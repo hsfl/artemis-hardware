@@ -1,0 +1,532 @@
+\hypertarget{classcubesat_1_1PyCubed}{}\section{cubesat\+:\+:Py\+Cubed Class Reference}
+\label{classcubesat_1_1PyCubed}\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+
+
+Provides access to the \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} mainboard.  
+
+
+
+
+{\ttfamily \#include $<$Py\+Cubed.\+h$>$}
+
+
+
+Inheritance diagram for cubesat\+:\+:Py\+Cubed\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classcubesat_1_1PyCubed__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cubesat\+:\+:Py\+Cubed\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcubesat_1_1PyCubed__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcubesat_1_1PyCubed_1_1MessageHandler}{Message\+Handler}
+\item 
+struct \hyperlink{structcubesat_1_1PyCubed_1_1MessageParser}{Message\+Parser}
+\item 
+struct \hyperlink{structcubesat_1_1PyCubed_1_1MessageSender}{Message\+Sender}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1PyCubed_a30b6d7ca9cc3d8d4151eca7525c9dc61}{Py\+Cubed} (uint8\+\_\+t bus, unsigned int baud)
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} object using the given bus and device numbers. \end{DoxyCompactList}\item 
+virtual \hyperlink{classcubesat_1_1PyCubed_ae9a69fbb6fb5df1d15984b0e11727aaa}{$\sim$\+Py\+Cubed} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classcubesat_1_1PyCubed_a18980909f0eac65f0977be35336a533c}{Send\+Message} (const std\+::string \&message\+\_\+type\+\_\+str, const std\+::vector$<$ std\+::string $>$ \&args)
+\begin{DoxyCompactList}\small\item\em Sends a typical (non-\/binary) message to the \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed}. \end{DoxyCompactList}\item 
+void \hyperlink{classcubesat_1_1PyCubed_a1607d57f2cd19bd3b75a2c3dbbfa4955}{Add\+Message\+Handler} (const std\+::string \&message\+\_\+type\+\_\+str, \hyperlink{namespacecubesat_a3b98f17d41bf0e37fe0d382b897f9692}{Py\+Cubed\+Message\+Handler\+Callback} callback, int num\+\_\+args)
+\begin{DoxyCompactList}\small\item\em Adds a message handler. \end{DoxyCompactList}\item 
+void \hyperlink{classcubesat_1_1PyCubed_a7ed5f976ac8923ac539a863d89df4776}{Add\+Message\+Parser} (const std\+::string \&message\+\_\+type\+\_\+str, \hyperlink{namespacecubesat_ad7197c1bfb09998ced84827cb0dd1680}{Py\+Cubed\+Message\+Parser\+Callback} callback)
+\begin{DoxyCompactList}\small\item\em Adds a message parser. \end{DoxyCompactList}\item 
+bool \hyperlink{classcubesat_1_1PyCubed_afa1170644bf62745e36fcf6a479bbbee}{Startup\+Confirmation} ()
+\begin{DoxyCompactList}\small\item\em Sends a message that startup was successful. \end{DoxyCompactList}\item 
+bool \hyperlink{classcubesat_1_1PyCubed_a0c707ebefe9fd00e2d1e602209c1e5a6}{Handoff} ()
+\begin{DoxyCompactList}\small\item\em Sends a handoff confirmation message. \end{DoxyCompactList}\item 
+bool \hyperlink{classcubesat_1_1PyCubed_a1156a3504ba2c8ad1f7b6622ff9f286c}{Kill\+Radio} ()
+\begin{DoxyCompactList}\small\item\em Sends a message to kill the radio. \end{DoxyCompactList}\item 
+void \hyperlink{classcubesat_1_1PyCubed_acfbc0579ac92c5ef15ccf27f78bbd721}{Set\+Shutdown\+Callback} (\hyperlink{namespacecubesat_abcc8eedef699fb7e3f433200cc25e181}{Py\+Cubed\+Shutdown\+Callback} callback)
+\begin{DoxyCompactList}\small\item\em Sets the callback function for when shutdown is requested. \end{DoxyCompactList}\item 
+\hyperlink{structcubesat_1_1PyCubedIMUInfo}{Py\+Cubed\+I\+M\+U\+Info} \hyperlink{classcubesat_1_1PyCubed_a74fd4657765351e136367592db3e3445}{Get\+I\+M\+U\+Info} () const
+\begin{DoxyCompactList}\small\item\em Returns the latest \hyperlink{classcubesat_1_1IMU}{I\+MU} information received. \end{DoxyCompactList}\item 
+\hyperlink{structcubesat_1_1PyCubedGPSInfo}{Py\+Cubed\+G\+P\+S\+Info} \hyperlink{classcubesat_1_1PyCubed_a9590d2e77b63e536062209b91a393d22}{Get\+G\+P\+S\+Info} () const
+\begin{DoxyCompactList}\small\item\em Returns the latest \hyperlink{classcubesat_1_1GPS}{G\+PS} information received. \end{DoxyCompactList}\item 
+\hyperlink{structcubesat_1_1PyCubedTempInfo}{Py\+Cubed\+Temp\+Info} \hyperlink{classcubesat_1_1PyCubed_a1eb8a72d0782680b320a336a301927a4}{Get\+Temp\+Info} () const
+\begin{DoxyCompactList}\small\item\em Returns the latest temperature information received. \end{DoxyCompactList}\item 
+\hyperlink{structcubesat_1_1PyCubedPowerInfo}{Py\+Cubed\+Power\+Info} \hyperlink{classcubesat_1_1PyCubed_ae934c1fb36fbf3865ee884401dc11aaa}{Get\+Power\+Info} () const
+\begin{DoxyCompactList}\small\item\em Returns the latest power information received. \end{DoxyCompactList}\item 
+int \hyperlink{classcubesat_1_1PyCubed_a60887bc5d94a8f58ac1d59db50397268}{Pop\+Incoming\+Packet} (\hyperlink{structcubesat_1_1PyCubedPacket}{Py\+Cubed\+Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Pops the newest radio packet from the incoming queue. \end{DoxyCompactList}\item 
+int \hyperlink{classcubesat_1_1PyCubed_ab662a7193869909f84e7f61abff835d4}{Telecommand\+Outbound\+Packet} (\hyperlink{structcubesat_1_1PyCubedDataPacket}{Py\+Cubed\+Data\+Packet} packet)
+\begin{DoxyCompactList}\small\item\em Sends a packet to the radio. \end{DoxyCompactList}\item 
+int \hyperlink{classcubesat_1_1PyCubed_a1f9dcecafbef5dc0b285aa34c7e6a81c}{Receive\+Messages} ()
+\begin{DoxyCompactList}\small\item\em Polls the \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} device for received messages. \end{DoxyCompactList}\item 
+bool \hyperlink{classcubesat_1_1PyCubed_a1a112a9d5f28f5a5cf1be27cd12d3cda}{Receive\+Next\+Message} ()
+\begin{DoxyCompactList}\small\item\em Receives the next message available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classcubesat_1_1PyCubed_ac58a739fdf572f272776164304dc951f}{Parser\+\_\+\+P\+KT} (\hyperlink{classcubesat_1_1UARTDevice}{U\+A\+R\+T\+Device} \&uart, \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&\hyperlink{pycubed__test_8cpp_ae8c4c37e7742557f28bffebe72eeef5e}{pycubed})
+\begin{DoxyCompactList}\small\item\em Radio packet parser. \end{DoxyCompactList}\item 
+static bool \hyperlink{classcubesat_1_1PyCubed_a1813883ff40761bffd3bdadbeac3c0ce}{Handler\+\_\+\+P\+ST} (std\+::vector$<$ std\+::string $>$ args, \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&\hyperlink{pycubed__test_8cpp_ae8c4c37e7742557f28bffebe72eeef5e}{pycubed})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} status handler. \end{DoxyCompactList}\item 
+static bool \hyperlink{classcubesat_1_1PyCubed_a4b4e36d9d30fc8c95030bdb8f6946c5e}{Handler\+\_\+\+I\+MU} (std\+::vector$<$ std\+::string $>$ args, \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&\hyperlink{pycubed__test_8cpp_ae8c4c37e7742557f28bffebe72eeef5e}{pycubed})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcubesat_1_1IMU}{I\+MU} handler. \end{DoxyCompactList}\item 
+static bool \hyperlink{classcubesat_1_1PyCubed_a60c99d1ef8b6a6b4e5721f18348b60dd}{Handler\+\_\+\+G\+PS} (std\+::vector$<$ std\+::string $>$ args, \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&\hyperlink{pycubed__test_8cpp_ae8c4c37e7742557f28bffebe72eeef5e}{pycubed})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcubesat_1_1GPS}{G\+PS} handler. \end{DoxyCompactList}\item 
+static bool \hyperlink{classcubesat_1_1PyCubed_a29cb9887d439e8fe784ebf9bc66187d9}{Handler\+\_\+\+T\+MP} (std\+::vector$<$ std\+::string $>$ args, \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&\hyperlink{pycubed__test_8cpp_ae8c4c37e7742557f28bffebe72eeef5e}{pycubed})
+\begin{DoxyCompactList}\small\item\em Temperature handler. \end{DoxyCompactList}\item 
+static bool \hyperlink{classcubesat_1_1PyCubed_aeeecb0e4d2632827980174128aed304a}{Handler\+\_\+\+P\+WR} (std\+::vector$<$ std\+::string $>$ args, \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&\hyperlink{pycubed__test_8cpp_ae8c4c37e7742557f28bffebe72eeef5e}{pycubed})
+\begin{DoxyCompactList}\small\item\em Power handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecubesat_abcc8eedef699fb7e3f433200cc25e181}{Py\+Cubed\+Shutdown\+Callback} \hyperlink{classcubesat_1_1PyCubed_abcdb5ea9c3b544a261a3aa2ec395836f}{shutdown\+\_\+callback}
+\begin{DoxyCompactList}\small\item\em The shutdown callback function. \end{DoxyCompactList}\item 
+\hyperlink{namespacecubesat_a378b098737c521b2e13df70ad8ddc0ba}{Py\+Cubed\+Receive\+File\+Callback} \hyperlink{classcubesat_1_1PyCubed_a7becf9e9df5a296a53f7f4228c28451a}{receive\+\_\+file\+\_\+callback}
+\begin{DoxyCompactList}\small\item\em The file receive callback. \end{DoxyCompactList}\item 
+\hyperlink{structcubesat_1_1PyCubedIMUInfo}{Py\+Cubed\+I\+M\+U\+Info} \hyperlink{classcubesat_1_1PyCubed_a8ecd72592ea8f3287a520e2ac834878c}{imu\+\_\+info}
+\begin{DoxyCompactList}\small\item\em Holds the last received \hyperlink{classcubesat_1_1IMU}{I\+MU} information. \end{DoxyCompactList}\item 
+\hyperlink{structcubesat_1_1PyCubedGPSInfo}{Py\+Cubed\+G\+P\+S\+Info} \hyperlink{classcubesat_1_1PyCubed_a0129f71b136ecc13fc378356431ccad0}{gps\+\_\+info}
+\begin{DoxyCompactList}\small\item\em Holds the last received \hyperlink{classcubesat_1_1GPS}{G\+PS} information. \end{DoxyCompactList}\item 
+\hyperlink{structcubesat_1_1PyCubedTempInfo}{Py\+Cubed\+Temp\+Info} \hyperlink{classcubesat_1_1PyCubed_a5508151b5f50200754c0a10efcc0445c}{temp\+\_\+info}
+\begin{DoxyCompactList}\small\item\em Holds the last received temperature information. \end{DoxyCompactList}\item 
+\hyperlink{structcubesat_1_1PyCubedPowerInfo}{Py\+Cubed\+Power\+Info} \hyperlink{classcubesat_1_1PyCubed_ac1feae4409faf165aafdc38489918db3}{power\+\_\+info}
+\begin{DoxyCompactList}\small\item\em Holds the last received power information. \end{DoxyCompactList}\item 
+std\+::queue$<$ \hyperlink{structcubesat_1_1PyCubedPacket}{Py\+Cubed\+Packet} $>$ \hyperlink{classcubesat_1_1PyCubed_a909673179f44b10128f01bd579bc13ba}{incoming\+\_\+packets}
+\begin{DoxyCompactList}\small\item\em Holds the incoming radio packets. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structcubesat_1_1PyCubed_1_1MessageParser}{Message\+Parser} $>$ \hyperlink{classcubesat_1_1PyCubed_a284d1cfcdd19675e2b96913018192928}{parsers}
+\begin{DoxyCompactList}\small\item\em The added message parsers. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structcubesat_1_1PyCubed_1_1MessageHandler}{Message\+Handler} $>$ \hyperlink{classcubesat_1_1PyCubed_aacc466db4b35e383eedd385db64522a1}{handlers}
+\begin{DoxyCompactList}\small\item\em The added message handlers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Provides access to the \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} mainboard. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a30b6d7ca9cc3d8d4151eca7525c9dc61}\label{classcubesat_1_1PyCubed_a30b6d7ca9cc3d8d4151eca7525c9dc61}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Py\+Cubed@{Py\+Cubed}}
+\index{Py\+Cubed@{Py\+Cubed}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Py\+Cubed()}{PyCubed()}}
+{\footnotesize\ttfamily Py\+Cubed\+::\+Py\+Cubed (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bus,  }\item[{unsigned int}]{baud }\end{DoxyParamCaption})}
+
+
+
+Constructs a \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} object using the given bus and device numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bus} & The U\+A\+RT bus number to use \\
+\hline
+{\em device} & The device number to use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_ae9a69fbb6fb5df1d15984b0e11727aaa}\label{classcubesat_1_1PyCubed_ae9a69fbb6fb5df1d15984b0e11727aaa}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!````~Py\+Cubed@{$\sim$\+Py\+Cubed}}
+\index{````~Py\+Cubed@{$\sim$\+Py\+Cubed}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{$\sim$\+Py\+Cubed()}{~PyCubed()}}
+{\footnotesize\ttfamily Py\+Cubed\+::$\sim$\+Py\+Cubed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a1607d57f2cd19bd3b75a2c3dbbfa4955}\label{classcubesat_1_1PyCubed_a1607d57f2cd19bd3b75a2c3dbbfa4955}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Add\+Message\+Handler@{Add\+Message\+Handler}}
+\index{Add\+Message\+Handler@{Add\+Message\+Handler}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Add\+Message\+Handler()}{AddMessageHandler()}}
+{\footnotesize\ttfamily void cubesat\+::\+Py\+Cubed\+::\+Add\+Message\+Handler (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message\+\_\+type\+\_\+str,  }\item[{\hyperlink{namespacecubesat_a3b98f17d41bf0e37fe0d382b897f9692}{Py\+Cubed\+Message\+Handler\+Callback}}]{callback,  }\item[{int}]{num\+\_\+args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a message handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+\_\+type\+\_\+str} & The message type string to add support for \\
+\hline
+{\em callback} & The function to call when this message type is received \\
+\hline
+{\em num\+\_\+args} & The number of arguments expected \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a7ed5f976ac8923ac539a863d89df4776}\label{classcubesat_1_1PyCubed_a7ed5f976ac8923ac539a863d89df4776}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Add\+Message\+Parser@{Add\+Message\+Parser}}
+\index{Add\+Message\+Parser@{Add\+Message\+Parser}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Add\+Message\+Parser()}{AddMessageParser()}}
+{\footnotesize\ttfamily void cubesat\+::\+Py\+Cubed\+::\+Add\+Message\+Parser (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message\+\_\+type\+\_\+str,  }\item[{\hyperlink{namespacecubesat_ad7197c1bfb09998ced84827cb0dd1680}{Py\+Cubed\+Message\+Parser\+Callback}}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a message parser. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+\_\+type\+\_\+str} & The message type string to add support for \\
+\hline
+{\em callback} & The function to call when this message type is received \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a9590d2e77b63e536062209b91a393d22}\label{classcubesat_1_1PyCubed_a9590d2e77b63e536062209b91a393d22}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Get\+G\+P\+S\+Info@{Get\+G\+P\+S\+Info}}
+\index{Get\+G\+P\+S\+Info@{Get\+G\+P\+S\+Info}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Get\+G\+P\+S\+Info()}{GetGPSInfo()}}
+{\footnotesize\ttfamily \hyperlink{structcubesat_1_1PyCubedGPSInfo}{Py\+Cubed\+G\+P\+S\+Info} cubesat\+::\+Py\+Cubed\+::\+Get\+G\+P\+S\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the latest \hyperlink{classcubesat_1_1GPS}{G\+PS} information received. 
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classcubesat_1_1GPS}{G\+PS} information 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a74fd4657765351e136367592db3e3445}\label{classcubesat_1_1PyCubed_a74fd4657765351e136367592db3e3445}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Get\+I\+M\+U\+Info@{Get\+I\+M\+U\+Info}}
+\index{Get\+I\+M\+U\+Info@{Get\+I\+M\+U\+Info}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Get\+I\+M\+U\+Info()}{GetIMUInfo()}}
+{\footnotesize\ttfamily \hyperlink{structcubesat_1_1PyCubedIMUInfo}{Py\+Cubed\+I\+M\+U\+Info} cubesat\+::\+Py\+Cubed\+::\+Get\+I\+M\+U\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the latest \hyperlink{classcubesat_1_1IMU}{I\+MU} information received. 
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classcubesat_1_1IMU}{I\+MU} information 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_ae934c1fb36fbf3865ee884401dc11aaa}\label{classcubesat_1_1PyCubed_ae934c1fb36fbf3865ee884401dc11aaa}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Get\+Power\+Info@{Get\+Power\+Info}}
+\index{Get\+Power\+Info@{Get\+Power\+Info}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Get\+Power\+Info()}{GetPowerInfo()}}
+{\footnotesize\ttfamily \hyperlink{structcubesat_1_1PyCubedPowerInfo}{Py\+Cubed\+Power\+Info} cubesat\+::\+Py\+Cubed\+::\+Get\+Power\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the latest power information received. 
+
+\begin{DoxyReturn}{Returns}
+The power information 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a1eb8a72d0782680b320a336a301927a4}\label{classcubesat_1_1PyCubed_a1eb8a72d0782680b320a336a301927a4}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Get\+Temp\+Info@{Get\+Temp\+Info}}
+\index{Get\+Temp\+Info@{Get\+Temp\+Info}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Get\+Temp\+Info()}{GetTempInfo()}}
+{\footnotesize\ttfamily \hyperlink{structcubesat_1_1PyCubedTempInfo}{Py\+Cubed\+Temp\+Info} cubesat\+::\+Py\+Cubed\+::\+Get\+Temp\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the latest temperature information received. 
+
+\begin{DoxyReturn}{Returns}
+The temperature information 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a60c99d1ef8b6a6b4e5721f18348b60dd}\label{classcubesat_1_1PyCubed_a60c99d1ef8b6a6b4e5721f18348b60dd}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Handler\+\_\+\+G\+PS@{Handler\+\_\+\+G\+PS}}
+\index{Handler\+\_\+\+G\+PS@{Handler\+\_\+\+G\+PS}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Handler\+\_\+\+G\+P\+S()}{Handler\_GPS()}}
+{\footnotesize\ttfamily bool Py\+Cubed\+::\+Handler\+\_\+\+G\+PS (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{args,  }\item[{\hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&}]{pycubed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\hyperlink{classcubesat_1_1GPS}{G\+PS} handler. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a4b4e36d9d30fc8c95030bdb8f6946c5e}\label{classcubesat_1_1PyCubed_a4b4e36d9d30fc8c95030bdb8f6946c5e}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Handler\+\_\+\+I\+MU@{Handler\+\_\+\+I\+MU}}
+\index{Handler\+\_\+\+I\+MU@{Handler\+\_\+\+I\+MU}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Handler\+\_\+\+I\+M\+U()}{Handler\_IMU()}}
+{\footnotesize\ttfamily bool Py\+Cubed\+::\+Handler\+\_\+\+I\+MU (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{args,  }\item[{\hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&}]{pycubed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\hyperlink{classcubesat_1_1IMU}{I\+MU} handler. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a1813883ff40761bffd3bdadbeac3c0ce}\label{classcubesat_1_1PyCubed_a1813883ff40761bffd3bdadbeac3c0ce}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Handler\+\_\+\+P\+ST@{Handler\+\_\+\+P\+ST}}
+\index{Handler\+\_\+\+P\+ST@{Handler\+\_\+\+P\+ST}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Handler\+\_\+\+P\+S\+T()}{Handler\_PST()}}
+{\footnotesize\ttfamily bool Py\+Cubed\+::\+Handler\+\_\+\+P\+ST (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{args,  }\item[{\hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&}]{pycubed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} status handler. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_aeeecb0e4d2632827980174128aed304a}\label{classcubesat_1_1PyCubed_aeeecb0e4d2632827980174128aed304a}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Handler\+\_\+\+P\+WR@{Handler\+\_\+\+P\+WR}}
+\index{Handler\+\_\+\+P\+WR@{Handler\+\_\+\+P\+WR}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Handler\+\_\+\+P\+W\+R()}{Handler\_PWR()}}
+{\footnotesize\ttfamily bool Py\+Cubed\+::\+Handler\+\_\+\+P\+WR (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{args,  }\item[{\hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&}]{pycubed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Power handler. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a29cb9887d439e8fe784ebf9bc66187d9}\label{classcubesat_1_1PyCubed_a29cb9887d439e8fe784ebf9bc66187d9}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Handler\+\_\+\+T\+MP@{Handler\+\_\+\+T\+MP}}
+\index{Handler\+\_\+\+T\+MP@{Handler\+\_\+\+T\+MP}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Handler\+\_\+\+T\+M\+P()}{Handler\_TMP()}}
+{\footnotesize\ttfamily bool Py\+Cubed\+::\+Handler\+\_\+\+T\+MP (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{args,  }\item[{\hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&}]{pycubed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Temperature handler. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a0c707ebefe9fd00e2d1e602209c1e5a6}\label{classcubesat_1_1PyCubed_a0c707ebefe9fd00e2d1e602209c1e5a6}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Handoff@{Handoff}}
+\index{Handoff@{Handoff}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Handoff()}{Handoff()}}
+{\footnotesize\ttfamily bool cubesat\+::\+Py\+Cubed\+::\+Handoff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sends a handoff confirmation message. 
+
+\begin{DoxyReturn}{Returns}
+The status of the operation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a1156a3504ba2c8ad1f7b6622ff9f286c}\label{classcubesat_1_1PyCubed_a1156a3504ba2c8ad1f7b6622ff9f286c}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Kill\+Radio@{Kill\+Radio}}
+\index{Kill\+Radio@{Kill\+Radio}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Kill\+Radio()}{KillRadio()}}
+{\footnotesize\ttfamily bool cubesat\+::\+Py\+Cubed\+::\+Kill\+Radio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sends a message to kill the radio. 
+
+\begin{DoxyReturn}{Returns}
+The status of the operation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_ac58a739fdf572f272776164304dc951f}\label{classcubesat_1_1PyCubed_ac58a739fdf572f272776164304dc951f}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Parser\+\_\+\+P\+KT@{Parser\+\_\+\+P\+KT}}
+\index{Parser\+\_\+\+P\+KT@{Parser\+\_\+\+P\+KT}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Parser\+\_\+\+P\+K\+T()}{Parser\_PKT()}}
+{\footnotesize\ttfamily bool Py\+Cubed\+::\+Parser\+\_\+\+P\+KT (\begin{DoxyParamCaption}\item[{\hyperlink{classcubesat_1_1UARTDevice}{U\+A\+R\+T\+Device} \&}]{uart,  }\item[{\hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} \&}]{pycubed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Radio packet parser. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a60887bc5d94a8f58ac1d59db50397268}\label{classcubesat_1_1PyCubed_a60887bc5d94a8f58ac1d59db50397268}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Pop\+Incoming\+Packet@{Pop\+Incoming\+Packet}}
+\index{Pop\+Incoming\+Packet@{Pop\+Incoming\+Packet}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Pop\+Incoming\+Packet()}{PopIncomingPacket()}}
+{\footnotesize\ttfamily int Py\+Cubed\+::\+Pop\+Incoming\+Packet (\begin{DoxyParamCaption}\item[{\hyperlink{structcubesat_1_1PyCubedPacket}{Py\+Cubed\+Packet} \&}]{packet }\end{DoxyParamCaption})}
+
+
+
+Pops the newest radio packet from the incoming queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & The output variable for the packet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The packet size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a1f9dcecafbef5dc0b285aa34c7e6a81c}\label{classcubesat_1_1PyCubed_a1f9dcecafbef5dc0b285aa34c7e6a81c}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Receive\+Messages@{Receive\+Messages}}
+\index{Receive\+Messages@{Receive\+Messages}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Receive\+Messages()}{ReceiveMessages()}}
+{\footnotesize\ttfamily int Py\+Cubed\+::\+Receive\+Messages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Polls the \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} device for received messages. 
+
+\begin{DoxyReturn}{Returns}
+The number of messages received 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a1a112a9d5f28f5a5cf1be27cd12d3cda}\label{classcubesat_1_1PyCubed_a1a112a9d5f28f5a5cf1be27cd12d3cda}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Receive\+Next\+Message@{Receive\+Next\+Message}}
+\index{Receive\+Next\+Message@{Receive\+Next\+Message}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Receive\+Next\+Message()}{ReceiveNextMessage()}}
+{\footnotesize\ttfamily bool Py\+Cubed\+::\+Receive\+Next\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Receives the next message available. 
+
+\begin{DoxyReturn}{Returns}
+True if the message was read successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a18980909f0eac65f0977be35336a533c}\label{classcubesat_1_1PyCubed_a18980909f0eac65f0977be35336a533c}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Send\+Message@{Send\+Message}}
+\index{Send\+Message@{Send\+Message}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Send\+Message()}{SendMessage()}}
+{\footnotesize\ttfamily bool Py\+Cubed\+::\+Send\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message\+\_\+type\+\_\+str,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{args }\end{DoxyParamCaption})}
+
+
+
+Sends a typical (non-\/binary) message to the \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+\_\+type\+\_\+str} & The message type string \\
+\hline
+{\em args} & The string arguments to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True upon success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_acfbc0579ac92c5ef15ccf27f78bbd721}\label{classcubesat_1_1PyCubed_acfbc0579ac92c5ef15ccf27f78bbd721}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Set\+Shutdown\+Callback@{Set\+Shutdown\+Callback}}
+\index{Set\+Shutdown\+Callback@{Set\+Shutdown\+Callback}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Set\+Shutdown\+Callback()}{SetShutdownCallback()}}
+{\footnotesize\ttfamily void cubesat\+::\+Py\+Cubed\+::\+Set\+Shutdown\+Callback (\begin{DoxyParamCaption}\item[{\hyperlink{namespacecubesat_abcc8eedef699fb7e3f433200cc25e181}{Py\+Cubed\+Shutdown\+Callback}}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the callback function for when shutdown is requested. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & The function to call \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_afa1170644bf62745e36fcf6a479bbbee}\label{classcubesat_1_1PyCubed_afa1170644bf62745e36fcf6a479bbbee}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Startup\+Confirmation@{Startup\+Confirmation}}
+\index{Startup\+Confirmation@{Startup\+Confirmation}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Startup\+Confirmation()}{StartupConfirmation()}}
+{\footnotesize\ttfamily bool cubesat\+::\+Py\+Cubed\+::\+Startup\+Confirmation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sends a message that startup was successful. 
+
+\begin{DoxyReturn}{Returns}
+The status of the operation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_ab662a7193869909f84e7f61abff835d4}\label{classcubesat_1_1PyCubed_ab662a7193869909f84e7f61abff835d4}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!Telecommand\+Outbound\+Packet@{Telecommand\+Outbound\+Packet}}
+\index{Telecommand\+Outbound\+Packet@{Telecommand\+Outbound\+Packet}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{Telecommand\+Outbound\+Packet()}{TelecommandOutboundPacket()}}
+{\footnotesize\ttfamily int Py\+Cubed\+::\+Telecommand\+Outbound\+Packet (\begin{DoxyParamCaption}\item[{\hyperlink{structcubesat_1_1PyCubedDataPacket}{Py\+Cubed\+Data\+Packet}}]{packet }\end{DoxyParamCaption})}
+
+
+
+Sends a packet to the radio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & The packet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of bytes written 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a0129f71b136ecc13fc378356431ccad0}\label{classcubesat_1_1PyCubed_a0129f71b136ecc13fc378356431ccad0}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!gps\+\_\+info@{gps\+\_\+info}}
+\index{gps\+\_\+info@{gps\+\_\+info}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{gps\+\_\+info}{gps\_info}}
+{\footnotesize\ttfamily \hyperlink{structcubesat_1_1PyCubedGPSInfo}{Py\+Cubed\+G\+P\+S\+Info} cubesat\+::\+Py\+Cubed\+::gps\+\_\+info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Holds the last received \hyperlink{classcubesat_1_1GPS}{G\+PS} information. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_aacc466db4b35e383eedd385db64522a1}\label{classcubesat_1_1PyCubed_aacc466db4b35e383eedd385db64522a1}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!handlers@{handlers}}
+\index{handlers@{handlers}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{handlers}{handlers}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \hyperlink{structcubesat_1_1PyCubed_1_1MessageHandler}{Message\+Handler}$>$ cubesat\+::\+Py\+Cubed\+::handlers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The added message handlers. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a8ecd72592ea8f3287a520e2ac834878c}\label{classcubesat_1_1PyCubed_a8ecd72592ea8f3287a520e2ac834878c}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!imu\+\_\+info@{imu\+\_\+info}}
+\index{imu\+\_\+info@{imu\+\_\+info}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{imu\+\_\+info}{imu\_info}}
+{\footnotesize\ttfamily \hyperlink{structcubesat_1_1PyCubedIMUInfo}{Py\+Cubed\+I\+M\+U\+Info} cubesat\+::\+Py\+Cubed\+::imu\+\_\+info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Holds the last received \hyperlink{classcubesat_1_1IMU}{I\+MU} information. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a909673179f44b10128f01bd579bc13ba}\label{classcubesat_1_1PyCubed_a909673179f44b10128f01bd579bc13ba}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!incoming\+\_\+packets@{incoming\+\_\+packets}}
+\index{incoming\+\_\+packets@{incoming\+\_\+packets}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{incoming\+\_\+packets}{incoming\_packets}}
+{\footnotesize\ttfamily std\+::queue$<$\hyperlink{structcubesat_1_1PyCubedPacket}{Py\+Cubed\+Packet}$>$ cubesat\+::\+Py\+Cubed\+::incoming\+\_\+packets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Holds the incoming radio packets. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a284d1cfcdd19675e2b96913018192928}\label{classcubesat_1_1PyCubed_a284d1cfcdd19675e2b96913018192928}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!parsers@{parsers}}
+\index{parsers@{parsers}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{parsers}{parsers}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \hyperlink{structcubesat_1_1PyCubed_1_1MessageParser}{Message\+Parser}$>$ cubesat\+::\+Py\+Cubed\+::parsers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The added message parsers. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_ac1feae4409faf165aafdc38489918db3}\label{classcubesat_1_1PyCubed_ac1feae4409faf165aafdc38489918db3}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!power\+\_\+info@{power\+\_\+info}}
+\index{power\+\_\+info@{power\+\_\+info}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{power\+\_\+info}{power\_info}}
+{\footnotesize\ttfamily \hyperlink{structcubesat_1_1PyCubedPowerInfo}{Py\+Cubed\+Power\+Info} cubesat\+::\+Py\+Cubed\+::power\+\_\+info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Holds the last received power information. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a7becf9e9df5a296a53f7f4228c28451a}\label{classcubesat_1_1PyCubed_a7becf9e9df5a296a53f7f4228c28451a}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!receive\+\_\+file\+\_\+callback@{receive\+\_\+file\+\_\+callback}}
+\index{receive\+\_\+file\+\_\+callback@{receive\+\_\+file\+\_\+callback}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{receive\+\_\+file\+\_\+callback}{receive\_file\_callback}}
+{\footnotesize\ttfamily \hyperlink{namespacecubesat_a378b098737c521b2e13df70ad8ddc0ba}{Py\+Cubed\+Receive\+File\+Callback} cubesat\+::\+Py\+Cubed\+::receive\+\_\+file\+\_\+callback\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The file receive callback. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_abcdb5ea9c3b544a261a3aa2ec395836f}\label{classcubesat_1_1PyCubed_abcdb5ea9c3b544a261a3aa2ec395836f}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!shutdown\+\_\+callback@{shutdown\+\_\+callback}}
+\index{shutdown\+\_\+callback@{shutdown\+\_\+callback}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{shutdown\+\_\+callback}{shutdown\_callback}}
+{\footnotesize\ttfamily \hyperlink{namespacecubesat_abcc8eedef699fb7e3f433200cc25e181}{Py\+Cubed\+Shutdown\+Callback} cubesat\+::\+Py\+Cubed\+::shutdown\+\_\+callback\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The shutdown callback function. 
+
+\mbox{\Hypertarget{classcubesat_1_1PyCubed_a5508151b5f50200754c0a10efcc0445c}\label{classcubesat_1_1PyCubed_a5508151b5f50200754c0a10efcc0445c}} 
+\index{cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}!temp\+\_\+info@{temp\+\_\+info}}
+\index{temp\+\_\+info@{temp\+\_\+info}!cubesat\+::\+Py\+Cubed@{cubesat\+::\+Py\+Cubed}}
+\subsubsection{\texorpdfstring{temp\+\_\+info}{temp\_info}}
+{\footnotesize\ttfamily \hyperlink{structcubesat_1_1PyCubedTempInfo}{Py\+Cubed\+Temp\+Info} cubesat\+::\+Py\+Cubed\+::temp\+\_\+info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Holds the last received temperature information. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/\hyperlink{PyCubed_8h}{Py\+Cubed.\+h}\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/device/\hyperlink{PyCubed_8cpp}{Py\+Cubed.\+cpp}\end{DoxyCompactItemize}

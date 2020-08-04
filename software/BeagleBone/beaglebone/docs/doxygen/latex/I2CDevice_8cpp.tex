@@ -1,0 +1,57 @@
+\hypertarget{I2CDevice_8cpp}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/device/\+I2\+C\+Device.cpp File Reference}
+\label{I2CDevice_8cpp}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/device/\+I2\+C\+Device.\+cpp@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/device/\+I2\+C\+Device.\+cpp}}
+{\ttfamily \#include \char`\"{}device/\+I2\+C\+Device.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\newline
+{\ttfamily \#include $<$linux/i2c.\+h$>$}\newline
+{\ttfamily \#include $<$linux/i2c-\/dev.\+h$>$}\newline
+Include dependency graph for I2\+C\+Device.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{I2CDevice_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{I2CDevice_8cpp_a38f38f0b896eccada826f8ed58b9b2a1}{B\+B\+B\+\_\+\+I2\+C\+\_\+0}~\char`\"{}/dev/i2c-\/0\char`\"{}
+\item 
+\#define \hyperlink{I2CDevice_8cpp_a667f333c12408590596d2cd2425b0066}{B\+B\+B\+\_\+\+I2\+C\+\_\+1}~\char`\"{}/dev/i2c-\/1\char`\"{}
+\item 
+\#define \hyperlink{I2CDevice_8cpp_a0b1f3c13ef0ccb5ee96b90bce5fdb7c1}{B\+B\+B\+\_\+\+I2\+C\+\_\+2}~\char`\"{}/dev/i2c-\/2\char`\"{}
+\item 
+\#define \hyperlink{I2CDevice_8cpp_afc599568c44b7c4e3cd0a25f32dc0001}{H\+EX}(x)~setw(2) $<$$<$ setfill(\textquotesingle{}0\textquotesingle{}) $<$$<$ hex $<$$<$ (int)(x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{I2CDevice_8cpp_a38f38f0b896eccada826f8ed58b9b2a1}\label{I2CDevice_8cpp_a38f38f0b896eccada826f8ed58b9b2a1}} 
+\index{I2\+C\+Device.\+cpp@{I2\+C\+Device.\+cpp}!B\+B\+B\+\_\+\+I2\+C\+\_\+0@{B\+B\+B\+\_\+\+I2\+C\+\_\+0}}
+\index{B\+B\+B\+\_\+\+I2\+C\+\_\+0@{B\+B\+B\+\_\+\+I2\+C\+\_\+0}!I2\+C\+Device.\+cpp@{I2\+C\+Device.\+cpp}}
+\subsubsection{\texorpdfstring{B\+B\+B\+\_\+\+I2\+C\+\_\+0}{BBB\_I2C\_0}}
+{\footnotesize\ttfamily \#define B\+B\+B\+\_\+\+I2\+C\+\_\+0~\char`\"{}/dev/i2c-\/0\char`\"{}}
+
+\mbox{\Hypertarget{I2CDevice_8cpp_a667f333c12408590596d2cd2425b0066}\label{I2CDevice_8cpp_a667f333c12408590596d2cd2425b0066}} 
+\index{I2\+C\+Device.\+cpp@{I2\+C\+Device.\+cpp}!B\+B\+B\+\_\+\+I2\+C\+\_\+1@{B\+B\+B\+\_\+\+I2\+C\+\_\+1}}
+\index{B\+B\+B\+\_\+\+I2\+C\+\_\+1@{B\+B\+B\+\_\+\+I2\+C\+\_\+1}!I2\+C\+Device.\+cpp@{I2\+C\+Device.\+cpp}}
+\subsubsection{\texorpdfstring{B\+B\+B\+\_\+\+I2\+C\+\_\+1}{BBB\_I2C\_1}}
+{\footnotesize\ttfamily \#define B\+B\+B\+\_\+\+I2\+C\+\_\+1~\char`\"{}/dev/i2c-\/1\char`\"{}}
+
+\mbox{\Hypertarget{I2CDevice_8cpp_a0b1f3c13ef0ccb5ee96b90bce5fdb7c1}\label{I2CDevice_8cpp_a0b1f3c13ef0ccb5ee96b90bce5fdb7c1}} 
+\index{I2\+C\+Device.\+cpp@{I2\+C\+Device.\+cpp}!B\+B\+B\+\_\+\+I2\+C\+\_\+2@{B\+B\+B\+\_\+\+I2\+C\+\_\+2}}
+\index{B\+B\+B\+\_\+\+I2\+C\+\_\+2@{B\+B\+B\+\_\+\+I2\+C\+\_\+2}!I2\+C\+Device.\+cpp@{I2\+C\+Device.\+cpp}}
+\subsubsection{\texorpdfstring{B\+B\+B\+\_\+\+I2\+C\+\_\+2}{BBB\_I2C\_2}}
+{\footnotesize\ttfamily \#define B\+B\+B\+\_\+\+I2\+C\+\_\+2~\char`\"{}/dev/i2c-\/2\char`\"{}}
+
+\mbox{\Hypertarget{I2CDevice_8cpp_afc599568c44b7c4e3cd0a25f32dc0001}\label{I2CDevice_8cpp_afc599568c44b7c4e3cd0a25f32dc0001}} 
+\index{I2\+C\+Device.\+cpp@{I2\+C\+Device.\+cpp}!H\+EX@{H\+EX}}
+\index{H\+EX@{H\+EX}!I2\+C\+Device.\+cpp@{I2\+C\+Device.\+cpp}}
+\subsubsection{\texorpdfstring{H\+EX}{HEX}}
+{\footnotesize\ttfamily \#define H\+EX(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~setw(2) $<$$<$ setfill(\textquotesingle{}0\textquotesingle{}) $<$$<$ hex $<$$<$ (int)(x)}
+

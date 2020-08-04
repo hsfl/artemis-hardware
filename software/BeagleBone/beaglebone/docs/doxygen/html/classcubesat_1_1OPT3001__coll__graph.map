@@ -1,0 +1,5 @@
+<map id="cubesat::OPT3001" name="cubesat::OPT3001">
+<area shape="rect" id="node2" href="$classcubesat_1_1I2CDevice.html" title="cubesat::I2CDevice" alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node3" href="$unioncubesat_1_1OPT3001_1_1Configuration.html" title="Configuration flags corresponding to the configuration register on the device. " alt="" coords="168,5,384,32"/>
+<area shape="rect" id="node4" href="$unioncubesat_1_1OPT3001_1_1ResultData.html" title="Stores data pulled from the result register. " alt="" coords="408,5,613,32"/>
+</map>

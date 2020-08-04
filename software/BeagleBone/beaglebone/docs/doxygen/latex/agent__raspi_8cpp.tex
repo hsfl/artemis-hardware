@@ -1,0 +1,219 @@
+\hypertarget{agent__raspi_8cpp}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+raspi.cpp File Reference}
+\label{agent__raspi_8cpp}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+raspi.\+cpp@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+raspi.\+cpp}}
+{\ttfamily \#include \char`\"{}utility/\+Simple\+Agent.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}device/\+Raspberry\+Pi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}device/switch.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$dirent.\+h$>$}\newline
+Include dependency graph for agent\+\_\+raspi.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{agent__raspi_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{agent__raspi_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}~1
+\item 
+\#define \hyperlink{agent__raspi_8cpp_ae7d59e0ff4b92a067102893f40a223f7}{R\+A\+S\+P\+I\+\_\+\+H\+O\+ST}~\char`\"{}raspberrypi.\+local\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{agent__raspi_8cpp_a55206e570dcbd7e18f985f45e0014d21}{Connect\+Raspi} ()
+\begin{DoxyCompactList}\small\item\em Attempts to connect to the Raspberry Pi by pinging it. \end{DoxyCompactList}\item 
+void \hyperlink{agent__raspi_8cpp_a794dd375fd81166bde341446bcd1f8e5}{Update\+Raspi} ()
+\begin{DoxyCompactList}\small\item\em Updates the Raspberry Pi. \end{DoxyCompactList}\item 
+void \hyperlink{agent__raspi_8cpp_a79b2426ac5acfd73e36a782ac65dc211}{Grab\+S\+O\+H\+Data} ()
+\begin{DoxyCompactList}\small\item\em Reads and stores S\+OH data from other agents. \end{DoxyCompactList}\item 
+void \hyperlink{agent__raspi_8cpp_a48928405675974fc4e8d456425fc31da}{System\+Call} (const std\+::string \&command, std\+::string \&output)
+\begin{DoxyCompactList}\small\item\em Calls a system command on the Raspberry Pi. \end{DoxyCompactList}\item 
+string \hyperlink{agent__raspi_8cpp_aeba795747b0417b233f7cbc6bdbc375f}{Request\+\_\+\+Get\+Data} ()
+\item 
+string \hyperlink{agent__raspi_8cpp_ad14364efa27d0a148ebdbff8be707036}{Request\+\_\+\+S\+SH} (vector$<$ string $>$ args)
+\item 
+string \hyperlink{agent__raspi_8cpp_aed5a98db7956062c4bec84016a1e69cc}{Request\+\_\+\+Ping} ()
+\item 
+string \hyperlink{agent__raspi_8cpp_a7511dfc1dad294e7ff06891778c75200}{Request\+\_\+\+Shutdown} ()
+\item 
+int \hyperlink{agent__raspi_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent} $\ast$ \hyperlink{agent__raspi_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}{agent}
+\item 
+\hyperlink{classcubesat_1_1CPU}{C\+PU} $\ast$ \hyperlink{agent__raspi_8cpp_ac833534fef495551a99ff1626c0985ee}{raspi}
+\item 
+\hyperlink{classcubesat_1_1Camera}{Camera} $\ast$ \hyperlink{agent__raspi_8cpp_af95833c961e5bd20dcd54e1d46a03c0b}{camera}
+\item 
+\hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device} $\ast$ \hyperlink{agent__raspi_8cpp_ade0605b840341817e85030df02a2cf7f}{pycubed}
+\item 
+\hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device} $\ast$ \hyperlink{agent__raspi_8cpp_a32b024299b59ee470caa94a8003e8117}{tempsensors}
+\item 
+\hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device} $\ast$ \hyperlink{agent__raspi_8cpp_ae8be2a0764cc3e72a3357bb75784e2cb}{sunsensors}
+\item 
+\hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device} $\ast$ \hyperlink{agent__raspi_8cpp_a6924e1e40985ea556ecefef700f2e6f8}{switches}
+\item 
+\hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device} $\ast$ \hyperlink{agent__raspi_8cpp_ac17e32d87c00b5f15b8e807d785e673b}{heater}
+\item 
+bool \hyperlink{agent__raspi_8cpp_addcffae286e79a7dc063b0c676398f9d}{perform\+\_\+shutdown} = false
+\item 
+\hyperlink{classcubesat_1_1Timer}{Timer} \hyperlink{agent__raspi_8cpp_afe34055562b8d3d757fa5865918a01a4}{up\+\_\+time\+\_\+timer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{agent__raspi_8cpp_ae7d59e0ff4b92a067102893f40a223f7}\label{agent__raspi_8cpp_ae7d59e0ff4b92a067102893f40a223f7}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!R\+A\+S\+P\+I\+\_\+\+H\+O\+ST@{R\+A\+S\+P\+I\+\_\+\+H\+O\+ST}}
+\index{R\+A\+S\+P\+I\+\_\+\+H\+O\+ST@{R\+A\+S\+P\+I\+\_\+\+H\+O\+ST}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{R\+A\+S\+P\+I\+\_\+\+H\+O\+ST}{RASPI\_HOST}}
+{\footnotesize\ttfamily \#define R\+A\+S\+P\+I\+\_\+\+H\+O\+ST~\char`\"{}raspberrypi.\+local\char`\"{}}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}\label{agent__raspi_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}}
+\index{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}{SLEEP\_TIME}}
+{\footnotesize\ttfamily \#define S\+L\+E\+E\+P\+\_\+\+T\+I\+ME~1}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{agent__raspi_8cpp_a55206e570dcbd7e18f985f45e0014d21}\label{agent__raspi_8cpp_a55206e570dcbd7e18f985f45e0014d21}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!Connect\+Raspi@{Connect\+Raspi}}
+\index{Connect\+Raspi@{Connect\+Raspi}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{Connect\+Raspi()}{ConnectRaspi()}}
+{\footnotesize\ttfamily void Connect\+Raspi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Attempts to connect to the Raspberry Pi by pinging it. 
+
+\mbox{\Hypertarget{agent__raspi_8cpp_a79b2426ac5acfd73e36a782ac65dc211}\label{agent__raspi_8cpp_a79b2426ac5acfd73e36a782ac65dc211}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!Grab\+S\+O\+H\+Data@{Grab\+S\+O\+H\+Data}}
+\index{Grab\+S\+O\+H\+Data@{Grab\+S\+O\+H\+Data}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{Grab\+S\+O\+H\+Data()}{GrabSOHData()}}
+{\footnotesize\ttfamily void Grab\+S\+O\+H\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads and stores S\+OH data from other agents. 
+
+\mbox{\Hypertarget{agent__raspi_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{agent__raspi_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!main@{main}}
+\index{main@{main}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_aeba795747b0417b233f7cbc6bdbc375f}\label{agent__raspi_8cpp_aeba795747b0417b233f7cbc6bdbc375f}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!Request\+\_\+\+Get\+Data@{Request\+\_\+\+Get\+Data}}
+\index{Request\+\_\+\+Get\+Data@{Request\+\_\+\+Get\+Data}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Get\+Data()}{Request\_GetData()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_aed5a98db7956062c4bec84016a1e69cc}\label{agent__raspi_8cpp_aed5a98db7956062c4bec84016a1e69cc}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!Request\+\_\+\+Ping@{Request\+\_\+\+Ping}}
+\index{Request\+\_\+\+Ping@{Request\+\_\+\+Ping}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Ping()}{Request\_Ping()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Ping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_a7511dfc1dad294e7ff06891778c75200}\label{agent__raspi_8cpp_a7511dfc1dad294e7ff06891778c75200}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!Request\+\_\+\+Shutdown@{Request\+\_\+\+Shutdown}}
+\index{Request\+\_\+\+Shutdown@{Request\+\_\+\+Shutdown}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Shutdown()}{Request\_Shutdown()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_ad14364efa27d0a148ebdbff8be707036}\label{agent__raspi_8cpp_ad14364efa27d0a148ebdbff8be707036}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!Request\+\_\+\+S\+SH@{Request\+\_\+\+S\+SH}}
+\index{Request\+\_\+\+S\+SH@{Request\+\_\+\+S\+SH}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+S\+S\+H()}{Request\_SSH()}}
+{\footnotesize\ttfamily string Request\+\_\+\+S\+SH (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_a48928405675974fc4e8d456425fc31da}\label{agent__raspi_8cpp_a48928405675974fc4e8d456425fc31da}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!System\+Call@{System\+Call}}
+\index{System\+Call@{System\+Call}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{System\+Call()}{SystemCall()}}
+{\footnotesize\ttfamily void System\+Call (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{command,  }\item[{std\+::string \&}]{output }\end{DoxyParamCaption})}
+
+
+
+Calls a system command on the Raspberry Pi. 
+
+\mbox{\Hypertarget{agent__raspi_8cpp_a794dd375fd81166bde341446bcd1f8e5}\label{agent__raspi_8cpp_a794dd375fd81166bde341446bcd1f8e5}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!Update\+Raspi@{Update\+Raspi}}
+\index{Update\+Raspi@{Update\+Raspi}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{Update\+Raspi()}{UpdateRaspi()}}
+{\footnotesize\ttfamily void Update\+Raspi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the Raspberry Pi. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{agent__raspi_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}\label{agent__raspi_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!agent@{agent}}
+\index{agent@{agent}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{agent}{agent}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent}$\ast$ agent}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_af95833c961e5bd20dcd54e1d46a03c0b}\label{agent__raspi_8cpp_af95833c961e5bd20dcd54e1d46a03c0b}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!camera@{camera}}
+\index{camera@{camera}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1Camera}{Camera}$\ast$ camera}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_ac17e32d87c00b5f15b8e807d785e673b}\label{agent__raspi_8cpp_ac17e32d87c00b5f15b8e807d785e673b}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!heater@{heater}}
+\index{heater@{heater}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{heater}{heater}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device} $\ast$ heater}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_addcffae286e79a7dc063b0c676398f9d}\label{agent__raspi_8cpp_addcffae286e79a7dc063b0c676398f9d}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!perform\+\_\+shutdown@{perform\+\_\+shutdown}}
+\index{perform\+\_\+shutdown@{perform\+\_\+shutdown}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{perform\+\_\+shutdown}{perform\_shutdown}}
+{\footnotesize\ttfamily bool perform\+\_\+shutdown = false}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_ade0605b840341817e85030df02a2cf7f}\label{agent__raspi_8cpp_ade0605b840341817e85030df02a2cf7f}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!pycubed@{pycubed}}
+\index{pycubed@{pycubed}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{pycubed}{pycubed}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device}$\ast$ pycubed}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_ac833534fef495551a99ff1626c0985ee}\label{agent__raspi_8cpp_ac833534fef495551a99ff1626c0985ee}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!raspi@{raspi}}
+\index{raspi@{raspi}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{raspi}{raspi}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1CPU}{C\+PU}$\ast$ raspi}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_ae8be2a0764cc3e72a3357bb75784e2cb}\label{agent__raspi_8cpp_ae8be2a0764cc3e72a3357bb75784e2cb}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!sunsensors@{sunsensors}}
+\index{sunsensors@{sunsensors}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{sunsensors}{sunsensors}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device} $\ast$ sunsensors}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_a6924e1e40985ea556ecefef700f2e6f8}\label{agent__raspi_8cpp_a6924e1e40985ea556ecefef700f2e6f8}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!switches@{switches}}
+\index{switches@{switches}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{switches}{switches}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device} $\ast$ switches}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_a32b024299b59ee470caa94a8003e8117}\label{agent__raspi_8cpp_a32b024299b59ee470caa94a8003e8117}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!tempsensors@{tempsensors}}
+\index{tempsensors@{tempsensors}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{tempsensors}{tempsensors}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1CustomDevice}{Custom\+Device} $\ast$ tempsensors}
+
+\mbox{\Hypertarget{agent__raspi_8cpp_afe34055562b8d3d757fa5865918a01a4}\label{agent__raspi_8cpp_afe34055562b8d3d757fa5865918a01a4}} 
+\index{agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}!up\+\_\+time\+\_\+timer@{up\+\_\+time\+\_\+timer}}
+\index{up\+\_\+time\+\_\+timer@{up\+\_\+time\+\_\+timer}!agent\+\_\+raspi.\+cpp@{agent\+\_\+raspi.\+cpp}}
+\subsubsection{\texorpdfstring{up\+\_\+time\+\_\+timer}{up\_time\_timer}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1Timer}{Timer} up\+\_\+time\+\_\+timer}
+

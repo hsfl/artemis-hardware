@@ -1,0 +1,199 @@
+\hypertarget{classcubesat_1_1RemoteAgent}{}\section{cubesat\+:\+:Remote\+Agent Class Reference}
+\label{classcubesat_1_1RemoteAgent}\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+
+
+A utility class for communicating with agents on seperate processes.  
+
+
+
+
+{\ttfamily \#include $<$Remote\+Agent.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1RemoteAgent_a011f3eddd537166c854dc976f6e04f9b}{Remote\+Agent} ()
+\item 
+\hyperlink{classcubesat_1_1RemoteAgent_a415c6e6434cbc15c3e0b889c02efbe0a}{Remote\+Agent} (const std\+::string \&\hyperlink{classcubesat_1_1RemoteAgent_ad53ce2f7c8bbe8e8582f82740d5c38fe}{node\+\_\+name}, const std\+::string \&\hyperlink{classcubesat_1_1RemoteAgent_a11c308db5679e300962e8a79b875dba5}{agent\+\_\+name}, Agent $\ast$\hyperlink{classcubesat_1_1RemoteAgent_ab6ebf279927e308af1ecaf81782af2a3}{agent}, beatstruc \hyperlink{classcubesat_1_1RemoteAgent_a56c2e7d52e3ebe7dfe69c4a779f1a375}{beat})
+\item 
+bool \hyperlink{classcubesat_1_1RemoteAgent_a149ba4f966974d78c265a18921057a6f}{Is\+Open} () const
+\begin{DoxyCompactList}\small\item\em Checks if this agent was connected to successfully. \end{DoxyCompactList}\item 
+bool \hyperlink{classcubesat_1_1RemoteAgent_a144dbf2aaccbe8cb53f811db1b62cea4}{Connect} (float wait\+\_\+sec=2.\+0f, bool crash\+\_\+if\+\_\+failed=false)
+\begin{DoxyCompactList}\small\item\em Attempts to connect to the remote agent. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, Json\+::\+Value $>$ \hyperlink{classcubesat_1_1RemoteAgent_afaaaec695eae602bc2a84d6ad88ed7f6}{Get\+C\+O\+S\+M\+O\+S\+Values} (std\+::vector$<$ std\+::string $>$ keys)
+\begin{DoxyCompactList}\small\item\em Gets a list of state of health values from a remote agent. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Properties, typename... Args$>$ }\\std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \hyperlink{classcubesat_1_1RemoteAgent_a08ff2ce8cd3114533ea51959f3f8c9ef}{Get\+Properties} (Args... device\+\_\+names\+\_\+)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\std\+::string \hyperlink{classcubesat_1_1RemoteAgent_a480b864cabc5b9f5b69833a3bc1c1d2f}{Send\+Request} (std\+::string request\+\_\+name, Args... args)
+\begin{DoxyCompactList}\small\item\em Sends a request to the remote agent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Agent $\ast$ \hyperlink{classcubesat_1_1RemoteAgent_ab6ebf279927e308af1ecaf81782af2a3}{agent}
+\begin{DoxyCompactList}\small\item\em The non-\/remote agent. \end{DoxyCompactList}\item 
+beatstruc \hyperlink{classcubesat_1_1RemoteAgent_a56c2e7d52e3ebe7dfe69c4a779f1a375}{beat}
+\begin{DoxyCompactList}\small\item\em The heartbeat of the remote agent. \end{DoxyCompactList}\item 
+float \hyperlink{classcubesat_1_1RemoteAgent_a22d81c0c42adb6cef33cdef627631f43}{wait\+\_\+time} = 5.\+0f
+\begin{DoxyCompactList}\small\item\em The timeout for requests. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classcubesat_1_1RemoteAgent_ad53ce2f7c8bbe8e8582f82740d5c38fe}{node\+\_\+name}
+\begin{DoxyCompactList}\small\item\em The name of the node the remote agent is on. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classcubesat_1_1RemoteAgent_a11c308db5679e300962e8a79b875dba5}{agent\+\_\+name}
+\begin{DoxyCompactList}\small\item\em The name of the remote agent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A utility class for communicating with agents on seperate processes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_a011f3eddd537166c854dc976f6e04f9b}\label{classcubesat_1_1RemoteAgent_a011f3eddd537166c854dc976f6e04f9b}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!Remote\+Agent@{Remote\+Agent}}
+\index{Remote\+Agent@{Remote\+Agent}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{Remote\+Agent()}{RemoteAgent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cubesat\+::\+Remote\+Agent\+::\+Remote\+Agent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_a415c6e6434cbc15c3e0b889c02efbe0a}\label{classcubesat_1_1RemoteAgent_a415c6e6434cbc15c3e0b889c02efbe0a}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!Remote\+Agent@{Remote\+Agent}}
+\index{Remote\+Agent@{Remote\+Agent}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{Remote\+Agent()}{RemoteAgent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily cubesat\+::\+Remote\+Agent\+::\+Remote\+Agent (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{node\+\_\+name,  }\item[{const std\+::string \&}]{agent\+\_\+name,  }\item[{Agent $\ast$}]{agent,  }\item[{beatstruc}]{beat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_a144dbf2aaccbe8cb53f811db1b62cea4}\label{classcubesat_1_1RemoteAgent_a144dbf2aaccbe8cb53f811db1b62cea4}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!Connect@{Connect}}
+\index{Connect@{Connect}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{Connect()}{Connect()}}
+{\footnotesize\ttfamily bool cubesat\+::\+Remote\+Agent\+::\+Connect (\begin{DoxyParamCaption}\item[{float}]{wait\+\_\+sec = {\ttfamily 2.0f},  }\item[{bool}]{crash\+\_\+if\+\_\+failed = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Attempts to connect to the remote agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wait\+\_\+sec} & The maximum duration in seconds to wait \\
+\hline
+{\em crash\+\_\+if\+\_\+failed} & If true, the program will crash if the agent is not found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the agent connected successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_afaaaec695eae602bc2a84d6ad88ed7f6}\label{classcubesat_1_1RemoteAgent_afaaaec695eae602bc2a84d6ad88ed7f6}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!Get\+C\+O\+S\+M\+O\+S\+Values@{Get\+C\+O\+S\+M\+O\+S\+Values}}
+\index{Get\+C\+O\+S\+M\+O\+S\+Values@{Get\+C\+O\+S\+M\+O\+S\+Values}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{Get\+C\+O\+S\+M\+O\+S\+Values()}{GetCOSMOSValues()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, Json\+::\+Value$>$ cubesat\+::\+Remote\+Agent\+::\+Get\+C\+O\+S\+M\+O\+S\+Values (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{keys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a list of state of health values from a remote agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & A vector of C\+O\+S\+M\+OS namespace names to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A table of values, indexed by the given keys 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_a08ff2ce8cd3114533ea51959f3f8c9ef}\label{classcubesat_1_1RemoteAgent_a08ff2ce8cd3114533ea51959f3f8c9ef}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!Get\+Properties@{Get\+Properties}}
+\index{Get\+Properties@{Get\+Properties}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{Get\+Properties()}{GetProperties()}}
+{\footnotesize\ttfamily template$<$typename... Properties, typename... Args$>$ \\
+std\+::unordered\+\_\+map$<$std\+::string, std\+::string$>$ cubesat\+::\+Remote\+Agent\+::\+Get\+Properties (\begin{DoxyParamCaption}\item[{Args...}]{device\+\_\+names\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_a149ba4f966974d78c265a18921057a6f}\label{classcubesat_1_1RemoteAgent_a149ba4f966974d78c265a18921057a6f}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!Is\+Open@{Is\+Open}}
+\index{Is\+Open@{Is\+Open}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{Is\+Open()}{IsOpen()}}
+{\footnotesize\ttfamily bool cubesat\+::\+Remote\+Agent\+::\+Is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if this agent was connected to successfully. 
+
+\begin{DoxyReturn}{Returns}
+True if connected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_a480b864cabc5b9f5b69833a3bc1c1d2f}\label{classcubesat_1_1RemoteAgent_a480b864cabc5b9f5b69833a3bc1c1d2f}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!Send\+Request@{Send\+Request}}
+\index{Send\+Request@{Send\+Request}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{Send\+Request()}{SendRequest()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+std\+::string cubesat\+::\+Remote\+Agent\+::\+Send\+Request (\begin{DoxyParamCaption}\item[{std\+::string}]{request\+\_\+name,  }\item[{Args...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sends a request to the remote agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+\_\+name} & The name of the request \\
+\hline
+{\em args} & The arguments to the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response, or an empty string on failure 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_ab6ebf279927e308af1ecaf81782af2a3}\label{classcubesat_1_1RemoteAgent_ab6ebf279927e308af1ecaf81782af2a3}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!agent@{agent}}
+\index{agent@{agent}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{agent}{agent}}
+{\footnotesize\ttfamily Agent$\ast$ cubesat\+::\+Remote\+Agent\+::agent\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The non-\/remote agent. 
+
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_a11c308db5679e300962e8a79b875dba5}\label{classcubesat_1_1RemoteAgent_a11c308db5679e300962e8a79b875dba5}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!agent\+\_\+name@{agent\+\_\+name}}
+\index{agent\+\_\+name@{agent\+\_\+name}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{agent\+\_\+name}{agent\_name}}
+{\footnotesize\ttfamily std\+::string cubesat\+::\+Remote\+Agent\+::agent\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The name of the remote agent. 
+
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_a56c2e7d52e3ebe7dfe69c4a779f1a375}\label{classcubesat_1_1RemoteAgent_a56c2e7d52e3ebe7dfe69c4a779f1a375}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!beat@{beat}}
+\index{beat@{beat}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{beat}{beat}}
+{\footnotesize\ttfamily beatstruc cubesat\+::\+Remote\+Agent\+::beat\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The heartbeat of the remote agent. 
+
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_ad53ce2f7c8bbe8e8582f82740d5c38fe}\label{classcubesat_1_1RemoteAgent_ad53ce2f7c8bbe8e8582f82740d5c38fe}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!node\+\_\+name@{node\+\_\+name}}
+\index{node\+\_\+name@{node\+\_\+name}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{node\+\_\+name}{node\_name}}
+{\footnotesize\ttfamily std\+::string cubesat\+::\+Remote\+Agent\+::node\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The name of the node the remote agent is on. 
+
+\mbox{\Hypertarget{classcubesat_1_1RemoteAgent_a22d81c0c42adb6cef33cdef627631f43}\label{classcubesat_1_1RemoteAgent_a22d81c0c42adb6cef33cdef627631f43}} 
+\index{cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}!wait\+\_\+time@{wait\+\_\+time}}
+\index{wait\+\_\+time@{wait\+\_\+time}!cubesat\+::\+Remote\+Agent@{cubesat\+::\+Remote\+Agent}}
+\subsubsection{\texorpdfstring{wait\+\_\+time}{wait\_time}}
+{\footnotesize\ttfamily float cubesat\+::\+Remote\+Agent\+::wait\+\_\+time = 5.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The timeout for requests. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/utility/\hyperlink{RemoteAgent_8h}{Remote\+Agent.\+h}\end{DoxyCompactItemize}

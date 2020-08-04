@@ -1,0 +1,25 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcubesat_1_1Device.html" title="Holds information about a device, and allows for properties to be posted in an agent&#39;s state of healt..." alt="" coords="33,405,150,432"/>
+<area shape="rect" id="node2" href="$classcubesat_1_1Battery.html" title="cubesat::Battery" alt="" coords="261,51,380,77"/>
+<area shape="rect" id="node3" href="$classcubesat_1_1Camera.html" title="cubesat::Camera" alt="" coords="259,131,382,157"/>
+<area shape="rect" id="node4" href="$classcubesat_1_1CPU.html" title="cubesat::CPU" alt="" coords="268,212,373,239"/>
+<area shape="rect" id="node5" href="$classcubesat_1_1CustomDevice.html" title="cubesat::CustomDevice" alt="" coords="239,295,402,321"/>
+<area shape="rect" id="node6" href="$classcubesat_1_1GPS.html" title="cubesat::GPS" alt="" coords="269,379,373,405"/>
+<area shape="rect" id="node7" href="$classcubesat_1_1Heater.html" title="cubesat::Heater" alt="" coords="263,432,378,459"/>
+<area shape="rect" id="node8" href="$classcubesat_1_1IMU.html" title="cubesat::IMU" alt="" coords="270,488,371,515"/>
+<area shape="rect" id="node9" href="$classcubesat_1_1RadioTransceiver.html" title="cubesat::RadioTransceiver" alt="" coords="231,549,410,576"/>
+<area shape="rect" id="node10" href="$classcubesat_1_1SunSensor.html" title="cubesat::SunSensor" alt="" coords="251,620,391,647"/>
+<area shape="rect" id="node11" href="$classcubesat_1_1Switch.html" title="cubesat::Switch" alt="" coords="263,711,379,737"/>
+<area shape="rect" id="node12" href="$classcubesat_1_1TemperatureSensor.html" title="cubesat::TemperatureSensor" alt="" coords="225,841,416,868"/>
+<area shape="rect" id="node13" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; battstruc, DeviceType\l::BATT \&gt;" alt="" coords="5,5,177,61"/>
+<area shape="rect" id="node14" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; camstruc, DeviceType\l::CAM \&gt;" alt="" coords="5,85,177,141"/>
+<area shape="rect" id="node15" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; cpustruc, DeviceType\l::CPU \&gt;" alt="" coords="5,165,177,221"/>
+<area shape="rect" id="node16" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; gpsstruc, DeviceType\l::GPS \&gt;" alt="" coords="5,325,177,381"/>
+<area shape="rect" id="node17" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; htrstruc, DeviceType\l::HTR \&gt;" alt="" coords="5,456,177,512"/>
+<area shape="rect" id="node18" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; imustruc, DeviceType\l::IMU \&gt;" alt="" coords="5,536,177,592"/>
+<area shape="rect" id="node19" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; ploadstruc, DeviceType\l::PLOAD \&gt;" alt="" coords="5,245,177,301"/>
+<area shape="rect" id="node20" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; ssenstruc, DeviceType\l::SSEN \&gt;" alt="" coords="5,696,177,752"/>
+<area shape="rect" id="node21" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; swchstruc, DeviceType\l::SWCH \&gt;" alt="" coords="5,776,177,832"/>
+<area shape="rect" id="node22" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; tcvstruc, DeviceType\l::TCV \&gt;" alt="" coords="5,616,177,672"/>
+<area shape="rect" id="node23" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; tsenstruc, DeviceType\l::TSEN \&gt;" alt="" coords="5,856,177,912"/>
+</map>

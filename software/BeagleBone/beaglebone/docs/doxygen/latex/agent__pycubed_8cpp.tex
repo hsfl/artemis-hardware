@@ -1,0 +1,403 @@
+\hypertarget{agent__pycubed_8cpp}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+pycubed.cpp File Reference}
+\label{agent__pycubed_8cpp}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+pycubed.\+cpp@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+pycubed.\+cpp}}
+{\ttfamily \#include \char`\"{}Cube\+Sat.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}device/\+Py\+Cubed.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$net/if.\+h$>$}\newline
+{\ttfamily \#include $<$linux/if\+\_\+tun.\+h$>$}\newline
+Include dependency graph for agent\+\_\+pycubed.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{agent__pycubed_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{agent__pycubed_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}~0.\+25
+\item 
+\#define \hyperlink{agent__pycubed_8cpp_a8b1235fbe2ea30552fa9283a5029c782}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+U\+A\+RT}~0
+\item 
+\#define \hyperlink{agent__pycubed_8cpp_a9245bb4a29048f095530872e5a3dd44c}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+A\+UD}~9600
+\item 
+\#define \hyperlink{agent__pycubed_8cpp_a84977424b647dd9248ebf1436aaa1cc8}{M\+A\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}~2560
+\item 
+\#define \hyperlink{agent__pycubed_8cpp_a4abaf66978291f08fc09adfcae1b9c12}{T\+U\+N\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}~2000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{agent__pycubed_8cpp_a295950f0eaffa618501cb75bb44d6755}{Init\+Py\+Cubed} ()
+\begin{DoxyCompactList}\small\item\em Sets up the Py\+Cubed. \end{DoxyCompactList}\item 
+bool \hyperlink{agent__pycubed_8cpp_a8a92720c92fcf8d5eb620d3e0ad11e09}{Connect\+Py\+Cubed} ()
+\begin{DoxyCompactList}\small\item\em Tries to connect to the Py\+Cubed. \end{DoxyCompactList}\item 
+void \hyperlink{agent__pycubed_8cpp_ab0aa90cbdc5925dc1f8915034b42010a}{Update\+Py\+Cubed} ()
+\begin{DoxyCompactList}\small\item\em Handles operations with the Py\+Cubed. \end{DoxyCompactList}\item 
+void \hyperlink{agent__pycubed_8cpp_ac5f038c2b480cf9ef5e19e3eba8dbaf9}{Shutdown} ()
+\begin{DoxyCompactList}\small\item\em Shutdown callback function. \end{DoxyCompactList}\item 
+string \hyperlink{agent__pycubed_8cpp_aacb45ec29e119ae3aa464336bf1f341b}{Request\+\_\+\+Is\+Up} ()
+\item 
+string \hyperlink{agent__pycubed_8cpp_a6bd85fd2494381214bf8bdde3e5675e6}{Request\+\_\+\+Send\+Message} (vector$<$ string $>$ args)
+\item 
+string \hyperlink{agent__pycubed_8cpp_a30107104990a990d9e88bc309650116d}{Request\+\_\+\+Get\+I\+M\+U\+Data} ()
+\item 
+string \hyperlink{agent__pycubed_8cpp_a99bc5b379aabe1428f4df43b4b998879}{Request\+\_\+\+Get\+G\+P\+S\+Data} ()
+\item 
+string \hyperlink{agent__pycubed_8cpp_ab07f6daa771aedaeb52b61575d8e8322}{Request\+\_\+\+Get\+Power\+Data} ()
+\item 
+string \hyperlink{agent__pycubed_8cpp_a1856bbe1a0e00c4d667c287c1856de95}{Request\+\_\+\+Get\+Temperature\+Data} ()
+\item 
+string \hyperlink{agent__pycubed_8cpp_a5e1a11268c9f89b8c5fe49eff7a7979c}{Request\+\_\+\+Kill\+Radio} ()
+\item 
+void \hyperlink{agent__pycubed_8cpp_aabfbf5711cb817cced10de74731ae7d8}{Start\+Tunnel} (const std\+::string \&tunnel\+\_\+ip)
+\item 
+void \hyperlink{agent__pycubed_8cpp_aea0d5432ec7cf0ad2c8265328baeb57a}{tcv\+\_\+read\+\_\+loop} ()
+\item 
+void \hyperlink{agent__pycubed_8cpp_a79de6b0b32cef3668c02d2fd0a525b06}{tcv\+\_\+write\+\_\+loop} ()
+\item 
+void \hyperlink{agent__pycubed_8cpp_a809965139ee302e27b2fbc16d52cc2b9}{tun\+\_\+read\+\_\+loop} ()
+\item 
+void \hyperlink{agent__pycubed_8cpp_a44fc3bb060b3513545ffb5303420e311}{tun\+\_\+write\+\_\+loop} ()
+\item 
+int32\+\_\+t \hyperlink{agent__pycubed_8cpp_a034b086f4bdecf4381f00922887218a5}{request\+\_\+tunnel\+\_\+queue\+\_\+size} (char $\ast$request, char $\ast$response, Agent $\ast$)
+\item 
+int32\+\_\+t \hyperlink{agent__pycubed_8cpp_a023ddcbd2907307e0109c744a33cb6f2}{request\+\_\+serial\+\_\+queue\+\_\+size} (char $\ast$request, char $\ast$response, Agent $\ast$)
+\item 
+int \hyperlink{agent__pycubed_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent} $\ast$ \hyperlink{agent__pycubed_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}{agent}
+\item 
+\hyperlink{classcubesat_1_1CPU}{C\+PU} $\ast$ \hyperlink{agent__pycubed_8cpp_a67581cf415d2361a540b3adaf7025a85}{pycubed}
+\item 
+\hyperlink{classcubesat_1_1IMU}{I\+MU} $\ast$ \hyperlink{agent__pycubed_8cpp_a5e841dff4ea82f8f72c668e0600dd251}{imu}
+\item 
+\hyperlink{classcubesat_1_1GPS}{G\+PS} $\ast$ \hyperlink{agent__pycubed_8cpp_ab2df8df451b81c135fea88a0fba6dbe8}{gps}
+\item 
+\hyperlink{classcubesat_1_1Battery}{Battery} $\ast$ \hyperlink{agent__pycubed_8cpp_a8df96f0d03c42558ce2c1d6ef1f0c35a}{battery}
+\item 
+\hyperlink{classcubesat_1_1RadioTransceiver}{Radio\+Transceiver} $\ast$ \hyperlink{agent__pycubed_8cpp_a625c9822effb90aa70ebc47969f9103d}{radio}
+\item 
+\hyperlink{classcubesat_1_1Timer}{Timer} \hyperlink{agent__pycubed_8cpp_a622011453bc479cbdc4adc20c8a304e8}{connection\+\_\+timer}
+\item 
+\hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed} $\ast$ \hyperlink{agent__pycubed_8cpp_aa460f7ce077147dcc8b11ec38a6c54f5}{handler} = nullptr
+\item 
+static queue$<$ vector$<$ uint8\+\_\+t $>$ $>$ \hyperlink{agent__pycubed_8cpp_aa296f7cbea41cbb5a1f4a087abdb8c83}{tun\+\_\+fifo}
+\item 
+static queue$<$ vector$<$ uint8\+\_\+t $>$ $>$ \hyperlink{agent__pycubed_8cpp_a2b0895eac3d9b0fd4ba8b62fc11baeca}{tcv\+\_\+fifo}
+\item 
+static condition\+\_\+variable \hyperlink{agent__pycubed_8cpp_a9a1958bbb55c58bb6a3efdf285d23b98}{tcv\+\_\+fifo\+\_\+check}
+\item 
+static condition\+\_\+variable \hyperlink{agent__pycubed_8cpp_a8345c01004295c8815b23411df72c245}{tun\+\_\+fifo\+\_\+check}
+\item 
+static int \hyperlink{agent__pycubed_8cpp_a417971830378d772829124e57555ed1d}{tun\+\_\+fd}
+\item 
+static string \hyperlink{agent__pycubed_8cpp_abb8b0e8e1efd633494a6dcaa64c2ef82}{rxr\+\_\+devname}
+\item 
+static string \hyperlink{agent__pycubed_8cpp_aad0f6c539a6e0fe1c855c4bbfe948705}{txr\+\_\+devname}
+\item 
+static uint16\+\_\+t \hyperlink{agent__pycubed_8cpp_a7a9f28a9b9a72da85d18698cf971ea0f}{tunnel\+\_\+mtu} = 512
+\item 
+int \hyperlink{agent__pycubed_8cpp_a33638ac69985e19bdf2a17a3e15bb2b4}{tun\+\_\+out}
+\item 
+int \hyperlink{agent__pycubed_8cpp_a4e87ce1d01e9920a4ee7d2d2202f48ea}{tun\+\_\+in}
+\item 
+int \hyperlink{agent__pycubed_8cpp_a806eb0eff6f73262b457a16b44824454}{gl\+\_\+in}
+\item 
+int \hyperlink{agent__pycubed_8cpp_a1ee58d34bc89d4dc42449f10c8280d6d}{gl\+\_\+out} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{agent__pycubed_8cpp_a84977424b647dd9248ebf1436aaa1cc8}\label{agent__pycubed_8cpp_a84977424b647dd9248ebf1436aaa1cc8}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!M\+A\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE@{M\+A\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}}
+\index{M\+A\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE@{M\+A\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{M\+A\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}{MAXBUFFERSIZE}}
+{\footnotesize\ttfamily \#define M\+A\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE~2560}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a9245bb4a29048f095530872e5a3dd44c}\label{agent__pycubed_8cpp_a9245bb4a29048f095530872e5a3dd44c}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+A\+UD@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+A\+UD}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+A\+UD@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+A\+UD}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+A\+UD}{PYCUBED\_BAUD}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+A\+UD~9600}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a8b1235fbe2ea30552fa9283a5029c782}\label{agent__pycubed_8cpp_a8b1235fbe2ea30552fa9283a5029c782}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+U\+A\+RT@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+U\+A\+RT}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+U\+A\+RT@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+U\+A\+RT}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+U\+A\+RT}{PYCUBED\_UART}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+U\+A\+RT~0}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}\label{agent__pycubed_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}}
+\index{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}{SLEEP\_TIME}}
+{\footnotesize\ttfamily \#define S\+L\+E\+E\+P\+\_\+\+T\+I\+ME~0.\+25}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a4abaf66978291f08fc09adfcae1b9c12}\label{agent__pycubed_8cpp_a4abaf66978291f08fc09adfcae1b9c12}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!T\+U\+N\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE@{T\+U\+N\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}}
+\index{T\+U\+N\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE@{T\+U\+N\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{T\+U\+N\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}{TUN\_BUF\_SIZE}}
+{\footnotesize\ttfamily \#define T\+U\+N\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE~2000}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{agent__pycubed_8cpp_a8a92720c92fcf8d5eb620d3e0ad11e09}\label{agent__pycubed_8cpp_a8a92720c92fcf8d5eb620d3e0ad11e09}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Connect\+Py\+Cubed@{Connect\+Py\+Cubed}}
+\index{Connect\+Py\+Cubed@{Connect\+Py\+Cubed}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Connect\+Py\+Cubed()}{ConnectPyCubed()}}
+{\footnotesize\ttfamily bool Connect\+Py\+Cubed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tries to connect to the Py\+Cubed. 
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a295950f0eaffa618501cb75bb44d6755}\label{agent__pycubed_8cpp_a295950f0eaffa618501cb75bb44d6755}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Init\+Py\+Cubed@{Init\+Py\+Cubed}}
+\index{Init\+Py\+Cubed@{Init\+Py\+Cubed}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Init\+Py\+Cubed()}{InitPyCubed()}}
+{\footnotesize\ttfamily void Init\+Py\+Cubed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets up the Py\+Cubed. 
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{agent__pycubed_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!main@{main}}
+\index{main@{main}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a99bc5b379aabe1428f4df43b4b998879}\label{agent__pycubed_8cpp_a99bc5b379aabe1428f4df43b4b998879}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Request\+\_\+\+Get\+G\+P\+S\+Data@{Request\+\_\+\+Get\+G\+P\+S\+Data}}
+\index{Request\+\_\+\+Get\+G\+P\+S\+Data@{Request\+\_\+\+Get\+G\+P\+S\+Data}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Get\+G\+P\+S\+Data()}{Request\_GetGPSData()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Get\+G\+P\+S\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a30107104990a990d9e88bc309650116d}\label{agent__pycubed_8cpp_a30107104990a990d9e88bc309650116d}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Request\+\_\+\+Get\+I\+M\+U\+Data@{Request\+\_\+\+Get\+I\+M\+U\+Data}}
+\index{Request\+\_\+\+Get\+I\+M\+U\+Data@{Request\+\_\+\+Get\+I\+M\+U\+Data}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Get\+I\+M\+U\+Data()}{Request\_GetIMUData()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Get\+I\+M\+U\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_ab07f6daa771aedaeb52b61575d8e8322}\label{agent__pycubed_8cpp_ab07f6daa771aedaeb52b61575d8e8322}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Request\+\_\+\+Get\+Power\+Data@{Request\+\_\+\+Get\+Power\+Data}}
+\index{Request\+\_\+\+Get\+Power\+Data@{Request\+\_\+\+Get\+Power\+Data}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Get\+Power\+Data()}{Request\_GetPowerData()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Get\+Power\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a1856bbe1a0e00c4d667c287c1856de95}\label{agent__pycubed_8cpp_a1856bbe1a0e00c4d667c287c1856de95}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Request\+\_\+\+Get\+Temperature\+Data@{Request\+\_\+\+Get\+Temperature\+Data}}
+\index{Request\+\_\+\+Get\+Temperature\+Data@{Request\+\_\+\+Get\+Temperature\+Data}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Get\+Temperature\+Data()}{Request\_GetTemperatureData()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Get\+Temperature\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_aacb45ec29e119ae3aa464336bf1f341b}\label{agent__pycubed_8cpp_aacb45ec29e119ae3aa464336bf1f341b}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Request\+\_\+\+Is\+Up@{Request\+\_\+\+Is\+Up}}
+\index{Request\+\_\+\+Is\+Up@{Request\+\_\+\+Is\+Up}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Is\+Up()}{Request\_IsUp()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Is\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a5e1a11268c9f89b8c5fe49eff7a7979c}\label{agent__pycubed_8cpp_a5e1a11268c9f89b8c5fe49eff7a7979c}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Request\+\_\+\+Kill\+Radio@{Request\+\_\+\+Kill\+Radio}}
+\index{Request\+\_\+\+Kill\+Radio@{Request\+\_\+\+Kill\+Radio}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Kill\+Radio()}{Request\_KillRadio()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Kill\+Radio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a6bd85fd2494381214bf8bdde3e5675e6}\label{agent__pycubed_8cpp_a6bd85fd2494381214bf8bdde3e5675e6}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Request\+\_\+\+Send\+Message@{Request\+\_\+\+Send\+Message}}
+\index{Request\+\_\+\+Send\+Message@{Request\+\_\+\+Send\+Message}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Send\+Message()}{Request\_SendMessage()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Send\+Message (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a023ddcbd2907307e0109c744a33cb6f2}\label{agent__pycubed_8cpp_a023ddcbd2907307e0109c744a33cb6f2}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!request\+\_\+serial\+\_\+queue\+\_\+size@{request\+\_\+serial\+\_\+queue\+\_\+size}}
+\index{request\+\_\+serial\+\_\+queue\+\_\+size@{request\+\_\+serial\+\_\+queue\+\_\+size}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{request\+\_\+serial\+\_\+queue\+\_\+size()}{request\_serial\_queue\_size()}}
+{\footnotesize\ttfamily int32\+\_\+t request\+\_\+serial\+\_\+queue\+\_\+size (\begin{DoxyParamCaption}\item[{char $\ast$}]{request,  }\item[{char $\ast$}]{response,  }\item[{Agent $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a034b086f4bdecf4381f00922887218a5}\label{agent__pycubed_8cpp_a034b086f4bdecf4381f00922887218a5}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!request\+\_\+tunnel\+\_\+queue\+\_\+size@{request\+\_\+tunnel\+\_\+queue\+\_\+size}}
+\index{request\+\_\+tunnel\+\_\+queue\+\_\+size@{request\+\_\+tunnel\+\_\+queue\+\_\+size}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{request\+\_\+tunnel\+\_\+queue\+\_\+size()}{request\_tunnel\_queue\_size()}}
+{\footnotesize\ttfamily int32\+\_\+t request\+\_\+tunnel\+\_\+queue\+\_\+size (\begin{DoxyParamCaption}\item[{char $\ast$}]{request,  }\item[{char $\ast$}]{response,  }\item[{Agent $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_ac5f038c2b480cf9ef5e19e3eba8dbaf9}\label{agent__pycubed_8cpp_ac5f038c2b480cf9ef5e19e3eba8dbaf9}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shutdown callback function. 
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_aabfbf5711cb817cced10de74731ae7d8}\label{agent__pycubed_8cpp_aabfbf5711cb817cced10de74731ae7d8}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Start\+Tunnel@{Start\+Tunnel}}
+\index{Start\+Tunnel@{Start\+Tunnel}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Start\+Tunnel()}{StartTunnel()}}
+{\footnotesize\ttfamily void Start\+Tunnel (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tunnel\+\_\+ip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_aea0d5432ec7cf0ad2c8265328baeb57a}\label{agent__pycubed_8cpp_aea0d5432ec7cf0ad2c8265328baeb57a}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tcv\+\_\+read\+\_\+loop@{tcv\+\_\+read\+\_\+loop}}
+\index{tcv\+\_\+read\+\_\+loop@{tcv\+\_\+read\+\_\+loop}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tcv\+\_\+read\+\_\+loop()}{tcv\_read\_loop()}}
+{\footnotesize\ttfamily void tcv\+\_\+read\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a79de6b0b32cef3668c02d2fd0a525b06}\label{agent__pycubed_8cpp_a79de6b0b32cef3668c02d2fd0a525b06}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tcv\+\_\+write\+\_\+loop@{tcv\+\_\+write\+\_\+loop}}
+\index{tcv\+\_\+write\+\_\+loop@{tcv\+\_\+write\+\_\+loop}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tcv\+\_\+write\+\_\+loop()}{tcv\_write\_loop()}}
+{\footnotesize\ttfamily void tcv\+\_\+write\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a809965139ee302e27b2fbc16d52cc2b9}\label{agent__pycubed_8cpp_a809965139ee302e27b2fbc16d52cc2b9}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tun\+\_\+read\+\_\+loop@{tun\+\_\+read\+\_\+loop}}
+\index{tun\+\_\+read\+\_\+loop@{tun\+\_\+read\+\_\+loop}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tun\+\_\+read\+\_\+loop()}{tun\_read\_loop()}}
+{\footnotesize\ttfamily void tun\+\_\+read\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a44fc3bb060b3513545ffb5303420e311}\label{agent__pycubed_8cpp_a44fc3bb060b3513545ffb5303420e311}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tun\+\_\+write\+\_\+loop@{tun\+\_\+write\+\_\+loop}}
+\index{tun\+\_\+write\+\_\+loop@{tun\+\_\+write\+\_\+loop}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tun\+\_\+write\+\_\+loop()}{tun\_write\_loop()}}
+{\footnotesize\ttfamily void tun\+\_\+write\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_ab0aa90cbdc5925dc1f8915034b42010a}\label{agent__pycubed_8cpp_ab0aa90cbdc5925dc1f8915034b42010a}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!Update\+Py\+Cubed@{Update\+Py\+Cubed}}
+\index{Update\+Py\+Cubed@{Update\+Py\+Cubed}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{Update\+Py\+Cubed()}{UpdatePyCubed()}}
+{\footnotesize\ttfamily void Update\+Py\+Cubed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles operations with the Py\+Cubed. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{agent__pycubed_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}\label{agent__pycubed_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!agent@{agent}}
+\index{agent@{agent}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{agent}{agent}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent}$\ast$ agent}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a8df96f0d03c42558ce2c1d6ef1f0c35a}\label{agent__pycubed_8cpp_a8df96f0d03c42558ce2c1d6ef1f0c35a}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!battery@{battery}}
+\index{battery@{battery}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{battery}{battery}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1Battery}{Battery}$\ast$ battery}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a622011453bc479cbdc4adc20c8a304e8}\label{agent__pycubed_8cpp_a622011453bc479cbdc4adc20c8a304e8}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!connection\+\_\+timer@{connection\+\_\+timer}}
+\index{connection\+\_\+timer@{connection\+\_\+timer}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{connection\+\_\+timer}{connection\_timer}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1Timer}{Timer} connection\+\_\+timer}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a806eb0eff6f73262b457a16b44824454}\label{agent__pycubed_8cpp_a806eb0eff6f73262b457a16b44824454}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!gl\+\_\+in@{gl\+\_\+in}}
+\index{gl\+\_\+in@{gl\+\_\+in}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{gl\+\_\+in}{gl\_in}}
+{\footnotesize\ttfamily int gl\+\_\+in}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a1ee58d34bc89d4dc42449f10c8280d6d}\label{agent__pycubed_8cpp_a1ee58d34bc89d4dc42449f10c8280d6d}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!gl\+\_\+out@{gl\+\_\+out}}
+\index{gl\+\_\+out@{gl\+\_\+out}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{gl\+\_\+out}{gl\_out}}
+{\footnotesize\ttfamily int gl\+\_\+out = 0}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_ab2df8df451b81c135fea88a0fba6dbe8}\label{agent__pycubed_8cpp_ab2df8df451b81c135fea88a0fba6dbe8}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!gps@{gps}}
+\index{gps@{gps}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{gps}{gps}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1GPS}{G\+PS}$\ast$ gps}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_aa460f7ce077147dcc8b11ec38a6c54f5}\label{agent__pycubed_8cpp_aa460f7ce077147dcc8b11ec38a6c54f5}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!handler@{handler}}
+\index{handler@{handler}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{handler}{handler}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1PyCubed}{Py\+Cubed}$\ast$ handler = nullptr}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a5e841dff4ea82f8f72c668e0600dd251}\label{agent__pycubed_8cpp_a5e841dff4ea82f8f72c668e0600dd251}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!imu@{imu}}
+\index{imu@{imu}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{imu}{imu}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1IMU}{I\+MU}$\ast$ imu}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a67581cf415d2361a540b3adaf7025a85}\label{agent__pycubed_8cpp_a67581cf415d2361a540b3adaf7025a85}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!pycubed@{pycubed}}
+\index{pycubed@{pycubed}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{pycubed}{pycubed}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1CPU}{C\+PU}$\ast$ pycubed}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a625c9822effb90aa70ebc47969f9103d}\label{agent__pycubed_8cpp_a625c9822effb90aa70ebc47969f9103d}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!radio@{radio}}
+\index{radio@{radio}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{radio}{radio}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1RadioTransceiver}{Radio\+Transceiver}$\ast$ radio}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_abb8b0e8e1efd633494a6dcaa64c2ef82}\label{agent__pycubed_8cpp_abb8b0e8e1efd633494a6dcaa64c2ef82}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!rxr\+\_\+devname@{rxr\+\_\+devname}}
+\index{rxr\+\_\+devname@{rxr\+\_\+devname}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{rxr\+\_\+devname}{rxr\_devname}}
+{\footnotesize\ttfamily string rxr\+\_\+devname\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a2b0895eac3d9b0fd4ba8b62fc11baeca}\label{agent__pycubed_8cpp_a2b0895eac3d9b0fd4ba8b62fc11baeca}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tcv\+\_\+fifo@{tcv\+\_\+fifo}}
+\index{tcv\+\_\+fifo@{tcv\+\_\+fifo}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tcv\+\_\+fifo}{tcv\_fifo}}
+{\footnotesize\ttfamily queue$<$vector$<$uint8\+\_\+t$>$ $>$ tcv\+\_\+fifo\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a9a1958bbb55c58bb6a3efdf285d23b98}\label{agent__pycubed_8cpp_a9a1958bbb55c58bb6a3efdf285d23b98}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tcv\+\_\+fifo\+\_\+check@{tcv\+\_\+fifo\+\_\+check}}
+\index{tcv\+\_\+fifo\+\_\+check@{tcv\+\_\+fifo\+\_\+check}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tcv\+\_\+fifo\+\_\+check}{tcv\_fifo\_check}}
+{\footnotesize\ttfamily condition\+\_\+variable tcv\+\_\+fifo\+\_\+check\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a417971830378d772829124e57555ed1d}\label{agent__pycubed_8cpp_a417971830378d772829124e57555ed1d}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tun\+\_\+fd@{tun\+\_\+fd}}
+\index{tun\+\_\+fd@{tun\+\_\+fd}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tun\+\_\+fd}{tun\_fd}}
+{\footnotesize\ttfamily int tun\+\_\+fd\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_aa296f7cbea41cbb5a1f4a087abdb8c83}\label{agent__pycubed_8cpp_aa296f7cbea41cbb5a1f4a087abdb8c83}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tun\+\_\+fifo@{tun\+\_\+fifo}}
+\index{tun\+\_\+fifo@{tun\+\_\+fifo}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tun\+\_\+fifo}{tun\_fifo}}
+{\footnotesize\ttfamily queue$<$vector$<$uint8\+\_\+t$>$ $>$ tun\+\_\+fifo\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a8345c01004295c8815b23411df72c245}\label{agent__pycubed_8cpp_a8345c01004295c8815b23411df72c245}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tun\+\_\+fifo\+\_\+check@{tun\+\_\+fifo\+\_\+check}}
+\index{tun\+\_\+fifo\+\_\+check@{tun\+\_\+fifo\+\_\+check}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tun\+\_\+fifo\+\_\+check}{tun\_fifo\_check}}
+{\footnotesize\ttfamily condition\+\_\+variable tun\+\_\+fifo\+\_\+check\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a4e87ce1d01e9920a4ee7d2d2202f48ea}\label{agent__pycubed_8cpp_a4e87ce1d01e9920a4ee7d2d2202f48ea}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tun\+\_\+in@{tun\+\_\+in}}
+\index{tun\+\_\+in@{tun\+\_\+in}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tun\+\_\+in}{tun\_in}}
+{\footnotesize\ttfamily int tun\+\_\+in}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a33638ac69985e19bdf2a17a3e15bb2b4}\label{agent__pycubed_8cpp_a33638ac69985e19bdf2a17a3e15bb2b4}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tun\+\_\+out@{tun\+\_\+out}}
+\index{tun\+\_\+out@{tun\+\_\+out}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tun\+\_\+out}{tun\_out}}
+{\footnotesize\ttfamily int tun\+\_\+out}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_a7a9f28a9b9a72da85d18698cf971ea0f}\label{agent__pycubed_8cpp_a7a9f28a9b9a72da85d18698cf971ea0f}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!tunnel\+\_\+mtu@{tunnel\+\_\+mtu}}
+\index{tunnel\+\_\+mtu@{tunnel\+\_\+mtu}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{tunnel\+\_\+mtu}{tunnel\_mtu}}
+{\footnotesize\ttfamily uint16\+\_\+t tunnel\+\_\+mtu = 512\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{agent__pycubed_8cpp_aad0f6c539a6e0fe1c855c4bbfe948705}\label{agent__pycubed_8cpp_aad0f6c539a6e0fe1c855c4bbfe948705}} 
+\index{agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}!txr\+\_\+devname@{txr\+\_\+devname}}
+\index{txr\+\_\+devname@{txr\+\_\+devname}!agent\+\_\+pycubed.\+cpp@{agent\+\_\+pycubed.\+cpp}}
+\subsubsection{\texorpdfstring{txr\+\_\+devname}{txr\_devname}}
+{\footnotesize\ttfamily string txr\+\_\+devname\hspace{0.3cm}{\ttfamily [static]}}
+

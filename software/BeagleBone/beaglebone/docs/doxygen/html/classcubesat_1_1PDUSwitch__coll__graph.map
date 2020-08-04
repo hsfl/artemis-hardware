@@ -1,0 +1,5 @@
+<map id="cubesat::PDUSwitch" name="cubesat::PDUSwitch">
+<area shape="rect" id="node2" href="$classcubesat_1_1GPIO.html" title="cubesat::GPIO" alt="" coords="9,95,119,121"/>
+<area shape="rect" id="node3" href="$structcubesat_1_1PinInfo.html" title="cubesat::PinInfo" alt="" coords="5,5,123,32"/>
+<area shape="rect" id="node4" href="$structcubesat_1_1SwitchedDeviceInfo.html" title="cubesat::SwitchedDeviceInfo" alt="" coords="143,95,337,121"/>
+</map>

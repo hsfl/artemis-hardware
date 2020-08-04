@@ -1,0 +1,152 @@
+\hypertarget{agent__heater_8cpp}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+heater.cpp File Reference}
+\label{agent__heater_8cpp}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+heater.\+cpp@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+heater.\+cpp}}
+{\ttfamily \#include \char`\"{}utility/\+Simple\+Agent.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}device/temp\+\_\+sensors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}device/switch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cubesat\+\_\+defs.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+Include dependency graph for agent\+\_\+heater.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{agent__heater_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{agent__heater_8cpp_ad09300c3f1dbdd4294d8f99869958d4e}{N\+U\+M\+\_\+\+H\+E\+A\+T\+E\+RS}~1
+\item 
+\#define \hyperlink{agent__heater_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{agent__heater_8cpp_a5a5a2ef7f3b05ab82dfa086fcb71009e}{Handle\+Temperatures} ()
+\begin{DoxyCompactList}\small\item\em Checks the latest temperatures and handles activation of the heaters if necessary. \end{DoxyCompactList}\item 
+void \hyperlink{agent__heater_8cpp_a8ba2f8775e272c1ff51022db3022f7ee}{Get\+Temperatures} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the temperatures from agent\+\_\+temp. \end{DoxyCompactList}\item 
+void \hyperlink{agent__heater_8cpp_a7fb6ea70f85693bd0c86d929515f4322}{Set\+Heater\+State} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Switchs a heater on or off via agent\+\_\+switch. \end{DoxyCompactList}\item 
+string \hyperlink{agent__heater_8cpp_a8ecdc0d75bc0529ce10248091a0129df}{Request\+\_\+\+Heater} (vector$<$ string $>$ args)
+\begin{DoxyCompactList}\small\item\em Request to enable, disable, or check the status of the heaters. \end{DoxyCompactList}\item 
+int \hyperlink{agent__heater_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent} $\ast$ \hyperlink{agent__heater_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}{agent}
+\item 
+\hyperlink{classcubesat_1_1Heater}{Heater} $\ast$ \hyperlink{agent__heater_8cpp_a13b71987217d8b80357c1dbb5eb74850}{heater}
+\item 
+\hyperlink{classcubesat_1_1TemperatureSensor}{Temperature\+Sensor} $\ast$ \hyperlink{agent__heater_8cpp_ad16c19c71f422812eb2c6b8f328e6c74}{temp\+\_\+sensor} \mbox{[}\hyperlink{temp__sensors_8h_a26704b5af43290748378cdd8ffec9202}{T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+U\+NT}\mbox{]}
+\item 
+float \hyperlink{agent__heater_8cpp_adf3c4963729e7c800d4016e983ecf331}{heater\+\_\+enable\+\_\+temp} = 5
+\item 
+float \hyperlink{agent__heater_8cpp_a9259968eacd60250f6972c60b637d3ab}{heater\+\_\+disable\+\_\+temp} = 20
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{agent__heater_8cpp_ad09300c3f1dbdd4294d8f99869958d4e}\label{agent__heater_8cpp_ad09300c3f1dbdd4294d8f99869958d4e}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!N\+U\+M\+\_\+\+H\+E\+A\+T\+E\+RS@{N\+U\+M\+\_\+\+H\+E\+A\+T\+E\+RS}}
+\index{N\+U\+M\+\_\+\+H\+E\+A\+T\+E\+RS@{N\+U\+M\+\_\+\+H\+E\+A\+T\+E\+RS}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+H\+E\+A\+T\+E\+RS}{NUM\_HEATERS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+H\+E\+A\+T\+E\+RS~1}
+
+\mbox{\Hypertarget{agent__heater_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}\label{agent__heater_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}}
+\index{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}{SLEEP\_TIME}}
+{\footnotesize\ttfamily \#define S\+L\+E\+E\+P\+\_\+\+T\+I\+ME~1}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{agent__heater_8cpp_a8ba2f8775e272c1ff51022db3022f7ee}\label{agent__heater_8cpp_a8ba2f8775e272c1ff51022db3022f7ee}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!Get\+Temperatures@{Get\+Temperatures}}
+\index{Get\+Temperatures@{Get\+Temperatures}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{Get\+Temperatures()}{GetTemperatures()}}
+{\footnotesize\ttfamily void Get\+Temperatures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the temperatures from agent\+\_\+temp. 
+
+\mbox{\Hypertarget{agent__heater_8cpp_a5a5a2ef7f3b05ab82dfa086fcb71009e}\label{agent__heater_8cpp_a5a5a2ef7f3b05ab82dfa086fcb71009e}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!Handle\+Temperatures@{Handle\+Temperatures}}
+\index{Handle\+Temperatures@{Handle\+Temperatures}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{Handle\+Temperatures()}{HandleTemperatures()}}
+{\footnotesize\ttfamily void Handle\+Temperatures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks the latest temperatures and handles activation of the heaters if necessary. 
+
+\mbox{\Hypertarget{agent__heater_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{agent__heater_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!main@{main}}
+\index{main@{main}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__heater_8cpp_a8ecdc0d75bc0529ce10248091a0129df}\label{agent__heater_8cpp_a8ecdc0d75bc0529ce10248091a0129df}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!Request\+\_\+\+Heater@{Request\+\_\+\+Heater}}
+\index{Request\+\_\+\+Heater@{Request\+\_\+\+Heater}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Heater()}{Request\_Heater()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Heater (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Request to enable, disable, or check the status of the heaters. 
+
+\mbox{\Hypertarget{agent__heater_8cpp_a7fb6ea70f85693bd0c86d929515f4322}\label{agent__heater_8cpp_a7fb6ea70f85693bd0c86d929515f4322}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!Set\+Heater\+State@{Set\+Heater\+State}}
+\index{Set\+Heater\+State@{Set\+Heater\+State}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{Set\+Heater\+State()}{SetHeaterState()}}
+{\footnotesize\ttfamily void Set\+Heater\+State (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Switchs a heater on or off via agent\+\_\+switch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Set to true to enable a heater, or false to disable a heater \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{agent__heater_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}\label{agent__heater_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!agent@{agent}}
+\index{agent@{agent}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{agent}{agent}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent}$\ast$ agent}
+
+\mbox{\Hypertarget{agent__heater_8cpp_a13b71987217d8b80357c1dbb5eb74850}\label{agent__heater_8cpp_a13b71987217d8b80357c1dbb5eb74850}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!heater@{heater}}
+\index{heater@{heater}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{heater}{heater}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1Heater}{Heater}$\ast$ heater}
+
+\mbox{\Hypertarget{agent__heater_8cpp_a9259968eacd60250f6972c60b637d3ab}\label{agent__heater_8cpp_a9259968eacd60250f6972c60b637d3ab}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!heater\+\_\+disable\+\_\+temp@{heater\+\_\+disable\+\_\+temp}}
+\index{heater\+\_\+disable\+\_\+temp@{heater\+\_\+disable\+\_\+temp}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{heater\+\_\+disable\+\_\+temp}{heater\_disable\_temp}}
+{\footnotesize\ttfamily float heater\+\_\+disable\+\_\+temp = 20}
+
+\mbox{\Hypertarget{agent__heater_8cpp_adf3c4963729e7c800d4016e983ecf331}\label{agent__heater_8cpp_adf3c4963729e7c800d4016e983ecf331}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!heater\+\_\+enable\+\_\+temp@{heater\+\_\+enable\+\_\+temp}}
+\index{heater\+\_\+enable\+\_\+temp@{heater\+\_\+enable\+\_\+temp}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{heater\+\_\+enable\+\_\+temp}{heater\_enable\_temp}}
+{\footnotesize\ttfamily float heater\+\_\+enable\+\_\+temp = 5}
+
+\mbox{\Hypertarget{agent__heater_8cpp_ad16c19c71f422812eb2c6b8f328e6c74}\label{agent__heater_8cpp_ad16c19c71f422812eb2c6b8f328e6c74}} 
+\index{agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}!temp\+\_\+sensor@{temp\+\_\+sensor}}
+\index{temp\+\_\+sensor@{temp\+\_\+sensor}!agent\+\_\+heater.\+cpp@{agent\+\_\+heater.\+cpp}}
+\subsubsection{\texorpdfstring{temp\+\_\+sensor}{temp\_sensor}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1TemperatureSensor}{Temperature\+Sensor}$\ast$ temp\+\_\+sensor\mbox{[}\hyperlink{temp__sensors_8h_a26704b5af43290748378cdd8ffec9202}{T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+U\+NT}\mbox{]}}
+

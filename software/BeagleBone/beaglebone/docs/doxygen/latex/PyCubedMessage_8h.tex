@@ -1,0 +1,118 @@
+\hypertarget{PyCubedMessage_8h}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/\+Py\+Cubed\+Message.h File Reference}
+\label{PyCubedMessage_8h}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/\+Py\+Cubed\+Message.\+h@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/\+Py\+Cubed\+Message.\+h}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include \char`\"{}support/datalib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utility/\+Types.\+h\char`\"{}}\newline
+Include dependency graph for Py\+Cubed\+Message.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{PyCubedMessage_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{PyCubedMessage_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcubesat_1_1PyCubedPacketHeader}{cubesat\+::\+Py\+Cubed\+Packet\+Header}
+\item 
+struct \hyperlink{structcubesat_1_1PyCubedPacketData}{cubesat\+::\+Py\+Cubed\+Packet\+Data}
+\item 
+struct \hyperlink{structcubesat_1_1PyCubedPacket}{cubesat\+::\+Py\+Cubed\+Packet}
+\item 
+struct \hyperlink{structcubesat_1_1PyCubedDataPacket}{cubesat\+::\+Py\+Cubed\+Data\+Packet}
+\item 
+struct \hyperlink{structcubesat_1_1PyCubedIMUInfo}{cubesat\+::\+Py\+Cubed\+I\+M\+U\+Info}
+\begin{DoxyCompactList}\small\item\em Holds \hyperlink{classcubesat_1_1IMU}{I\+MU} information. \end{DoxyCompactList}\item 
+struct \hyperlink{structcubesat_1_1PyCubedGPSInfo}{cubesat\+::\+Py\+Cubed\+G\+P\+S\+Info}
+\begin{DoxyCompactList}\small\item\em Holds \hyperlink{classcubesat_1_1GPS}{G\+PS} information. \end{DoxyCompactList}\item 
+struct \hyperlink{structcubesat_1_1PyCubedTempInfo}{cubesat\+::\+Py\+Cubed\+Temp\+Info}
+\begin{DoxyCompactList}\small\item\em Holds temperature information. \end{DoxyCompactList}\item 
+struct \hyperlink{structcubesat_1_1PyCubedPowerInfo}{cubesat\+::\+Py\+Cubed\+Power\+Info}
+\begin{DoxyCompactList}\small\item\em Holds power information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecubesat}{cubesat}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{PyCubedMessage_8h_a83016d0ed48e7dc3769a8b8a6c695caa}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+E\+A\+G\+L\+E\+B\+O\+N\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE}~\char`\"{}B\+ST\char`\"{}
+\item 
+\#define \hyperlink{PyCubedMessage_8h_a045867b70b79575107b7c391b88a9772}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+Y\+C\+U\+B\+E\+D\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE}~\char`\"{}P\+ST\char`\"{}
+\item 
+\#define \hyperlink{PyCubedMessage_8h_ad1b1f66310960d0029aa0bfbc1e59251}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+F\+I\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+S\+G\+T\+Y\+PE}~\char`\"{}F\+TR\char`\"{}
+\item 
+\#define \hyperlink{PyCubedMessage_8h_ad72ba92e78dd296d25b1f48ec2c520c1}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+I\+M\+U\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}~\char`\"{}I\+MU\char`\"{}
+\item 
+\#define \hyperlink{PyCubedMessage_8h_ad6708a6c74bc3dd2a5970ee8650243ed}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+G\+P\+S\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}~\char`\"{}G\+PS\char`\"{}
+\item 
+\#define \hyperlink{PyCubedMessage_8h_a6eb1e15178db260df337140306a9c472}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+T\+E\+M\+P\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}~\char`\"{}T\+MP\char`\"{}
+\item 
+\#define \hyperlink{PyCubedMessage_8h_a5e150fe0ef353b492b569e6dd4da511c}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+O\+W\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}~\char`\"{}P\+WR\char`\"{}
+\item 
+\#define \hyperlink{PyCubedMessage_8h_a45a46d1410aac122ec01bf1c88d39b6c}{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+M\+S\+G\+T\+Y\+PE}~\char`\"{}P\+KT\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{PyCubedMessage_8h_a83016d0ed48e7dc3769a8b8a6c695caa}\label{PyCubedMessage_8h_a83016d0ed48e7dc3769a8b8a6c695caa}} 
+\index{Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+E\+A\+G\+L\+E\+B\+O\+N\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+E\+A\+G\+L\+E\+B\+O\+N\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+E\+A\+G\+L\+E\+B\+O\+N\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+E\+A\+G\+L\+E\+B\+O\+N\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE}!Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+E\+A\+G\+L\+E\+B\+O\+N\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE}{PYCUBED\_BEAGLEBONE\_STATUS\_MSGTYPE}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+B\+E\+A\+G\+L\+E\+B\+O\+N\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE~\char`\"{}B\+ST\char`\"{}}
+
+\mbox{\Hypertarget{PyCubedMessage_8h_ad1b1f66310960d0029aa0bfbc1e59251}\label{PyCubedMessage_8h_ad1b1f66310960d0029aa0bfbc1e59251}} 
+\index{Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+F\+I\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+F\+I\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+S\+G\+T\+Y\+PE}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+F\+I\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+F\+I\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+S\+G\+T\+Y\+PE}!Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+F\+I\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+S\+G\+T\+Y\+PE}{PYCUBED\_FILE\_TRANSFER\_MSGTYPE}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+F\+I\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+S\+G\+T\+Y\+PE~\char`\"{}F\+TR\char`\"{}}
+
+\mbox{\Hypertarget{PyCubedMessage_8h_ad6708a6c74bc3dd2a5970ee8650243ed}\label{PyCubedMessage_8h_ad6708a6c74bc3dd2a5970ee8650243ed}} 
+\index{Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+G\+P\+S\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+G\+P\+S\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+G\+P\+S\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+G\+P\+S\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}!Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+G\+P\+S\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}{PYCUBED\_GPS\_DATA\_MSGTYPE}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+G\+P\+S\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE~\char`\"{}G\+PS\char`\"{}}
+
+\mbox{\Hypertarget{PyCubedMessage_8h_ad72ba92e78dd296d25b1f48ec2c520c1}\label{PyCubedMessage_8h_ad72ba92e78dd296d25b1f48ec2c520c1}} 
+\index{Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+I\+M\+U\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+I\+M\+U\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+I\+M\+U\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+I\+M\+U\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}!Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+I\+M\+U\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}{PYCUBED\_IMU\_DATA\_MSGTYPE}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+I\+M\+U\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE~\char`\"{}I\+MU\char`\"{}}
+
+\mbox{\Hypertarget{PyCubedMessage_8h_a45a46d1410aac122ec01bf1c88d39b6c}\label{PyCubedMessage_8h_a45a46d1410aac122ec01bf1c88d39b6c}} 
+\index{Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+M\+S\+G\+T\+Y\+PE}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+M\+S\+G\+T\+Y\+PE}!Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+M\+S\+G\+T\+Y\+PE}{PYCUBED\_PACKET\_MSGTYPE}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+M\+S\+G\+T\+Y\+PE~\char`\"{}P\+KT\char`\"{}}
+
+\mbox{\Hypertarget{PyCubedMessage_8h_a5e150fe0ef353b492b569e6dd4da511c}\label{PyCubedMessage_8h_a5e150fe0ef353b492b569e6dd4da511c}} 
+\index{Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+O\+W\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+O\+W\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+O\+W\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+O\+W\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}!Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+O\+W\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}{PYCUBED\_POWER\_DATA\_MSGTYPE}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+O\+W\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE~\char`\"{}P\+WR\char`\"{}}
+
+\mbox{\Hypertarget{PyCubedMessage_8h_a045867b70b79575107b7c391b88a9772}\label{PyCubedMessage_8h_a045867b70b79575107b7c391b88a9772}} 
+\index{Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+Y\+C\+U\+B\+E\+D\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+Y\+C\+U\+B\+E\+D\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+Y\+C\+U\+B\+E\+D\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+Y\+C\+U\+B\+E\+D\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE}!Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+Y\+C\+U\+B\+E\+D\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE}{PYCUBED\_PYCUBED\_STATUS\_MSGTYPE}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+P\+Y\+C\+U\+B\+E\+D\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+S\+G\+T\+Y\+PE~\char`\"{}P\+ST\char`\"{}}
+
+\mbox{\Hypertarget{PyCubedMessage_8h_a6eb1e15178db260df337140306a9c472}\label{PyCubedMessage_8h_a6eb1e15178db260df337140306a9c472}} 
+\index{Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}!P\+Y\+C\+U\+B\+E\+D\+\_\+\+T\+E\+M\+P\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+T\+E\+M\+P\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}}
+\index{P\+Y\+C\+U\+B\+E\+D\+\_\+\+T\+E\+M\+P\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE@{P\+Y\+C\+U\+B\+E\+D\+\_\+\+T\+E\+M\+P\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}!Py\+Cubed\+Message.\+h@{Py\+Cubed\+Message.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+C\+U\+B\+E\+D\+\_\+\+T\+E\+M\+P\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE}{PYCUBED\_TEMP\_DATA\_MSGTYPE}}
+{\footnotesize\ttfamily \#define P\+Y\+C\+U\+B\+E\+D\+\_\+\+T\+E\+M\+P\+\_\+\+D\+A\+T\+A\+\_\+\+M\+S\+G\+T\+Y\+PE~\char`\"{}T\+MP\char`\"{}}
+

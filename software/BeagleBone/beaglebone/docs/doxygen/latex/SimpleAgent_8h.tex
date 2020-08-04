@@ -1,0 +1,84 @@
+\hypertarget{SimpleAgent_8h}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/utility/\+Simple\+Agent.h File Reference}
+\label{SimpleAgent_8h}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/utility/\+Simple\+Agent.\+h@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/utility/\+Simple\+Agent.\+h}}
+{\ttfamily \#include \char`\"{}agent/agentclass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}support/config\+Cosmos.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}support/jsonlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}support/jsonclass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cubesat\+\_\+defs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utility/\+Exceptions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utility/\+Remote\+Agent.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utility/\+Device.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utility/\+String\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utility/\+Time\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+Include dependency graph for Simple\+Agent.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SimpleAgent_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SimpleAgent_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcubesat_1_1SimpleAgent}{cubesat\+::\+Simple\+Agent}
+\begin{DoxyCompactList}\small\item\em You guessed it -- it\textquotesingle{}s a simple agent. \end{DoxyCompactList}\item 
+struct \hyperlink{structcubesat_1_1SimpleAgent_1_1ArgumentedRequestData}{cubesat\+::\+Simple\+Agent\+::\+Argumented\+Request\+Data}
+\begin{DoxyCompactList}\small\item\em Stores data for a request with arguments. \end{DoxyCompactList}\item 
+struct \hyperlink{structcubesat_1_1SimpleAgent_1_1NonArgumentedRequestData}{cubesat\+::\+Simple\+Agent\+::\+Non\+Argumented\+Request\+Data}
+\begin{DoxyCompactList}\small\item\em Stores data for a request with no arguments. \end{DoxyCompactList}\item 
+struct \hyperlink{structcubesat_1_1SimpleAgent_1_1NodeProperty}{cubesat\+::\+Simple\+Agent\+::\+Node\+Property}
+\begin{DoxyCompactList}\small\item\em Represents a C\+O\+S\+M\+OS node property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecubesat}{cubesat}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{SimpleAgent_8h_ae0458b189260d62b7f199e0324dc3cc4}{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE}~true
+\item 
+\#define \hyperlink{SimpleAgent_8h_a29723c6650014766273eefdfa76e7776}{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+C\+A\+SE}~true
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacecubesat_a4fb5bf4788a49408c2c979bb82ae4fe1}{cubesat\+::\+Argumented\+Request} = std\+::function$<$ std\+::string(std\+::vector$<$ std\+::string $>$)$>$
+\item 
+using \hyperlink{namespacecubesat_a494b2feec3d999510e5772da5c0b354c}{cubesat\+::\+Non\+Argumented\+Request} = std\+::function$<$ std\+::string(void)$>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int32\+\_\+t \hyperlink{namespacecubesat_a9779717726c4d78b76d7a3a10556cf7a}{cubesat\+::\+Request\+Proxy} (char $\ast$request, char $\ast$response, Agent $\ast$agent\+\_\+)
+\begin{DoxyCompactList}\small\item\em A request which redirects itself to requests added to a \hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent}. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespacecubesat_a03e9fbf30b91d3d0992e8a539cbb855a}{cubesat\+::\+\_\+\+Request\+\_\+\+Debug\+Print} (std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em A \hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent} request (added by default) which prints device properties. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespacecubesat_a86fef60e77fb4edbec3c5bd8f99132b4}{cubesat\+::\+\_\+\+Request\+\_\+\+Get\+Property} (std\+::vector$<$ std\+::string $>$ args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{SimpleAgent_8h_a29723c6650014766273eefdfa76e7776}\label{SimpleAgent_8h_a29723c6650014766273eefdfa76e7776}} 
+\index{Simple\+Agent.\+h@{Simple\+Agent.\+h}!S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+C\+A\+SE@{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+C\+A\+SE}}
+\index{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+C\+A\+SE@{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+C\+A\+SE}!Simple\+Agent.\+h@{Simple\+Agent.\+h}}
+\subsubsection{\texorpdfstring{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+C\+A\+SE}{SIMPLEAGENT\_IGNORE\_CASE}}
+{\footnotesize\ttfamily \#define S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+C\+A\+SE~true}
+
+If true, case will be ignored in request names. Ignoring case will slow down lookup times. By default this is set to true. Define this before including the file \hyperlink{SimpleAgent_8h}{Simple\+Agent.\+h} if you want to change it \mbox{\Hypertarget{SimpleAgent_8h_ae0458b189260d62b7f199e0324dc3cc4}\label{SimpleAgent_8h_ae0458b189260d62b7f199e0324dc3cc4}} 
+\index{Simple\+Agent.\+h@{Simple\+Agent.\+h}!S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE@{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE}}
+\index{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE@{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE}!Simple\+Agent.\+h@{Simple\+Agent.\+h}}
+\subsubsection{\texorpdfstring{S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE}{SIMPLEAGENT\_STRICT\_MODE}}
+{\footnotesize\ttfamily \#define S\+I\+M\+P\+L\+E\+A\+G\+E\+N\+T\+\_\+\+S\+T\+R\+I\+C\+T\+\_\+\+M\+O\+DE~true}
+
+If true, the program will operate in \char`\"{}strict mode,\char`\"{} and will crash upon various failures. By default this is set to true. Define this before including the file \hyperlink{SimpleAgent_8h}{Simple\+Agent.\+h} if you want to change it 

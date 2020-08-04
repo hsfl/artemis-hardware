@@ -1,0 +1,10 @@
+<map id="/home/osboxes/cosmos/source/projects/cubesat&#45;kit/include/device/switch.h" name="/home/osboxes/cosmos/source/projects/cubesat&#45;kit/include/device/switch.h">
+<area shape="rect" id="node2" href="$agent__heater_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/agents/agent\l_heater.cpp" alt="" coords="5,109,171,180"/>
+<area shape="rect" id="node3" href="$agent__raspi_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/agents/agent\l_raspi.cpp" alt="" coords="195,109,360,180"/>
+<area shape="rect" id="node4" href="$agent__switch_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/agents/agent\l_switch.cpp" alt="" coords="384,109,549,180"/>
+<area shape="rect" id="node5" href="$switch_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/device/switch.cpp" alt="" coords="573,117,765,173"/>
+<area shape="rect" id="node6" href="$gpio__test_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/tests/gpio_test.cpp" alt="" coords="790,117,989,173"/>
+<area shape="rect" id="node7" href="$soh1__test_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/tests/soh1_test.cpp" alt="" coords="1013,117,1216,173"/>
+<area shape="rect" id="node8" href="$soh2__test_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/tests/soh2_test.cpp" alt="" coords="1240,117,1443,173"/>
+<area shape="rect" id="node9" href="$switch__test_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/tests/switch\l_test.cpp" alt="" coords="1467,109,1632,180"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="cubesat::ADT7311" name="cubesat::ADT7311">
+<area shape="rect" id="node2" href="$classcubesat_1_1SPIDevice.html" title="Generic SPI Device class that can be used to connect to any type of SPI device and read or write to i..." alt="" coords="57,5,196,32"/>
+<area shape="rect" id="node3" href="$unioncubesat_1_1ADT7311_1_1ManufacturerData.html" title="Stores data from the Manufacturer ID register. " alt="" coords="5,56,248,83"/>
+<area shape="rect" id="node4" href="$unioncubesat_1_1ADT7311_1_1StatusData.html" title="Stores data from the Status register. " alt="" coords="24,107,229,133"/>
+<area shape="rect" id="node5" href="$unioncubesat_1_1ADT7311_1_1Configuration.html" title="Configuration flags. " alt="" coords="19,157,235,184"/>
+<area shape="rect" id="node6" href="$unioncubesat_1_1ADT7311_1_1TemperatureData.html" title="Stores temperature data for 13&#45;bit resolution mode. " alt="" coords="7,208,247,235"/>
+</map>

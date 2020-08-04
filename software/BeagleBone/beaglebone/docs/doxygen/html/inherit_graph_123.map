@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcubesat_1_1SPIDevice.html" title="Generic SPI Device class that can be used to connect to any type of SPI device and read or write to i..." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$classcubesat_1_1ADT7311.html" title="Provides access to the ADT7311 temperature sensor. " alt="" coords="192,5,323,32"/>
+</map>

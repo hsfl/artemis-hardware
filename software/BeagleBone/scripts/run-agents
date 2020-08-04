@@ -1,0 +1,39 @@
+#!/bin/bash
+
+
+intexit() {
+    # Kill all subprocesses
+    kill -HUP -$$
+}
+
+hupexit() {
+    echo
+    echo "Interrupted"
+    exit
+}
+
+
+# Set traps so the script exits properly
+trap hupexit HUP
+trap intexit INT
+
+
+
+# ======================= Start Agents =======================
+echo "Starting agents..."
+
+cd ~/agents
+
+./agent_switch &
+./agent_temp &
+./agent_sun &
+./agent_heater &
+./agent_raspi &
+./agent_pycubed &
+
+
+# ================================================================
+
+# Wait for processes to finish
+wait
+

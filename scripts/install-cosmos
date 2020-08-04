@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Check if COSMOS is already installed
+if [ -d ~/cosmos ]; then
+    echo "COSMOS is already installed."
+    echo "Remove the installation folder to continue."
+    exit
+fi
+
+
+# Install dependencies
+sudo apt-get update
+sudo apt-get install git cmake build-essential
+
+
+mkdir ~/cosmos
+cd cosmos
+
+
+# ========================== Download COSMOS ==========================
+echo "Cloning repositories..."
+
+# Clone core repo
+git clone https://bitbucket.org/cosmos-project/core.git source/core
+
+# Switch to dev branch (optional)
+read -p "Use dev branch? [y/n]: "
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "Switching to dev branch"
+    cd source/core
+    git checkout dev
+    git fetch
+    cd ~/cosmos
+fi
+
+# Clone resources repo
+https://bitbucket.org/cosmos-project/resources.git
+
+
+# ========================== Build COSMOS ==========================
+echo "Building COSMOS Core..."
+
+cd ~/cosmos/source/core/build
+mkdir linux
+./do_cmake linux
+cd linux
+make -j
+make -j install
+
+
+
+

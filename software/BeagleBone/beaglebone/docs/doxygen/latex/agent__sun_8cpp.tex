@@ -1,0 +1,226 @@
+\hypertarget{agent__sun_8cpp}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+sun.cpp File Reference}
+\label{agent__sun_8cpp}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+sun.\+cpp@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+sun.\+cpp}}
+{\ttfamily \#include \char`\"{}utility/\+Simple\+Agent.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}device/\+O\+P\+T3001.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}device/sun\+\_\+sensors.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+Include dependency graph for agent\+\_\+sun.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{agent__sun_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structDeviceAddress}{Device\+Address}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{agent__sun_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{agent__sun_8cpp_a8418ec151724344f6ea0efc879c385ca}{Init\+Sensors} ()
+\begin{DoxyCompactList}\small\item\em Initializes the sensor devices. \end{DoxyCompactList}\item 
+void \hyperlink{agent__sun_8cpp_a755ff699ffbedd573eb37669a44071d4}{Init\+Sensor} (int index)
+\begin{DoxyCompactList}\small\item\em Initializes a sensor. \end{DoxyCompactList}\item 
+bool \hyperlink{agent__sun_8cpp_a43267a1269c74d9d588f4f748d8bab40}{Connect\+Sensor} (int index)
+\begin{DoxyCompactList}\small\item\em Attempts to connect a sensor. \end{DoxyCompactList}\item 
+void \hyperlink{agent__sun_8cpp_aa03a4dfa231ec3d45898c7652c4f42a9}{Destroy\+Sensors} ()
+\begin{DoxyCompactList}\small\item\em Wraps up communication with the sensor devices. \end{DoxyCompactList}\item 
+void \hyperlink{agent__sun_8cpp_a620e90cc2222c0f831770a5bab938422}{Update\+Sensor} (int index)
+\begin{DoxyCompactList}\small\item\em Grabs the latest readings from a sensor device. \end{DoxyCompactList}\item 
+void \hyperlink{agent__sun_8cpp_a98c1e52b14e703f741eb1ab9e87023ed}{Set\+Sensor\+Power} (bool enabled)
+\begin{DoxyCompactList}\small\item\em Enables/disables power to sensors via agent\+\_\+switch. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{agent__sun_8cpp_ae18c20f7da66476a680c550d0e9a1ad8}{request\+\_\+sensor} (char $\ast$request, char $\ast$response, Agent $\ast$\hyperlink{agent__temp_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}{agent})
+\item 
+int32\+\_\+t \hyperlink{agent__sun_8cpp_ae0d8e23c5446aa857ca5fac634c19f19}{request\+\_\+list} (char $\ast$request, char $\ast$response, Agent $\ast$\hyperlink{agent__temp_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}{agent})
+\item 
+string \hyperlink{agent__sun_8cpp_a7e48a8d3799083eae1f5af3fbaaec561}{Request\+\_\+\+Sensor} (vector$<$ string $>$ args)
+\item 
+string \hyperlink{agent__sun_8cpp_a5e95cbc24cd730f8b85526870d50d281}{Request\+\_\+\+List} ()
+\item 
+int \hyperlink{agent__sun_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent} $\ast$ \hyperlink{agent__sun_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}{agent}
+\item 
+\hyperlink{classcubesat_1_1SunSensor}{Sun\+Sensor} $\ast$ \hyperlink{agent__sun_8cpp_af114316bd9ab8e0df2d20d378b6bd73e}{sun\+\_\+sensor} \mbox{[}\hyperlink{sun__sensors_8h_a585220eeec1b78d7d6de02b4ab06fbb3}{S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+U\+NT}\mbox{]}
+\item 
+\hyperlink{classcubesat_1_1OPT3001}{O\+P\+T3001} $\ast$ \hyperlink{agent__sun_8cpp_a84f9556204e732c59f320aeabf0e9b5e}{handlers} \mbox{[}\hyperlink{sun__sensors_8h_a585220eeec1b78d7d6de02b4ab06fbb3}{S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+U\+NT}\mbox{]}
+\item 
+\hyperlink{unioncubesat_1_1OPT3001_1_1Configuration}{O\+P\+T3001\+::\+Configuration} \hyperlink{agent__sun_8cpp_afe258c3d5cff346743137969be223d15}{default\+\_\+sensor\+\_\+config}
+\item 
+bool \hyperlink{agent__sun_8cpp_a4cc00fe4c90bdc80a52fb0eacfbc51a2}{should\+\_\+enable\+\_\+sensors} = true
+\item 
+bool \hyperlink{agent__sun_8cpp_ad99c1df832d3a2050623f616d4926793}{sensors\+\_\+powered} = false
+\item 
+\hyperlink{structDeviceAddress}{Device\+Address} \hyperlink{agent__sun_8cpp_ad4072ddd91b6dd5fc6e7f9f52bffd854}{devices\+\_\+addresses} \mbox{[}\hyperlink{sun__sensors_8h_a585220eeec1b78d7d6de02b4ab06fbb3}{S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+U\+NT}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{agent__sun_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}\label{agent__sun_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}}
+\index{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}{SLEEP\_TIME}}
+{\footnotesize\ttfamily \#define S\+L\+E\+E\+P\+\_\+\+T\+I\+ME~1}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{agent__sun_8cpp_a43267a1269c74d9d588f4f748d8bab40}\label{agent__sun_8cpp_a43267a1269c74d9d588f4f748d8bab40}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!Connect\+Sensor@{Connect\+Sensor}}
+\index{Connect\+Sensor@{Connect\+Sensor}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{Connect\+Sensor()}{ConnectSensor()}}
+{\footnotesize\ttfamily bool Connect\+Sensor (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Attempts to connect a sensor. 
+
+\mbox{\Hypertarget{agent__sun_8cpp_aa03a4dfa231ec3d45898c7652c4f42a9}\label{agent__sun_8cpp_aa03a4dfa231ec3d45898c7652c4f42a9}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!Destroy\+Sensors@{Destroy\+Sensors}}
+\index{Destroy\+Sensors@{Destroy\+Sensors}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{Destroy\+Sensors()}{DestroySensors()}}
+{\footnotesize\ttfamily void Destroy\+Sensors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wraps up communication with the sensor devices. 
+
+\mbox{\Hypertarget{agent__sun_8cpp_a755ff699ffbedd573eb37669a44071d4}\label{agent__sun_8cpp_a755ff699ffbedd573eb37669a44071d4}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!Init\+Sensor@{Init\+Sensor}}
+\index{Init\+Sensor@{Init\+Sensor}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{Init\+Sensor()}{InitSensor()}}
+{\footnotesize\ttfamily void Init\+Sensor (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Initializes a sensor. 
+
+\mbox{\Hypertarget{agent__sun_8cpp_a8418ec151724344f6ea0efc879c385ca}\label{agent__sun_8cpp_a8418ec151724344f6ea0efc879c385ca}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!Init\+Sensors@{Init\+Sensors}}
+\index{Init\+Sensors@{Init\+Sensors}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{Init\+Sensors()}{InitSensors()}}
+{\footnotesize\ttfamily void Init\+Sensors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the sensor devices. 
+
+\mbox{\Hypertarget{agent__sun_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{agent__sun_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!main@{main}}
+\index{main@{main}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__sun_8cpp_ae0d8e23c5446aa857ca5fac634c19f19}\label{agent__sun_8cpp_ae0d8e23c5446aa857ca5fac634c19f19}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!request\+\_\+list@{request\+\_\+list}}
+\index{request\+\_\+list@{request\+\_\+list}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{request\+\_\+list()}{request\_list()}}
+{\footnotesize\ttfamily int32\+\_\+t request\+\_\+list (\begin{DoxyParamCaption}\item[{char $\ast$}]{request,  }\item[{char $\ast$}]{response,  }\item[{Agent $\ast$}]{agent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__sun_8cpp_a5e95cbc24cd730f8b85526870d50d281}\label{agent__sun_8cpp_a5e95cbc24cd730f8b85526870d50d281}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!Request\+\_\+\+List@{Request\+\_\+\+List}}
+\index{Request\+\_\+\+List@{Request\+\_\+\+List}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+List()}{Request\_List()}}
+{\footnotesize\ttfamily string Request\+\_\+\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__sun_8cpp_ae18c20f7da66476a680c550d0e9a1ad8}\label{agent__sun_8cpp_ae18c20f7da66476a680c550d0e9a1ad8}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!request\+\_\+sensor@{request\+\_\+sensor}}
+\index{request\+\_\+sensor@{request\+\_\+sensor}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{request\+\_\+sensor()}{request\_sensor()}}
+{\footnotesize\ttfamily int32\+\_\+t request\+\_\+sensor (\begin{DoxyParamCaption}\item[{char $\ast$}]{request,  }\item[{char $\ast$}]{response,  }\item[{Agent $\ast$}]{agent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__sun_8cpp_a7e48a8d3799083eae1f5af3fbaaec561}\label{agent__sun_8cpp_a7e48a8d3799083eae1f5af3fbaaec561}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!Request\+\_\+\+Sensor@{Request\+\_\+\+Sensor}}
+\index{Request\+\_\+\+Sensor@{Request\+\_\+\+Sensor}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Sensor()}{Request\_Sensor()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Sensor (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__sun_8cpp_a98c1e52b14e703f741eb1ab9e87023ed}\label{agent__sun_8cpp_a98c1e52b14e703f741eb1ab9e87023ed}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!Set\+Sensor\+Power@{Set\+Sensor\+Power}}
+\index{Set\+Sensor\+Power@{Set\+Sensor\+Power}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{Set\+Sensor\+Power()}{SetSensorPower()}}
+{\footnotesize\ttfamily void Set\+Sensor\+Power (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Enables/disables power to sensors via agent\+\_\+switch. 
+
+\mbox{\Hypertarget{agent__sun_8cpp_a620e90cc2222c0f831770a5bab938422}\label{agent__sun_8cpp_a620e90cc2222c0f831770a5bab938422}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!Update\+Sensor@{Update\+Sensor}}
+\index{Update\+Sensor@{Update\+Sensor}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{Update\+Sensor()}{UpdateSensor()}}
+{\footnotesize\ttfamily void Update\+Sensor (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Grabs the latest readings from a sensor device. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{agent__sun_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}\label{agent__sun_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!agent@{agent}}
+\index{agent@{agent}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{agent}{agent}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent}$\ast$ agent}
+
+\mbox{\Hypertarget{agent__sun_8cpp_afe258c3d5cff346743137969be223d15}\label{agent__sun_8cpp_afe258c3d5cff346743137969be223d15}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!default\+\_\+sensor\+\_\+config@{default\+\_\+sensor\+\_\+config}}
+\index{default\+\_\+sensor\+\_\+config@{default\+\_\+sensor\+\_\+config}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{default\+\_\+sensor\+\_\+config}{default\_sensor\_config}}
+{\footnotesize\ttfamily \hyperlink{unioncubesat_1_1OPT3001_1_1Configuration}{O\+P\+T3001\+::\+Configuration} default\+\_\+sensor\+\_\+config}
+
+\mbox{\Hypertarget{agent__sun_8cpp_ad4072ddd91b6dd5fc6e7f9f52bffd854}\label{agent__sun_8cpp_ad4072ddd91b6dd5fc6e7f9f52bffd854}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!devices\+\_\+addresses@{devices\+\_\+addresses}}
+\index{devices\+\_\+addresses@{devices\+\_\+addresses}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{devices\+\_\+addresses}{devices\_addresses}}
+{\footnotesize\ttfamily \hyperlink{structDeviceAddress}{Device\+Address} devices\+\_\+addresses\mbox{[}\hyperlink{sun__sensors_8h_a585220eeec1b78d7d6de02b4ab06fbb3}{S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+U\+NT}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+    \{0x00, 0x00\},
+    \{0x00, 0x00\},
+    \{0x00, 0x00\},
+    \{0x00, 0x00\},
+    \{0x00, 0x00\},
+    \{0x00, 0x00\},
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{agent__sun_8cpp_a84f9556204e732c59f320aeabf0e9b5e}\label{agent__sun_8cpp_a84f9556204e732c59f320aeabf0e9b5e}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!handlers@{handlers}}
+\index{handlers@{handlers}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{handlers}{handlers}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1OPT3001}{O\+P\+T3001}$\ast$ handlers\mbox{[}\hyperlink{sun__sensors_8h_a585220eeec1b78d7d6de02b4ab06fbb3}{S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+U\+NT}\mbox{]}}
+
+\mbox{\Hypertarget{agent__sun_8cpp_ad99c1df832d3a2050623f616d4926793}\label{agent__sun_8cpp_ad99c1df832d3a2050623f616d4926793}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!sensors\+\_\+powered@{sensors\+\_\+powered}}
+\index{sensors\+\_\+powered@{sensors\+\_\+powered}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{sensors\+\_\+powered}{sensors\_powered}}
+{\footnotesize\ttfamily bool sensors\+\_\+powered = false}
+
+\mbox{\Hypertarget{agent__sun_8cpp_a4cc00fe4c90bdc80a52fb0eacfbc51a2}\label{agent__sun_8cpp_a4cc00fe4c90bdc80a52fb0eacfbc51a2}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!should\+\_\+enable\+\_\+sensors@{should\+\_\+enable\+\_\+sensors}}
+\index{should\+\_\+enable\+\_\+sensors@{should\+\_\+enable\+\_\+sensors}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{should\+\_\+enable\+\_\+sensors}{should\_enable\_sensors}}
+{\footnotesize\ttfamily bool should\+\_\+enable\+\_\+sensors = true}
+
+\mbox{\Hypertarget{agent__sun_8cpp_af114316bd9ab8e0df2d20d378b6bd73e}\label{agent__sun_8cpp_af114316bd9ab8e0df2d20d378b6bd73e}} 
+\index{agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}!sun\+\_\+sensor@{sun\+\_\+sensor}}
+\index{sun\+\_\+sensor@{sun\+\_\+sensor}!agent\+\_\+sun.\+cpp@{agent\+\_\+sun.\+cpp}}
+\subsubsection{\texorpdfstring{sun\+\_\+sensor}{sun\_sensor}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1SunSensor}{Sun\+Sensor}$\ast$ sun\+\_\+sensor\mbox{[}\hyperlink{sun__sensors_8h_a585220eeec1b78d7d6de02b4ab06fbb3}{S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+U\+NT}\mbox{]}}
+

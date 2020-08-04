@@ -1,0 +1,218 @@
+\hypertarget{classcubesat_1_1I2CDevice}{}\section{cubesat\+:\+:I2\+C\+Device Class Reference}
+\label{classcubesat_1_1I2CDevice}\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+
+
+{\ttfamily \#include $<$I2\+C\+Device.\+h$>$}
+
+
+
+Inheritance diagram for cubesat\+:\+:I2\+C\+Device\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classcubesat_1_1I2CDevice__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1I2CDevice_afa6d28cbaab65cfc2ad60a63bc95d30d}{I2\+C\+Device} ()
+\item 
+\hyperlink{classcubesat_1_1I2CDevice_a9fad0233c906bdbbe9b66ceaacfbb35e}{I2\+C\+Device} (uint8\+\_\+t \hyperlink{classcubesat_1_1I2CDevice_acc13c6328bb7f29ddc5b9436d6b40816}{bus}, uint8\+\_\+t \hyperlink{classcubesat_1_1I2CDevice_a59cdefbd8b9720d194254c617f5c9b07}{device})
+\item 
+virtual \hyperlink{classcubesat_1_1I2CDevice_aebf54d150dca31a5bd8ddd524cb5bb00}{$\sim$\+I2\+C\+Device} ()
+\item 
+virtual int \hyperlink{classcubesat_1_1I2CDevice_a9a3ac852fdca8da83bcf5d771c710264}{Open} ()
+\item 
+virtual void \hyperlink{classcubesat_1_1I2CDevice_a09c6fe7b6318662e4438ee52c21cee20}{Close} ()
+\item 
+bool \hyperlink{classcubesat_1_1I2CDevice_abcc65de8ac56247998f20a0023351959}{Is\+Open} () const
+\item 
+int \hyperlink{classcubesat_1_1I2CDevice_aae688e4c62fafe205028fc0301492b40}{Get\+Bus\+Addr} () const
+\item 
+int \hyperlink{classcubesat_1_1I2CDevice_a9621077493039877b663245a0491c3fa}{Get\+Device\+Addr} () const
+\item 
+std\+::string \hyperlink{classcubesat_1_1I2CDevice_aa5919f5bdade4ad2d4ca5b54894350b7}{Get\+Device\+Path} () const
+\item 
+virtual int \hyperlink{classcubesat_1_1I2CDevice_a4c961bc762deb1388a541f148de32b7e}{Write} (uint8\+\_\+t value)
+\item 
+virtual int \hyperlink{classcubesat_1_1I2CDevice_ae80e31206a3b08754ca9649326c7e682}{Write\+Register} (uint8\+\_\+t register\+\_\+addr, uint16\+\_\+t value)
+\item 
+virtual int \hyperlink{classcubesat_1_1I2CDevice_ade46491355547ba50c00a078527dff93}{Read\+Registers} (uint8\+\_\+t $\ast$out, uint8\+\_\+t first\+\_\+addr, uint8\+\_\+t len)
+\item 
+virtual uint16\+\_\+t \hyperlink{classcubesat_1_1I2CDevice_a398afc2399a0c9164398ee8fdb759669}{Read\+Register} (uint8\+\_\+t register\+\_\+addr)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcubesat_1_1I2CDevice_acc13c6328bb7f29ddc5b9436d6b40816}{bus}
+\item 
+int \hyperlink{classcubesat_1_1I2CDevice_a59cdefbd8b9720d194254c617f5c9b07}{device}
+\item 
+int \hyperlink{classcubesat_1_1I2CDevice_aea3a1fc10a89f78e12f6a905dfa7deb1}{file}
+\item 
+bool \hyperlink{classcubesat_1_1I2CDevice_a6d247df5f1726283a1783810305c2699}{is\+\_\+open} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_afa6d28cbaab65cfc2ad60a63bc95d30d}\label{classcubesat_1_1I2CDevice_afa6d28cbaab65cfc2ad60a63bc95d30d}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!I2\+C\+Device@{I2\+C\+Device}}
+\index{I2\+C\+Device@{I2\+C\+Device}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{I2\+C\+Device()}{I2CDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily I2\+C\+Device\+::\+I2\+C\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_a9fad0233c906bdbbe9b66ceaacfbb35e}\label{classcubesat_1_1I2CDevice_a9fad0233c906bdbbe9b66ceaacfbb35e}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!I2\+C\+Device@{I2\+C\+Device}}
+\index{I2\+C\+Device@{I2\+C\+Device}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{I2\+C\+Device()}{I2CDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily I2\+C\+Device\+::\+I2\+C\+Device (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bus,  }\item[{uint8\+\_\+t}]{device }\end{DoxyParamCaption})}
+
+Constructor for the \hyperlink{classcubesat_1_1I2CDevice}{I2\+C\+Device} class. It requires the bus number and device number. The constructor opens a file handle to the I2C device, which is destroyed when the destructor is called 
+\begin{DoxyParams}{Parameters}
+{\em bus} & The bus number. Usually 0 or 1 on the B\+BB \\
+\hline
+{\em device} & The device ID on the bus. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_aebf54d150dca31a5bd8ddd524cb5bb00}\label{classcubesat_1_1I2CDevice_aebf54d150dca31a5bd8ddd524cb5bb00}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!````~I2\+C\+Device@{$\sim$\+I2\+C\+Device}}
+\index{````~I2\+C\+Device@{$\sim$\+I2\+C\+Device}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{$\sim$\+I2\+C\+Device()}{~I2CDevice()}}
+{\footnotesize\ttfamily I2\+C\+Device\+::$\sim$\+I2\+C\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Closes the file on destruction, provided that it has not already been closed. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_a09c6fe7b6318662e4438ee52c21cee20}\label{classcubesat_1_1I2CDevice_a09c6fe7b6318662e4438ee52c21cee20}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Close@{Close}}
+\index{Close@{Close}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void I2\+C\+Device\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Close the file handles and sets a temporary state to -\/1. \mbox{\Hypertarget{classcubesat_1_1I2CDevice_aae688e4c62fafe205028fc0301492b40}\label{classcubesat_1_1I2CDevice_aae688e4c62fafe205028fc0301492b40}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Get\+Bus\+Addr@{Get\+Bus\+Addr}}
+\index{Get\+Bus\+Addr@{Get\+Bus\+Addr}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Get\+Bus\+Addr()}{GetBusAddr()}}
+{\footnotesize\ttfamily int cubesat\+::\+I2\+C\+Device\+::\+Get\+Bus\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_a9621077493039877b663245a0491c3fa}\label{classcubesat_1_1I2CDevice_a9621077493039877b663245a0491c3fa}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Get\+Device\+Addr@{Get\+Device\+Addr}}
+\index{Get\+Device\+Addr@{Get\+Device\+Addr}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Get\+Device\+Addr()}{GetDeviceAddr()}}
+{\footnotesize\ttfamily int cubesat\+::\+I2\+C\+Device\+::\+Get\+Device\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_aa5919f5bdade4ad2d4ca5b54894350b7}\label{classcubesat_1_1I2CDevice_aa5919f5bdade4ad2d4ca5b54894350b7}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Get\+Device\+Path@{Get\+Device\+Path}}
+\index{Get\+Device\+Path@{Get\+Device\+Path}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Get\+Device\+Path()}{GetDevicePath()}}
+{\footnotesize\ttfamily std\+::string I2\+C\+Device\+::\+Get\+Device\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_abcc65de8ac56247998f20a0023351959}\label{classcubesat_1_1I2CDevice_abcc65de8ac56247998f20a0023351959}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Is\+Open@{Is\+Open}}
+\index{Is\+Open@{Is\+Open}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Is\+Open()}{IsOpen()}}
+{\footnotesize\ttfamily bool cubesat\+::\+I2\+C\+Device\+::\+Is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_a9a3ac852fdca8da83bcf5d771c710264}\label{classcubesat_1_1I2CDevice_a9a3ac852fdca8da83bcf5d771c710264}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Open@{Open}}
+\index{Open@{Open}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily int I2\+C\+Device\+::\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Open a connection to an I2C device \begin{DoxyReturn}{Returns}
+-\/1 on failure to open to the bus or device, 0 on success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_a398afc2399a0c9164398ee8fdb759669}\label{classcubesat_1_1I2CDevice_a398afc2399a0c9164398ee8fdb759669}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Read\+Register@{Read\+Register}}
+\index{Read\+Register@{Read\+Register}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Read\+Register()}{ReadRegister()}}
+{\footnotesize\ttfamily uint16\+\_\+t I2\+C\+Device\+::\+Read\+Register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{register\+Address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Read a single register value from the address on the device. 
+\begin{DoxyParams}{Parameters}
+{\em register\+Address} & the address to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the byte value at the register address. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_ade46491355547ba50c00a078527dff93}\label{classcubesat_1_1I2CDevice_ade46491355547ba50c00a078527dff93}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Read\+Registers@{Read\+Registers}}
+\index{Read\+Registers@{Read\+Registers}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Read\+Registers()}{ReadRegisters()}}
+{\footnotesize\ttfamily int I2\+C\+Device\+::\+Read\+Registers (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{out,  }\item[{uint8\+\_\+t}]{first\+\_\+addr,  }\item[{uint8\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Method to read a number of registers from a single device. This is much more efficient than reading the registers individually. The from address is the starting address to read from, which defaults to 0x00. 
+\begin{DoxyParams}{Parameters}
+{\em number} & the number of registers to read from the device \\
+\hline
+{\em from\+Address} & the starting address to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer of type unsigned char$\ast$ that points to the first element in the block of registers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_a4c961bc762deb1388a541f148de32b7e}\label{classcubesat_1_1I2CDevice_a4c961bc762deb1388a541f148de32b7e}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Write@{Write}}
+\index{Write@{Write}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily int I2\+C\+Device\+::\+Write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Write a single value to the I2C device. Used to set up the device to read from a particular address. 
+\begin{DoxyParams}{Parameters}
+{\em value} & the value to write to the device \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 on failure to write, 0 on success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_ae80e31206a3b08754ca9649326c7e682}\label{classcubesat_1_1I2CDevice_ae80e31206a3b08754ca9649326c7e682}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!Write\+Register@{Write\+Register}}
+\index{Write\+Register@{Write\+Register}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{Write\+Register()}{WriteRegister()}}
+{\footnotesize\ttfamily int I2\+C\+Device\+::\+Write\+Register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{register\+Address,  }\item[{uint16\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Write a single byte value to a single register. 
+\begin{DoxyParams}{Parameters}
+{\em register\+Address} & The register address \\
+\hline
+{\em value} & The value to be written to the register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 on failure to write, 0 on success. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_acc13c6328bb7f29ddc5b9436d6b40816}\label{classcubesat_1_1I2CDevice_acc13c6328bb7f29ddc5b9436d6b40816}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!bus@{bus}}
+\index{bus@{bus}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{bus}{bus}}
+{\footnotesize\ttfamily int cubesat\+::\+I2\+C\+Device\+::bus\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_a59cdefbd8b9720d194254c617f5c9b07}\label{classcubesat_1_1I2CDevice_a59cdefbd8b9720d194254c617f5c9b07}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!device@{device}}
+\index{device@{device}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily int cubesat\+::\+I2\+C\+Device\+::device\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_aea3a1fc10a89f78e12f6a905dfa7deb1}\label{classcubesat_1_1I2CDevice_aea3a1fc10a89f78e12f6a905dfa7deb1}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!file@{file}}
+\index{file@{file}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily int cubesat\+::\+I2\+C\+Device\+::file\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1I2CDevice_a6d247df5f1726283a1783810305c2699}\label{classcubesat_1_1I2CDevice_a6d247df5f1726283a1783810305c2699}} 
+\index{cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}!is\+\_\+open@{is\+\_\+open}}
+\index{is\+\_\+open@{is\+\_\+open}!cubesat\+::\+I2\+C\+Device@{cubesat\+::\+I2\+C\+Device}}
+\subsubsection{\texorpdfstring{is\+\_\+open}{is\_open}}
+{\footnotesize\ttfamily bool cubesat\+::\+I2\+C\+Device\+::is\+\_\+open = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/\hyperlink{I2CDevice_8h}{I2\+C\+Device.\+h}\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/device/\hyperlink{I2CDevice_8cpp}{I2\+C\+Device.\+cpp}\end{DoxyCompactItemize}

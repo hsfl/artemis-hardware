@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+# Update agents
+echo "============================================"
+./update-agents -n
+
+
+# Update COSMOS Web routes
+echo "============================================"
+./update-routes -n
+

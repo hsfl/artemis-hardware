@@ -1,0 +1,121 @@
+\hypertarget{switch_8h}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/switch.h File Reference}
+\label{switch_8h}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/switch.\+h@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/switch.\+h}}
+{\ttfamily \#include \char`\"{}device/\+G\+P\+I\+O.\+h\char`\"{}}\newline
+Include dependency graph for switch.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{switch_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{switch_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcubesat_1_1SwitchedDeviceInfo}{cubesat\+::\+Switched\+Device\+Info}
+\item 
+class \hyperlink{classcubesat_1_1PDUSwitch}{cubesat\+::\+P\+D\+U\+Switch}
+\begin{DoxyCompactList}\small\item\em A class for controlling the switched lines to the E\+PS. Inherits from the \hyperlink{classcubesat_1_1GPIO}{G\+P\+IO} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecubesat}{cubesat}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{switch_8h_ad7db8926cbb872ec36c2e94db869235f}{S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT}~3
+\item 
+\#define \hyperlink{switch_8h_a128560820edeca7416767b0278974f97}{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+N\+A\+ME}~\char`\"{}sw\+\_\+heater\char`\"{}
+\item 
+\#define \hyperlink{switch_8h_ab87f0daf3c993cbb43485e40fd11a584}{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME}~\char`\"{}sw\+\_\+temp\char`\"{}
+\item 
+\#define \hyperlink{switch_8h_a079b325f48bc449963b8f5c0b84c1455}{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME}~\char`\"{}sw\+\_\+ss\char`\"{}
+\item 
+\#define \hyperlink{switch_8h_aa8ca5e0d0ad07ec0d7d0e5d4f7ba727f}{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+N\+A\+ME}~\char`\"{}sw\+\_\+raspi\char`\"{}
+\item 
+\#define \hyperlink{switch_8h_ac4a41c3b8145477d4d658f975adfc5de}{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+K\+EY}~\char`\"{}P9\+\_\+14\char`\"{}
+\item 
+\#define \hyperlink{switch_8h_a34ce8812e308ab41e84a54561ab5e29d}{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY}~\char`\"{}P9\+\_\+14\char`\"{}
+\item 
+\#define \hyperlink{switch_8h_a0e876cac82ae0ac174eb90ee8f919288}{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY}~\char`\"{}P9\+\_\+14\char`\"{}
+\item 
+\#define \hyperlink{switch_8h_a8a17ae60639b83e8a8ba3b3cff59629d}{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+K\+EY}~\char`\"{}P9\+\_\+14\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacecubesat_a4343cdc3d5f03bad7a16bac6c47cd1ca}{cubesat\+::\+Switch\+ID} \+: int \{ \hyperlink{namespacecubesat_a4343cdc3d5f03bad7a16bac6c47cd1caad690e15341e1a5100e4a9e1fdc0e9575}{cubesat\+::\+Switch\+I\+D\+::\+Heater} = 0, 
+\hyperlink{namespacecubesat_a4343cdc3d5f03bad7a16bac6c47cd1caae32c3be0c84270cf8f83bb84e8cd99fe}{cubesat\+::\+Switch\+I\+D\+::\+Temp\+Sensor} = 1, 
+\hyperlink{namespacecubesat_a4343cdc3d5f03bad7a16bac6c47cd1caa0467d02ab8462871ddb62301414bf3ee}{cubesat\+::\+Switch\+I\+D\+::\+Sun\+Sensor} = 2, 
+\hyperlink{namespacecubesat_a4343cdc3d5f03bad7a16bac6c47cd1caa00f4e5788aab6d3546bb433842dbbefc}{cubesat\+::\+Switch\+I\+D\+::\+Payload} = 3
+ \}
+\item 
+enum \hyperlink{namespacecubesat_a61ab3c9f315851c6eaaf5ad28f97f2e3}{cubesat\+::\+Switch\+State} \+: int \{ \hyperlink{namespacecubesat_a61ab3c9f315851c6eaaf5ad28f97f2e3a4bbb8f967da6d1a610596d7257179c2b}{cubesat\+::\+Switch\+State\+::\+Invalid} = -\/1, 
+\hyperlink{namespacecubesat_a61ab3c9f315851c6eaaf5ad28f97f2e3ad15305d7a4e34e02489c74a5ef542f36}{cubesat\+::\+Switch\+State\+::\+Off} = 0, 
+\hyperlink{namespacecubesat_a61ab3c9f315851c6eaaf5ad28f97f2e3a521c36a31c2762741cf0f8890cbe05e3}{cubesat\+::\+Switch\+State\+::\+On} = 1
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{switch_8h_ad7db8926cbb872ec36c2e94db869235f}\label{switch_8h_ad7db8926cbb872ec36c2e94db869235f}} 
+\index{switch.\+h@{switch.\+h}!S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT@{S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT}}
+\index{S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT@{S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT}!switch.\+h@{switch.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT}{SWITCH\_COUNT}}
+{\footnotesize\ttfamily \#define S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT~3}
+
+\mbox{\Hypertarget{switch_8h_ac4a41c3b8145477d4d658f975adfc5de}\label{switch_8h_ac4a41c3b8145477d4d658f975adfc5de}} 
+\index{switch.\+h@{switch.\+h}!S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+K\+EY@{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+K\+EY}}
+\index{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+K\+EY@{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+K\+EY}!switch.\+h@{switch.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+K\+EY}{SWITCH\_HEATER\_KEY}}
+{\footnotesize\ttfamily \#define S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+K\+EY~\char`\"{}P9\+\_\+14\char`\"{}}
+
+\mbox{\Hypertarget{switch_8h_a128560820edeca7416767b0278974f97}\label{switch_8h_a128560820edeca7416767b0278974f97}} 
+\index{switch.\+h@{switch.\+h}!S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+N\+A\+ME@{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+N\+A\+ME}}
+\index{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+N\+A\+ME@{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+N\+A\+ME}!switch.\+h@{switch.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+N\+A\+ME}{SWITCH\_HEATER\_NAME}}
+{\footnotesize\ttfamily \#define S\+W\+I\+T\+C\+H\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+N\+A\+ME~\char`\"{}sw\+\_\+heater\char`\"{}}
+
+\mbox{\Hypertarget{switch_8h_a8a17ae60639b83e8a8ba3b3cff59629d}\label{switch_8h_a8a17ae60639b83e8a8ba3b3cff59629d}} 
+\index{switch.\+h@{switch.\+h}!S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+K\+EY@{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+K\+EY}}
+\index{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+K\+EY@{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+K\+EY}!switch.\+h@{switch.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+K\+EY}{SWITCH\_PAYLOAD\_KEY}}
+{\footnotesize\ttfamily \#define S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+K\+EY~\char`\"{}P9\+\_\+14\char`\"{}}
+
+\mbox{\Hypertarget{switch_8h_aa8ca5e0d0ad07ec0d7d0e5d4f7ba727f}\label{switch_8h_aa8ca5e0d0ad07ec0d7d0e5d4f7ba727f}} 
+\index{switch.\+h@{switch.\+h}!S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+N\+A\+ME@{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+N\+A\+ME}}
+\index{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+N\+A\+ME@{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+N\+A\+ME}!switch.\+h@{switch.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+N\+A\+ME}{SWITCH\_PAYLOAD\_NAME}}
+{\footnotesize\ttfamily \#define S\+W\+I\+T\+C\+H\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+N\+A\+ME~\char`\"{}sw\+\_\+raspi\char`\"{}}
+
+\mbox{\Hypertarget{switch_8h_a0e876cac82ae0ac174eb90ee8f919288}\label{switch_8h_a0e876cac82ae0ac174eb90ee8f919288}} 
+\index{switch.\+h@{switch.\+h}!S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY@{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY}}
+\index{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY@{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY}!switch.\+h@{switch.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY}{SWITCH\_SUNSENSOR\_KEY}}
+{\footnotesize\ttfamily \#define S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY~\char`\"{}P9\+\_\+14\char`\"{}}
+
+\mbox{\Hypertarget{switch_8h_a079b325f48bc449963b8f5c0b84c1455}\label{switch_8h_a079b325f48bc449963b8f5c0b84c1455}} 
+\index{switch.\+h@{switch.\+h}!S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME@{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME}}
+\index{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME@{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME}!switch.\+h@{switch.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME}{SWITCH\_SUNSENSOR\_NAME}}
+{\footnotesize\ttfamily \#define S\+W\+I\+T\+C\+H\+\_\+\+S\+U\+N\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME~\char`\"{}sw\+\_\+ss\char`\"{}}
+
+\mbox{\Hypertarget{switch_8h_a34ce8812e308ab41e84a54561ab5e29d}\label{switch_8h_a34ce8812e308ab41e84a54561ab5e29d}} 
+\index{switch.\+h@{switch.\+h}!S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY@{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY}}
+\index{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY@{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY}!switch.\+h@{switch.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY}{SWITCH\_TEMPSENSOR\_KEY}}
+{\footnotesize\ttfamily \#define S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+K\+EY~\char`\"{}P9\+\_\+14\char`\"{}}
+
+\mbox{\Hypertarget{switch_8h_ab87f0daf3c993cbb43485e40fd11a584}\label{switch_8h_ab87f0daf3c993cbb43485e40fd11a584}} 
+\index{switch.\+h@{switch.\+h}!S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME@{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME}}
+\index{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME@{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME}!switch.\+h@{switch.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME}{SWITCH\_TEMPSENSOR\_NAME}}
+{\footnotesize\ttfamily \#define S\+W\+I\+T\+C\+H\+\_\+\+T\+E\+M\+P\+S\+E\+N\+S\+O\+R\+\_\+\+N\+A\+ME~\char`\"{}sw\+\_\+temp\char`\"{}}
+

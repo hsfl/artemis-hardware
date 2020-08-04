@@ -1,0 +1,3 @@
+#!/bin/bash
+
+firefox --new-tab --url 192.168.6.2 &

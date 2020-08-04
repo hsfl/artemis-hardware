@@ -1,0 +1,84 @@
+\hypertarget{classcubesat_1_1ChipSelect}{}\section{cubesat\+:\+:Chip\+Select Class Reference}
+\label{classcubesat_1_1ChipSelect}\index{cubesat\+::\+Chip\+Select@{cubesat\+::\+Chip\+Select}}
+
+
+{\ttfamily \#include $<$Chip\+Select.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1ChipSelect_a18fb93813dc66313c0ebdea468f61366}{Chip\+Select} (const std\+::vector$<$ std\+::string $>$ \&\hyperlink{classcubesat_1_1ChipSelect_ae6285a5edb25a1dbecce248bf1ac241d}{cs\+\_\+pin\+\_\+keys})
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classcubesat_1_1ChipSelect}{Chip\+Select} object. \end{DoxyCompactList}\item 
+void \hyperlink{classcubesat_1_1ChipSelect_ab173c06bea583f833b11bae2a305701d}{Acquire} (unsigned int address)
+\begin{DoxyCompactList}\small\item\em Selects a chip at the given address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classcubesat_1_1ChipSelect_ae6285a5edb25a1dbecce248bf1ac241d}{cs\+\_\+pin\+\_\+keys}
+\begin{DoxyCompactList}\small\item\em The Beagle\+Bone \hyperlink{classcubesat_1_1GPIO}{G\+P\+IO} pin keys (e.\+g. P9\+\_\+14) \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classcubesat_1_1GPIO}{G\+P\+IO} $>$ \hyperlink{classcubesat_1_1ChipSelect_a549f890313f33099ac514679d86501a4}{cs\+\_\+gpios}
+\begin{DoxyCompactList}\small\item\em The Beagle\+Bone G\+P\+I\+Os. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcubesat_1_1ChipSelect_a18fb93813dc66313c0ebdea468f61366}\label{classcubesat_1_1ChipSelect_a18fb93813dc66313c0ebdea468f61366}} 
+\index{cubesat\+::\+Chip\+Select@{cubesat\+::\+Chip\+Select}!Chip\+Select@{Chip\+Select}}
+\index{Chip\+Select@{Chip\+Select}!cubesat\+::\+Chip\+Select@{cubesat\+::\+Chip\+Select}}
+\subsubsection{\texorpdfstring{Chip\+Select()}{ChipSelect()}}
+{\footnotesize\ttfamily cubesat\+::\+Chip\+Select\+::\+Chip\+Select (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{cs\+\_\+pin\+\_\+keys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \hyperlink{classcubesat_1_1ChipSelect}{Chip\+Select} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cs\+\_\+pin\+\_\+keys} & The pin keys, stored in big endian order \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcubesat_1_1ChipSelect_ab173c06bea583f833b11bae2a305701d}\label{classcubesat_1_1ChipSelect_ab173c06bea583f833b11bae2a305701d}} 
+\index{cubesat\+::\+Chip\+Select@{cubesat\+::\+Chip\+Select}!Acquire@{Acquire}}
+\index{Acquire@{Acquire}!cubesat\+::\+Chip\+Select@{cubesat\+::\+Chip\+Select}}
+\subsubsection{\texorpdfstring{Acquire()}{Acquire()}}
+{\footnotesize\ttfamily void cubesat\+::\+Chip\+Select\+::\+Acquire (\begin{DoxyParamCaption}\item[{unsigned int}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Selects a chip at the given address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & The address (big endian) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcubesat_1_1ChipSelect_a549f890313f33099ac514679d86501a4}\label{classcubesat_1_1ChipSelect_a549f890313f33099ac514679d86501a4}} 
+\index{cubesat\+::\+Chip\+Select@{cubesat\+::\+Chip\+Select}!cs\+\_\+gpios@{cs\+\_\+gpios}}
+\index{cs\+\_\+gpios@{cs\+\_\+gpios}!cubesat\+::\+Chip\+Select@{cubesat\+::\+Chip\+Select}}
+\subsubsection{\texorpdfstring{cs\+\_\+gpios}{cs\_gpios}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classcubesat_1_1GPIO}{G\+P\+IO}$>$ cubesat\+::\+Chip\+Select\+::cs\+\_\+gpios\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Beagle\+Bone G\+P\+I\+Os. 
+
+\mbox{\Hypertarget{classcubesat_1_1ChipSelect_ae6285a5edb25a1dbecce248bf1ac241d}\label{classcubesat_1_1ChipSelect_ae6285a5edb25a1dbecce248bf1ac241d}} 
+\index{cubesat\+::\+Chip\+Select@{cubesat\+::\+Chip\+Select}!cs\+\_\+pin\+\_\+keys@{cs\+\_\+pin\+\_\+keys}}
+\index{cs\+\_\+pin\+\_\+keys@{cs\+\_\+pin\+\_\+keys}!cubesat\+::\+Chip\+Select@{cubesat\+::\+Chip\+Select}}
+\subsubsection{\texorpdfstring{cs\+\_\+pin\+\_\+keys}{cs\_pin\_keys}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ cubesat\+::\+Chip\+Select\+::cs\+\_\+pin\+\_\+keys\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Beagle\+Bone \hyperlink{classcubesat_1_1GPIO}{G\+P\+IO} pin keys (e.\+g. P9\+\_\+14) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/\hyperlink{ChipSelect_8h}{Chip\+Select.\+h}\end{DoxyCompactItemize}

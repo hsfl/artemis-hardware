@@ -1,0 +1,9 @@
+<map id="/home/osboxes/cosmos/source/projects/cubesat&#45;kit/include/device/temp_sensors.h" name="/home/osboxes/cosmos/source/projects/cubesat&#45;kit/include/device/temp_sensors.h">
+<area shape="rect" id="node2" href="$agent__heater_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/agents/agent\l_heater.cpp" alt="" coords="5,124,171,195"/>
+<area shape="rect" id="node3" href="$agent__temp_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/agents/agent\l_temp.cpp" alt="" coords="195,124,360,195"/>
+<area shape="rect" id="node4" href="$pycubed__test_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/tests/pycubed\l_test.cpp" alt="" coords="385,124,554,195"/>
+<area shape="rect" id="node5" href="$sun__dump_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/tests/sun_dump.cpp" alt="" coords="579,131,784,187"/>
+<area shape="rect" id="node6" href="$sun__test_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/tests/sun_test.cpp" alt="" coords="808,131,1003,187"/>
+<area shape="rect" id="node7" href="$temp__dump_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/tests/temp_dump.cpp" alt="" coords="1027,131,1240,187"/>
+<area shape="rect" id="node8" href="$temp__test_8cpp.html" title="/home/osboxes/cosmos\l/source/projects/cubesat\l&#45;kit/source/tests/temp_test.cpp" alt="" coords="1264,131,1467,187"/>
+</map>

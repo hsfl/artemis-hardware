@@ -1,0 +1,180 @@
+\hypertarget{classcubesat_1_1UARTDevice}{}\section{cubesat\+:\+:U\+A\+R\+T\+Device Class Reference}
+\label{classcubesat_1_1UARTDevice}\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+
+
+{\ttfamily \#include $<$U\+A\+R\+T\+Device.\+h$>$}
+
+
+
+Inheritance diagram for cubesat\+:\+:U\+A\+R\+T\+Device\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classcubesat_1_1UARTDevice__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1UARTDevice_af648c63f795f89afac21d89352200a35}{U\+A\+R\+T\+Device} ()
+\item 
+\hyperlink{classcubesat_1_1UARTDevice_afe892b54ee594ad24c4d89239717deab}{U\+A\+R\+T\+Device} (unsigned int \hyperlink{classcubesat_1_1UARTDevice_a19a4104e3e06e3d76a4ea7c2c3ee26ad}{device}, unsigned int \hyperlink{classcubesat_1_1UARTDevice_ab5c12926f749e9bbcae638cd973f8d6f}{baud\+\_\+rate})
+\item 
+virtual \hyperlink{classcubesat_1_1UARTDevice_a2d29c9d257d0bccd37ed1a46d677fd59}{$\sim$\+U\+A\+R\+T\+Device} ()
+\item 
+virtual int \hyperlink{classcubesat_1_1UARTDevice_a0aecca41c50292d1fe1707047d358b3c}{Open} ()
+\item 
+virtual void \hyperlink{classcubesat_1_1UARTDevice_a4f98d284474caac32b0ec06ce8b74c3c}{Close} ()
+\item 
+bool \hyperlink{classcubesat_1_1UARTDevice_ac2f32d0a2afeec8d86c61bfc110eb2f1}{Is\+Open} () const
+\item 
+unsigned int \hyperlink{classcubesat_1_1UARTDevice_a20e25102be5f18fff292a4078d9683a3}{Get\+Device\+Number} () const
+\item 
+std\+::string \hyperlink{classcubesat_1_1UARTDevice_a703a5c7bbfde9765313f2f4c4c41858b}{Get\+Device\+Path} () const
+\item 
+virtual size\+\_\+t \hyperlink{classcubesat_1_1UARTDevice_a0b1b192b77a10db5971d95bea86a2f75}{In\+Waiting} () const
+\item 
+virtual void \hyperlink{classcubesat_1_1UARTDevice_a647e8d0903bfbde3b68d88ce51cac8b3}{Write\+Byte} (uint8\+\_\+t byte)
+\item 
+virtual void \hyperlink{classcubesat_1_1UARTDevice_a3e951a7949b46db693bfff5b31a185b5}{Write} (uint8\+\_\+t byte\mbox{[}$\,$\mbox{]}, unsigned int len)
+\item 
+virtual size\+\_\+t \hyperlink{classcubesat_1_1UARTDevice_acf792566e68c57746e0dd48d091092ac}{Read} (uint8\+\_\+t out\mbox{[}$\,$\mbox{]}, size\+\_\+t len)
+\item 
+virtual void \hyperlink{classcubesat_1_1UARTDevice_aa1b4f804458d976a8e3c1a5f69db31af}{Drain} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classcubesat_1_1UARTDevice_a26f9e39eb44dd57e6adbf934bf65dfb4}{filename}
+\item 
+unsigned int \hyperlink{classcubesat_1_1UARTDevice_a19a4104e3e06e3d76a4ea7c2c3ee26ad}{device}
+\item 
+unsigned int \hyperlink{classcubesat_1_1UARTDevice_ab5c12926f749e9bbcae638cd973f8d6f}{baud\+\_\+rate}
+\item 
+int \hyperlink{classcubesat_1_1UARTDevice_a40269dd62c40a4967159e1f6f0be56b8}{file}
+\item 
+struct termios uart\+Termios \hyperlink{classcubesat_1_1UARTDevice_a3d85748f0c38b743ff4e6e139635c1cf}{old\+Descriptor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_af648c63f795f89afac21d89352200a35}\label{classcubesat_1_1UARTDevice_af648c63f795f89afac21d89352200a35}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!U\+A\+R\+T\+Device@{U\+A\+R\+T\+Device}}
+\index{U\+A\+R\+T\+Device@{U\+A\+R\+T\+Device}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+Device()}{UARTDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cubesat\+::\+U\+A\+R\+T\+Device\+::\+U\+A\+R\+T\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_afe892b54ee594ad24c4d89239717deab}\label{classcubesat_1_1UARTDevice_afe892b54ee594ad24c4d89239717deab}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!U\+A\+R\+T\+Device@{U\+A\+R\+T\+Device}}
+\index{U\+A\+R\+T\+Device@{U\+A\+R\+T\+Device}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+Device()}{UARTDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily U\+A\+R\+T\+Device\+::\+U\+A\+R\+T\+Device (\begin{DoxyParamCaption}\item[{unsigned int}]{device,  }\item[{unsigned int}]{baud\+\_\+rate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a2d29c9d257d0bccd37ed1a46d677fd59}\label{classcubesat_1_1UARTDevice_a2d29c9d257d0bccd37ed1a46d677fd59}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!````~U\+A\+R\+T\+Device@{$\sim$\+U\+A\+R\+T\+Device}}
+\index{````~U\+A\+R\+T\+Device@{$\sim$\+U\+A\+R\+T\+Device}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{$\sim$\+U\+A\+R\+T\+Device()}{~UARTDevice()}}
+{\footnotesize\ttfamily U\+A\+R\+T\+Device\+::$\sim$\+U\+A\+R\+T\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a4f98d284474caac32b0ec06ce8b74c3c}\label{classcubesat_1_1UARTDevice_a4f98d284474caac32b0ec06ce8b74c3c}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!Close@{Close}}
+\index{Close@{Close}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+Device\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_aa1b4f804458d976a8e3c1a5f69db31af}\label{classcubesat_1_1UARTDevice_aa1b4f804458d976a8e3c1a5f69db31af}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!Drain@{Drain}}
+\index{Drain@{Drain}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{Drain()}{Drain()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+Device\+::\+Drain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a20e25102be5f18fff292a4078d9683a3}\label{classcubesat_1_1UARTDevice_a20e25102be5f18fff292a4078d9683a3}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!Get\+Device\+Number@{Get\+Device\+Number}}
+\index{Get\+Device\+Number@{Get\+Device\+Number}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{Get\+Device\+Number()}{GetDeviceNumber()}}
+{\footnotesize\ttfamily unsigned int cubesat\+::\+U\+A\+R\+T\+Device\+::\+Get\+Device\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a703a5c7bbfde9765313f2f4c4c41858b}\label{classcubesat_1_1UARTDevice_a703a5c7bbfde9765313f2f4c4c41858b}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!Get\+Device\+Path@{Get\+Device\+Path}}
+\index{Get\+Device\+Path@{Get\+Device\+Path}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{Get\+Device\+Path()}{GetDevicePath()}}
+{\footnotesize\ttfamily std\+::string cubesat\+::\+U\+A\+R\+T\+Device\+::\+Get\+Device\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a0b1b192b77a10db5971d95bea86a2f75}\label{classcubesat_1_1UARTDevice_a0b1b192b77a10db5971d95bea86a2f75}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!In\+Waiting@{In\+Waiting}}
+\index{In\+Waiting@{In\+Waiting}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{In\+Waiting()}{InWaiting()}}
+{\footnotesize\ttfamily size\+\_\+t U\+A\+R\+T\+Device\+::\+In\+Waiting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_ac2f32d0a2afeec8d86c61bfc110eb2f1}\label{classcubesat_1_1UARTDevice_ac2f32d0a2afeec8d86c61bfc110eb2f1}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!Is\+Open@{Is\+Open}}
+\index{Is\+Open@{Is\+Open}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{Is\+Open()}{IsOpen()}}
+{\footnotesize\ttfamily bool cubesat\+::\+U\+A\+R\+T\+Device\+::\+Is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a0aecca41c50292d1fe1707047d358b3c}\label{classcubesat_1_1UARTDevice_a0aecca41c50292d1fe1707047d358b3c}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!Open@{Open}}
+\index{Open@{Open}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily int U\+A\+R\+T\+Device\+::\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_acf792566e68c57746e0dd48d091092ac}\label{classcubesat_1_1UARTDevice_acf792566e68c57746e0dd48d091092ac}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!Read@{Read}}
+\index{Read@{Read}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily size\+\_\+t U\+A\+R\+T\+Device\+::\+Read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{out\mbox{[}$\,$\mbox{]},  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a3e951a7949b46db693bfff5b31a185b5}\label{classcubesat_1_1UARTDevice_a3e951a7949b46db693bfff5b31a185b5}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!Write@{Write}}
+\index{Write@{Write}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+Device\+::\+Write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{byte\mbox{[}$\,$\mbox{]},  }\item[{unsigned int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a647e8d0903bfbde3b68d88ce51cac8b3}\label{classcubesat_1_1UARTDevice_a647e8d0903bfbde3b68d88ce51cac8b3}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!Write\+Byte@{Write\+Byte}}
+\index{Write\+Byte@{Write\+Byte}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{Write\+Byte()}{WriteByte()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+Device\+::\+Write\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_ab5c12926f749e9bbcae638cd973f8d6f}\label{classcubesat_1_1UARTDevice_ab5c12926f749e9bbcae638cd973f8d6f}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!baud\+\_\+rate@{baud\+\_\+rate}}
+\index{baud\+\_\+rate@{baud\+\_\+rate}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{baud\+\_\+rate}{baud\_rate}}
+{\footnotesize\ttfamily unsigned int cubesat\+::\+U\+A\+R\+T\+Device\+::baud\+\_\+rate\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a19a4104e3e06e3d76a4ea7c2c3ee26ad}\label{classcubesat_1_1UARTDevice_a19a4104e3e06e3d76a4ea7c2c3ee26ad}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!device@{device}}
+\index{device@{device}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily unsigned int cubesat\+::\+U\+A\+R\+T\+Device\+::device\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a40269dd62c40a4967159e1f6f0be56b8}\label{classcubesat_1_1UARTDevice_a40269dd62c40a4967159e1f6f0be56b8}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!file@{file}}
+\index{file@{file}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily int cubesat\+::\+U\+A\+R\+T\+Device\+::file\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a26f9e39eb44dd57e6adbf934bf65dfb4}\label{classcubesat_1_1UARTDevice_a26f9e39eb44dd57e6adbf934bf65dfb4}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!filename@{filename}}
+\index{filename@{filename}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily std\+::string cubesat\+::\+U\+A\+R\+T\+Device\+::filename\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1UARTDevice_a3d85748f0c38b743ff4e6e139635c1cf}\label{classcubesat_1_1UARTDevice_a3d85748f0c38b743ff4e6e139635c1cf}} 
+\index{cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}!old\+Descriptor@{old\+Descriptor}}
+\index{old\+Descriptor@{old\+Descriptor}!cubesat\+::\+U\+A\+R\+T\+Device@{cubesat\+::\+U\+A\+R\+T\+Device}}
+\subsubsection{\texorpdfstring{old\+Descriptor}{oldDescriptor}}
+{\footnotesize\ttfamily struct termios uart\+Termios cubesat\+::\+U\+A\+R\+T\+Device\+::old\+Descriptor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/\hyperlink{UARTDevice_8h}{U\+A\+R\+T\+Device.\+h}\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/device/\hyperlink{UARTDevice_8cpp}{U\+A\+R\+T\+Device.\+cpp}\end{DoxyCompactItemize}

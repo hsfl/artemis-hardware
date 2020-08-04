@@ -1,0 +1,4 @@
+<map id="cubesat::Battery" name="cubesat::Battery">
+<area shape="rect" id="node2" href="$classcubesat_1_1Device.html" title="Holds information about a device, and allows for properties to be posted in an agent&#39;s state of healt..." alt="" coords="5,20,123,47"/>
+<area shape="rect" id="node3" href="$structcubesat_1_1DeviceImplBase.html" title="cubesat::DeviceImplBase\l\&lt; battstruc, DeviceType\l::BATT \&gt;" alt="" coords="147,5,319,61"/>
+</map>

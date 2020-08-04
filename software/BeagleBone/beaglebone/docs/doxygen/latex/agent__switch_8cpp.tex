@@ -1,0 +1,154 @@
+\hypertarget{agent__switch_8cpp}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+switch.cpp File Reference}
+\label{agent__switch_8cpp}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+switch.\+cpp@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/agents/agent\+\_\+switch.\+cpp}}
+{\ttfamily \#include \char`\"{}utility/\+Simple\+Agent.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}device/switch.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for agent\+\_\+switch.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{agent__switch_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{agent__switch_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{agent__switch_8cpp_a4b642d77f9ea76cc222c941f85f51895}{Init\+Agent} ()
+\begin{DoxyCompactList}\small\item\em Sets up the agent. Prints a message and exits with code 1 if an error occurs during setup. \end{DoxyCompactList}\item 
+void \hyperlink{agent__switch_8cpp_af37aab8aca33cda3fd842ae2ccec763b}{Init\+Switch} (int switch\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Initializes a P\+DU switch. \end{DoxyCompactList}\item 
+void \hyperlink{agent__switch_8cpp_a9febb2fcae52ba90dffff1c588ad31b0}{Update\+Switch} (int switch\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Update\+Switch Updates a switch. \end{DoxyCompactList}\item 
+void \hyperlink{agent__switch_8cpp_a4ffe32c5326cac2128f903d969dcbf1d}{Set\+Switch\+State} (int switch\+\_\+id, bool enabled)
+\begin{DoxyCompactList}\small\item\em Attempts to set the state of a switch (on/off) \end{DoxyCompactList}\item 
+string \hyperlink{agent__switch_8cpp_ab1124a32014216b8bdfba74a2401d55f}{Request\+\_\+\+Switch} (vector$<$ string $>$ args)
+\item 
+string \hyperlink{agent__switch_8cpp_a5e95cbc24cd730f8b85526870d50d281}{Request\+\_\+\+List} ()
+\item 
+int \hyperlink{agent__switch_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent} $\ast$ \hyperlink{agent__switch_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}{agent}
+\item 
+\hyperlink{classcubesat_1_1Switch}{Switch} $\ast$ \hyperlink{agent__switch_8cpp_ae83f7c633e94b9e7d62e9bb7fbedf2fd}{switches} \mbox{[}\hyperlink{switch_8h_ad7db8926cbb872ec36c2e94db869235f}{S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT}\mbox{]}
+\item 
+\hyperlink{classcubesat_1_1PDUSwitch}{P\+D\+U\+Switch} $\ast$ \hyperlink{agent__switch_8cpp_a21cbf6fd494f59d771fcbbcab38f014a}{handlers} \mbox{[}\hyperlink{switch_8h_ad7db8926cbb872ec36c2e94db869235f}{S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{agent__switch_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}\label{agent__switch_8cpp_abe0b7b2a0ec4b64b92585808a051e1fa}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}}
+\index{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME@{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{S\+L\+E\+E\+P\+\_\+\+T\+I\+ME}{SLEEP\_TIME}}
+{\footnotesize\ttfamily \#define S\+L\+E\+E\+P\+\_\+\+T\+I\+ME~1}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{agent__switch_8cpp_a4b642d77f9ea76cc222c941f85f51895}\label{agent__switch_8cpp_a4b642d77f9ea76cc222c941f85f51895}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!Init\+Agent@{Init\+Agent}}
+\index{Init\+Agent@{Init\+Agent}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{Init\+Agent()}{InitAgent()}}
+{\footnotesize\ttfamily void Init\+Agent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets up the agent. Prints a message and exits with code 1 if an error occurs during setup. 
+
+\mbox{\Hypertarget{agent__switch_8cpp_af37aab8aca33cda3fd842ae2ccec763b}\label{agent__switch_8cpp_af37aab8aca33cda3fd842ae2ccec763b}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!Init\+Switch@{Init\+Switch}}
+\index{Init\+Switch@{Init\+Switch}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{Init\+Switch()}{InitSwitch()}}
+{\footnotesize\ttfamily void Init\+Switch (\begin{DoxyParamCaption}\item[{int}]{switch\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Initializes a P\+DU switch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The switch device \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{agent__switch_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{agent__switch_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!main@{main}}
+\index{main@{main}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__switch_8cpp_a5e95cbc24cd730f8b85526870d50d281}\label{agent__switch_8cpp_a5e95cbc24cd730f8b85526870d50d281}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!Request\+\_\+\+List@{Request\+\_\+\+List}}
+\index{Request\+\_\+\+List@{Request\+\_\+\+List}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+List()}{Request\_List()}}
+{\footnotesize\ttfamily string Request\+\_\+\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__switch_8cpp_ab1124a32014216b8bdfba74a2401d55f}\label{agent__switch_8cpp_ab1124a32014216b8bdfba74a2401d55f}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!Request\+\_\+\+Switch@{Request\+\_\+\+Switch}}
+\index{Request\+\_\+\+Switch@{Request\+\_\+\+Switch}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{Request\+\_\+\+Switch()}{Request\_Switch()}}
+{\footnotesize\ttfamily string Request\+\_\+\+Switch (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{agent__switch_8cpp_a4ffe32c5326cac2128f903d969dcbf1d}\label{agent__switch_8cpp_a4ffe32c5326cac2128f903d969dcbf1d}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!Set\+Switch\+State@{Set\+Switch\+State}}
+\index{Set\+Switch\+State@{Set\+Switch\+State}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{Set\+Switch\+State()}{SetSwitchState()}}
+{\footnotesize\ttfamily void Set\+Switch\+State (\begin{DoxyParamCaption}\item[{int}]{switch\+\_\+id,  }\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+
+
+Attempts to set the state of a switch (on/off) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em switch\+\_\+id} & The switch ID number. See the file device/switched\+\_\+devices.\+h for more info \\
+\hline
+{\em enabled} & True for on, false for off \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{agent__switch_8cpp_a9febb2fcae52ba90dffff1c588ad31b0}\label{agent__switch_8cpp_a9febb2fcae52ba90dffff1c588ad31b0}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!Update\+Switch@{Update\+Switch}}
+\index{Update\+Switch@{Update\+Switch}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{Update\+Switch()}{UpdateSwitch()}}
+{\footnotesize\ttfamily void Update\+Switch (\begin{DoxyParamCaption}\item[{int}]{switch\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Update\+Switch Updates a switch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & The switch device \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{agent__switch_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}\label{agent__switch_8cpp_ae2843ddb3d1ed309b16789f596b0fce8}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!agent@{agent}}
+\index{agent@{agent}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{agent}{agent}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1SimpleAgent}{Simple\+Agent}$\ast$ agent}
+
+\mbox{\Hypertarget{agent__switch_8cpp_a21cbf6fd494f59d771fcbbcab38f014a}\label{agent__switch_8cpp_a21cbf6fd494f59d771fcbbcab38f014a}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!handlers@{handlers}}
+\index{handlers@{handlers}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{handlers}{handlers}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1PDUSwitch}{P\+D\+U\+Switch}$\ast$ handlers\mbox{[}\hyperlink{switch_8h_ad7db8926cbb872ec36c2e94db869235f}{S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT}\mbox{]}}
+
+\mbox{\Hypertarget{agent__switch_8cpp_ae83f7c633e94b9e7d62e9bb7fbedf2fd}\label{agent__switch_8cpp_ae83f7c633e94b9e7d62e9bb7fbedf2fd}} 
+\index{agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}!switches@{switches}}
+\index{switches@{switches}!agent\+\_\+switch.\+cpp@{agent\+\_\+switch.\+cpp}}
+\subsubsection{\texorpdfstring{switches}{switches}}
+{\footnotesize\ttfamily \hyperlink{classcubesat_1_1Switch}{Switch}$\ast$ switches\mbox{[}\hyperlink{switch_8h_ad7db8926cbb872ec36c2e94db869235f}{S\+W\+I\+T\+C\+H\+\_\+\+C\+O\+U\+NT}\mbox{]}}
+

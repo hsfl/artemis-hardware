@@ -1,0 +1,592 @@
+\hypertarget{classcubesat_1_1ADT7311}{}\section{cubesat\+:\+:A\+D\+T7311 Class Reference}
+\label{classcubesat_1_1ADT7311}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+
+
+Provides access to the \hyperlink{classcubesat_1_1ADT7311}{A\+D\+T7311} temperature sensor.  
+
+
+
+
+{\ttfamily \#include $<$A\+D\+T7311.\+h$>$}
+
+
+
+Inheritance diagram for cubesat\+:\+:A\+D\+T7311\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classcubesat_1_1ADT7311__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cubesat\+:\+:A\+D\+T7311\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcubesat_1_1ADT7311__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unioncubesat_1_1ADT7311_1_1Configuration}{Configuration}
+\begin{DoxyCompactList}\small\item\em \hyperlink{unioncubesat_1_1ADT7311_1_1Configuration}{Configuration} flags. \end{DoxyCompactList}\item 
+union \hyperlink{unioncubesat_1_1ADT7311_1_1ManufacturerData}{Manufacturer\+Data}
+\begin{DoxyCompactList}\small\item\em Stores data from the Manufacturer ID register. \end{DoxyCompactList}\item 
+union \hyperlink{unioncubesat_1_1ADT7311_1_1StatusData}{Status\+Data}
+\begin{DoxyCompactList}\small\item\em Stores data from the Status register. \end{DoxyCompactList}\item 
+union \hyperlink{unioncubesat_1_1ADT7311_1_1TemperatureData}{Temperature\+Data}
+\begin{DoxyCompactList}\small\item\em Stores temperature data for 13-\/bit resolution mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register} \+: uint8\+\_\+t \{ \newline
+\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aec53a8c4f07baed5d8825072c89799be}{Register\+::\+Status} = 0x00, 
+\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45afa535ffb25e1fd20341652f9be21e06e}{Register\+::\+Config} = 0x01, 
+\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aee7a8e262285ed49ea1b4e4ae11525bd}{Register\+::\+Temperature} = 0x02, 
+\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aa7d89735574041405dafefe7c2c15afb}{Register\+::\+Manufacturer\+\_\+\+ID} = 0x03, 
+\newline
+\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45ad7a94d133d1316be5d89f1cd8796b7fa}{Register\+::\+Crit\+Set\+Point} = 0x04, 
+\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aa904db05d93ac11f90d0c6dabdbca25c}{Register\+::\+Hyst\+Set\+Point} = 0x05, 
+\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45a0c6f114f7df080df2f10b75e96223dc3}{Register\+::\+High\+Set\+Point} = 0x06, 
+\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45a4011b21f421577265c398f33412b0216}{Register\+::\+Low\+Set\+Point} = 0x07
+ \}\begin{DoxyCompactList}\small\item\em Register addresses. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcubesat_1_1ADT7311_a78925b45d39fe44bd7cf1fb706a6d5c1}{A\+D\+T7311} ()
+\item 
+\hyperlink{classcubesat_1_1ADT7311_ae20c3e2e7668a0b93494dd1e2fb89d8d}{A\+D\+T7311} (unsigned int \hyperlink{classcubesat_1_1SPIDevice_a4b4e91bed3762e7c7e4399fba3cb386d}{bus}, unsigned int \hyperlink{classcubesat_1_1SPIDevice_aa771ccb034a870a9188e63600fd4b40a}{device})
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{classcubesat_1_1ADT7311}{A\+D\+T7311} object with the given bus and device address. \end{DoxyCompactList}\item 
+virtual \hyperlink{classcubesat_1_1ADT7311_a2f45a357a557098fcf9d72b6087e731c}{$\sim$\+A\+D\+T7311} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classcubesat_1_1ADT7311_ac8ddceb62b008effe3f4521bbbe154f7}{Open} () override
+\item 
+void \hyperlink{classcubesat_1_1ADT7311_a30816e820813a843a945583572676c13}{Read\+State} ()
+\begin{DoxyCompactList}\small\item\em Reads and stores information from the device. \end{DoxyCompactList}\item 
+void \hyperlink{classcubesat_1_1ADT7311_adaafd79f27e3929eeba00c0a185d5b32}{Set\+Configuration} (\hyperlink{unioncubesat_1_1ADT7311_1_1Configuration}{Configuration} \&\hyperlink{classcubesat_1_1ADT7311_aa14e2538b100b5427358cf21fff183e6}{config})
+\begin{DoxyCompactList}\small\item\em Writes to the configuration register. \end{DoxyCompactList}\item 
+void \hyperlink{classcubesat_1_1ADT7311_a52ef57ca7df4c0f53ed0f98be1c1defd}{Set\+Low\+Setpoint} (int16\+\_\+t temp)
+\begin{DoxyCompactList}\small\item\em Writes to the low setpoint register. \end{DoxyCompactList}\item 
+void \hyperlink{classcubesat_1_1ADT7311_a6e2fef4825d733d11fed423e0c19edcd}{Set\+High\+Setpoint} (int16\+\_\+t temp)
+\begin{DoxyCompactList}\small\item\em Writes to the high setpoint register. \end{DoxyCompactList}\item 
+void \hyperlink{classcubesat_1_1ADT7311_a769bd9152682b5ebd7408d1796116b71}{Set\+Hyst\+Setpoint} (uint8\+\_\+t temp)
+\begin{DoxyCompactList}\small\item\em Writes to the hyst. setpoint register. \end{DoxyCompactList}\item 
+void \hyperlink{classcubesat_1_1ADT7311_a5351ef5f5982332d1a8a08677f93e859}{Set\+Crit\+Setpoint} (int16\+\_\+t temp)
+\begin{DoxyCompactList}\small\item\em Writes to the critical setpoint register. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a4d2ab8dec28559cd1d2a2030b2b828d2}{Get\+Low\+Setpoint} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the low setpoint value. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_adb40c389c5e36aa4c2f0e59712df9333}{Get\+High\+Setpoint} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the high setpoint value. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_ace49d19de024ba042aa8f9cfd6aee526}{Get\+Crit\+Setpoint} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the critical setpoint value. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a9e7fd53a9da8c18626f766cafa2afe76}{Get\+Hyst\+Setpoint} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the hyst. setpoint value. \end{DoxyCompactList}\item 
+float \hyperlink{classcubesat_1_1ADT7311_ae9d908dd010582e8c1fe6b56826bbcbc}{Get\+Temperature} () const
+\begin{DoxyCompactList}\small\item\em Returns the latest temperature reading. \end{DoxyCompactList}\item 
+bool \hyperlink{classcubesat_1_1ADT7311_aa72c15f502541eb8fbfff33b77a27423}{Get\+Low\+Temp\+Flag} () const
+\begin{DoxyCompactList}\small\item\em Checks if the low temperature flag was triggered. \end{DoxyCompactList}\item 
+bool \hyperlink{classcubesat_1_1ADT7311_a7c4ec1475995dd4461ad8813eeebc384}{Get\+High\+Temp\+Flag} () const
+\begin{DoxyCompactList}\small\item\em Checks if the high temperature flag was triggered. \end{DoxyCompactList}\item 
+bool \hyperlink{classcubesat_1_1ADT7311_ad82d5473a3f07b5cb85cc4af670bba28}{Get\+Crit\+Temp\+Flag} () const
+\begin{DoxyCompactList}\small\item\em Checks if the critical temperature flag was triggered. \end{DoxyCompactList}\item 
+\hyperlink{unioncubesat_1_1ADT7311_1_1Configuration}{Configuration} \hyperlink{classcubesat_1_1ADT7311_af51b8fd845ccdabb5be82263025de820}{Get\+Configuration} () const
+\item 
+\hyperlink{unioncubesat_1_1ADT7311_1_1TemperatureData}{Temperature\+Data} \hyperlink{classcubesat_1_1ADT7311_a84b567fb73e84dca956b9129a020f7ed}{Get\+Temperature\+Register} () const
+\item 
+\hyperlink{unioncubesat_1_1ADT7311_1_1StatusData}{Status\+Data} \hyperlink{classcubesat_1_1ADT7311_abb9e10d67c752e460f50c964cae84661}{Get\+Status\+Register} () const
+\item 
+\hyperlink{unioncubesat_1_1ADT7311_1_1ManufacturerData}{Manufacturer\+Data} \hyperlink{classcubesat_1_1ADT7311_a7bee01cf24697f23b6e6ec236fab7966}{Get\+Manufacturer\+Register} () const
+\item 
+uint16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a504905f3649b3013f3f2d1ffe3676376}{Get\+Crit\+Setpoint\+Register} () const
+\item 
+uint8\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a8b2cf374d18a6bc05a8529a4e667face}{Get\+Hyst\+Setpoint\+Register} () const
+\item 
+uint16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a1cc3625e29758f775de262aaea89b0f1}{Get\+Low\+Setpoint\+Register} () const
+\item 
+uint16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a97830a383f0149caf364a5e135d75835}{Get\+High\+Setpoint\+Register} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59e}{Command\+Mode} \+: uint8\+\_\+t \{ \hyperlink{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59ead4d157343baa33cf5c433a363aee8da3}{Write} = 0, 
+\hyperlink{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59eabcbc3270c2b985ad1692355475b67986}{Read} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{classcubesat_1_1ADT7311_afa5e19c1e97ce0623c658120f3c02027}{Get\+Command} (\hyperlink{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59e}{Command\+Mode} \hyperlink{classcubesat_1_1SPIDevice_ac69ac6b9e9ac9ed194384a3fa07ecbde}{mode}, \hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register} reg)
+\item 
+void \hyperlink{classcubesat_1_1ADT7311_acfb6dbbe3616e39449808880f96f610c}{Write8\+Bit} (\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register} reg, uint8\+\_\+t value)
+\item 
+void \hyperlink{classcubesat_1_1ADT7311_a78f061f3e7a5a4f060868b53839c7af6}{Write16\+Bit} (\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register} reg, uint16\+\_\+t value)
+\item 
+uint8\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a0f0c46f2a75ebb5661e27c3340b089a4}{Read8\+Bit} (\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register} reg)
+\item 
+uint16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a9147cb2c01b121fe0576eb36c9fcc18f}{Read16\+Bit} (\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register} reg)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{unioncubesat_1_1ADT7311_1_1Configuration}{Configuration} \hyperlink{classcubesat_1_1ADT7311_aa14e2538b100b5427358cf21fff183e6}{config}
+\item 
+\hyperlink{unioncubesat_1_1ADT7311_1_1StatusData}{Status\+Data} \hyperlink{classcubesat_1_1ADT7311_a4d64ee91316d0a3f44384f57bee01d17}{status}
+\item 
+\hyperlink{unioncubesat_1_1ADT7311_1_1TemperatureData}{Temperature\+Data} \hyperlink{classcubesat_1_1ADT7311_a8045af6862135c6796ea97b95e431705}{temp\+\_\+data}
+\item 
+\hyperlink{unioncubesat_1_1ADT7311_1_1ManufacturerData}{Manufacturer\+Data} \hyperlink{classcubesat_1_1ADT7311_adca4665892622e13f6dc7405528697d6}{manufacturer\+\_\+data}
+\item 
+uint16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a5239e3277f763a5d9cbdda84fc6476b1}{low\+\_\+setpoint}
+\item 
+uint16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a24bf458335fd8dce02f43f0d66ec323a}{high\+\_\+setpoint}
+\item 
+uint16\+\_\+t \hyperlink{classcubesat_1_1ADT7311_ab79d199972c7f14cab10015034cf6b52}{crit\+\_\+setpoint}
+\item 
+uint8\+\_\+t \hyperlink{classcubesat_1_1ADT7311_a486d810e54eae5c266a2c640725a4885}{hyst\+\_\+setpoint}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Provides access to the \hyperlink{classcubesat_1_1ADT7311}{A\+D\+T7311} temperature sensor. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59e}\label{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59e}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Command\+Mode@{Command\+Mode}}
+\index{Command\+Mode@{Command\+Mode}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Command\+Mode}{CommandMode}}
+{\footnotesize\ttfamily enum \hyperlink{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59e}{cubesat\+::\+A\+D\+T7311\+::\+Command\+Mode} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Write@{Write}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Write@{Write}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59ead4d157343baa33cf5c433a363aee8da3}\label{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59ead4d157343baa33cf5c433a363aee8da3}} 
+Write&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Read@{Read}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Read@{Read}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59eabcbc3270c2b985ad1692355475b67986}\label{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59eabcbc3270c2b985ad1692355475b67986}} 
+Read&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}\label{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Register@{Register}}
+\index{Register@{Register}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Register}{Register}}
+{\footnotesize\ttfamily enum \hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{cubesat\+::\+A\+D\+T7311\+::\+Register} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Register addresses. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Status@{Status}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Status@{Status}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aec53a8c4f07baed5d8825072c89799be}\label{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aec53a8c4f07baed5d8825072c89799be}} 
+Status&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Config@{Config}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Config@{Config}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45afa535ffb25e1fd20341652f9be21e06e}\label{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45afa535ffb25e1fd20341652f9be21e06e}} 
+Config&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Temperature@{Temperature}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Temperature@{Temperature}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aee7a8e262285ed49ea1b4e4ae11525bd}\label{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aee7a8e262285ed49ea1b4e4ae11525bd}} 
+Temperature&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Manufacturer\+\_\+\+ID@{Manufacturer\+\_\+\+ID}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Manufacturer\+\_\+\+ID@{Manufacturer\+\_\+\+ID}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aa7d89735574041405dafefe7c2c15afb}\label{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aa7d89735574041405dafefe7c2c15afb}} 
+Manufacturer\+\_\+\+ID&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Crit\+Set\+Point@{Crit\+Set\+Point}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Crit\+Set\+Point@{Crit\+Set\+Point}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45ad7a94d133d1316be5d89f1cd8796b7fa}\label{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45ad7a94d133d1316be5d89f1cd8796b7fa}} 
+Crit\+Set\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hyst\+Set\+Point@{Hyst\+Set\+Point}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Hyst\+Set\+Point@{Hyst\+Set\+Point}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aa904db05d93ac11f90d0c6dabdbca25c}\label{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45aa904db05d93ac11f90d0c6dabdbca25c}} 
+Hyst\+Set\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{High\+Set\+Point@{High\+Set\+Point}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!High\+Set\+Point@{High\+Set\+Point}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45a0c6f114f7df080df2f10b75e96223dc3}\label{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45a0c6f114f7df080df2f10b75e96223dc3}} 
+High\+Set\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Low\+Set\+Point@{Low\+Set\+Point}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Low\+Set\+Point@{Low\+Set\+Point}}}\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45a4011b21f421577265c398f33412b0216}\label{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45a4011b21f421577265c398f33412b0216}} 
+Low\+Set\+Point&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a78925b45d39fe44bd7cf1fb706a6d5c1}\label{classcubesat_1_1ADT7311_a78925b45d39fe44bd7cf1fb706a6d5c1}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!A\+D\+T7311@{A\+D\+T7311}}
+\index{A\+D\+T7311@{A\+D\+T7311}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{A\+D\+T7311()}{ADT7311()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cubesat\+::\+A\+D\+T7311\+::\+A\+D\+T7311 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_ae20c3e2e7668a0b93494dd1e2fb89d8d}\label{classcubesat_1_1ADT7311_ae20c3e2e7668a0b93494dd1e2fb89d8d}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!A\+D\+T7311@{A\+D\+T7311}}
+\index{A\+D\+T7311@{A\+D\+T7311}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{A\+D\+T7311()}{ADT7311()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily A\+D\+T7311\+::\+A\+D\+T7311 (\begin{DoxyParamCaption}\item[{unsigned int}]{bus,  }\item[{unsigned int}]{device }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \hyperlink{classcubesat_1_1ADT7311}{A\+D\+T7311} object with the given bus and device address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bus} & The bus address \\
+\hline
+{\em device} & The device address \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a2f45a357a557098fcf9d72b6087e731c}\label{classcubesat_1_1ADT7311_a2f45a357a557098fcf9d72b6087e731c}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!````~A\+D\+T7311@{$\sim$\+A\+D\+T7311}}
+\index{````~A\+D\+T7311@{$\sim$\+A\+D\+T7311}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{$\sim$\+A\+D\+T7311()}{~ADT7311()}}
+{\footnotesize\ttfamily A\+D\+T7311\+::$\sim$\+A\+D\+T7311 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_afa5e19c1e97ce0623c658120f3c02027}\label{classcubesat_1_1ADT7311_afa5e19c1e97ce0623c658120f3c02027}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Command@{Get\+Command}}
+\index{Get\+Command@{Get\+Command}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Command()}{GetCommand()}}
+{\footnotesize\ttfamily uint8\+\_\+t A\+D\+T7311\+::\+Get\+Command (\begin{DoxyParamCaption}\item[{\hyperlink{classcubesat_1_1ADT7311_a4a6cb79b6b3ec095455c94b20c9ca59e}{Command\+Mode}}]{mode,  }\item[{\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register}}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_af51b8fd845ccdabb5be82263025de820}\label{classcubesat_1_1ADT7311_af51b8fd845ccdabb5be82263025de820}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Configuration@{Get\+Configuration}}
+\index{Get\+Configuration@{Get\+Configuration}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Configuration()}{GetConfiguration()}}
+{\footnotesize\ttfamily \hyperlink{unioncubesat_1_1ADT7311_1_1Configuration}{Configuration} cubesat\+::\+A\+D\+T7311\+::\+Get\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_ace49d19de024ba042aa8f9cfd6aee526}\label{classcubesat_1_1ADT7311_ace49d19de024ba042aa8f9cfd6aee526}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Crit\+Setpoint@{Get\+Crit\+Setpoint}}
+\index{Get\+Crit\+Setpoint@{Get\+Crit\+Setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Crit\+Setpoint()}{GetCritSetpoint()}}
+{\footnotesize\ttfamily int16\+\_\+t cubesat\+::\+A\+D\+T7311\+::\+Get\+Crit\+Setpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the critical setpoint value. 
+
+\begin{DoxyReturn}{Returns}
+The critical setpoint in celcius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a504905f3649b3013f3f2d1ffe3676376}\label{classcubesat_1_1ADT7311_a504905f3649b3013f3f2d1ffe3676376}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Crit\+Setpoint\+Register@{Get\+Crit\+Setpoint\+Register}}
+\index{Get\+Crit\+Setpoint\+Register@{Get\+Crit\+Setpoint\+Register}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Crit\+Setpoint\+Register()}{GetCritSetpointRegister()}}
+{\footnotesize\ttfamily uint16\+\_\+t cubesat\+::\+A\+D\+T7311\+::\+Get\+Crit\+Setpoint\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_ad82d5473a3f07b5cb85cc4af670bba28}\label{classcubesat_1_1ADT7311_ad82d5473a3f07b5cb85cc4af670bba28}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Crit\+Temp\+Flag@{Get\+Crit\+Temp\+Flag}}
+\index{Get\+Crit\+Temp\+Flag@{Get\+Crit\+Temp\+Flag}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Crit\+Temp\+Flag()}{GetCritTempFlag()}}
+{\footnotesize\ttfamily bool cubesat\+::\+A\+D\+T7311\+::\+Get\+Crit\+Temp\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the critical temperature flag was triggered. 
+
+\begin{DoxyReturn}{Returns}
+True if set, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_adb40c389c5e36aa4c2f0e59712df9333}\label{classcubesat_1_1ADT7311_adb40c389c5e36aa4c2f0e59712df9333}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+High\+Setpoint@{Get\+High\+Setpoint}}
+\index{Get\+High\+Setpoint@{Get\+High\+Setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+High\+Setpoint()}{GetHighSetpoint()}}
+{\footnotesize\ttfamily int16\+\_\+t cubesat\+::\+A\+D\+T7311\+::\+Get\+High\+Setpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the high setpoint value. 
+
+\begin{DoxyReturn}{Returns}
+The high setpoint in celcius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a97830a383f0149caf364a5e135d75835}\label{classcubesat_1_1ADT7311_a97830a383f0149caf364a5e135d75835}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+High\+Setpoint\+Register@{Get\+High\+Setpoint\+Register}}
+\index{Get\+High\+Setpoint\+Register@{Get\+High\+Setpoint\+Register}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+High\+Setpoint\+Register()}{GetHighSetpointRegister()}}
+{\footnotesize\ttfamily uint16\+\_\+t cubesat\+::\+A\+D\+T7311\+::\+Get\+High\+Setpoint\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a7c4ec1475995dd4461ad8813eeebc384}\label{classcubesat_1_1ADT7311_a7c4ec1475995dd4461ad8813eeebc384}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+High\+Temp\+Flag@{Get\+High\+Temp\+Flag}}
+\index{Get\+High\+Temp\+Flag@{Get\+High\+Temp\+Flag}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+High\+Temp\+Flag()}{GetHighTempFlag()}}
+{\footnotesize\ttfamily bool cubesat\+::\+A\+D\+T7311\+::\+Get\+High\+Temp\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the high temperature flag was triggered. 
+
+\begin{DoxyReturn}{Returns}
+True if set, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a9e7fd53a9da8c18626f766cafa2afe76}\label{classcubesat_1_1ADT7311_a9e7fd53a9da8c18626f766cafa2afe76}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Hyst\+Setpoint@{Get\+Hyst\+Setpoint}}
+\index{Get\+Hyst\+Setpoint@{Get\+Hyst\+Setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Hyst\+Setpoint()}{GetHystSetpoint()}}
+{\footnotesize\ttfamily uint8\+\_\+t cubesat\+::\+A\+D\+T7311\+::\+Get\+Hyst\+Setpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the hyst. setpoint value. 
+
+\begin{DoxyReturn}{Returns}
+The hyst. setpoint in celcius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a8b2cf374d18a6bc05a8529a4e667face}\label{classcubesat_1_1ADT7311_a8b2cf374d18a6bc05a8529a4e667face}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Hyst\+Setpoint\+Register@{Get\+Hyst\+Setpoint\+Register}}
+\index{Get\+Hyst\+Setpoint\+Register@{Get\+Hyst\+Setpoint\+Register}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Hyst\+Setpoint\+Register()}{GetHystSetpointRegister()}}
+{\footnotesize\ttfamily uint8\+\_\+t cubesat\+::\+A\+D\+T7311\+::\+Get\+Hyst\+Setpoint\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a4d2ab8dec28559cd1d2a2030b2b828d2}\label{classcubesat_1_1ADT7311_a4d2ab8dec28559cd1d2a2030b2b828d2}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Low\+Setpoint@{Get\+Low\+Setpoint}}
+\index{Get\+Low\+Setpoint@{Get\+Low\+Setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Low\+Setpoint()}{GetLowSetpoint()}}
+{\footnotesize\ttfamily int16\+\_\+t cubesat\+::\+A\+D\+T7311\+::\+Get\+Low\+Setpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the low setpoint value. 
+
+\begin{DoxyReturn}{Returns}
+The low setpoint in celcius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a1cc3625e29758f775de262aaea89b0f1}\label{classcubesat_1_1ADT7311_a1cc3625e29758f775de262aaea89b0f1}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Low\+Setpoint\+Register@{Get\+Low\+Setpoint\+Register}}
+\index{Get\+Low\+Setpoint\+Register@{Get\+Low\+Setpoint\+Register}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Low\+Setpoint\+Register()}{GetLowSetpointRegister()}}
+{\footnotesize\ttfamily uint16\+\_\+t cubesat\+::\+A\+D\+T7311\+::\+Get\+Low\+Setpoint\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_aa72c15f502541eb8fbfff33b77a27423}\label{classcubesat_1_1ADT7311_aa72c15f502541eb8fbfff33b77a27423}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Low\+Temp\+Flag@{Get\+Low\+Temp\+Flag}}
+\index{Get\+Low\+Temp\+Flag@{Get\+Low\+Temp\+Flag}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Low\+Temp\+Flag()}{GetLowTempFlag()}}
+{\footnotesize\ttfamily bool cubesat\+::\+A\+D\+T7311\+::\+Get\+Low\+Temp\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the low temperature flag was triggered. 
+
+\begin{DoxyReturn}{Returns}
+True if set, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a7bee01cf24697f23b6e6ec236fab7966}\label{classcubesat_1_1ADT7311_a7bee01cf24697f23b6e6ec236fab7966}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Manufacturer\+Register@{Get\+Manufacturer\+Register}}
+\index{Get\+Manufacturer\+Register@{Get\+Manufacturer\+Register}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Manufacturer\+Register()}{GetManufacturerRegister()}}
+{\footnotesize\ttfamily \hyperlink{unioncubesat_1_1ADT7311_1_1ManufacturerData}{Manufacturer\+Data} cubesat\+::\+A\+D\+T7311\+::\+Get\+Manufacturer\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_abb9e10d67c752e460f50c964cae84661}\label{classcubesat_1_1ADT7311_abb9e10d67c752e460f50c964cae84661}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Status\+Register@{Get\+Status\+Register}}
+\index{Get\+Status\+Register@{Get\+Status\+Register}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Status\+Register()}{GetStatusRegister()}}
+{\footnotesize\ttfamily \hyperlink{unioncubesat_1_1ADT7311_1_1StatusData}{Status\+Data} cubesat\+::\+A\+D\+T7311\+::\+Get\+Status\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_ae9d908dd010582e8c1fe6b56826bbcbc}\label{classcubesat_1_1ADT7311_ae9d908dd010582e8c1fe6b56826bbcbc}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Temperature@{Get\+Temperature}}
+\index{Get\+Temperature@{Get\+Temperature}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Temperature()}{GetTemperature()}}
+{\footnotesize\ttfamily float A\+D\+T7311\+::\+Get\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the latest temperature reading. 
+
+\begin{DoxyReturn}{Returns}
+The temperature in celcius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a84b567fb73e84dca956b9129a020f7ed}\label{classcubesat_1_1ADT7311_a84b567fb73e84dca956b9129a020f7ed}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Get\+Temperature\+Register@{Get\+Temperature\+Register}}
+\index{Get\+Temperature\+Register@{Get\+Temperature\+Register}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Get\+Temperature\+Register()}{GetTemperatureRegister()}}
+{\footnotesize\ttfamily \hyperlink{unioncubesat_1_1ADT7311_1_1TemperatureData}{Temperature\+Data} cubesat\+::\+A\+D\+T7311\+::\+Get\+Temperature\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_ac8ddceb62b008effe3f4521bbbe154f7}\label{classcubesat_1_1ADT7311_ac8ddceb62b008effe3f4521bbbe154f7}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Open@{Open}}
+\index{Open@{Open}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily int A\+D\+T7311\+::\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This method opens the file connection to the S\+PI device. \begin{DoxyReturn}{Returns}
+0 on a successful open of the file 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classcubesat_1_1SPIDevice_a2467a2271529579bdeaf0ffb6078b253}{cubesat\+::\+S\+P\+I\+Device}.
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a9147cb2c01b121fe0576eb36c9fcc18f}\label{classcubesat_1_1ADT7311_a9147cb2c01b121fe0576eb36c9fcc18f}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Read16\+Bit@{Read16\+Bit}}
+\index{Read16\+Bit@{Read16\+Bit}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Read16\+Bit()}{Read16Bit()}}
+{\footnotesize\ttfamily uint16\+\_\+t A\+D\+T7311\+::\+Read16\+Bit (\begin{DoxyParamCaption}\item[{\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register}}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a0f0c46f2a75ebb5661e27c3340b089a4}\label{classcubesat_1_1ADT7311_a0f0c46f2a75ebb5661e27c3340b089a4}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Read8\+Bit@{Read8\+Bit}}
+\index{Read8\+Bit@{Read8\+Bit}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Read8\+Bit()}{Read8Bit()}}
+{\footnotesize\ttfamily uint8\+\_\+t A\+D\+T7311\+::\+Read8\+Bit (\begin{DoxyParamCaption}\item[{\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register}}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a30816e820813a843a945583572676c13}\label{classcubesat_1_1ADT7311_a30816e820813a843a945583572676c13}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Read\+State@{Read\+State}}
+\index{Read\+State@{Read\+State}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Read\+State()}{ReadState()}}
+{\footnotesize\ttfamily void A\+D\+T7311\+::\+Read\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads and stores information from the device. 
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_adaafd79f27e3929eeba00c0a185d5b32}\label{classcubesat_1_1ADT7311_adaafd79f27e3929eeba00c0a185d5b32}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Set\+Configuration@{Set\+Configuration}}
+\index{Set\+Configuration@{Set\+Configuration}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Set\+Configuration()}{SetConfiguration()}}
+{\footnotesize\ttfamily void A\+D\+T7311\+::\+Set\+Configuration (\begin{DoxyParamCaption}\item[{\hyperlink{unioncubesat_1_1ADT7311_1_1Configuration}{Configuration} \&}]{config }\end{DoxyParamCaption})}
+
+
+
+Writes to the configuration register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & The configuration data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a5351ef5f5982332d1a8a08677f93e859}\label{classcubesat_1_1ADT7311_a5351ef5f5982332d1a8a08677f93e859}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Set\+Crit\+Setpoint@{Set\+Crit\+Setpoint}}
+\index{Set\+Crit\+Setpoint@{Set\+Crit\+Setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Set\+Crit\+Setpoint()}{SetCritSetpoint()}}
+{\footnotesize\ttfamily void A\+D\+T7311\+::\+Set\+Crit\+Setpoint (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{temp }\end{DoxyParamCaption})}
+
+
+
+Writes to the critical setpoint register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & The critical temperature in celcius \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a6e2fef4825d733d11fed423e0c19edcd}\label{classcubesat_1_1ADT7311_a6e2fef4825d733d11fed423e0c19edcd}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Set\+High\+Setpoint@{Set\+High\+Setpoint}}
+\index{Set\+High\+Setpoint@{Set\+High\+Setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Set\+High\+Setpoint()}{SetHighSetpoint()}}
+{\footnotesize\ttfamily void A\+D\+T7311\+::\+Set\+High\+Setpoint (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{temp }\end{DoxyParamCaption})}
+
+
+
+Writes to the high setpoint register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & The high setpoint temperature in celcius \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a769bd9152682b5ebd7408d1796116b71}\label{classcubesat_1_1ADT7311_a769bd9152682b5ebd7408d1796116b71}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Set\+Hyst\+Setpoint@{Set\+Hyst\+Setpoint}}
+\index{Set\+Hyst\+Setpoint@{Set\+Hyst\+Setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Set\+Hyst\+Setpoint()}{SetHystSetpoint()}}
+{\footnotesize\ttfamily void A\+D\+T7311\+::\+Set\+Hyst\+Setpoint (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{temp }\end{DoxyParamCaption})}
+
+
+
+Writes to the hyst. setpoint register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & The hyst. temperature in celcius \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a52ef57ca7df4c0f53ed0f98be1c1defd}\label{classcubesat_1_1ADT7311_a52ef57ca7df4c0f53ed0f98be1c1defd}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Set\+Low\+Setpoint@{Set\+Low\+Setpoint}}
+\index{Set\+Low\+Setpoint@{Set\+Low\+Setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Set\+Low\+Setpoint()}{SetLowSetpoint()}}
+{\footnotesize\ttfamily void A\+D\+T7311\+::\+Set\+Low\+Setpoint (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{temp }\end{DoxyParamCaption})}
+
+
+
+Writes to the low setpoint register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & The low setpoint temperature in celcius \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a78f061f3e7a5a4f060868b53839c7af6}\label{classcubesat_1_1ADT7311_a78f061f3e7a5a4f060868b53839c7af6}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Write16\+Bit@{Write16\+Bit}}
+\index{Write16\+Bit@{Write16\+Bit}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Write16\+Bit()}{Write16Bit()}}
+{\footnotesize\ttfamily void A\+D\+T7311\+::\+Write16\+Bit (\begin{DoxyParamCaption}\item[{\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register}}]{reg,  }\item[{uint16\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_acfb6dbbe3616e39449808880f96f610c}\label{classcubesat_1_1ADT7311_acfb6dbbe3616e39449808880f96f610c}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!Write8\+Bit@{Write8\+Bit}}
+\index{Write8\+Bit@{Write8\+Bit}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{Write8\+Bit()}{Write8Bit()}}
+{\footnotesize\ttfamily void A\+D\+T7311\+::\+Write8\+Bit (\begin{DoxyParamCaption}\item[{\hyperlink{classcubesat_1_1ADT7311_a0c841a239b3da653d4304377b3e83b45}{Register}}]{reg,  }\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_aa14e2538b100b5427358cf21fff183e6}\label{classcubesat_1_1ADT7311_aa14e2538b100b5427358cf21fff183e6}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!config@{config}}
+\index{config@{config}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily \hyperlink{unioncubesat_1_1ADT7311_1_1Configuration}{Configuration} cubesat\+::\+A\+D\+T7311\+::config\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_ab79d199972c7f14cab10015034cf6b52}\label{classcubesat_1_1ADT7311_ab79d199972c7f14cab10015034cf6b52}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!crit\+\_\+setpoint@{crit\+\_\+setpoint}}
+\index{crit\+\_\+setpoint@{crit\+\_\+setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{crit\+\_\+setpoint}{crit\_setpoint}}
+{\footnotesize\ttfamily uint16\+\_\+t cubesat\+::\+A\+D\+T7311\+::crit\+\_\+setpoint\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a24bf458335fd8dce02f43f0d66ec323a}\label{classcubesat_1_1ADT7311_a24bf458335fd8dce02f43f0d66ec323a}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!high\+\_\+setpoint@{high\+\_\+setpoint}}
+\index{high\+\_\+setpoint@{high\+\_\+setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{high\+\_\+setpoint}{high\_setpoint}}
+{\footnotesize\ttfamily uint16\+\_\+t cubesat\+::\+A\+D\+T7311\+::high\+\_\+setpoint\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a486d810e54eae5c266a2c640725a4885}\label{classcubesat_1_1ADT7311_a486d810e54eae5c266a2c640725a4885}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!hyst\+\_\+setpoint@{hyst\+\_\+setpoint}}
+\index{hyst\+\_\+setpoint@{hyst\+\_\+setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{hyst\+\_\+setpoint}{hyst\_setpoint}}
+{\footnotesize\ttfamily uint8\+\_\+t cubesat\+::\+A\+D\+T7311\+::hyst\+\_\+setpoint\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a5239e3277f763a5d9cbdda84fc6476b1}\label{classcubesat_1_1ADT7311_a5239e3277f763a5d9cbdda84fc6476b1}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!low\+\_\+setpoint@{low\+\_\+setpoint}}
+\index{low\+\_\+setpoint@{low\+\_\+setpoint}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{low\+\_\+setpoint}{low\_setpoint}}
+{\footnotesize\ttfamily uint16\+\_\+t cubesat\+::\+A\+D\+T7311\+::low\+\_\+setpoint\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_adca4665892622e13f6dc7405528697d6}\label{classcubesat_1_1ADT7311_adca4665892622e13f6dc7405528697d6}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!manufacturer\+\_\+data@{manufacturer\+\_\+data}}
+\index{manufacturer\+\_\+data@{manufacturer\+\_\+data}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{manufacturer\+\_\+data}{manufacturer\_data}}
+{\footnotesize\ttfamily \hyperlink{unioncubesat_1_1ADT7311_1_1ManufacturerData}{Manufacturer\+Data} cubesat\+::\+A\+D\+T7311\+::manufacturer\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a4d64ee91316d0a3f44384f57bee01d17}\label{classcubesat_1_1ADT7311_a4d64ee91316d0a3f44384f57bee01d17}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!status@{status}}
+\index{status@{status}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \hyperlink{unioncubesat_1_1ADT7311_1_1StatusData}{Status\+Data} cubesat\+::\+A\+D\+T7311\+::status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcubesat_1_1ADT7311_a8045af6862135c6796ea97b95e431705}\label{classcubesat_1_1ADT7311_a8045af6862135c6796ea97b95e431705}} 
+\index{cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}!temp\+\_\+data@{temp\+\_\+data}}
+\index{temp\+\_\+data@{temp\+\_\+data}!cubesat\+::\+A\+D\+T7311@{cubesat\+::\+A\+D\+T7311}}
+\subsubsection{\texorpdfstring{temp\+\_\+data}{temp\_data}}
+{\footnotesize\ttfamily \hyperlink{unioncubesat_1_1ADT7311_1_1TemperatureData}{Temperature\+Data} cubesat\+::\+A\+D\+T7311\+::temp\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/device/\hyperlink{ADT7311_8h}{A\+D\+T7311.\+h}\item 
+/home/osboxes/cosmos/source/projects/cubesat-\/kit/source/device/\hyperlink{ADT7311_8cpp}{A\+D\+T7311.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,314 @@
+\hypertarget{DeviceDetail_8h}{}\section{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/utility/\+Device\+Detail.h File Reference}
+\label{DeviceDetail_8h}\index{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/utility/\+Device\+Detail.\+h@{/home/osboxes/cosmos/source/projects/cubesat-\/kit/include/utility/\+Device\+Detail.\+h}}
+{\ttfamily \#include \char`\"{}support/config\+Cosmos.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}agent/agentclass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}support/jsonlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}support/jsonclass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utility/\+Types.\+h\char`\"{}}\newline
+Include dependency graph for Device\+Detail.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceDetail_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DeviceDetail_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcubesat_1_1PropertyMeta}{cubesat\+::\+Property\+Meta$<$ device\+\_\+struc, offset $>$}
+\begin{DoxyCompactList}\small\item\em Holds information about a C\+O\+S\+M\+OS property. \end{DoxyCompactList}\item 
+struct \hyperlink{structcubesat_1_1Property}{cubesat\+::\+Property$<$ device\+\_\+struc, offset $>$}
+\item 
+struct \hyperlink{structcubesat_1_1NodeProperty}{cubesat\+::\+Node\+Property$<$ T, \+\_\+offset $>$}
+\item 
+struct \hyperlink{structcubesat_1_1Node_1_1UTC}{cubesat\+::\+Node\+::\+U\+TC}
+\item 
+struct \hyperlink{structcubesat_1_1Node_1_1MomentOfInertia}{cubesat\+::\+Node\+::\+Moment\+Of\+Inertia}
+\item 
+struct \hyperlink{structcubesat_1_1Node_1_1Mass}{cubesat\+::\+Node\+::\+Mass}
+\item 
+struct \hyperlink{structcubesat_1_1Node_1_1PowerGeneration}{cubesat\+::\+Node\+::\+Power\+Generation}
+\item 
+struct \hyperlink{structcubesat_1_1Node_1_1PowerUse}{cubesat\+::\+Node\+::\+Power\+Use}
+\item 
+struct \hyperlink{structcubesat_1_1Node_1_1BatteryCapacity}{cubesat\+::\+Node\+::\+Battery\+Capacity}
+\item 
+struct \hyperlink{structcubesat_1_1Node_1_1BatteryCharge}{cubesat\+::\+Node\+::\+Battery\+Charge}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecubesat}{cubesat}
+\item 
+ \hyperlink{namespacecubesat_1_1Node}{cubesat\+::\+Node}
+\begin{DoxyCompactList}\small\item\em A namespace holding all available node properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{DeviceDetail_8h_afe1e0e159fe8e31b0677c32c129772d7}{\+\_\+\+Register\+Property}(simple\+\_\+name\+\_\+,  device\+\_\+struc,  member)
+\begin{DoxyCompactList}\small\item\em Use this to add support for a new property. \end{DoxyCompactList}\item 
+\#define \hyperlink{DeviceDetail_8h_acf56a3c016040fe49ea7e3fa76d67677}{\+\_\+\+Register\+Property\+With\+Type}(type,  simple\+\_\+name\+\_\+,  device\+\_\+struc,  member)
+\item 
+\#define \hyperlink{DeviceDetail_8h_adc81d97a546e341243da1e5b163d8898}{\+\_\+\+Add\+Property}(name,  member)~Property$<$\+\_\+\+\_\+\+Device\+Struc, offsetof(\+\_\+\+\_\+\+Device\+Struc, member)$>$ name
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacecubesat_ab5c769503b8a77bc90a47ca8705f2f86}{cubesat\+::\+Property\+ID} = intptr\+\_\+t
+\begin{DoxyCompactList}\small\item\em A unique ID corresponding to a particular property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecubesat_ae60badb52b7fcfff832fba5f59a3d36f}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, tsenstruc, temp)
+\item 
+\hyperlink{namespacecubesat_a5655beb2324dcdf96e70a3f912e75e7f}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, tsenstruc, enabled)
+\item 
+\hyperlink{namespacecubesat_ad118b4edea35ff959ec0d700404120fa}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, tsenstruc, volt)
+\item 
+\hyperlink{namespacecubesat_a5a9fca0b9cf3936f3a62d27e3da35d89}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, tsenstruc, amp)
+\item 
+\hyperlink{namespacecubesat_af5b3b935beae2161e395e8ddb9ea6420}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, tsenstruc, power)
+\item 
+\hyperlink{namespacecubesat_a71447aabcce7c231bbd9a13860c5dcc6}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, tsenstruc, utc)
+\item 
+\hyperlink{namespacecubesat_a780e0c325fea4d8107d452415b2bd827}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Energy\char`\"{}, tsenstruc, energy)
+\item 
+\hyperlink{namespacecubesat_a8021a4361004392205cf0b556908b6ab}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, htrstruc, temp)
+\item 
+\hyperlink{namespacecubesat_ae7e5037a9e3fe065fbf9be12b5e89606}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, htrstruc, enabled)
+\item 
+\hyperlink{namespacecubesat_ad93c2f1b2cbf600039df86ec7217fd2c}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, htrstruc, volt)
+\item 
+\hyperlink{namespacecubesat_a61bd28e07b0eabac7cb4c12bd3ee1927}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, htrstruc, amp)
+\item 
+\hyperlink{namespacecubesat_a84d24bce3fabb54c8b9264517d787e3d}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, htrstruc, power)
+\item 
+\hyperlink{namespacecubesat_af3c7174c92afdb054b1946516d8d2fd3}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, htrstruc, utc)
+\item 
+\hyperlink{namespacecubesat_a8da88e33bf3374e90d99c3f3fc05d269}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, ssenstruc, temp)
+\item 
+\hyperlink{namespacecubesat_a894241cbe0e2afc9b2e2f018fc9b4f42}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, ssenstruc, enabled)
+\item 
+\hyperlink{namespacecubesat_a8ff8499c07abacbe97d6c1693730f360}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, ssenstruc, volt)
+\item 
+\hyperlink{namespacecubesat_adfac989178e975bc1fb191b2a568debd}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, ssenstruc, amp)
+\item 
+\hyperlink{namespacecubesat_aaef1a8d0e7ab780c34e00629ca20472d}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, ssenstruc, power)
+\item 
+\hyperlink{namespacecubesat_aef4b72fea119a05fe8ea09fdb8f1e9b2}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, ssenstruc, utc)
+\item 
+\hyperlink{namespacecubesat_a67d2242ce2f4ec114b11c03d2d94e1f3}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, imustruc, temp)
+\item 
+\hyperlink{namespacecubesat_ac77186cd76d188df01efaf49de9c81ca}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, imustruc, enabled)
+\item 
+\hyperlink{namespacecubesat_ae5a91e4b6e48712e562434b42513c2d3}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, imustruc, volt)
+\item 
+\hyperlink{namespacecubesat_a05da320713010c17ed4d36faf166aa3b}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, imustruc, amp)
+\item 
+\hyperlink{namespacecubesat_a2b386c8e128709bdfbe799722026f3e4}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, imustruc, power)
+\item 
+\hyperlink{namespacecubesat_a91e72884f2c0378e79caed44f9aec2d5}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, imustruc, utc)
+\item 
+\hyperlink{namespacecubesat_a9bb9ea267b49409f5e5f3def53e6c772}{cubesat\+::\+\_\+\+Register\+Property\+With\+Type} (Vec3, \char`\"{}Magnetic Field\char`\"{}, imustruc, mag)
+\item 
+\hyperlink{namespacecubesat_ab7b60765b2dd5c25491859e2d56a9968}{cubesat\+::\+\_\+\+Register\+Property\+With\+Type} (Vec3, \char`\"{}Acceleration\char`\"{}, imustruc, accel)
+\item 
+\hyperlink{namespacecubesat_a6e92a530dcef22e2c783cf38ada3dd37}{cubesat\+::\+\_\+\+Register\+Property\+With\+Type} (Vec3, \char`\"{}Angular Acceleration\char`\"{}, imustruc, omega)
+\item 
+\hyperlink{namespacecubesat_a596edca6af979208673860da1074bda2}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, gpsstruc, temp)
+\item 
+\hyperlink{namespacecubesat_a172b87203fcfd282d69ccd8176dad916}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, gpsstruc, enabled)
+\item 
+\hyperlink{namespacecubesat_a634fb58ab8493b4ec489c448121cedea}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, gpsstruc, volt)
+\item 
+\hyperlink{namespacecubesat_ae6973f54d6433e2a0ad86817c28fb004}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, gpsstruc, amp)
+\item 
+\hyperlink{namespacecubesat_a065da1471a72c0441abe875b78575123}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, gpsstruc, power)
+\item 
+\hyperlink{namespacecubesat_a046f94447d56f9c89894965ee06a3caf}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, gpsstruc, utc)
+\item 
+\hyperlink{namespacecubesat_aeaa026b90b46862e6611d2cf6f4c4150}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Satellites Used\char`\"{}, gpsstruc, sats\+\_\+used)
+\item 
+\hyperlink{namespacecubesat_ae881f3e127be104ce791ef946529211b}{cubesat\+::\+\_\+\+Register\+Property\+With\+Type} (Location, \char`\"{}Location\char`\"{}, gpsstruc, geods)
+\item 
+\hyperlink{namespacecubesat_a71c1f96727249243c284337421b58dac}{cubesat\+::\+\_\+\+Register\+Property\+With\+Type} (Vec3, \char`\"{}Velocity\char`\"{}, gpsstruc, geocv)
+\item 
+\hyperlink{namespacecubesat_ad3c5eaa4901d52c82f9539d0bd6345f2}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, battstruc, temp)
+\item 
+\hyperlink{namespacecubesat_ae0ae4077ebcaf0a368c29d6ba5d9c758}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, battstruc, enabled)
+\item 
+\hyperlink{namespacecubesat_a7045a5f00d8b74c53a85f4fcabf955fa}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, battstruc, volt)
+\item 
+\hyperlink{namespacecubesat_a6038ebb76a70bbecbc364f744798e6a5}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, battstruc, amp)
+\item 
+\hyperlink{namespacecubesat_a1f40f2d2ece3ed4d36645d22e304a5d8}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, battstruc, power)
+\item 
+\hyperlink{namespacecubesat_a2b8886528da9c9ef1188184de26416b3}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, battstruc, utc)
+\item 
+\hyperlink{namespacecubesat_a0f66108b1109813b274401d287dc2b44}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Percent\char`\"{}, battstruc, percentage)
+\item 
+\hyperlink{namespacecubesat_a99d534593c079c64c9ee3f0ff8ede01a}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Capacity\char`\"{}, battstruc, capacity)
+\item 
+\hyperlink{namespacecubesat_adb2f317d40876206a742637b47177b16}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Charge\char`\"{}, battstruc, charge)
+\item 
+\hyperlink{namespacecubesat_a7911f554d445e859b10ffedffd4a0559}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Efficiency\char`\"{}, battstruc, efficiency)
+\item 
+\hyperlink{namespacecubesat_a775c2d719346b2f2a5930bcca3de404b}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Time Remaining\char`\"{}, battstruc, time\+\_\+remaining)
+\item 
+\hyperlink{namespacecubesat_ad9e52a0ce2c3bc006a68a7a2ee6fc098}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, tcvstruc, temp)
+\item 
+\hyperlink{namespacecubesat_a81387d891db58db5835ab1bee5c3616d}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, tcvstruc, enabled)
+\item 
+\hyperlink{namespacecubesat_a7c2eb31e717e2a6562b5cf4ab26c9870}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, tcvstruc, volt)
+\item 
+\hyperlink{namespacecubesat_a07c1968eadc068db782155d93d62863e}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, tcvstruc, amp)
+\item 
+\hyperlink{namespacecubesat_ad98f3a637f65fa42645a2ab3a47848cb}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, tcvstruc, power)
+\item 
+\hyperlink{namespacecubesat_a738576c2c7c6ae926fe78dd3a5ef4b03}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, tcvstruc, utc)
+\item 
+\hyperlink{namespacecubesat_adf2b02e8338ce448dd6824f0f55bd43d}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Frequency\char`\"{}, tcvstruc, freq)
+\item 
+\hyperlink{namespacecubesat_a9cd182663ced5c63d086360eb0cbbe41}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Max Frequency\char`\"{}, tcvstruc, maxfreq)
+\item 
+\hyperlink{namespacecubesat_a8c44383989fad18490e66a66cb810996}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Min Frequency\char`\"{}, tcvstruc, minfreq)
+\item 
+\hyperlink{namespacecubesat_a27b5c904bcdc5725913141037ebfe4ff}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power In\char`\"{}, tcvstruc, powerin)
+\item 
+\hyperlink{namespacecubesat_a74f354677edb168867b1ec01d41ddceb}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power Out\char`\"{}, tcvstruc, powerout)
+\item 
+\hyperlink{namespacecubesat_a21b46b24747cede24591a4fa09938d46}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Max Power\char`\"{}, tcvstruc, maxpower)
+\item 
+\hyperlink{namespacecubesat_a016d2f8569dd1a4e8d991a8be018ad5e}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Bandwidth\char`\"{}, tcvstruc, band)
+\item 
+\hyperlink{namespacecubesat_ad8e29ac7bcd0db763374743ea254efe1}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Good Packet Count\char`\"{}, tcvstruc, goodcnt)
+\item 
+\hyperlink{namespacecubesat_a58867368867ef441cccc4f382118c12e}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Bad Packet Count\char`\"{}, tcvstruc, badcnt)
+\item 
+\hyperlink{namespacecubesat_a8bb108fc4eecb2cc32a9493d16551311}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, cpustruc, temp)
+\item 
+\hyperlink{namespacecubesat_aafc89b5a15524c4858f5f1bcbe47fce1}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, cpustruc, enabled)
+\item 
+\hyperlink{namespacecubesat_a219472c75c8170664f0815ad1aa6fe3a}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, cpustruc, volt)
+\item 
+\hyperlink{namespacecubesat_ab831e0d9017df503adcdef8aa5a03db6}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, cpustruc, amp)
+\item 
+\hyperlink{namespacecubesat_a37c2ab55da643392e430844cc3d07e14}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, cpustruc, power)
+\item 
+\hyperlink{namespacecubesat_a9a148e6f640a1840126adb10e372100c}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, cpustruc, utc)
+\item 
+\hyperlink{namespacecubesat_a0b61587ddba14bf262a6797d65ac9970}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Up Time\char`\"{}, cpustruc, uptime)
+\item 
+\hyperlink{namespacecubesat_a87075078ddc87c5940c67eb5c439d273}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Load\char`\"{}, cpustruc, load)
+\item 
+\hyperlink{namespacecubesat_a613dc2d54d1023b6e891f6bc7feae004}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Max Load\char`\"{}, cpustruc, maxload)
+\item 
+\hyperlink{namespacecubesat_a824f59271908e2b7bce5180975e3f55b}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Max Memory\char`\"{}, cpustruc, maxgib)
+\item 
+\hyperlink{namespacecubesat_ad636c97c076ecaa994e0636c225e03ec}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Memory Use\char`\"{}, cpustruc, gib)
+\item 
+\hyperlink{namespacecubesat_a8d3688b83c4e307a6a7485937bf1244c}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Boot Count\char`\"{}, cpustruc, boot\+\_\+count)
+\item 
+\hyperlink{namespacecubesat_a8109b10d6a2729e44afdcb77e088454d}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, camstruc, temp)
+\item 
+\hyperlink{namespacecubesat_a56f40a8c7426b1c0c1c15ce88b12488b}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, camstruc, enabled)
+\item 
+\hyperlink{namespacecubesat_a3e7e7627d531946f335bf9872b27aa94}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, camstruc, volt)
+\item 
+\hyperlink{namespacecubesat_a26ad24bd35018417014e92f829aa0f89}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, camstruc, amp)
+\item 
+\hyperlink{namespacecubesat_a3bccdf76728c77f0d244db3c1bf9137a}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, camstruc, power)
+\item 
+\hyperlink{namespacecubesat_a0d457561d0a8ffba79995bfb80b39885}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, camstruc, utc)
+\item 
+\hyperlink{namespacecubesat_abcb5aad32d317bd92deae96a599f2835}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Pixel Width\char`\"{}, camstruc, pwidth)
+\item 
+\hyperlink{namespacecubesat_a3da245d2c94085a1ab8e8536f1c5bdbf}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Pixel Height\char`\"{}, camstruc, pheight)
+\item 
+\hyperlink{namespacecubesat_aa3a7688719bac052c068facf1b72dce8}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Width\char`\"{}, camstruc, width)
+\item 
+\hyperlink{namespacecubesat_a18aaf6e50ef2ee655b4664b8cea0bfef}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Height\char`\"{}, camstruc, height)
+\item 
+\hyperlink{namespacecubesat_a301e2495f63a6e395026c55263fb6efa}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Focal Length\char`\"{}, camstruc, flength)
+\item 
+\hyperlink{namespacecubesat_ad39533f1569a5b7fb80587a91e3f44ed}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, swchstruc, temp)
+\item 
+\hyperlink{namespacecubesat_a67258e683b353e20e2671a21f04d451c}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, swchstruc, enabled)
+\item 
+\hyperlink{namespacecubesat_a5224528d62a50c5c543a5cf37660e4d8}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, swchstruc, volt)
+\item 
+\hyperlink{namespacecubesat_a31ce45fa78131286e97ac1cc7dfb034f}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, swchstruc, amp)
+\item 
+\hyperlink{namespacecubesat_a17a0144937747f1e51aee81a234f99ac}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, swchstruc, power)
+\item 
+\hyperlink{namespacecubesat_aaff2b0b308c7ef11aa9b139b5335e801}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, swchstruc, utc)
+\item 
+\hyperlink{namespacecubesat_a6dfe80daa72908aeceb10c75578066a8}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Temperature\char`\"{}, ploadstruc, temp)
+\item 
+\hyperlink{namespacecubesat_a2665beb7cdaf986597d4d7c0324475df}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Enabled\char`\"{}, ploadstruc, enabled)
+\item 
+\hyperlink{namespacecubesat_a764740652bec6157a44361ca932519f3}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Voltage\char`\"{}, ploadstruc, volt)
+\item 
+\hyperlink{namespacecubesat_a096a9ee58ec6fd7245a3d2cbdf4853e2}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Current\char`\"{}, ploadstruc, amp)
+\item 
+\hyperlink{namespacecubesat_adf899b7f005579a222e38a2049d18ecc}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}Power\char`\"{}, ploadstruc, power)
+\item 
+\hyperlink{namespacecubesat_a072dc6b35f6341cb0f601f5255458de4}{cubesat\+::\+\_\+\+Register\+Property} (\char`\"{}U\+TC\char`\"{}, ploadstruc, utc)
+\item 
+{\footnotesize template$<$typename T $>$ }\\Property\+ID \hyperlink{namespacecubesat_a705e2168749172dcbae8a042595376f9}{cubesat\+::\+Get\+Property\+ID} ()
+\begin{DoxyCompactList}\small\item\em Returns a unique ID corresponding to a property. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{namespacecubesat_a81f456d1c4c1074ce18ac724303763bc}{cubesat\+::\+Get\+Device\+Type\+String} (Device\+Type type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{DeviceDetail_8h_adc81d97a546e341243da1e5b163d8898}\label{DeviceDetail_8h_adc81d97a546e341243da1e5b163d8898}} 
+\index{Device\+Detail.\+h@{Device\+Detail.\+h}!\+\_\+\+Add\+Property@{\+\_\+\+Add\+Property}}
+\index{\+\_\+\+Add\+Property@{\+\_\+\+Add\+Property}!Device\+Detail.\+h@{Device\+Detail.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+Add\+Property}{\_AddProperty}}
+{\footnotesize\ttfamily \#define \+\_\+\+Add\+Property(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{member }\end{DoxyParamCaption})~Property$<$\+\_\+\+\_\+\+Device\+Struc, offsetof(\+\_\+\+\_\+\+Device\+Struc, member)$>$ name}
+
+Use this to add a property to a device implementation (it\textquotesingle{}s just for convenience) \mbox{\Hypertarget{DeviceDetail_8h_afe1e0e159fe8e31b0677c32c129772d7}\label{DeviceDetail_8h_afe1e0e159fe8e31b0677c32c129772d7}} 
+\index{Device\+Detail.\+h@{Device\+Detail.\+h}!\+\_\+\+Register\+Property@{\+\_\+\+Register\+Property}}
+\index{\+\_\+\+Register\+Property@{\+\_\+\+Register\+Property}!Device\+Detail.\+h@{Device\+Detail.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+Register\+Property}{\_RegisterProperty}}
+{\footnotesize\ttfamily \#define \+\_\+\+Register\+Property(\begin{DoxyParamCaption}\item[{}]{simple\+\_\+name\+\_\+,  }\item[{}]{device\+\_\+struc,  }\item[{}]{member }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<> \textcolor{keyword}{struct }PropertyMeta<device\_struc, offsetof(device\_struc, member)> \{\(\backslash\)
+        using ValueType = decltype(device\_struc::member);\(\backslash\)
+        using MemberType = decltype(device\_struc::member);\(\backslash\)
+        static constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{char} *cosmos\_name = #member;\(\backslash\)
+        static constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{char} *simple\_name = simple\_name\_;\(\backslash\)
+    \}
+\end{DoxyCode}
+
+
+Use this to add support for a new property. 
+
+\mbox{\Hypertarget{DeviceDetail_8h_acf56a3c016040fe49ea7e3fa76d67677}\label{DeviceDetail_8h_acf56a3c016040fe49ea7e3fa76d67677}} 
+\index{Device\+Detail.\+h@{Device\+Detail.\+h}!\+\_\+\+Register\+Property\+With\+Type@{\+\_\+\+Register\+Property\+With\+Type}}
+\index{\+\_\+\+Register\+Property\+With\+Type@{\+\_\+\+Register\+Property\+With\+Type}!Device\+Detail.\+h@{Device\+Detail.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+Register\+Property\+With\+Type}{\_RegisterPropertyWithType}}
+{\footnotesize\ttfamily \#define \+\_\+\+Register\+Property\+With\+Type(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{simple\+\_\+name\+\_\+,  }\item[{}]{device\+\_\+struc,  }\item[{}]{member }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<> \textcolor{keyword}{struct }PropertyMeta<device\_struc, offsetof(device\_struc, member)> \{\(\backslash\)
+        using ValueType = type;\(\backslash\)
+        using MemberType = decltype(device\_struc::member);\(\backslash\)
+        static constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{char} *cosmos\_name = #member;\(\backslash\)
+        static constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{char} *simple\_name = simple\_name\_;\(\backslash\)
+    \}
+\end{DoxyCode}
+Use this to add support for a new property that uses a different type than the one defined in the given device struc 
