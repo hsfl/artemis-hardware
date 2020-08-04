@@ -4,10 +4,10 @@
 
 # Update agents
 echo "============================================"
-./update-agents -n
+./update-agents
 
 
 # Update COSMOS Web routes
 echo "============================================"
-./update-routes -n
+./update-routes
 

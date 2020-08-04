@@ -3,7 +3,6 @@
 source config
 
 echo "Updating BeagleBone project..."
-echo "Source Repository: ${GITHUB_REPO}"
 echo "Destination: ${BEAGLEBONE_PROJECT_FOLDER}"
 
 
