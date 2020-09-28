@@ -1,8 +1,0 @@
-<map id="cubesat::PyCubed" name="cubesat::PyCubed">
-<area shape="rect" id="node2" href="$classcubesat_1_1UARTDevice.html" title="cubesat::UARTDevice" alt="" coords="261,5,416,32"/>
-<area shape="rect" id="node3" href="$structcubesat_1_1PyCubedTempInfo.html" title="Holds temperature information. " alt="" coords="246,56,431,83"/>
-<area shape="rect" id="node4" href="$structcubesat_1_1PyCubedIMUInfo.html" title="Holds IMU information. " alt="" coords="250,107,427,133"/>
-<area shape="rect" id="node5" href="$structcubesat_1_1Vec3.html" title="cubesat::Vec3" alt="" coords="5,107,112,133"/>
-<area shape="rect" id="node6" href="$structcubesat_1_1PyCubedPowerInfo.html" title="Holds power information. " alt="" coords="244,157,433,184"/>
-<area shape="rect" id="node7" href="$structcubesat_1_1PyCubedGPSInfo.html" title="Holds GPS information. " alt="" coords="249,208,429,235"/>
-</map>

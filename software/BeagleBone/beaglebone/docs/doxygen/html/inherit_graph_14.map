@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classcubesat_1_1DeviceAlreadyExistsException.html" title="cubesat::DeviceAlreadyExists\lException" alt="" coords="143,5,341,47"/>
-<area shape="rect" id="node3" href="$classcubesat_1_1MultipleSimpleAgentException.html" title="Thrown if the user attempts to create a second SimpleAgent in the same process. " alt="" coords="145,71,339,112"/>
-<area shape="rect" id="node4" href="$classcubesat_1_1NonExistentPropertyException.html" title="Thrown if a non&#45;existent property is accessed. " alt="" coords="143,136,341,177"/>
-<area shape="rect" id="node5" href="$classcubesat_1_1TypeMismatchException.html" title="Thrown if a non&#45;existent property is accessed. " alt="" coords="132,202,352,229"/>
-</map>
