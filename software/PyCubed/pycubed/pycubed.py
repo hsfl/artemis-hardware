@@ -1,14 +1,10 @@
 """
 CircuitPython driver for PyCubed satellite board
-
 PyCubed mainboard-v04
-
 * Author(s): Max Holliday
-
 TODO
 - improve burn wire handling & syntax
 - 
-
 """
 import adafruit_gps
 import adafruit_sdcard
@@ -260,10 +256,10 @@ class Satellite:
             return False
 
     # this deployment function is a placeholder
-    def deploy(self,burnA=False,dutycycle=0,freq=5000,duration=1):
+    def deploy(self,burnA=False,dutycycle=4000,freq=5000,duration=1):
         print('BURNING with duty cycle of:',dutycycle)
         # if not self._deployA:
-        burn = pulseio.PWMOut(board.PA22, frequency=freq, duty_cycle=0)
+        burn = pulseio.PWMOut(board.BURN1, frequency=freq, duty_cycle=4000)
         self._relayA.drive_mode=digitalio.DriveMode.PUSH_PULL
         self._relayA.value = 1
         time.sleep(1)
