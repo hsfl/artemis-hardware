@@ -1,0 +1,2 @@
+The top and bottom parts of the satellite have been split in half. These are meant to be glued together after
+printing to produce a better looking model -kenny :)
