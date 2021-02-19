@@ -598,30 +598,28 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J2" gate="G$0" pin="1"/>
-<wire x1="416.56" y1="-33.02" x2="439.42" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="-33.02" x2="439.42" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="-33.02" x2="419.1" y2="-33.02" width="0.1524" layer="91"/>
+<label x="419.1" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="SC25" gate="G$1" pin="+"/>
 <pinref part="SC17" gate="G$1" pin="+"/>
 <wire x1="487.68" y1="43.18" x2="502.92" y2="43.18" width="0.1524" layer="91"/>
 <junction x="487.68" y="43.18"/>
 <wire x1="480.06" y1="43.18" x2="487.68" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="43.18" x2="480.06" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="43.18" x2="480.06" y2="55.88" width="0.1524" layer="91"/>
 <junction x="480.06" y="43.18"/>
 <pinref part="SC9" gate="G$1" pin="+"/>
 <pinref part="SC1" gate="G$1" pin="+"/>
-<wire x1="480.06" y1="48.26" x2="480.06" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="50.8" x2="480.06" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="43.18" x2="472.44" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="472.44" y1="43.18" x2="480.06" y2="43.18" width="0.1524" layer="91"/>
 <junction x="472.44" y="43.18"/>
 <label x="480.06" y="55.88" size="1.778" layer="95"/>
-<wire x1="439.42" y1="50.8" x2="480.06" y2="50.8" width="0.1524" layer="91"/>
-<junction x="480.06" y="50.8"/>
-<wire x1="441.96" y1="-38.1" x2="441.96" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="J2" gate="G$0" pin="2"/>
-<wire x1="416.56" y1="-38.1" x2="441.96" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="441.96" y1="48.26" x2="480.06" y2="48.26" width="0.1524" layer="91"/>
-<junction x="480.06" y="48.26"/>
+<wire x1="416.56" y1="-38.1" x2="419.1" y2="-38.1" width="0.1524" layer="91"/>
+<label x="419.1" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -795,30 +793,48 @@ Created by Upverter.com</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="J2" gate="G$0" pin="4"/>
-<wire x1="416.56" y1="-48.26" x2="439.42" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="-48.26" x2="439.42" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="-48.26" x2="419.1" y2="-48.26" width="0.1524" layer="91"/>
+<label x="419.1" y="-48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$0" pin="MNT_1"/>
+<wire x1="416.56" y1="2.54" x2="419.1" y2="2.54" width="0.1524" layer="91"/>
+<label x="419.1" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$0" pin="MNT_2"/>
+<wire x1="416.56" y1="-2.54" x2="419.1" y2="-2.54" width="0.1524" layer="91"/>
+<label x="419.1" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="SC32" gate="G$1" pin="-"/>
 <pinref part="SC24" gate="G$1" pin="-"/>
 <wire x1="487.68" y1="-78.74" x2="502.92" y2="-78.74" width="0.1524" layer="91"/>
 <junction x="487.68" y="-78.74"/>
+<wire x1="480.06" y1="-78.74" x2="487.68" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="-78.74" x2="480.06" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="480.06" y="-78.74"/>
 <pinref part="SC16" gate="G$1" pin="-"/>
 <junction x="472.44" y="-78.74"/>
 <wire x1="472.44" y1="-78.74" x2="480.06" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="SC8" gate="G$1" pin="-"/>
-<wire x1="480.06" y1="-78.74" x2="487.68" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="-78.74" x2="472.44" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="-78.74" x2="480.06" y2="-83.82" width="0.1524" layer="91"/>
-<junction x="480.06" y="-78.74"/>
 <label x="480.06" y="-91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$0" pin="MNT_2"/>
+<wire x1="416.56" y1="-58.42" x2="419.1" y2="-58.42" width="0.1524" layer="91"/>
+<label x="419.1" y="-58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$0" pin="MNT_1"/>
+<wire x1="416.56" y1="-53.34" x2="419.1" y2="-53.34" width="0.1524" layer="91"/>
+<label x="419.1" y="-53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="J2" gate="G$0" pin="3"/>
-<wire x1="480.06" y1="-83.82" x2="480.06" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="-86.36" x2="480.06" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="416.56" y1="-43.18" x2="441.96" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="441.96" y1="-43.18" x2="441.96" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="441.96" y1="-83.82" x2="480.06" y2="-83.82" width="0.1524" layer="91"/>
-<junction x="480.06" y="-83.82"/>
-<wire x1="439.42" y1="-86.36" x2="480.06" y2="-86.36" width="0.1524" layer="91"/>
-<junction x="480.06" y="-86.36"/>
+<wire x1="416.56" y1="-43.18" x2="419.1" y2="-43.18" width="0.1524" layer="91"/>
+<label x="419.1" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
