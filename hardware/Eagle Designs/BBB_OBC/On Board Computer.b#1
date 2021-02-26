@@ -5757,9 +5757,8 @@ design rules under a new name.</description>
 <signal name="VCC_MICRO">
 <contactref element="J3" pad="1"/>
 <contactref element="J4" pad="5"/>
+<wire x1="76.6608" y1="43.2" x2="79.339" y2="43.2" width="0.6096" layer="1"/>
 <wire x1="79.339" y1="43.2" x2="79.3402" y2="43.1988" width="0.6096" layer="1"/>
-<wire x1="79.3402" y1="43.1988" x2="76.662" y2="43.1988" width="0.3048" layer="1"/>
-<wire x1="76.662" y1="43.1988" x2="76.6608" y2="43.2" width="0.3048" layer="1"/>
 </signal>
 <signal name="D">
 <contactref element="U2" pad="8"/>

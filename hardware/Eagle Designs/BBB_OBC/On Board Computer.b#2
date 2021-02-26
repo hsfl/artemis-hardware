@@ -4750,7 +4750,7 @@ design rules under a new name.</description>
 <attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5037630591_sd.pdf" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="503763-0591" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="71.4256" y="40.2766" size="1.27" layer="25" ratio="6" rot="SR90"/>
+<attribute name="NAME" x="76.0256" y="48.4766" size="1.27" layer="25" ratio="6" rot="SR270"/>
 <attribute name="SOURCELIBRARY" value="Add_to_database_2020-12-14" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VENDOR" value="Molex Connector Corporation" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -5757,9 +5757,8 @@ design rules under a new name.</description>
 <signal name="VCC_MICRO">
 <contactref element="J3" pad="1"/>
 <contactref element="J4" pad="5"/>
+<wire x1="76.6608" y1="43.2" x2="79.339" y2="43.2" width="0.6096" layer="1"/>
 <wire x1="79.339" y1="43.2" x2="79.3402" y2="43.1988" width="0.6096" layer="1"/>
-<wire x1="79.3402" y1="43.1988" x2="76.662" y2="43.1988" width="0.3048" layer="1"/>
-<wire x1="76.662" y1="43.1988" x2="76.6608" y2="43.2" width="0.3048" layer="1"/>
 </signal>
 <signal name="D">
 <contactref element="U2" pad="8"/>

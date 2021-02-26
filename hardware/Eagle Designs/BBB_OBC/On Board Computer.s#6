@@ -3310,7 +3310,7 @@ Created by Upverter.com</description>
 <part name="J15" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
 <part name="J4" library="Molex - 503763-0591" deviceset="503763-0591" device=""/>
 <part name="J2" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
-<part name="J9" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
+<part name="J9" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
 </parts>
 <sheets>
 <sheet>
@@ -3655,11 +3655,11 @@ Created by Upverter.com</description>
 <instance part="J10" gate="A" x="345.44" y="142.24" smashed="yes">
 <attribute name="NAME" x="349.6056" y="145.0086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
-<instance part="J11" gate="A" x="287.02" y="104.14" smashed="yes">
-<attribute name="NAME" x="291.1856" y="106.9086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<instance part="J11" gate="A" x="284.48" y="109.22" smashed="yes">
+<attribute name="NAME" x="288.6456" y="111.9886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
-<instance part="J12" gate="A" x="320.04" y="104.14" smashed="yes">
-<attribute name="NAME" x="324.2056" y="106.9086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<instance part="J12" gate="A" x="317.5" y="109.22" smashed="yes">
+<attribute name="NAME" x="321.6656" y="111.9886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
 <instance part="J13" gate="G$0" x="259.08" y="81.28" smashed="yes">
 <attribute name="NAME" x="261.62" y="78.74" size="2.54" layer="95" align="top-left"/>
@@ -3670,14 +3670,14 @@ Created by Upverter.com</description>
 <instance part="J15" gate="G$0" x="327.66" y="81.28" smashed="yes">
 <attribute name="NAME" x="330.2" y="78.74" size="2.54" layer="95" align="top-left"/>
 </instance>
-<instance part="J4" gate="A" x="363.22" y="236.22" smashed="yes">
-<attribute name="NAME" x="367.3856" y="238.9886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<instance part="J4" gate="A" x="360.68" y="236.22" smashed="yes">
+<attribute name="NAME" x="364.8456" y="238.9886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
 <instance part="J2" gate="G$0" x="279.4" y="254" smashed="yes">
 <attribute name="NAME" x="281.94" y="251.46" size="2.54" layer="95" align="top-left"/>
 </instance>
-<instance part="J9" gate="G$0" x="292.1" y="157.48" smashed="yes">
-<attribute name="NAME" x="294.64" y="154.94" size="2.54" layer="95" align="top-left"/>
+<instance part="J9" gate="G$0" x="292.1" y="154.94" smashed="yes">
+<attribute name="NAME" x="294.64" y="152.4" size="2.54" layer="95" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -3878,29 +3878,9 @@ Created by Upverter.com</description>
 <label x="274.32" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="312.42" y1="147.32" x2="314.96" y2="147.32" width="0.1524" layer="91"/>
-<label x="314.96" y="147.32" size="1.778" layer="95"/>
-<pinref part="J9" gate="G$0" pin="1"/>
-</segment>
-<segment>
-<wire x1="312.42" y1="127" x2="314.96" y2="127" width="0.1524" layer="91"/>
-<label x="314.96" y="127" size="1.778" layer="95"/>
-<pinref part="J9" gate="G$0" pin="MNT_1"/>
-</segment>
-<segment>
-<wire x1="312.42" y1="142.24" x2="314.96" y2="142.24" width="0.1524" layer="91"/>
-<label x="314.96" y="142.24" size="1.778" layer="95"/>
-<pinref part="J9" gate="G$0" pin="2"/>
-</segment>
-<segment>
-<wire x1="312.42" y1="121.92" x2="314.96" y2="121.92" width="0.1524" layer="91"/>
-<label x="314.96" y="121.92" size="1.778" layer="95"/>
-<pinref part="J9" gate="G$0" pin="MNT_2"/>
-</segment>
-<segment>
-<wire x1="363.22" y1="236.22" x2="360.68" y2="236.22" width="0.1524" layer="91"/>
-<label x="360.68" y="236.22" size="1.778" layer="95" rot="MR0"/>
-<pinref part="J4" gate="A" pin="1"/>
+<wire x1="360.68" y1="226.06" x2="358.14" y2="226.06" width="0.1524" layer="91"/>
+<label x="358.14" y="226.06" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J4" gate="A" pin="5"/>
 </segment>
 <segment>
 <wire x1="299.72" y1="218.44" x2="302.26" y2="218.44" width="0.1524" layer="91"/>
@@ -3908,9 +3888,14 @@ Created by Upverter.com</description>
 <pinref part="J2" gate="G$0" pin="MNT_2"/>
 </segment>
 <segment>
-<wire x1="299.72" y1="223.52" x2="302.26" y2="223.52" width="0.1524" layer="91"/>
-<label x="302.26" y="223.52" size="1.778" layer="95"/>
-<pinref part="J2" gate="G$0" pin="MNT_1"/>
+<pinref part="J9" gate="G$0" pin="1"/>
+<wire x1="312.42" y1="144.78" x2="314.96" y2="144.78" width="0.1524" layer="91"/>
+<label x="314.96" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$0" pin="2"/>
+<wire x1="312.42" y1="139.7" x2="314.96" y2="139.7" width="0.1524" layer="91"/>
+<label x="314.96" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$94" class="0">
@@ -4223,9 +4208,9 @@ Created by Upverter.com</description>
 <label x="96.52" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="312.42" y1="137.16" x2="314.96" y2="137.16" width="0.1524" layer="91"/>
-<label x="314.96" y="137.16" size="1.778" layer="95"/>
-<pinref part="J9" gate="G$0" pin="3"/>
+<pinref part="J9" gate="G$0" pin="MNT_2"/>
+<wire x1="312.42" y1="129.54" x2="314.96" y2="129.54" width="0.1524" layer="91"/>
+<label x="314.96" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART1_RXD" class="0">
@@ -4235,9 +4220,9 @@ Created by Upverter.com</description>
 <label x="96.52" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="312.42" y1="132.08" x2="314.96" y2="132.08" width="0.1524" layer="91"/>
-<label x="314.96" y="132.08" size="1.778" layer="95"/>
-<pinref part="J9" gate="G$0" pin="4"/>
+<pinref part="J9" gate="G$0" pin="MNT_1"/>
+<wire x1="312.42" y1="134.62" x2="314.96" y2="134.62" width="0.1524" layer="91"/>
+<label x="314.96" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI1_D1" class="0">
@@ -4425,8 +4410,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J11" gate="A" pin="2"/>
-<wire x1="287.02" y1="101.6" x2="284.48" y2="101.6" width="0.1524" layer="91"/>
-<label x="284.48" y="101.6" size="1.778" layer="95" rot="MR0"/>
+<wire x1="284.48" y1="106.68" x2="281.94" y2="106.68" width="0.1524" layer="91"/>
+<label x="281.94" y="106.68" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO2_9" class="0">
@@ -4449,8 +4434,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J11" gate="A" pin="1"/>
-<wire x1="287.02" y1="104.14" x2="284.48" y2="104.14" width="0.1524" layer="91"/>
-<label x="284.48" y="104.14" size="1.778" layer="95" rot="MR0"/>
+<wire x1="284.48" y1="109.22" x2="281.94" y2="109.22" width="0.1524" layer="91"/>
+<label x="281.94" y="109.22" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO2_13" class="0">
@@ -4461,8 +4446,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J11" gate="A" pin="3"/>
-<wire x1="287.02" y1="99.06" x2="284.48" y2="99.06" width="0.1524" layer="91"/>
-<label x="284.48" y="99.06" size="1.778" layer="95" rot="MR0"/>
+<wire x1="284.48" y1="104.14" x2="281.94" y2="104.14" width="0.1524" layer="91"/>
+<label x="281.94" y="104.14" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO2_23" class="0">
@@ -4473,8 +4458,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J11" gate="A" pin="4"/>
-<wire x1="287.02" y1="96.52" x2="284.48" y2="96.52" width="0.1524" layer="91"/>
-<label x="284.48" y="96.52" size="1.778" layer="95" rot="MR0"/>
+<wire x1="284.48" y1="101.6" x2="281.94" y2="101.6" width="0.1524" layer="91"/>
+<label x="281.94" y="101.6" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO2_25" class="0">
@@ -4485,8 +4470,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J11" gate="A" pin="5"/>
-<wire x1="287.02" y1="93.98" x2="284.48" y2="93.98" width="0.1524" layer="91"/>
-<label x="284.48" y="93.98" size="1.778" layer="95" rot="MR0"/>
+<wire x1="284.48" y1="99.06" x2="281.94" y2="99.06" width="0.1524" layer="91"/>
+<label x="281.94" y="99.06" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="VCC_HOST" class="0">
@@ -4530,8 +4515,8 @@ Created by Upverter.com</description>
 <pinref part="J3" gate="A" pin="3"/>
 </segment>
 <segment>
-<wire x1="363.22" y1="231.14" x2="360.68" y2="231.14" width="0.1524" layer="91"/>
-<label x="360.68" y="231.14" size="1.778" layer="95" rot="MR0"/>
+<wire x1="360.68" y1="231.14" x2="358.14" y2="231.14" width="0.1524" layer="91"/>
+<label x="358.14" y="231.14" size="1.778" layer="95" rot="MR0"/>
 <pinref part="J4" gate="A" pin="3"/>
 </segment>
 </net>
@@ -4559,9 +4544,9 @@ Created by Upverter.com</description>
 <pinref part="J3" gate="A" pin="2"/>
 </segment>
 <segment>
-<wire x1="363.22" y1="228.6" x2="360.68" y2="228.6" width="0.1524" layer="91"/>
-<label x="360.68" y="228.6" size="1.778" layer="95" rot="MR0"/>
-<pinref part="J4" gate="A" pin="4"/>
+<wire x1="360.68" y1="233.68" x2="358.14" y2="233.68" width="0.1524" layer="91"/>
+<label x="358.14" y="233.68" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J4" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="ID_MICRO" class="0">
@@ -4571,9 +4556,9 @@ Created by Upverter.com</description>
 <pinref part="J3" gate="A" pin="4"/>
 </segment>
 <segment>
-<wire x1="363.22" y1="233.68" x2="360.68" y2="233.68" width="0.1524" layer="91"/>
-<label x="360.68" y="233.68" size="1.778" layer="95" rot="MR0"/>
-<pinref part="J4" gate="A" pin="2"/>
+<wire x1="360.68" y1="228.6" x2="358.14" y2="228.6" width="0.1524" layer="91"/>
+<label x="358.14" y="228.6" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J4" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="VCC_MICRO" class="0">
@@ -4583,9 +4568,9 @@ Created by Upverter.com</description>
 <pinref part="J3" gate="A" pin="1"/>
 </segment>
 <segment>
-<wire x1="363.22" y1="226.06" x2="360.68" y2="226.06" width="0.1524" layer="91"/>
-<label x="360.68" y="226.06" size="1.778" layer="95" rot="MR0"/>
-<pinref part="J4" gate="A" pin="5"/>
+<wire x1="360.68" y1="236.22" x2="358.14" y2="236.22" width="0.1524" layer="91"/>
+<label x="358.14" y="236.22" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J4" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="D" class="0">
@@ -4788,8 +4773,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J12" gate="A" pin="5"/>
-<wire x1="320.04" y1="93.98" x2="317.5" y2="93.98" width="0.1524" layer="91"/>
-<label x="317.5" y="93.98" size="1.778" layer="95" rot="MR0"/>
+<wire x1="317.5" y1="99.06" x2="314.96" y2="99.06" width="0.1524" layer="91"/>
+<label x="314.96" y="99.06" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO2_24" class="0">
@@ -4800,8 +4785,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J12" gate="A" pin="6"/>
-<wire x1="320.04" y1="91.44" x2="317.5" y2="91.44" width="0.1524" layer="91"/>
-<label x="317.5" y="91.44" size="1.778" layer="95" rot="MR0"/>
+<wire x1="317.5" y1="96.52" x2="314.96" y2="96.52" width="0.1524" layer="91"/>
+<label x="314.96" y="96.52" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO1_0" class="0">
@@ -4812,8 +4797,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J12" gate="A" pin="3"/>
-<wire x1="320.04" y1="99.06" x2="317.5" y2="99.06" width="0.1524" layer="91"/>
-<label x="317.5" y="99.06" size="1.778" layer="95" rot="MR0"/>
+<wire x1="317.5" y1="104.14" x2="314.96" y2="104.14" width="0.1524" layer="91"/>
+<label x="314.96" y="104.14" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO1_29" class="0">
@@ -4824,8 +4809,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J12" gate="A" pin="4"/>
-<wire x1="320.04" y1="96.52" x2="317.5" y2="96.52" width="0.1524" layer="91"/>
-<label x="317.5" y="96.52" size="1.778" layer="95" rot="MR0"/>
+<wire x1="317.5" y1="101.6" x2="314.96" y2="101.6" width="0.1524" layer="91"/>
+<label x="314.96" y="101.6" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO1_4" class="0">
@@ -4836,8 +4821,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J12" gate="A" pin="1"/>
-<wire x1="320.04" y1="104.14" x2="317.5" y2="104.14" width="0.1524" layer="91"/>
-<label x="317.5" y="104.14" size="1.778" layer="95" rot="MR0"/>
+<wire x1="317.5" y1="109.22" x2="314.96" y2="109.22" width="0.1524" layer="91"/>
+<label x="314.96" y="109.22" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GPIO1_1" class="0">
@@ -4848,8 +4833,8 @@ Created by Upverter.com</description>
 </segment>
 <segment>
 <pinref part="J12" gate="A" pin="2"/>
-<wire x1="320.04" y1="101.6" x2="317.5" y2="101.6" width="0.1524" layer="91"/>
-<label x="317.5" y="101.6" size="1.778" layer="95" rot="MR0"/>
+<wire x1="317.5" y1="106.68" x2="314.96" y2="106.68" width="0.1524" layer="91"/>
+<label x="314.96" y="106.68" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="ID_RP" class="0">
@@ -4885,9 +4870,9 @@ Created by Upverter.com</description>
 <label x="274.32" y="228.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$0" pin="1"/>
-<wire x1="299.72" y1="243.84" x2="302.26" y2="243.84" width="0.1524" layer="91"/>
-<label x="302.26" y="243.84" size="1.778" layer="95"/>
+<wire x1="299.72" y1="228.6" x2="302.26" y2="228.6" width="0.1524" layer="91"/>
+<label x="302.26" y="228.6" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$0" pin="4"/>
 </segment>
 </net>
 <net name="RX+" class="0">
@@ -4897,9 +4882,9 @@ Created by Upverter.com</description>
 <label x="274.32" y="233.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$0" pin="2"/>
-<wire x1="299.72" y1="238.76" x2="302.26" y2="238.76" width="0.1524" layer="91"/>
-<label x="302.26" y="238.76" size="1.778" layer="95"/>
+<wire x1="299.72" y1="233.68" x2="302.26" y2="233.68" width="0.1524" layer="91"/>
+<label x="302.26" y="233.68" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$0" pin="3"/>
 </segment>
 </net>
 <net name="TX-" class="0">
@@ -4909,9 +4894,9 @@ Created by Upverter.com</description>
 <label x="274.32" y="238.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$0" pin="3"/>
-<wire x1="299.72" y1="233.68" x2="302.26" y2="233.68" width="0.1524" layer="91"/>
-<label x="302.26" y="233.68" size="1.778" layer="95"/>
+<wire x1="299.72" y1="238.76" x2="302.26" y2="238.76" width="0.1524" layer="91"/>
+<label x="302.26" y="238.76" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$0" pin="2"/>
 </segment>
 </net>
 <net name="TX+" class="0">
@@ -4921,9 +4906,16 @@ Created by Upverter.com</description>
 <label x="274.32" y="243.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$0" pin="4"/>
-<wire x1="299.72" y1="228.6" x2="302.26" y2="228.6" width="0.1524" layer="91"/>
-<label x="302.26" y="228.6" size="1.778" layer="95"/>
+<wire x1="299.72" y1="243.84" x2="302.26" y2="243.84" width="0.1524" layer="91"/>
+<label x="302.26" y="243.84" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$0" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<wire x1="299.72" y1="223.52" x2="302.26" y2="223.52" width="0.1524" layer="91"/>
+<label x="302.26" y="223.52" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$0" pin="MNT_1"/>
 </segment>
 </net>
 </nets>

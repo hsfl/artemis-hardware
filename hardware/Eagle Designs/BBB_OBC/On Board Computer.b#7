@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -4745,84 +4745,85 @@ design rules under a new name.</description>
 <attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="68.4" y="8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE_RATING" value="150V" x="68.4" y="8" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J4" library="Molex - 503763-0591" package="CONN_5037630591_MOL" value="503763-0591" x="74.4" y="45.2" smashed="yes" rot="R270">
-<attribute name="BUILT_BY" value="EMA_Cory" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5037630591_sd.pdf" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="503763-0591" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="71.4256" y="40.2766" size="1.27" layer="25" ratio="6" rot="SR90"/>
-<attribute name="SOURCELIBRARY" value="Add_to_database_2020-12-14" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VENDOR" value="Molex Connector Corporation" x="74.4" y="45.2" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="J4" library="Molex - 503763-0591" package="CONN_5037630591_MOL" value="503763-0591" x="70.2" y="44.8" smashed="yes">
+<attribute name="BUILT_BY" value="EMA_Cory" x="70.2" y="44.8" size="1.778" layer="27" display="off"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="70.2" y="44.8" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5037630591_sd.pdf" x="70.2" y="44.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="503763-0591" x="70.2" y="44.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="66.9234" y="46.4256" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="SOURCELIBRARY" value="Add_to_database_2020-12-14" x="70.2" y="44.8" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="68.4728" y="46.4256" size="1.27" layer="21" ratio="6" rot="SR0"/>
+<attribute name="VENDOR" value="Molex Connector Corporation" x="70.2" y="44.8" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J2" library="Molex - 503763-0491" package="MOLEX_503763-0491_0" value="MOLEX_503763-0491MOLEX_503763-0491_0_0" x="74.2" y="31" smashed="yes" rot="R90">
-<attribute name="AUTOMOTIVE" value="No" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CONN_GENDER" value="Male" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CONN_ORIENTATION" value="Right Angle" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CONTACT_MATERIAL" value="Gold,Nickel" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CURRENT_RATING" value="1.5A" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET" value="https://www.molex.com/webdocs/datasheets/pdf/en-us/5037630491_PCB_HEADERS.pdf" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DEVICE_CLASS_L1" value="Connectors" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DEVICE_CLASS_L2" value="Headers and Wire Housings" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DEVICE_CLASS_L3" value="unset" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_DESCRIPTION" value="CONN HEADER 1MM R/A 4CKT" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="WM10655CT-ND" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FOOTPRINT_URL" value="https://www.molex.com/pdm_docs/sd/5037630491_sd.pdf" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Recommended_Land_Pattern" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="1.7mm" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LEAD_FREE" value="Yes" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Molex" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT" value="503763-0491" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_DATE" value="0" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_REV" value="0" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="538-503763-0491" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="503763-0491" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="71.375" y="27" size="1" layer="25" rot="R90"/>
-<attribute name="NUMBER_OF_CONTACTS" value="4" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NUMBER_OF_ROWS" value="1" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PACKAGE" value="HDR4" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PITCH" value="1mm" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PREFIX" value="J" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ROHS" value="Yes" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMPERATURE_RANGE_HIGH" value="+105°C" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VOLTAGE_RATING" value="150V" x="74.2" y="31" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="J2" library="Molex - 503763-0491" package="MOLEX_503763-0491_0" value="MOLEX_503763-0491MOLEX_503763-0491_0_0" x="72.6" y="33.6" smashed="yes">
+<attribute name="AUTOMOTIVE" value="No" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="CONN_GENDER" value="Male" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="CONN_ORIENTATION" value="Right Angle" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="CONTACT_MATERIAL" value="Gold,Nickel" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="CURRENT_RATING" value="1.5A" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://www.molex.com/webdocs/datasheets/pdf/en-us/5037630491_PCB_HEADERS.pdf" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="DEVICE_CLASS_L1" value="Connectors" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="DEVICE_CLASS_L2" value="Headers and Wire Housings" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="DEVICE_CLASS_L3" value="unset" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="CONN HEADER 1MM R/A 4CKT" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="WM10655CT-ND" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_URL" value="https://www.molex.com/pdm_docs/sd/5037630491_sd.pdf" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Recommended_Land_Pattern" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.7mm" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="Yes" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Molex" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT" value="503763-0491" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_DATE" value="0" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_REV" value="0" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-503763-0491" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="503763-0491" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="68.6" y="36.425" size="1" layer="25"/>
+<attribute name="NUMBER_OF_CONTACTS" value="4" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="NUMBER_OF_ROWS" value="1" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="HDR4" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="1mm" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="J" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+105°C" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_RATING" value="150V" x="72.6" y="33.6" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J9" library="Molex - 503763-0491" package="MOLEX_503763-0491_0" value="MOLEX_503763-0491MOLEX_503763-0491_0_0" x="11" y="75.2" smashed="yes" rot="R90">
-<attribute name="AUTOMOTIVE" value="No" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CONN_GENDER" value="Male" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CONN_ORIENTATION" value="Right Angle" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CONTACT_MATERIAL" value="Gold,Nickel" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CURRENT_RATING" value="1.5A" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET" value="https://www.molex.com/webdocs/datasheets/pdf/en-us/5037630491_PCB_HEADERS.pdf" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DEVICE_CLASS_L1" value="Connectors" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DEVICE_CLASS_L2" value="Headers and Wire Housings" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DEVICE_CLASS_L3" value="unset" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_DESCRIPTION" value="CONN HEADER 1MM R/A 4CKT" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="WM10655CT-ND" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FOOTPRINT_URL" value="https://www.molex.com/pdm_docs/sd/5037630491_sd.pdf" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Recommended_Land_Pattern" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="1.7mm" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LEAD_FREE" value="Yes" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Molex" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT" value="503763-0491" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_DATE" value="0" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_REV" value="0" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="538-503763-0491" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="503763-0491" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="8.175" y="71.2" size="1" layer="25" rot="R90"/>
-<attribute name="NUMBER_OF_CONTACTS" value="4" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NUMBER_OF_ROWS" value="1" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PACKAGE" value="HDR4" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PITCH" value="1mm" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PREFIX" value="J" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ROHS" value="Yes" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMPERATURE_RANGE_HIGH" value="+105°C" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VOLTAGE_RATING" value="150V" x="11" y="75.2" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="J9" library="Molex - 503763-0491" package="MOLEX_503763-0491_0" value="MOLEX_503763-0491MOLEX_503763-0491_0_0" x="9.4" y="76.4" smashed="yes">
+<attribute name="AUTOMOTIVE" value="No" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="CONN_GENDER" value="Male" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="CONN_ORIENTATION" value="Right Angle" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="CONTACT_MATERIAL" value="Gold,Nickel" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="CURRENT_RATING" value="1.5A" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="https://www.molex.com/webdocs/datasheets/pdf/en-us/5037630491_PCB_HEADERS.pdf" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="DEVICE_CLASS_L1" value="Connectors" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="DEVICE_CLASS_L2" value="Headers and Wire Housings" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="DEVICE_CLASS_L3" value="unset" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="CONN HEADER 1MM R/A 4CKT" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="WM10655CT-ND" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_URL" value="https://www.molex.com/pdm_docs/sd/5037630491_sd.pdf" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Recommended_Land_Pattern" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.7mm" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="LEAD_FREE" value="Yes" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Molex" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT" value="503763-0491" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_DATE" value="0" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_REV" value="0" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-503763-0491" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="503763-0491" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="5.4" y="79.225" size="1" layer="25"/>
+<attribute name="NUMBER_OF_CONTACTS" value="4" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="NUMBER_OF_ROWS" value="1" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="HDR4" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="1mm" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="J" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+105°C" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE_RATING" value="150V" x="9.4" y="76.4" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -5010,13 +5011,12 @@ design rules under a new name.</description>
 <contactref element="J13" pad="2"/>
 <contactref element="J1" pad="6"/>
 <contactref element="J1" pad="5"/>
+<contactref element="J4" pad="5"/>
+<contactref element="J2" pad="6"/>
 <contactref element="J9" pad="1"/>
 <contactref element="J9" pad="5"/>
 <contactref element="J9" pad="2"/>
 <contactref element="J9" pad="6"/>
-<contactref element="J4" pad="1"/>
-<contactref element="J2" pad="6"/>
-<contactref element="J2" pad="5"/>
 <wire x1="88.6206" y1="81.2292" x2="88.6206" y2="82.2452" width="0" layer="19" extent="1-1"/>
 <wire x1="88.6206" y1="80.2132" x2="88.6206" y2="81.2292" width="0" layer="19" extent="1-1"/>
 <wire x1="88.6206" y1="79.1972" x2="88.6206" y2="80.2132" width="0" layer="19" extent="1-1"/>
@@ -5047,9 +5047,7 @@ design rules under a new name.</description>
 <wire x1="88.6206" y1="43.7388" x2="88.6206" y2="44.7548" width="0" layer="19" extent="1-1"/>
 <wire x1="88.6206" y1="42.7228" x2="88.6206" y2="43.7388" width="0" layer="19" extent="1-1"/>
 <wire x1="79.3402" y1="47.1988" x2="82.157" y2="55.1248" width="0" layer="19" extent="1-1"/>
-<wire x1="76.6608" y1="47.2" x2="79.3402" y2="47.1988" width="0" layer="19" extent="1-1"/>
-<wire x1="73.645" y1="34.875" x2="76.6608" y2="47.2" width="0" layer="19" extent="1-1"/>
-<wire x1="73.645" y1="27.125" x2="73.645" y2="34.875" width="0" layer="19" extent="1-1"/>
+<wire x1="72.2" y1="47.0608" x2="79.3402" y2="47.1988" width="0" layer="19" extent="1-1"/>
 <wire x1="88.519" y1="32.7406" x2="88.6206" y2="42.7228" width="0" layer="19" extent="1-1"/>
 <wire x1="88.519" y1="31.7246" x2="88.519" y2="32.7406" width="0" layer="19" extent="1-1"/>
 <wire x1="88.519" y1="30.7086" x2="88.519" y2="31.7246" width="0" layer="19" extent="1-1"/>
@@ -5060,6 +5058,7 @@ design rules under a new name.</description>
 <wire x1="88.519" y1="25.6286" x2="88.519" y2="26.6446" width="0" layer="19" extent="1-1"/>
 <wire x1="82.154" y1="27.1238" x2="88.519" y2="27.6606" width="0" layer="19" extent="1-1"/>
 <wire x1="82.154" y1="34.8738" x2="88.519" y2="32.7406" width="0" layer="19" extent="1-1"/>
+<wire x1="76.475" y1="34.155" x2="82.154" y2="34.8738" width="0" layer="19" extent="1-1"/>
 <wire x1="88.519" y1="16.5354" x2="88.519" y2="25.6286" width="0" layer="19" extent="1-1"/>
 <wire x1="88.519" y1="15.5194" x2="88.519" y2="16.5354" width="0" layer="19" extent="1-1"/>
 <wire x1="88.519" y1="14.5034" x2="88.519" y2="15.5194" width="0" layer="19" extent="1-1"/>
@@ -5103,12 +5102,12 @@ design rules under a new name.</description>
 <wire x1="59.309" y1="1.651" x2="60.325" y2="1.651" width="0" layer="19" extent="1-1"/>
 <wire x1="58.293" y1="1.651" x2="59.309" y2="1.651" width="0" layer="19" extent="1-1"/>
 <wire x1="52.525" y1="7.445" x2="60.275" y2="7.445" width="0" layer="19" extent="1-1"/>
-<wire x1="62.0692" y1="40.5228" x2="73.645" y2="34.875" width="0" layer="19" extent="1-1"/>
-<wire x1="57.8231" y1="47.2746" x2="62.0692" y2="40.5228" width="0" layer="19" extent="1-1"/>
-<wire x1="57.4667" y1="55.957" x2="57.8231" y2="47.2746" width="0" layer="19" extent="1-1"/>
-<wire x1="64.9478" y1="56.6056" x2="57.4667" y2="55.957" width="0" layer="19" extent="1-1"/>
-<wire x1="69.85" y1="62.23" x2="64.9478" y2="56.6056" width="0" layer="19" extent="1-1"/>
+<wire x1="69.85" y1="62.23" x2="79.167" y2="57.4998" width="0" layer="19" extent="1-1"/>
 <wire x1="69.85" y1="64.77" x2="69.85" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="64.9478" y1="56.6056" x2="69.85" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="57.4667" y1="55.957" x2="64.9478" y2="56.6056" width="0" layer="19" extent="1-1"/>
+<wire x1="57.8231" y1="47.2746" x2="57.4667" y2="55.957" width="0" layer="19" extent="1-1"/>
+<wire x1="62.0692" y1="40.5228" x2="57.8231" y2="47.2746" width="0" layer="19" extent="1-1"/>
 <wire x1="72.39" y1="88.265" x2="79.165" y2="78.1" width="0" layer="19" extent="1-1"/>
 <wire x1="72.39" y1="90.805" x2="72.39" y2="88.265" width="0" layer="19" extent="1-1"/>
 <wire x1="48.895" y1="67.5132" x2="57.4667" y2="55.957" width="0" layer="19" extent="1-1"/>
@@ -5131,11 +5130,8 @@ design rules under a new name.</description>
 <wire x1="19.685" y1="81.407" x2="24.765" y2="81.1784" width="0" layer="19" extent="1-1"/>
 <wire x1="18.415" y1="81.407" x2="19.685" y2="81.407" width="0" layer="19" extent="1-1"/>
 <wire x1="17.145" y1="81.407" x2="18.415" y2="81.407" width="0" layer="19" extent="1-1"/>
-<wire x1="13.435" y1="76.7" x2="17.145" y2="81.407" width="0" layer="19" extent="1-1"/>
-<wire x1="13.435" y1="75.7" x2="13.435" y2="76.7" width="0" layer="19" extent="1-1"/>
-<wire x1="10.445" y1="79.075" x2="13.435" y2="76.7" width="0" layer="19" extent="1-1"/>
-<wire x1="10.445" y1="71.325" x2="13.435" y2="75.7" width="0" layer="19" extent="1-1"/>
-<wire x1="8.889" y1="84.174" x2="10.445" y2="79.075" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="88.265" x2="19.685" y2="81.407" width="0" layer="19" extent="1-1"/>
+<wire x1="8.889" y1="84.174" x2="17.145" y2="81.407" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="84.7344" x2="8.889" y2="84.174" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="85.7504" x2="4.1656" y2="84.7344" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="86.7664" x2="4.1656" y2="85.7504" width="0" layer="19" extent="1-1"/>
@@ -5144,7 +5140,7 @@ design rules under a new name.</description>
 <wire x1="4.1656" y1="81.6864" x2="4.1656" y2="82.7024" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="80.6704" x2="4.1656" y2="81.6864" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="79.6544" x2="4.1656" y2="80.6704" width="0" layer="19" extent="1-1"/>
-<wire x1="4.1656" y1="70.5612" x2="10.445" y2="71.325" width="0" layer="19" extent="1-1"/>
+<wire x1="4.1656" y1="70.5612" x2="4.1656" y2="79.6544" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="69.5452" x2="4.1656" y2="70.5612" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="68.5292" x2="4.1656" y2="69.5452" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="67.5132" x2="4.1656" y2="68.5292" width="0" layer="19" extent="1-1"/>
@@ -5152,7 +5148,6 @@ design rules under a new name.</description>
 <wire x1="4.1656" y1="65.4812" x2="4.1656" y2="66.4972" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="64.4652" x2="4.1656" y2="65.4812" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1656" y1="63.4492" x2="4.1656" y2="64.4652" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="88.265" x2="19.685" y2="81.407" width="0" layer="19" extent="1-1"/>
 <wire x1="10.445" y1="56.175" x2="4.1656" y2="63.4492" width="0" layer="19" extent="1-1"/>
 <wire x1="13.435" y1="50.8" x2="10.445" y2="56.175" width="0" layer="19" extent="1-1"/>
 <wire x1="10.445" y1="48.425" x2="13.435" y2="50.8" width="0" layer="19" extent="1-1"/>
@@ -5194,6 +5189,10 @@ design rules under a new name.</description>
 <wire x1="31.496" y1="1.651" x2="30.48" y2="1.651" width="0" layer="19" extent="1-1"/>
 <wire x1="32.512" y1="1.651" x2="31.496" y2="1.651" width="0" layer="19" extent="1-1"/>
 <wire x1="33.528" y1="1.651" x2="32.512" y2="1.651" width="0" layer="19" extent="1-1"/>
+<wire x1="13.275" y1="76.955" x2="10.16" y2="1.651" width="0" layer="19" extent="1-1"/>
+<wire x1="10.9" y1="73.965" x2="13.275" y2="76.955" width="0" layer="19" extent="1-1"/>
+<wire x1="9.9" y1="73.965" x2="10.9" y2="73.965" width="0" layer="19" extent="1-1"/>
+<wire x1="5.525" y1="76.955" x2="9.9" y2="73.965" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$94">
 <contactref element="H1" pad="P$4"/>
@@ -5296,9 +5295,9 @@ design rules under a new name.</description>
 <contactref element="H1" pad="1.2"/>
 <wire x1="44.45" y1="64.77" x2="44.45" y2="68.834" width="0.3048" layer="16"/>
 <wire x1="44.45" y1="68.834" x2="43.307" y2="69.977" width="0.3048" layer="16"/>
-<wire x1="43.307" y1="69.977" x2="16.31" y2="69.977" width="0.3048" layer="16"/>
-<wire x1="16.31" y1="69.977" x2="15.24" y2="71.047" width="0.3048" layer="16"/>
-<wire x1="15.24" y1="71.047" x2="15.24" y2="84.455" width="0.3048" layer="16"/>
+<wire x1="43.307" y1="69.977" x2="16.51" y2="69.977" width="0.3048" layer="16"/>
+<wire x1="16.51" y1="69.977" x2="15.24" y2="71.247" width="0.3048" layer="16"/>
+<wire x1="15.24" y1="71.247" x2="15.24" y2="84.455" width="0.3048" layer="16"/>
 <wire x1="15.24" y1="84.455" x2="13.97" y2="85.725" width="0.3048" layer="16"/>
 </signal>
 <signal name="SPI1_D0">
@@ -5424,28 +5423,22 @@ design rules under a new name.</description>
 <signal name="UART1_TXD">
 <contactref element="P9" pad="24"/>
 <wire x1="41.91" y1="62.23" x2="40.6654" y2="63.4746" width="0.3048" layer="16"/>
+<wire x1="40.6654" y1="67.1322" x2="39.7002" y2="68.0974" width="0.3048" layer="16"/>
 <wire x1="40.6654" y1="63.4746" x2="40.6654" y2="67.1322" width="0.3048" layer="16"/>
+<wire x1="39.7002" y1="68.0974" x2="13.081" y2="68.0974" width="0.3048" layer="16"/>
+<wire x1="13.081" y1="68.0974" x2="11.7856" y2="69.3928" width="0.3048" layer="16"/>
 <contactref element="J9" pad="3"/>
-<wire x1="39.8976" y1="67.9" x2="18.4" y2="67.9" width="0.3048" layer="16"/>
-<wire x1="40.6654" y1="67.1322" x2="39.8976" y2="67.9" width="0.3048" layer="16"/>
-<via x="18.4" y="67.9" extent="1-16" drill="0.35"/>
-<wire x1="18.4" y1="67.9" x2="15.25" y2="71.05" width="0.3048" layer="1"/>
-<wire x1="15.25" y1="71.05" x2="15.25" y2="73.55" width="0.3048" layer="1"/>
-<wire x1="15.25" y1="73.55" x2="14.1" y2="74.7" width="0.3048" layer="1"/>
-<wire x1="14.1" y1="74.7" x2="13.435" y2="74.7" width="0.3048" layer="1"/>
+<wire x1="11.7856" y1="69.3928" x2="8.9" y2="73.965" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="UART1_RXD">
 <contactref element="P9" pad="26"/>
 <wire x1="39.37" y1="62.23" x2="38.1254" y2="63.4746" width="0.3048" layer="16"/>
 <wire x1="38.1254" y1="63.4746" x2="38.1254" y2="65.9638" width="0.3048" layer="16"/>
 <wire x1="38.1254" y1="65.9638" x2="37.2872" y2="66.802" width="0.3048" layer="16"/>
+<wire x1="10.541" y1="66.802" x2="9.2456" y2="68.0974" width="0.3048" layer="16"/>
+<wire x1="37.2872" y1="66.802" x2="10.541" y2="66.802" width="0.3048" layer="16"/>
 <contactref element="J9" pad="4"/>
-<wire x1="13.435" y1="73.7" x2="13.95" y2="73.185" width="0.3048" layer="1"/>
-<wire x1="13.95" y1="73.185" x2="13.95" y2="71.05" width="0.3048" layer="1"/>
-<wire x1="13.95" y1="71.05" x2="18.2" y2="66.8" width="0.3048" layer="1"/>
-<via x="18.2" y="66.8" extent="1-16" drill="0.35"/>
-<wire x1="37.2872" y1="66.802" x2="18.202" y2="66.802" width="0.3048" layer="16"/>
-<wire x1="18.202" y1="66.802" x2="18.2" y2="66.8" width="0.3048" layer="16"/>
+<wire x1="9.2456" y1="68.0974" x2="7.9" y2="73.965" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SPI1_D1">
 <contactref element="P9" pad="30"/>
@@ -5712,8 +5705,7 @@ design rules under a new name.</description>
 <signal name="D-_MICRO">
 <contactref element="J3" pad="3"/>
 <contactref element="J4" pad="3"/>
-<wire x1="79.3402" y1="45.1988" x2="76.662" y2="45.1988" width="0.3048" layer="1"/>
-<wire x1="76.662" y1="45.1988" x2="76.6608" y2="45.2" width="0.3048" layer="1"/>
+<wire x1="70.2" y1="47.0608" x2="79.3402" y2="45.1988" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D+_HOST">
 <contactref element="H1" pad="1.19"/>
@@ -5744,22 +5736,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="D+_MICRO">
 <contactref element="J3" pad="2"/>
-<contactref element="J4" pad="4"/>
-<wire x1="76.6608" y1="44.2" x2="79.339" y2="44.2" width="0.3048" layer="1"/>
-<wire x1="79.339" y1="44.2" x2="79.3402" y2="44.1988" width="0.3048" layer="1"/>
+<contactref element="J4" pad="2"/>
+<wire x1="69.2" y1="47.0608" x2="79.3402" y2="44.1988" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ID_MICRO">
 <contactref element="J3" pad="4"/>
-<contactref element="J4" pad="2"/>
-<wire x1="76.6608" y1="46.2" x2="79.339" y2="46.2" width="0.3048" layer="1"/>
-<wire x1="79.339" y1="46.2" x2="79.3402" y2="46.1988" width="0.3048" layer="1"/>
+<contactref element="J4" pad="4"/>
+<wire x1="71.2" y1="47.0608" x2="79.3402" y2="46.1988" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC_MICRO">
 <contactref element="J3" pad="1"/>
-<contactref element="J4" pad="5"/>
-<wire x1="79.339" y1="43.2" x2="79.3402" y2="43.1988" width="0.6096" layer="1"/>
-<wire x1="79.3402" y1="43.1988" x2="76.662" y2="43.1988" width="0.3048" layer="1"/>
-<wire x1="76.662" y1="43.1988" x2="76.6608" y2="43.2" width="0.3048" layer="1"/>
+<contactref element="J4" pad="1"/>
+<wire x1="68.2" y1="47.0608" x2="79.3402" y2="43.1988" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D">
 <contactref element="U2" pad="8"/>
@@ -6013,27 +6001,29 @@ design rules under a new name.</description>
 </signal>
 <signal name="RX-">
 <contactref element="J1" pad="4"/>
-<contactref element="J2" pad="1"/>
-<wire x1="76.635" y1="32.5" x2="79.1628" y2="32.5" width="0.3048" layer="1"/>
-<wire x1="79.1628" y1="32.5" x2="79.164" y2="32.4988" width="0.3048" layer="1"/>
+<contactref element="J2" pad="4"/>
+<wire x1="71.1" y1="31.165" x2="79.164" y2="32.4988" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RX+">
 <contactref element="J1" pad="3"/>
-<contactref element="J2" pad="2"/>
-<wire x1="79.164" y1="31.4988" x2="76.6362" y2="31.4988" width="0.3048" layer="1"/>
-<wire x1="76.6362" y1="31.4988" x2="76.635" y2="31.5" width="0.3048" layer="1"/>
+<contactref element="J2" pad="3"/>
+<wire x1="72.1" y1="31.165" x2="79.164" y2="31.4988" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX-">
 <contactref element="J1" pad="2"/>
-<contactref element="J2" pad="3"/>
-<wire x1="76.635" y1="30.5" x2="79.1628" y2="30.5" width="0.3048" layer="1"/>
-<wire x1="79.1628" y1="30.5" x2="79.164" y2="30.4988" width="0.3048" layer="1"/>
+<contactref element="J2" pad="2"/>
+<wire x1="73.1" y1="31.165" x2="79.164" y2="30.4988" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX+">
 <contactref element="J1" pad="1"/>
-<contactref element="J2" pad="4"/>
-<wire x1="79.164" y1="29.4988" x2="76.6362" y2="29.4988" width="0.3048" layer="1"/>
-<wire x1="76.6362" y1="29.4988" x2="76.635" y2="29.5" width="0.3048" layer="1"/>
+<contactref element="J2" pad="1"/>
+<wire x1="74.1" y1="31.165" x2="79.164" y2="29.4988" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<wire x1="78.2" y1="8.4" x2="78.4" y2="8.2" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="J2" pad="5"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
