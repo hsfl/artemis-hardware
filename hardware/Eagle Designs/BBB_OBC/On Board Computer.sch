@@ -4926,6 +4926,48 @@ Created by Upverter.com</description>
 <label x="302.26" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="GPIO_FAULT1" class="0">
+<segment>
+<wire x1="88.9" y1="165.1" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
+<label x="96.52" y="165.1" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.40"/>
+</segment>
+</net>
+<net name="GPIO_SLEEP1" class="0">
+<segment>
+<wire x1="88.9" y1="162.56" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
+<label x="96.52" y="162.56" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.42"/>
+</segment>
+</net>
+<net name="GPIO_TRQ1" class="0">
+<segment>
+<wire x1="88.9" y1="167.64" x2="96.52" y2="167.64" width="0.1524" layer="91"/>
+<label x="96.52" y="167.64" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.38"/>
+</segment>
+</net>
+<net name="GPIO_FAULT2" class="0">
+<segment>
+<wire x1="88.9" y1="157.48" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
+<label x="96.52" y="157.48" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.46"/>
+</segment>
+</net>
+<net name="GPIO_SLEEP2" class="0">
+<segment>
+<wire x1="88.9" y1="154.94" x2="96.52" y2="154.94" width="0.1524" layer="91"/>
+<label x="96.52" y="154.94" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.48"/>
+</segment>
+</net>
+<net name="GPIO_TRQ2" class="0">
+<segment>
+<wire x1="88.9" y1="160.02" x2="96.52" y2="160.02" width="0.1524" layer="91"/>
+<label x="96.52" y="160.02" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.44"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
