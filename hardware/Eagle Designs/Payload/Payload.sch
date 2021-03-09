@@ -5016,9 +5016,9 @@ Source: Samtec SSW.pdf</description>
 <pinref part="U1" gate="G$1" pin="IN4"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="1.24"/>
-<wire x1="99.06" y1="187.96" x2="106.68" y2="187.96" width="0.1524" layer="91"/>
-<label x="106.68" y="187.96" size="1.778" layer="95"/>
+<wire x1="99.06" y1="185.42" x2="106.68" y2="185.42" width="0.1524" layer="91"/>
+<label x="106.68" y="185.42" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.26"/>
 </segment>
 </net>
 <net name="TORQUE_1A" class="0">
@@ -5108,9 +5108,9 @@ Source: Samtec SSW.pdf</description>
 <label x="218.44" y="129.54" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="1.26"/>
-<wire x1="99.06" y1="185.42" x2="106.68" y2="185.42" width="0.1524" layer="91"/>
-<label x="106.68" y="185.42" size="1.778" layer="95"/>
+<wire x1="99.06" y1="187.96" x2="106.68" y2="187.96" width="0.1524" layer="91"/>
+<label x="106.68" y="187.96" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.24"/>
 </segment>
 </net>
 <net name="IN2" class="0">
@@ -5120,9 +5120,9 @@ Source: Samtec SSW.pdf</description>
 <pinref part="U1" gate="G$1" pin="IN2"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="1.25"/>
-<wire x1="71.12" y1="185.42" x2="63.5" y2="185.42" width="0.1524" layer="91"/>
-<label x="63.5" y="185.42" size="1.778" layer="95" rot="MR0"/>
+<wire x1="71.12" y1="187.96" x2="63.5" y2="187.96" width="0.1524" layer="91"/>
+<label x="63.5" y="187.96" size="1.778" layer="95" rot="MR0"/>
+<pinref part="H1" gate="G$1" pin="1.23"/>
 </segment>
 </net>
 <net name="IN3" class="0">
@@ -5132,9 +5132,9 @@ Source: Samtec SSW.pdf</description>
 <pinref part="U1" gate="G$1" pin="IN3"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="1.23"/>
-<wire x1="71.12" y1="187.96" x2="63.5" y2="187.96" width="0.1524" layer="91"/>
-<label x="63.5" y="187.96" size="1.778" layer="95" rot="MR0"/>
+<wire x1="71.12" y1="185.42" x2="63.5" y2="185.42" width="0.1524" layer="91"/>
+<label x="63.5" y="185.42" size="1.778" layer="95" rot="MR0"/>
+<pinref part="H1" gate="G$1" pin="1.25"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -5168,9 +5168,9 @@ Source: Samtec SSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="IN4"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="1.28"/>
-<wire x1="99.06" y1="182.88" x2="106.68" y2="182.88" width="0.1524" layer="91"/>
-<label x="106.68" y="182.88" size="1.778" layer="95"/>
+<wire x1="99.06" y1="180.34" x2="106.68" y2="180.34" width="0.1524" layer="91"/>
+<label x="106.68" y="180.34" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.30"/>
 </segment>
 </net>
 <net name="TORQUE_3A" class="0">
@@ -5260,9 +5260,9 @@ Source: Samtec SSW.pdf</description>
 <label x="218.44" y="63.5" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="1.30"/>
-<wire x1="99.06" y1="180.34" x2="106.68" y2="180.34" width="0.1524" layer="91"/>
-<label x="106.68" y="180.34" size="1.778" layer="95"/>
+<wire x1="99.06" y1="182.88" x2="106.68" y2="182.88" width="0.1524" layer="91"/>
+<label x="106.68" y="182.88" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1.28"/>
 </segment>
 </net>
 <net name="IN6" class="0">
@@ -5272,9 +5272,9 @@ Source: Samtec SSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="IN2"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="1.29"/>
-<wire x1="71.12" y1="180.34" x2="63.5" y2="180.34" width="0.1524" layer="91"/>
-<label x="63.5" y="180.34" size="1.778" layer="95" rot="MR0"/>
+<wire x1="71.12" y1="182.88" x2="63.5" y2="182.88" width="0.1524" layer="91"/>
+<label x="63.5" y="182.88" size="1.778" layer="95" rot="MR0"/>
+<pinref part="H1" gate="G$1" pin="1.27"/>
 </segment>
 </net>
 <net name="IN7" class="0">
@@ -5284,9 +5284,9 @@ Source: Samtec SSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="IN3"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="1.27"/>
-<wire x1="71.12" y1="182.88" x2="63.5" y2="182.88" width="0.1524" layer="91"/>
-<label x="63.5" y="182.88" size="1.778" layer="95" rot="MR0"/>
+<wire x1="71.12" y1="180.34" x2="63.5" y2="180.34" width="0.1524" layer="91"/>
+<label x="63.5" y="180.34" size="1.778" layer="95" rot="MR0"/>
+<pinref part="H1" gate="G$1" pin="1.29"/>
 </segment>
 </net>
 <net name="GPIO6" class="0">
