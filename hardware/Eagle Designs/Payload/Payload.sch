@@ -3906,8 +3906,8 @@ Source: Samtec SSW.pdf</description>
 <part name="J3" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
 <part name="J4" library="Molex - 503763-0691" deviceset="503763-0691" device=""/>
 <part name="J5" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
-<part name="J7" library="Molex - 503763-0691" deviceset="503763-0691" device=""/>
 <part name="J6" library="Molex - 503763-0691" deviceset="503763-0691" device=""/>
+<part name="J7" library="Molex - 503763-0691" deviceset="503763-0691" device=""/>
 <part name="X1" library="Adafruit - C25582-40G-M36-0A" deviceset="C25582-40G-M36-0A" device=""/>
 <part name="X2" library="con-samtec" library_urn="urn:adsk.eagle:library:184" deviceset="SSW-120-02-G" device="-D"/>
 <part name="J8" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
@@ -4067,14 +4067,14 @@ Source: Samtec SSW.pdf</description>
 <instance part="J4" gate="A" x="347.98" y="134.62" smashed="yes">
 <attribute name="NAME" x="352.1456" y="137.3886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
-<instance part="J5" gate="G$0" x="294.64" y="101.6" smashed="yes">
-<attribute name="NAME" x="297.18" y="99.06" size="2.54" layer="95" align="top-left"/>
+<instance part="J5" gate="G$0" x="281.94" y="104.14" smashed="yes">
+<attribute name="NAME" x="284.48" y="101.6" size="2.54" layer="95" align="top-left"/>
 </instance>
-<instance part="J7" gate="A" x="350.52" y="60.96" smashed="yes">
-<attribute name="NAME" x="354.6856" y="63.7286" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<instance part="J6" gate="A" x="330.2" y="93.98" smashed="yes">
+<attribute name="NAME" x="334.3656" y="96.7486" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
-<instance part="J6" gate="A" x="350.52" y="91.44" smashed="yes">
-<attribute name="NAME" x="354.6856" y="94.2086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<instance part="J7" gate="A" x="363.22" y="93.98" smashed="yes">
+<attribute name="NAME" x="367.3856" y="96.7486" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
 <instance part="X1" gate="G$1" x="284.48" y="236.22" smashed="yes">
 <attribute name="NAME" x="284.48" y="236.22" size="1.778" layer="95"/>
@@ -4200,11 +4200,11 @@ Source: Samtec SSW.pdf</description>
 <instance part="X2" gate="-40" x="365.76" y="185.42" smashed="yes">
 <attribute name="NAME" x="362.712" y="186.182" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="J8" gate="G$0" x="281.94" y="71.12" smashed="yes">
-<attribute name="NAME" x="284.48" y="68.58" size="2.54" layer="95" align="top-left"/>
+<instance part="J8" gate="G$0" x="294.64" y="71.12" smashed="yes">
+<attribute name="NAME" x="297.18" y="68.58" size="2.54" layer="95" align="top-left"/>
 </instance>
-<instance part="J9" gate="G$0" x="307.34" y="71.12" smashed="yes">
-<attribute name="NAME" x="309.88" y="68.58" size="2.54" layer="95" align="top-left"/>
+<instance part="J9" gate="G$0" x="337.82" y="71.12" smashed="yes">
+<attribute name="NAME" x="340.36" y="68.58" size="2.54" layer="95" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -4213,8 +4213,8 @@ Source: Samtec SSW.pdf</description>
 <net name="SDA1_I2C" class="0">
 <segment>
 <pinref part="J5" gate="G$0" pin="1"/>
-<wire x1="314.96" y1="91.44" x2="317.5" y2="91.44" width="0.1524" layer="91"/>
-<label x="317.5" y="91.44" size="1.778" layer="95"/>
+<wire x1="302.26" y1="93.98" x2="304.8" y2="93.98" width="0.1524" layer="91"/>
+<label x="304.8" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="231.14" x2="271.78" y2="231.14" width="0.1524" layer="91"/>
@@ -4225,8 +4225,8 @@ Source: Samtec SSW.pdf</description>
 <net name="SCL1_I2C" class="0">
 <segment>
 <pinref part="J5" gate="G$0" pin="2"/>
-<wire x1="314.96" y1="86.36" x2="317.5" y2="86.36" width="0.1524" layer="91"/>
-<label x="317.5" y="86.36" size="1.778" layer="95"/>
+<wire x1="302.26" y1="88.9" x2="304.8" y2="88.9" width="0.1524" layer="91"/>
+<label x="304.8" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="228.6" x2="271.78" y2="228.6" width="0.1524" layer="91"/>
@@ -4236,9 +4236,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="GPIO17" class="0">
 <segment>
-<pinref part="J7" gate="A" pin="1"/>
-<wire x1="350.52" y1="60.96" x2="347.98" y2="60.96" width="0.1524" layer="91"/>
-<label x="347.98" y="60.96" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J6" gate="A" pin="1"/>
+<wire x1="330.2" y1="93.98" x2="327.66" y2="93.98" width="0.1524" layer="91"/>
+<label x="327.66" y="93.98" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="220.98" x2="271.78" y2="220.98" width="0.1524" layer="91"/>
@@ -4248,9 +4248,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="GPIO27" class="0">
 <segment>
-<pinref part="J7" gate="A" pin="2"/>
-<wire x1="350.52" y1="58.42" x2="347.98" y2="58.42" width="0.1524" layer="91"/>
-<label x="347.98" y="58.42" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J6" gate="A" pin="2"/>
+<wire x1="330.2" y1="91.44" x2="327.66" y2="91.44" width="0.1524" layer="91"/>
+<label x="327.66" y="91.44" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="218.44" x2="271.78" y2="218.44" width="0.1524" layer="91"/>
@@ -4260,9 +4260,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="GPIO22" class="0">
 <segment>
-<pinref part="J7" gate="A" pin="4"/>
-<wire x1="350.52" y1="53.34" x2="347.98" y2="53.34" width="0.1524" layer="91"/>
-<label x="347.98" y="53.34" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J6" gate="A" pin="4"/>
+<wire x1="330.2" y1="86.36" x2="327.66" y2="86.36" width="0.1524" layer="91"/>
+<label x="327.66" y="86.36" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="215.9" x2="271.78" y2="215.9" width="0.1524" layer="91"/>
@@ -4272,9 +4272,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="SPI0_MOSI" class="0">
 <segment>
-<pinref part="J6" gate="A" pin="1"/>
-<wire x1="350.52" y1="91.44" x2="347.98" y2="91.44" width="0.1524" layer="91"/>
-<label x="347.98" y="91.44" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J7" gate="A" pin="1"/>
+<wire x1="363.22" y1="93.98" x2="360.68" y2="93.98" width="0.1524" layer="91"/>
+<label x="360.68" y="93.98" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="210.82" x2="271.78" y2="210.82" width="0.1524" layer="91"/>
@@ -4284,9 +4284,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="SPI0_MISO" class="0">
 <segment>
-<pinref part="J6" gate="A" pin="2"/>
-<wire x1="350.52" y1="88.9" x2="347.98" y2="88.9" width="0.1524" layer="91"/>
-<label x="347.98" y="88.9" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J7" gate="A" pin="2"/>
+<wire x1="363.22" y1="91.44" x2="360.68" y2="91.44" width="0.1524" layer="91"/>
+<label x="360.68" y="91.44" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="208.28" x2="271.78" y2="208.28" width="0.1524" layer="91"/>
@@ -4296,9 +4296,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="SPI0_SCLK" class="0">
 <segment>
-<pinref part="J6" gate="A" pin="4"/>
-<wire x1="350.52" y1="83.82" x2="347.98" y2="83.82" width="0.1524" layer="91"/>
-<label x="347.98" y="83.82" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J7" gate="A" pin="4"/>
+<wire x1="363.22" y1="86.36" x2="360.68" y2="86.36" width="0.1524" layer="91"/>
+<label x="360.68" y="86.36" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="205.74" x2="271.78" y2="205.74" width="0.1524" layer="91"/>
@@ -4308,9 +4308,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="GPIO23" class="0">
 <segment>
-<pinref part="J7" gate="A" pin="3"/>
-<wire x1="350.52" y1="55.88" x2="347.98" y2="55.88" width="0.1524" layer="91"/>
-<label x="347.98" y="55.88" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J6" gate="A" pin="3"/>
+<wire x1="330.2" y1="88.9" x2="327.66" y2="88.9" width="0.1524" layer="91"/>
+<label x="327.66" y="88.9" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="309.88" y1="215.9" x2="317.5" y2="215.9" width="0.1524" layer="91"/>
@@ -4320,9 +4320,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="GPIO24" class="0">
 <segment>
-<pinref part="J7" gate="A" pin="5"/>
-<wire x1="350.52" y1="50.8" x2="347.98" y2="50.8" width="0.1524" layer="91"/>
-<label x="347.98" y="50.8" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J6" gate="A" pin="5"/>
+<wire x1="330.2" y1="83.82" x2="327.66" y2="83.82" width="0.1524" layer="91"/>
+<label x="327.66" y="83.82" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="309.88" y1="213.36" x2="317.5" y2="213.36" width="0.1524" layer="91"/>
@@ -4332,9 +4332,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="GPIO25" class="0">
 <segment>
-<pinref part="J7" gate="A" pin="6"/>
-<wire x1="350.52" y1="48.26" x2="347.98" y2="48.26" width="0.1524" layer="91"/>
-<label x="347.98" y="48.26" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J6" gate="A" pin="6"/>
+<wire x1="330.2" y1="81.28" x2="327.66" y2="81.28" width="0.1524" layer="91"/>
+<label x="327.66" y="81.28" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="309.88" y1="208.28" x2="317.5" y2="208.28" width="0.1524" layer="91"/>
@@ -4344,9 +4344,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="SPI0_CE0_N" class="0">
 <segment>
-<pinref part="J6" gate="A" pin="3"/>
-<wire x1="350.52" y1="86.36" x2="347.98" y2="86.36" width="0.1524" layer="91"/>
-<label x="347.98" y="86.36" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J7" gate="A" pin="3"/>
+<wire x1="363.22" y1="88.9" x2="360.68" y2="88.9" width="0.1524" layer="91"/>
+<label x="360.68" y="88.9" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="309.88" y1="205.74" x2="317.5" y2="205.74" width="0.1524" layer="91"/>
@@ -4356,9 +4356,9 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="SPI0_CE1_N" class="0">
 <segment>
-<pinref part="J6" gate="A" pin="5"/>
-<wire x1="350.52" y1="81.28" x2="347.98" y2="81.28" width="0.1524" layer="91"/>
-<label x="347.98" y="81.28" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J7" gate="A" pin="5"/>
+<wire x1="363.22" y1="83.82" x2="360.68" y2="83.82" width="0.1524" layer="91"/>
+<label x="360.68" y="83.82" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <wire x1="309.88" y1="203.2" x2="317.5" y2="203.2" width="0.1524" layer="91"/>
@@ -4554,18 +4554,18 @@ Source: Samtec SSW.pdf</description>
 </segment>
 <segment>
 <pinref part="J5" gate="G$0" pin="MNT_2"/>
-<wire x1="314.96" y1="76.2" x2="317.5" y2="76.2" width="0.1524" layer="91"/>
-<label x="317.5" y="76.2" size="1.778" layer="95"/>
+<wire x1="302.26" y1="78.74" x2="304.8" y2="78.74" width="0.1524" layer="91"/>
+<label x="304.8" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$0" pin="MNT_1"/>
-<wire x1="314.96" y1="81.28" x2="317.5" y2="81.28" width="0.1524" layer="91"/>
-<label x="317.5" y="81.28" size="1.778" layer="95"/>
+<wire x1="302.26" y1="83.82" x2="304.8" y2="83.82" width="0.1524" layer="91"/>
+<label x="304.8" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J6" gate="A" pin="6"/>
-<wire x1="350.52" y1="78.74" x2="347.98" y2="78.74" width="0.1524" layer="91"/>
-<label x="347.98" y="78.74" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J7" gate="A" pin="6"/>
+<wire x1="363.22" y1="81.28" x2="360.68" y2="81.28" width="0.1524" layer="91"/>
+<label x="360.68" y="81.28" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="RPI_GND" class="0">
@@ -5027,12 +5027,22 @@ Source: Samtec SSW.pdf</description>
 <wire x1="256.54" y1="129.54" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
 <label x="259.08" y="129.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="314.96" y1="60.96" x2="317.5" y2="60.96" width="0.1524" layer="91"/>
+<label x="317.5" y="60.96" size="1.778" layer="95"/>
+<pinref part="J8" gate="G$0" pin="1"/>
+</segment>
 </net>
 <net name="TORQUE_1B" class="0">
 <segment>
 <wire x1="256.54" y1="127" x2="259.08" y2="127" width="0.1524" layer="91"/>
 <label x="259.08" y="127" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="OUT2"/>
+</segment>
+<segment>
+<wire x1="314.96" y1="55.88" x2="317.5" y2="55.88" width="0.1524" layer="91"/>
+<label x="317.5" y="55.88" size="1.778" layer="95"/>
+<pinref part="J8" gate="G$0" pin="2"/>
 </segment>
 </net>
 <net name="TORQUE_2A" class="0">
@@ -5041,12 +5051,22 @@ Source: Samtec SSW.pdf</description>
 <label x="259.08" y="124.46" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="OUT3"/>
 </segment>
+<segment>
+<wire x1="314.96" y1="45.72" x2="317.5" y2="45.72" width="0.1524" layer="91"/>
+<label x="317.5" y="45.72" size="1.778" layer="95"/>
+<pinref part="J8" gate="G$0" pin="4"/>
+</segment>
 </net>
 <net name="TORQUE_2B" class="0">
 <segment>
 <wire x1="256.54" y1="121.92" x2="259.08" y2="121.92" width="0.1524" layer="91"/>
 <label x="259.08" y="121.92" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="OUT4"/>
+</segment>
+<segment>
+<wire x1="314.96" y1="50.8" x2="317.5" y2="50.8" width="0.1524" layer="91"/>
+<label x="317.5" y="50.8" size="1.778" layer="95"/>
+<pinref part="J8" gate="G$0" pin="3"/>
 </segment>
 </net>
 <net name="GPIO_SLEEP1" class="0">
@@ -5159,12 +5179,22 @@ Source: Samtec SSW.pdf</description>
 <wire x1="256.54" y1="63.5" x2="259.08" y2="63.5" width="0.1524" layer="91"/>
 <label x="259.08" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="358.14" y1="60.96" x2="360.68" y2="60.96" width="0.1524" layer="91"/>
+<label x="360.68" y="60.96" size="1.778" layer="95"/>
+<pinref part="J9" gate="G$0" pin="1"/>
+</segment>
 </net>
 <net name="TORQUE_3B" class="0">
 <segment>
 <wire x1="256.54" y1="60.96" x2="259.08" y2="60.96" width="0.1524" layer="91"/>
 <label x="259.08" y="60.96" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="OUT2"/>
+</segment>
+<segment>
+<wire x1="358.14" y1="55.88" x2="360.68" y2="55.88" width="0.1524" layer="91"/>
+<label x="360.68" y="55.88" size="1.778" layer="95"/>
+<pinref part="J9" gate="G$0" pin="2"/>
 </segment>
 </net>
 <net name="TORQUE_4A" class="0">
@@ -5173,12 +5203,22 @@ Source: Samtec SSW.pdf</description>
 <label x="259.08" y="58.42" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="OUT3"/>
 </segment>
+<segment>
+<wire x1="358.14" y1="45.72" x2="360.68" y2="45.72" width="0.1524" layer="91"/>
+<label x="360.68" y="45.72" size="1.778" layer="95"/>
+<pinref part="J9" gate="G$0" pin="4"/>
+</segment>
 </net>
 <net name="TORQUE_4B" class="0">
 <segment>
 <wire x1="256.54" y1="55.88" x2="259.08" y2="55.88" width="0.1524" layer="91"/>
 <label x="259.08" y="55.88" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="OUT4"/>
+</segment>
+<segment>
+<wire x1="358.14" y1="50.8" x2="360.68" y2="50.8" width="0.1524" layer="91"/>
+<label x="360.68" y="50.8" size="1.778" layer="95"/>
+<pinref part="J9" gate="G$0" pin="3"/>
 </segment>
 </net>
 <net name="GPIO_SLEEP2" class="0">
