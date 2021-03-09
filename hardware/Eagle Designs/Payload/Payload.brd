@@ -5107,9 +5107,9 @@ design rules under a new name.</description>
 <wire x1="16" y1="74.2" x2="16" y2="69.4" width="0.3048" layer="1"/>
 <wire x1="16" y1="69.4" x2="18.4" y2="67" width="0.3048" layer="1"/>
 <wire x1="18.4" y1="67" x2="26.192" y2="67" width="0.3048" layer="1"/>
-<wire x1="26.192" y1="67" x2="27.44" y2="68.248" width="0.3048" layer="1"/>
 <contactref element="X1" pad="3"/>
-<wire x1="27.44" y1="68.248" x2="27.44" y2="68.644" width="0" layer="19" extent="1-1"/>
+<wire x1="26.192" y1="67" x2="27.44" y2="68.248" width="0.3048" layer="1"/>
+<wire x1="27.44" y1="68.248" x2="27.44" y2="68.644" width="0.3048" layer="1"/>
 </signal>
 <signal name="SCL1_I2C">
 <contactref element="J5" pad="2"/>
@@ -6855,6 +6855,10 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="21,19,7b72797079707b72"/>
+<approved hash="21,19,fb07f905f905fb07"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
