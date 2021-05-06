@@ -4886,7 +4886,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="72.1289" y="40.9772" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="70.9539" y="40.7772" size="0.8128" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
-<element name="R13" library="HSFL_Main_Library" package="0805" value="" x="71.987" y="26.7652" smashed="yes" rot="R270">
+<element name="R13" library="HSFL_Main_Library" package="0805" value="3.3k" x="71.987" y="26.7652" smashed="yes" rot="R270">
 <attribute name="NAME" x="71.0665" y="23.9432" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="69.8915" y="28.5432" size="0.8128" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
@@ -4917,7 +4917,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="77.3299" y="40.9782" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="76.1549" y="40.7782" size="0.8128" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
-<element name="R16" library="HSFL_Main_Library" package="0805" value="" x="83.907" y="26.7632" smashed="yes" rot="R270">
+<element name="R16" library="HSFL_Main_Library" package="0805" value="3.3k" x="83.907" y="26.7632" smashed="yes" rot="R270">
 <attribute name="NAME" x="85.7865" y="24.9412" size="0.8128" layer="25" font="vector" ratio="15" rot="SR90"/>
 <attribute name="VALUE" x="81.8115" y="28.5412" size="0.8128" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>

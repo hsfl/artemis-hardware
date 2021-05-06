@@ -3891,7 +3891,7 @@ Source: Samtec SSW.pdf</description>
 <part name="C14" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="10 μF"/>
 <part name="C18" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 μF"/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="R13" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R13" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="GND18" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="U2" library="DRV8847PWPR" deviceset="DRV8847PWPR" device=""/>
 <part name="R14" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="330 mΩ"/>
@@ -3899,7 +3899,7 @@ Source: Samtec SSW.pdf</description>
 <part name="C19" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="10 μF"/>
 <part name="C20" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 μF"/>
 <part name="GND19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="R16" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R16" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="GND24" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="J1" library="Molex - 503763-0591" deviceset="503763-0591" device=""/>
 <part name="J2" library="Molex - 503763-0591" deviceset="503763-0591" device=""/>

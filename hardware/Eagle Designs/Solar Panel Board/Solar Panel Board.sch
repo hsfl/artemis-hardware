@@ -1090,7 +1090,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="J2" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
 <part name="U1" library="TMP36GSZ" deviceset="TMP36GSZ" device=""/>
 <part name="J3" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
-<part name="C1" library="HSFL_Main_Library" deviceset="CAP" device="0805"/>
+<part name="C1" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -1213,8 +1213,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="NAME" x="414.02" y="-27.94" size="2.54" layer="95" align="top-left"/>
 </instance>
 <instance part="C1" gate="G$1" x="398.78" y="35.56" smashed="yes">
-<attribute name="NAME" x="401.066" y="36.195" size="1.778" layer="95"/>
-<attribute name="VALUE" x="400.304" y="33.401" size="1.778" layer="96"/>
+<attribute name="NAME" x="401.066" y="37.973" size="1.778" layer="95"/>
+<attribute name="VALUE" x="400.812" y="34.671" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
