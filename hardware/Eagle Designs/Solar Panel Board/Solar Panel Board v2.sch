@@ -1548,7 +1548,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="J2" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
 <part name="U1" library="TMP36GSZ" deviceset="TMP36GSZ" device=""/>
 <part name="J3" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
-<part name="C1" library="HSFL_Main_Library" deviceset="CAP" device="0805"/>
+<part name="C1" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="U2" library="INA219BIDR" deviceset="INA219BIDR" device=""/>
 <part name="C2" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="R1" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>

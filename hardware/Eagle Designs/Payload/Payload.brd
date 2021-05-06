@@ -4870,19 +4870,19 @@ design rules under a new name.</description>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DRV8847PWPR/?ref=eda" x="59.2032" y="20.6504" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="70.9686" y="25.187" size="1.016" layer="27" rot="R90" align="top-left"/>
 </element>
-<element name="R11" library="HSFL_Main_Library" package="0805" value="330 mΩ" x="64.0214" y="27.192" smashed="yes" rot="R90">
+<element name="R11" library="HSFL_Main_Library" package="0805" value="330m" x="64.0214" y="27.192" smashed="yes" rot="R90">
 <attribute name="NAME" x="63.1419" y="24.414" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="66.1169" y="25.414" size="0.8128" layer="27" font="vector" ratio="15" rot="SR90"/>
 </element>
-<element name="R12" library="HSFL_Main_Library" package="0805" value="330 mΩ" x="71.9728" y="30.842" smashed="yes" rot="R90">
+<element name="R12" library="HSFL_Main_Library" package="0805" value="330m" x="71.9728" y="30.842" smashed="yes" rot="R90">
 <attribute name="NAME" x="71.0933" y="32.864" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="74.0683" y="29.064" size="0.8128" layer="27" font="vector" ratio="15" rot="SR90"/>
 </element>
-<element name="C14" library="HSFL_Main_Library" package="0805" value="10 μF" x="70.4492" y="39" smashed="yes" rot="R270">
+<element name="C14" library="HSFL_Main_Library" package="0805" value="10uF" x="70.4492" y="39" smashed="yes" rot="R270">
 <attribute name="NAME" x="69.5287" y="40.978" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="68.3537" y="40.778" size="0.8128" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
-<element name="C18" library="HSFL_Main_Library" package="0805" value="0.1 μF" x="73.0494" y="38.9992" smashed="yes" rot="R270">
+<element name="C18" library="HSFL_Main_Library" package="0805" value="0.1uF" x="73.0494" y="38.9992" smashed="yes" rot="R270">
 <attribute name="NAME" x="72.1289" y="40.9772" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="70.9539" y="40.7772" size="0.8128" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
@@ -4901,19 +4901,19 @@ design rules under a new name.</description>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/DRV8847PWPR/?ref=eda" x="71.1158" y="20.5728" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="82.9066" y="25.084" size="1.016" layer="27" rot="R90" align="top-left"/>
 </element>
-<element name="R14" library="HSFL_Main_Library" package="0805" value="330 mΩ" x="75.9464" y="27.175" smashed="yes" rot="R90">
+<element name="R14" library="HSFL_Main_Library" package="0805" value="330m" x="75.9464" y="27.175" smashed="yes" rot="R90">
 <attribute name="NAME" x="75.0669" y="24.397" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="78.0419" y="25.397" size="0.8128" layer="27" font="vector" ratio="15" rot="SR90"/>
 </element>
-<element name="R15" library="HSFL_Main_Library" package="0805" value="330 mΩ" x="83.9228" y="30.825" smashed="yes" rot="R90">
+<element name="R15" library="HSFL_Main_Library" package="0805" value="330m" x="83.9228" y="30.825" smashed="yes" rot="R90">
 <attribute name="NAME" x="83.0433" y="32.847" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="86.0183" y="29.047" size="0.8128" layer="27" font="vector" ratio="15" rot="SR90"/>
 </element>
-<element name="C19" library="HSFL_Main_Library" package="0805" value="10 μF" x="75.6492" y="39" smashed="yes" rot="R270">
+<element name="C19" library="HSFL_Main_Library" package="0805" value="10uF" x="75.6492" y="39" smashed="yes" rot="R270">
 <attribute name="NAME" x="74.7287" y="40.978" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="73.5537" y="40.778" size="0.8128" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>
-<element name="C20" library="HSFL_Main_Library" package="0805" value="0.1 μF" x="78.2504" y="39.0002" smashed="yes" rot="R270">
+<element name="C20" library="HSFL_Main_Library" package="0805" value="0.1uF" x="78.2504" y="39.0002" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.3299" y="40.9782" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="76.1549" y="40.7782" size="0.8128" layer="27" font="vector" ratio="15" rot="SR270"/>
 </element>

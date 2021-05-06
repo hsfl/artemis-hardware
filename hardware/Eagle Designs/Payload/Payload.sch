@@ -3886,18 +3886,18 @@ Source: Samtec SSW.pdf</description>
 <part name="R38" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="C13" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="4.7uF"/>
 <part name="U1" library="DRV8847PWPR" deviceset="DRV8847PWPR" device=""/>
-<part name="R11" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="330 mΩ"/>
-<part name="R12" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="330 mΩ"/>
-<part name="C14" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="10 μF"/>
-<part name="C18" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 μF"/>
+<part name="R11" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="330m"/>
+<part name="R12" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="330m"/>
+<part name="C14" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="10uF"/>
+<part name="C18" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="R13" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="GND18" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="U2" library="DRV8847PWPR" deviceset="DRV8847PWPR" device=""/>
-<part name="R14" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="330 mΩ"/>
-<part name="R15" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="330 mΩ"/>
-<part name="C19" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="10 μF"/>
-<part name="C20" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 μF"/>
+<part name="R14" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="330m"/>
+<part name="R15" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="330m"/>
+<part name="C19" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="10uF"/>
+<part name="C20" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="R16" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="GND24" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
