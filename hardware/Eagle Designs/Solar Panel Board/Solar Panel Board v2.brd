@@ -2435,6 +2435,11 @@ design rules under a new name.</description>
 <via x="33" y="62.8" extent="1-16" drill="0.35"/>
 <contactref element="U2" pad="6"/>
 <contactref element="C2" pad="2"/>
+<contactref element="U2" pad="7"/>
+<contactref element="R3" pad="2"/>
+<wire x1="64.93" y1="33.035" x2="60.465" y2="33.035" width="0.508" layer="16"/>
+<wire x1="60.465" y1="33.035" x2="59.4" y2="34.1" width="0.508" layer="16"/>
+<wire x1="59.4" y1="34.1" x2="59.4" y2="34.5" width="0.1524" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="SC1" pad="+"/>
@@ -2519,15 +2524,15 @@ design rules under a new name.</description>
 <signal name="N$31">
 <contactref element="U2" pad="2"/>
 <contactref element="U$1" pad="1"/>
-<wire x1="75.5" y1="33" x2="72.8" y2="33" width="0.1524" layer="16"/>
-<wire x1="72.8" y1="33" x2="69.905" y2="33" width="0.1524" layer="16"/>
+<wire x1="75.5" y1="33" x2="72.8" y2="33" width="0.3048" layer="16"/>
+<wire x1="72.8" y1="33" x2="69.905" y2="33" width="0.3048" layer="16"/>
 <wire x1="69.905" y1="33" x2="69.87" y2="33.035" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$32">
 <contactref element="U2" pad="1"/>
 <contactref element="U$2" pad="1"/>
-<wire x1="75.5" y1="35.6" x2="71.165" y2="35.6" width="0.1524" layer="16"/>
-<wire x1="71.165" y1="35.6" x2="69.87" y2="34.305" width="0.1524" layer="16"/>
+<wire x1="75.5" y1="35.6" x2="71.165" y2="35.6" width="0.3048" layer="16"/>
+<wire x1="71.165" y1="35.6" x2="69.87" y2="34.305" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$33">
 <contactref element="U2" pad="4"/>
@@ -2558,13 +2563,6 @@ design rules under a new name.</description>
 <wire x1="65.6" y1="27.9" x2="69.4" y2="27.9" width="0.3048" layer="16"/>
 <wire x1="65.6" y1="27.9" x2="64.93" y2="28.57" width="0.3048" layer="16"/>
 <wire x1="64.93" y1="28.57" x2="64.93" y2="30.495" width="0.3048" layer="16"/>
-</signal>
-<signal name="VIN-">
-<contactref element="U2" pad="7"/>
-<contactref element="R3" pad="2"/>
-<wire x1="64.93" y1="33.035" x2="60.465" y2="33.035" width="0.508" layer="16"/>
-<wire x1="60.465" y1="33.035" x2="59.4" y2="34.1" width="0.508" layer="16"/>
-<wire x1="59.4" y1="34.1" x2="59.4" y2="34.5" width="0.1524" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
