@@ -238,56 +238,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="KXOB25-05X3F">
-<packages>
-<package name="KXOB25-05X3F">
-<smd name="+" x="-10.5" y="0" dx="3" dy="8.4" layer="1"/>
-<smd name="-" x="10.5" y="0" dx="3" dy="8.4" layer="1"/>
-<text x="-8.45" y="-0.6" size="1.27" layer="21">+</text>
-<text x="7.89" y="-0.48" size="1.27" layer="21">-</text>
-<wire x1="-12.1" y1="4.3" x2="12.1" y2="4.3" width="0.127" layer="51"/>
-<wire x1="12.1" y1="4.3" x2="12.1" y2="-4.3" width="0.127" layer="51"/>
-<wire x1="12.1" y1="-4.3" x2="-12.1" y2="-4.3" width="0.127" layer="51"/>
-<wire x1="-12.1" y1="-4.3" x2="-12.1" y2="4.3" width="0.127" layer="51"/>
-<wire x1="-12.1" y1="4.3" x2="12.1" y2="4.3" width="0.127" layer="21"/>
-<wire x1="12.1" y1="4.3" x2="12.1" y2="-4.3" width="0.127" layer="21"/>
-<wire x1="12.1" y1="-4.3" x2="-12.1" y2="-4.3" width="0.127" layer="21"/>
-<wire x1="-12.1" y1="-4.3" x2="-12.1" y2="4.3" width="0.127" layer="21"/>
-<text x="-3.683" y="2.413" size="1.778" layer="25">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="KXOB25-05X3F">
-<pin name="+" x="-2.54" y="2.54" length="short"/>
-<pin name="-" x="12.7" y="2.54" length="short" rot="R180"/>
-<wire x1="0" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<text x="0.5" y="5.2" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="KXOB25-05X3F" prefix="SC">
-<description>KXOB25-05X3F - 
-Monocrystalline Solar Cell 30.7mW, 2.07V</description>
-<gates>
-<gate name="G$1" symbol="KXOB25-05X3F" x="20.32" y="-10.16"/>
-</gates>
-<devices>
-<device name="" package="KXOB25-05X3F">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Molex - 503763-0291">
 <description>Upverter Parts Library
 
@@ -1500,6 +1450,56 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="untitled">
+<packages>
+<package name="KXOB25-05X3F">
+<smd name="+" x="-10.5" y="0" dx="1.96" dy="7.49" layer="1"/>
+<smd name="-" x="10.5" y="0" dx="1.96" dy="7.49" layer="1"/>
+<text x="-8.45" y="-0.6" size="1.27" layer="21">+</text>
+<text x="7.89" y="-0.48" size="1.27" layer="21">-</text>
+<wire x1="-12.1" y1="4.3" x2="12.1" y2="4.3" width="0.127" layer="51"/>
+<wire x1="12.1" y1="4.3" x2="12.1" y2="-4.3" width="0.127" layer="51"/>
+<wire x1="12.1" y1="-4.3" x2="-12.1" y2="-4.3" width="0.127" layer="51"/>
+<wire x1="-12.1" y1="-4.3" x2="-12.1" y2="4.3" width="0.127" layer="51"/>
+<wire x1="-12.1" y1="4.3" x2="12.1" y2="4.3" width="0.127" layer="21"/>
+<wire x1="12.1" y1="4.3" x2="12.1" y2="-4.3" width="0.127" layer="21"/>
+<wire x1="12.1" y1="-4.3" x2="-12.1" y2="-4.3" width="0.127" layer="21"/>
+<wire x1="-12.1" y1="-4.3" x2="-12.1" y2="4.3" width="0.127" layer="21"/>
+<text x="-3.683" y="2.413" size="1.778" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="KXOB25-05X3F">
+<pin name="+" x="-2.54" y="2.54" length="short"/>
+<pin name="-" x="12.7" y="2.54" length="short" rot="R180"/>
+<wire x1="0" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="0.5" y="5.2" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KXOB25-05X3F" prefix="SC">
+<description>KXOB25-05X3F - 
+Monocrystalline Solar Cell 30.7mW, 2.07V</description>
+<gates>
+<gate name="G$1" symbol="KXOB25-05X3F" x="20.32" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="KXOB25-05X3F">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1512,38 +1512,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <parts>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="SC1" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC2" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC3" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC4" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC5" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC6" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC7" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC8" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC9" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC10" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC11" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC12" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC13" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC14" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC15" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC16" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC17" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC18" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC19" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC20" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC21" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC22" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC23" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC24" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC25" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC26" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC27" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC28" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC29" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC30" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC31" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC32" library="KXOB25-05X3F" deviceset="KXOB25-05X3F" device=""/>
 <part name="J1" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
 <part name="J2" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
 <part name="U1" library="TMP36GSZ" deviceset="TMP36GSZ" device=""/>
@@ -1556,6 +1524,38 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R3" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="2m"/>
 <part name="U$1" library="HSFL_Main_Library" deviceset="TEST_POINT" device=""/>
 <part name="U$2" library="HSFL_Main_Library" deviceset="TEST_POINT" device=""/>
+<part name="SC1" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC2" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC3" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC4" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC5" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC6" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC7" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC8" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC9" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC10" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC11" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC12" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC13" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC14" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC15" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC16" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC17" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC18" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC19" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC20" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC21" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC22" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC23" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC24" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC25" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC26" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC27" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC28" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC29" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC30" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC31" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="SC32" library="untitled" deviceset="KXOB25-05X3F" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1567,102 +1567,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </instance>
 <instance part="P+1" gate="VCC" x="426.72" y="36.83" smashed="yes">
 <attribute name="VALUE" x="424.18" y="34.29" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SC1" gate="G$1" x="454.66" y="40.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="40.14" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC2" gate="G$1" x="454.66" y="25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="24.9" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC3" gate="G$1" x="454.66" y="10.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="9.66" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC4" gate="G$1" x="454.66" y="-5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-5.58" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC5" gate="G$1" x="454.66" y="-20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-20.82" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC6" gate="G$1" x="454.66" y="-35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-36.06" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC7" gate="G$1" x="454.66" y="-50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-51.3" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC8" gate="G$1" x="454.66" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-66.54" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC9" gate="G$1" x="469.9" y="40.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="40.14" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC10" gate="G$1" x="469.9" y="25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="24.9" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC11" gate="G$1" x="469.9" y="10.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="9.66" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC12" gate="G$1" x="469.9" y="-5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-5.58" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC13" gate="G$1" x="469.9" y="-20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-20.82" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC14" gate="G$1" x="469.9" y="-35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-36.06" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC15" gate="G$1" x="469.9" y="-50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-51.3" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC16" gate="G$1" x="469.9" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-66.54" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC17" gate="G$1" x="485.14" y="40.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="40.14" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC18" gate="G$1" x="485.14" y="25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="24.9" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC19" gate="G$1" x="485.14" y="10.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="9.66" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC20" gate="G$1" x="485.14" y="-5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-5.58" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC21" gate="G$1" x="485.14" y="-20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-20.82" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC22" gate="G$1" x="485.14" y="-35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-36.06" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC23" gate="G$1" x="485.14" y="-50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-51.3" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC24" gate="G$1" x="485.14" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-66.54" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC25" gate="G$1" x="500.38" y="40.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="40.14" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC26" gate="G$1" x="500.38" y="25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="24.9" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC27" gate="G$1" x="500.38" y="10.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="9.66" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC28" gate="G$1" x="500.38" y="-5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-5.58" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC29" gate="G$1" x="500.38" y="-20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-20.82" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC30" gate="G$1" x="500.38" y="-35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-36.06" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC31" gate="G$1" x="500.38" y="-50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-51.3" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SC32" gate="G$1" x="500.38" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-66.54" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="J1" gate="G$0" x="337.82" y="-25.4" smashed="yes">
 <attribute name="NAME" x="340.36" y="-27.94" size="2.54" layer="95" align="top-left"/>
@@ -1703,6 +1607,102 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </instance>
 <instance part="U$1" gate="G$1" x="353.06" y="7.62" smashed="yes"/>
 <instance part="U$2" gate="G$1" x="347.98" y="5.08" smashed="yes"/>
+<instance part="SC1" gate="G$1" x="454.66" y="40.64" smashed="yes" rot="R270">
+<attribute name="NAME" x="459.86" y="40.14" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC2" gate="G$1" x="454.66" y="25.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="459.86" y="24.9" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC3" gate="G$1" x="454.66" y="10.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="459.86" y="9.66" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC4" gate="G$1" x="454.66" y="-5.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="459.86" y="-5.58" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC5" gate="G$1" x="454.66" y="-20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="459.86" y="-20.82" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC6" gate="G$1" x="454.66" y="-35.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="459.86" y="-36.06" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC7" gate="G$1" x="454.66" y="-50.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="459.86" y="-51.3" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC8" gate="G$1" x="454.66" y="-66.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="459.86" y="-66.54" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC9" gate="G$1" x="469.9" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="475.1" y="37.6" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC10" gate="G$1" x="469.9" y="22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="475.1" y="22.36" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC11" gate="G$1" x="469.9" y="7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="475.1" y="7.12" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC12" gate="G$1" x="469.9" y="-7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="475.1" y="-8.12" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC13" gate="G$1" x="469.9" y="-22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="475.1" y="-23.36" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC14" gate="G$1" x="469.9" y="-38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="475.1" y="-38.6" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC15" gate="G$1" x="469.9" y="-53.34" smashed="yes" rot="R270">
+<attribute name="NAME" x="475.1" y="-53.84" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC16" gate="G$1" x="469.9" y="-68.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="475.1" y="-69.08" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC17" gate="G$1" x="485.14" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="490.34" y="37.6" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC18" gate="G$1" x="485.14" y="22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="490.34" y="22.36" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC19" gate="G$1" x="485.14" y="7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="490.34" y="7.12" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC20" gate="G$1" x="485.14" y="-7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="490.34" y="-8.12" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC21" gate="G$1" x="485.14" y="-22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="490.34" y="-23.36" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC22" gate="G$1" x="485.14" y="-38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="490.34" y="-38.6" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC23" gate="G$1" x="485.14" y="-53.34" smashed="yes" rot="R270">
+<attribute name="NAME" x="490.34" y="-53.84" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC24" gate="G$1" x="485.14" y="-68.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="490.34" y="-69.08" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC25" gate="G$1" x="500.38" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="505.58" y="37.6" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC26" gate="G$1" x="500.38" y="22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="505.58" y="22.36" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC27" gate="G$1" x="500.38" y="7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="505.58" y="7.12" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC28" gate="G$1" x="500.38" y="-7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="505.58" y="-8.12" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC29" gate="G$1" x="500.38" y="-22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="505.58" y="-23.36" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC30" gate="G$1" x="500.38" y="-38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="505.58" y="-38.6" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC31" gate="G$1" x="500.38" y="-53.34" smashed="yes" rot="R270">
+<attribute name="NAME" x="505.58" y="-53.84" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="SC32" gate="G$1" x="500.38" y="-68.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="505.58" y="-69.08" size="1.778" layer="95" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1714,24 +1714,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="426.72" y1="34.29" x2="426.72" y2="29.21" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SC1" gate="G$1" pin="+"/>
-<wire x1="457.2" y1="43.18" x2="457.2" y2="45.72" width="0.1524" layer="91"/>
 <label x="457.2" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SC9" gate="G$1" pin="+"/>
-<wire x1="472.44" y1="43.18" x2="472.44" y2="45.72" width="0.1524" layer="91"/>
-<label x="472.44" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SC17" gate="G$1" pin="+"/>
-<wire x1="487.68" y1="43.18" x2="487.68" y2="45.72" width="0.1524" layer="91"/>
-<label x="487.68" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SC25" gate="G$1" pin="+"/>
-<wire x1="502.92" y1="43.18" x2="502.92" y2="45.72" width="0.1524" layer="91"/>
-<label x="502.92" y="45.72" size="1.778" layer="95"/>
+<wire x1="457.2" y1="43.18" x2="457.2" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SC1" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <wire x1="393.7" y1="-35.56" x2="396.24" y2="-35.56" width="0.1524" layer="91"/>
@@ -1750,195 +1735,42 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="342.9" y1="-5.08" x2="355.6" y2="-5.08" width="0.1524" layer="91"/>
 <label x="350.52" y="-5.08" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$2" class="0">
 <segment>
-<pinref part="SC2" gate="G$1" pin="+"/>
-<pinref part="SC1" gate="G$1" pin="-"/>
+<label x="472.44" y="45.72" size="1.778" layer="95"/>
+<wire x1="472.44" y1="40.64" x2="472.44" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SC9" gate="G$1" pin="+"/>
 </segment>
-</net>
-<net name="N$3" class="0">
 <segment>
-<pinref part="SC3" gate="G$1" pin="+"/>
-<pinref part="SC2" gate="G$1" pin="-"/>
+<label x="487.68" y="45.72" size="1.778" layer="95"/>
+<wire x1="487.68" y1="40.64" x2="487.68" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SC17" gate="G$1" pin="+"/>
 </segment>
-</net>
-<net name="N$4" class="0">
 <segment>
-<pinref part="SC4" gate="G$1" pin="+"/>
-<pinref part="SC3" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="SC5" gate="G$1" pin="+"/>
-<pinref part="SC4" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="SC6" gate="G$1" pin="+"/>
-<pinref part="SC5" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="SC7" gate="G$1" pin="+"/>
-<pinref part="SC6" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="SC8" gate="G$1" pin="+"/>
-<pinref part="SC7" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="SC10" gate="G$1" pin="+"/>
-<pinref part="SC9" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="SC11" gate="G$1" pin="+"/>
-<pinref part="SC10" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="SC12" gate="G$1" pin="+"/>
-<pinref part="SC11" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="SC13" gate="G$1" pin="+"/>
-<pinref part="SC12" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="SC14" gate="G$1" pin="+"/>
-<pinref part="SC13" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="SC15" gate="G$1" pin="+"/>
-<pinref part="SC14" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="SC16" gate="G$1" pin="+"/>
-<pinref part="SC15" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="SC18" gate="G$1" pin="+"/>
-<pinref part="SC17" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="SC19" gate="G$1" pin="+"/>
-<pinref part="SC18" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="SC20" gate="G$1" pin="+"/>
-<pinref part="SC19" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="SC21" gate="G$1" pin="+"/>
-<pinref part="SC20" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="SC22" gate="G$1" pin="+"/>
-<pinref part="SC21" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="SC23" gate="G$1" pin="+"/>
-<pinref part="SC22" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="SC24" gate="G$1" pin="+"/>
-<pinref part="SC23" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="SC26" gate="G$1" pin="+"/>
-<pinref part="SC25" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="SC27" gate="G$1" pin="+"/>
-<pinref part="SC26" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="SC28" gate="G$1" pin="+"/>
-<pinref part="SC27" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="SC29" gate="G$1" pin="+"/>
-<pinref part="SC28" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="SC30" gate="G$1" pin="+"/>
-<pinref part="SC29" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="SC31" gate="G$1" pin="+"/>
-<pinref part="SC30" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="SC32" gate="G$1" pin="+"/>
-<pinref part="SC31" gate="G$1" pin="-"/>
+<wire x1="502.92" y1="40.64" x2="502.92" y2="45.72" width="0.1524" layer="91"/>
+<label x="502.92" y="45.72" size="1.778" layer="95"/>
+<pinref part="SC25" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
+<label x="457.2" y="-81.28" size="1.778" layer="95" rot="R180"/>
 <pinref part="SC8" gate="G$1" pin="-"/>
 <wire x1="457.2" y1="-78.74" x2="457.2" y2="-81.28" width="0.1524" layer="91"/>
-<label x="457.2" y="-81.28" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SC16" gate="G$1" pin="-"/>
 <wire x1="472.44" y1="-78.74" x2="472.44" y2="-81.28" width="0.1524" layer="91"/>
 <label x="472.44" y="-81.28" size="1.778" layer="95" rot="R180"/>
+<pinref part="SC16" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<pinref part="SC24" gate="G$1" pin="-"/>
 <wire x1="487.68" y1="-78.74" x2="487.68" y2="-81.28" width="0.1524" layer="91"/>
 <label x="487.68" y="-81.28" size="1.778" layer="95" rot="R180"/>
+<pinref part="SC24" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<pinref part="SC32" gate="G$1" pin="-"/>
 <wire x1="502.92" y1="-78.74" x2="502.92" y2="-81.28" width="0.1524" layer="91"/>
 <label x="502.92" y="-81.28" size="1.778" layer="95" rot="R180"/>
+<pinref part="SC32" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <wire x1="358.14" y1="-45.72" x2="360.68" y2="-45.72" width="0.1524" layer="91"/>
@@ -2090,6 +1922,158 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="337.82" y1="-2.54" x2="337.82" y2="-12.7" width="0.1524" layer="91"/>
 <label x="332.74" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="SC8" gate="G$1" pin="+"/>
+<pinref part="SC7" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="SC5" gate="G$1" pin="+"/>
+<pinref part="SC6" gate="G$1" pin="-"/>
+<pinref part="SC7" gate="G$1" pin="+"/>
+<pinref part="SC4" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="SC6" gate="G$1" pin="+"/>
+<pinref part="SC5" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="SC2" gate="G$1" pin="-"/>
+<pinref part="SC3" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="SC1" gate="G$1" pin="-"/>
+<pinref part="SC2" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="SC4" gate="G$1" pin="+"/>
+<pinref part="SC3" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="SC16" gate="G$1" pin="+"/>
+<pinref part="SC15" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="SC13" gate="G$1" pin="+"/>
+<pinref part="SC14" gate="G$1" pin="-"/>
+<pinref part="SC15" gate="G$1" pin="+"/>
+<pinref part="SC12" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="SC14" gate="G$1" pin="+"/>
+<pinref part="SC13" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="SC10" gate="G$1" pin="-"/>
+<pinref part="SC11" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="SC9" gate="G$1" pin="-"/>
+<pinref part="SC10" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="SC12" gate="G$1" pin="+"/>
+<pinref part="SC11" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="SC24" gate="G$1" pin="+"/>
+<pinref part="SC23" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="SC21" gate="G$1" pin="+"/>
+<pinref part="SC22" gate="G$1" pin="-"/>
+<pinref part="SC23" gate="G$1" pin="+"/>
+<pinref part="SC20" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="SC22" gate="G$1" pin="+"/>
+<pinref part="SC21" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="SC18" gate="G$1" pin="-"/>
+<pinref part="SC19" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="SC17" gate="G$1" pin="-"/>
+<pinref part="SC18" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="SC20" gate="G$1" pin="+"/>
+<pinref part="SC19" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="SC32" gate="G$1" pin="+"/>
+<pinref part="SC31" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="SC29" gate="G$1" pin="+"/>
+<pinref part="SC30" gate="G$1" pin="-"/>
+<pinref part="SC31" gate="G$1" pin="+"/>
+<pinref part="SC28" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="SC30" gate="G$1" pin="+"/>
+<pinref part="SC29" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="SC26" gate="G$1" pin="-"/>
+<pinref part="SC27" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="SC25" gate="G$1" pin="-"/>
+<pinref part="SC26" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="SC28" gate="G$1" pin="+"/>
+<pinref part="SC27" gate="G$1" pin="-"/>
 </segment>
 </net>
 </nets>

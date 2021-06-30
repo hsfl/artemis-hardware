@@ -554,6 +554,72 @@ Created by Upverter.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="U.FL-R-SMT">
+<packages>
+<package name="CONN_-SMT-1(01)">
+<smd name="1" x="-1.4705" y="-0.0001" dx="1.0414" dy="2.2606" layer="1"/>
+<smd name="2" x="1.4705" y="-0.0001" dx="1.0414" dy="2.2606" layer="1"/>
+<smd name="3" x="0" y="-1.5961" dx="1.0414" dy="1.0922" layer="1"/>
+<wire x1="0.4064" y1="1.4224" x2="-0.4064" y2="1.4224" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-1.2954" x2="1.778" y2="-1.2954" width="0.1524" layer="51"/>
+<wire x1="1.778" y1="-1.2954" x2="1.778" y2="1.2954" width="0.1524" layer="51"/>
+<wire x1="1.778" y1="1.2954" x2="-1.778" y2="1.2954" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="1.2954" x2="-1.778" y2="-1.2954" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="2.0828" x2="-1.651" y2="2.0828" width="0.508" layer="51" curve="-180"/>
+<wire x1="-1.651" y1="2.0828" x2="-0.889" y2="2.0828" width="0.508" layer="51" curve="-180"/>
+<wire x1="0.3302" y1="-2.9718" x2="-0.4318" y2="-2.9718" width="0.508" layer="22" curve="-180"/>
+<wire x1="-0.4318" y1="-2.9718" x2="0.3302" y2="-2.9718" width="0.508" layer="22" curve="-180"/>
+<text x="-2.667" y="1.6002" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<text x="0.8128" y="-3.1496" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CONN_-SMT-1(01)">
+<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="middle" direction="pas"/>
+<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-1.7018" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="8.89" y2="-4.2418" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-3.3782" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="8.89" y2="-5.9182" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="12.7" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="U.FL-R-SMT-1(01)" prefix="J">
+<gates>
+<gate name="A" symbol="CONN_-SMT-1(01)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_-SMT-1(01)">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BUILT_BY" value="EMA_Matt" constant="no"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="U.FL-R-SMT-1(01)" constant="no"/>
+<attribute name="SOURCELIBRARY" value="Hirose_12_20_2019" constant="no"/>
+<attribute name="VENDOR" value="Hirose" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -576,6 +642,8 @@ Created by Upverter.com</description>
 <part name="J5" library="Molex - 503763-0591" deviceset="503763-0591" device=""/>
 <part name="U$2" library="Antenna_Pad" deviceset="ANTENNA_PAD" device=""/>
 <part name="U$3" library="Burn_Wire" deviceset="BURNWIRE" device=""/>
+<part name="J11" library="U.FL-R-SMT" deviceset="U.FL-R-SMT-1(01)" device=""/>
+<part name="J12" library="U.FL-R-SMT" deviceset="U.FL-R-SMT-1(01)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -614,6 +682,12 @@ Created by Upverter.com</description>
 </instance>
 <instance part="U$2" gate="G$1" x="185.42" y="66.04" smashed="yes"/>
 <instance part="U$3" gate="G$1" x="185.42" y="83.82" smashed="yes"/>
+<instance part="J11" gate="A" x="220.98" y="63.5" smashed="yes">
+<attribute name="NAME" x="225.1456" y="68.8086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+</instance>
+<instance part="J12" gate="A" x="220.98" y="83.82" smashed="yes">
+<attribute name="NAME" x="225.1456" y="89.1286" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -906,6 +980,38 @@ Created by Upverter.com</description>
 <wire x1="203.2" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
 <label x="205.74" y="86.36" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J12" gate="A" pin="1"/>
+<wire x1="220.98" y1="83.82" x2="218.44" y2="83.82" width="0.1524" layer="91"/>
+<label x="215.9" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J12" gate="A" pin="2"/>
+<wire x1="220.98" y1="81.28" x2="218.44" y2="81.28" width="0.1524" layer="91"/>
+<label x="215.9" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J11" gate="A" pin="1"/>
+<wire x1="220.98" y1="63.5" x2="218.44" y2="63.5" width="0.1524" layer="91"/>
+<label x="215.9" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J11" gate="A" pin="2"/>
+<wire x1="220.98" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
+<label x="215.9" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ORION-SPACE" class="0">
+<segment>
+<pinref part="J12" gate="A" pin="3"/>
+<wire x1="220.98" y1="78.74" x2="218.44" y2="78.74" width="0.1524" layer="91"/>
+<label x="205.74" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J11" gate="A" pin="3"/>
+<wire x1="220.98" y1="58.42" x2="218.44" y2="58.42" width="0.1524" layer="91"/>
+<label x="203.2" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
