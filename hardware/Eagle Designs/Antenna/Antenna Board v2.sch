@@ -324,96 +324,6 @@ Created by Upverter.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Molex - 503763-0591">
-<packages>
-<package name="CONN_5037630591_MOL">
-<smd name="1" x="-2" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="2" x="-1" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="3" x="0" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="4" x="1" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="5" x="2" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="6" x="-4.375" y="-0.7292" dx="1.27" dy="1.2954" layer="1"/>
-<smd name="7" x="4.375" y="-0.7292" dx="1.27" dy="1.2954" layer="1"/>
-<wire x1="-4.9276" y1="-2.7178" x2="4.9276" y2="-2.7178" width="0.1524" layer="21"/>
-<wire x1="4.9276" y1="-2.7178" x2="4.9276" y2="-1.7018" width="0.1524" layer="21"/>
-<wire x1="4.9276" y1="2.7178" x2="2.6162" y2="2.7178" width="0.1524" layer="21"/>
-<wire x1="-4.9276" y1="2.7178" x2="-4.9276" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-2.6162" y1="2.7178" x2="-4.9276" y2="2.7178" width="0.1524" layer="21"/>
-<wire x1="-4.9276" y1="-1.7018" x2="-4.9276" y2="-2.7178" width="0.1524" layer="21"/>
-<wire x1="4.9276" y1="0.254" x2="4.9276" y2="2.7178" width="0.1524" layer="21"/>
-<wire x1="-6.3246" y1="2.2606" x2="-7.0866" y2="2.2606" width="0.508" layer="21" curve="-180"/>
-<wire x1="-7.0866" y1="2.2606" x2="-6.3246" y2="2.2606" width="0.508" layer="21" curve="-180"/>
-<text x="-1.7272" y="1.6256" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<wire x1="-4.8006" y1="-2.5908" x2="4.8006" y2="-2.5908" width="0.1524" layer="51"/>
-<wire x1="4.8006" y1="-2.5908" x2="4.8006" y2="2.5908" width="0.1524" layer="51"/>
-<wire x1="4.8006" y1="2.5908" x2="-4.8006" y2="2.5908" width="0.1524" layer="51"/>
-<wire x1="-4.8006" y1="2.5908" x2="-4.8006" y2="-2.5908" width="0.1524" layer="51"/>
-<wire x1="-1.6256" y1="4.1656" x2="-2.3876" y2="4.1656" width="0.508" layer="51" curve="-180"/>
-<wire x1="-2.3876" y1="4.1656" x2="-1.6256" y2="4.1656" width="0.508" layer="51" curve="-180"/>
-<wire x1="-6.3246" y1="2.2606" x2="-7.0866" y2="2.2606" width="0.508" layer="22" curve="-180"/>
-<wire x1="-7.0866" y1="2.2606" x2="-6.3246" y2="2.2606" width="0.508" layer="22" curve="-180"/>
-<text x="-3.2766" y="1.6256" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CONN_005P_000C_1">
-<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
-<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
-<pin name="3" x="0" y="-5.08" visible="pad" length="middle" direction="pas"/>
-<pin name="4" x="0" y="-7.62" visible="pad" length="middle" direction="pas"/>
-<pin name="5" x="0" y="-10.16" visible="pad" length="middle" direction="pas"/>
-<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="5.08" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="8.89" y2="-1.7018" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="8.89" y2="-4.2418" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="8.89" y2="-6.7818" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="8.89" y2="-9.3218" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="8.89" y2="-3.3782" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="8.89" y2="-5.9182" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="8.89" y2="-8.4582" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="8.89" y2="-10.9982" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<text x="4.1656" y="2.7686" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="2.286" y="-14.732" size="1.778" layer="96">503763-0591</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="503763-0591" prefix="J">
-<gates>
-<gate name="A" symbol="CONN_005P_000C_1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CONN_5037630591_MOL">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-<connect gate="A" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="BUILT_BY" value="EMA_Cory" constant="no"/>
-<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" constant="no"/>
-<attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5037630591_sd.pdf" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="503763-0591" constant="no"/>
-<attribute name="SOURCELIBRARY" value="Add_to_database_2020-12-14" constant="no"/>
-<attribute name="VENDOR" value="Molex Connector Corporation" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="U.FL-R-SMT-1(01)">
 <packages>
 <package name="CONN_-SMT-1(01)">
@@ -620,6 +530,99 @@ Created by Upverter.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Improved Molex 503763-0591">
+<packages>
+<package name="CONN_5037630591_MOL">
+<smd name="1" x="-2" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="2" x="-1" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="3" x="0" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="4" x="1" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="5" x="2" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="6" x="-4.375" y="-0.7292" dx="1.27" dy="1.2954" layer="1"/>
+<smd name="7" x="4.375" y="-0.7292" dx="1.27" dy="1.2954" layer="1"/>
+<wire x1="-4.9276" y1="-2.7178" x2="4.9276" y2="-2.7178" width="0.1524" layer="21"/>
+<wire x1="4.9276" y1="-2.7178" x2="4.9276" y2="-1.7018" width="0.1524" layer="21"/>
+<wire x1="4.9276" y1="2.7178" x2="2.6162" y2="2.7178" width="0.1524" layer="21"/>
+<wire x1="-4.9276" y1="2.7178" x2="-4.9276" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-2.6162" y1="2.7178" x2="-4.9276" y2="2.7178" width="0.1524" layer="21"/>
+<wire x1="-4.9276" y1="-1.7018" x2="-4.9276" y2="-2.7178" width="0.1524" layer="21"/>
+<wire x1="4.9276" y1="0.254" x2="4.9276" y2="2.7178" width="0.1524" layer="21"/>
+<wire x1="-6.3246" y1="2.2606" x2="-7.0866" y2="2.2606" width="0.508" layer="21" curve="-180"/>
+<wire x1="-7.0866" y1="2.2606" x2="-6.3246" y2="2.2606" width="0.508" layer="21" curve="-180"/>
+<wire x1="-4.8006" y1="-2.5908" x2="4.8006" y2="-2.5908" width="0.1524" layer="51"/>
+<wire x1="4.8006" y1="-2.5908" x2="4.8006" y2="2.5908" width="0.1524" layer="51"/>
+<wire x1="4.8006" y1="2.5908" x2="-4.8006" y2="2.5908" width="0.1524" layer="51"/>
+<wire x1="-4.8006" y1="2.5908" x2="-4.8006" y2="-2.5908" width="0.1524" layer="51"/>
+<wire x1="-1.6256" y1="4.1656" x2="-2.3876" y2="4.1656" width="0.508" layer="51" curve="-180"/>
+<wire x1="-2.3876" y1="4.1656" x2="-1.6256" y2="4.1656" width="0.508" layer="51" curve="-180"/>
+<wire x1="-6.3246" y1="2.2606" x2="-7.0866" y2="2.2606" width="0.508" layer="22" curve="-180"/>
+<wire x1="-7.0866" y1="2.2606" x2="-6.3246" y2="2.2606" width="0.508" layer="22" curve="-180"/>
+<text x="-3.2766" y="1.6256" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-1.7272" y="1.6256" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CONN_005P_000C_1">
+<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="middle" direction="pas"/>
+<pin name="4" x="0" y="-7.62" visible="pad" length="middle" direction="pas"/>
+<pin name="5" x="0" y="-10.16" visible="pad" length="middle" direction="pas"/>
+<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="5.08" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-1.7018" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="8.89" y2="-4.2418" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="8.89" y2="-6.7818" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="8.89" y2="-9.3218" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-3.3782" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="8.89" y2="-5.9182" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="8.89" y2="-8.4582" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="8.89" y2="-10.9982" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<pin name="P$1" x="0" y="2.54" length="middle"/>
+<pin name="P$2" x="0" y="-12.7" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="503763-0591" prefix="J">
+<gates>
+<gate name="A" symbol="CONN_005P_000C_1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_5037630591_MOL">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="P$1" pad="6"/>
+<connect gate="A" pin="P$2" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BUILT_BY" value="EMA_Cory" constant="no"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" constant="no"/>
+<attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5037630591_sd.pdf" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="503763-0591" constant="no"/>
+<attribute name="SOURCELIBRARY" value="Add_to_database_2020-12-14" constant="no"/>
+<attribute name="VENDOR" value="Molex Connector Corporation" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -634,12 +637,12 @@ Created by Upverter.com</description>
 <part name="J4" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
 <part name="J2" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
 <part name="J3" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
-<part name="J1" library="Molex - 503763-0591" deviceset="503763-0591" device=""/>
+<part name="J1" library="Improved Molex 503763-0591" deviceset="503763-0591" device=""/>
 <part name="J10" library="U.FL-R-SMT-1(01)" deviceset="U.FL-R-SMT-1(01)" device=""/>
 <part name="J8" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
 <part name="J6" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
 <part name="J7" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
-<part name="J5" library="Molex - 503763-0591" deviceset="503763-0591" device=""/>
+<part name="J5" library="Improved Molex 503763-0591" deviceset="503763-0591" device=""/>
 <part name="U$2" library="Antenna_Pad" deviceset="ANTENNA_PAD" device=""/>
 <part name="U$3" library="Burn_Wire" deviceset="BURNWIRE" device=""/>
 <part name="J11" library="U.FL-R-SMT" deviceset="U.FL-R-SMT-1(01)" device=""/>
@@ -1000,6 +1003,26 @@ Created by Upverter.com</description>
 <pinref part="J11" gate="A" pin="2"/>
 <wire x1="220.98" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
 <label x="215.9" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="A" pin="P$2"/>
+<wire x1="15.24" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
+<label x="12.7" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="A" pin="P$1"/>
+<wire x1="15.24" y1="99.06" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
+<label x="12.7" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J5" gate="A" pin="P$2"/>
+<wire x1="15.24" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
+<label x="12.7" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J5" gate="A" pin="P$1"/>
+<wire x1="15.24" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<label x="12.7" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ORION-SPACE" class="0">

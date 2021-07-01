@@ -97,38 +97,6 @@
 <hole x="3.6" y="75.2" drill="2.4"/>
 </plain>
 <libraries>
-<library name="Molex - 503763-0591">
-<packages>
-<package name="CONN_5037630591_MOL">
-<smd name="1" x="-2" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="2" x="-1" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="3" x="0" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="4" x="1" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="5" x="2" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
-<smd name="6" x="-4.375" y="-0.7292" dx="1.27" dy="1.2954" layer="1"/>
-<smd name="7" x="4.375" y="-0.7292" dx="1.27" dy="1.2954" layer="1"/>
-<wire x1="-4.9276" y1="-2.7178" x2="4.9276" y2="-2.7178" width="0.1524" layer="21"/>
-<wire x1="4.9276" y1="-2.7178" x2="4.9276" y2="-1.7018" width="0.1524" layer="21"/>
-<wire x1="4.9276" y1="2.7178" x2="2.6162" y2="2.7178" width="0.1524" layer="21"/>
-<wire x1="-4.9276" y1="2.7178" x2="-4.9276" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-2.6162" y1="2.7178" x2="-4.9276" y2="2.7178" width="0.1524" layer="21"/>
-<wire x1="-4.9276" y1="-1.7018" x2="-4.9276" y2="-2.7178" width="0.1524" layer="21"/>
-<wire x1="4.9276" y1="0.254" x2="4.9276" y2="2.7178" width="0.1524" layer="21"/>
-<wire x1="-6.3246" y1="2.2606" x2="-7.0866" y2="2.2606" width="0.508" layer="21" curve="-180"/>
-<wire x1="-7.0866" y1="2.2606" x2="-6.3246" y2="2.2606" width="0.508" layer="21" curve="-180"/>
-<text x="-1.7272" y="1.6256" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<wire x1="-4.8006" y1="-2.5908" x2="4.8006" y2="-2.5908" width="0.1524" layer="51"/>
-<wire x1="4.8006" y1="-2.5908" x2="4.8006" y2="2.5908" width="0.1524" layer="51"/>
-<wire x1="4.8006" y1="2.5908" x2="-4.8006" y2="2.5908" width="0.1524" layer="51"/>
-<wire x1="-4.8006" y1="2.5908" x2="-4.8006" y2="-2.5908" width="0.1524" layer="51"/>
-<wire x1="-1.6256" y1="4.1656" x2="-2.3876" y2="4.1656" width="0.508" layer="51" curve="-180"/>
-<wire x1="-2.3876" y1="4.1656" x2="-1.6256" y2="4.1656" width="0.508" layer="51" curve="-180"/>
-<wire x1="-6.3246" y1="2.2606" x2="-7.0866" y2="2.2606" width="0.508" layer="22" curve="-180"/>
-<wire x1="-7.0866" y1="2.2606" x2="-6.3246" y2="2.2606" width="0.508" layer="22" curve="-180"/>
-<text x="-3.2766" y="1.6256" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-</package>
-</packages>
-</library>
 <library name="Molex - 503763-0491">
 <description>Upverter Parts Library
 
@@ -252,6 +220,38 @@ Created by Upverter.com</description>
 <wire x1="-0.4318" y1="-2.9718" x2="0.3302" y2="-2.9718" width="0.508" layer="22" curve="-180"/>
 <text x="-2.667" y="1.6002" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="0.8128" y="-3.1496" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+</package>
+</packages>
+</library>
+<library name="Improved Molex 503763-0591">
+<packages>
+<package name="CONN_5037630591_MOL">
+<smd name="1" x="-2" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="2" x="-1" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="3" x="0" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="4" x="1" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="5" x="2" y="2.2608" dx="0.5588" dy="0.9906" layer="1"/>
+<smd name="6" x="-4.375" y="-0.7292" dx="1.27" dy="1.2954" layer="1"/>
+<smd name="7" x="4.375" y="-0.7292" dx="1.27" dy="1.2954" layer="1"/>
+<wire x1="-4.9276" y1="-2.7178" x2="4.9276" y2="-2.7178" width="0.1524" layer="21"/>
+<wire x1="4.9276" y1="-2.7178" x2="4.9276" y2="-1.7018" width="0.1524" layer="21"/>
+<wire x1="4.9276" y1="2.7178" x2="2.6162" y2="2.7178" width="0.1524" layer="21"/>
+<wire x1="-4.9276" y1="2.7178" x2="-4.9276" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-2.6162" y1="2.7178" x2="-4.9276" y2="2.7178" width="0.1524" layer="21"/>
+<wire x1="-4.9276" y1="-1.7018" x2="-4.9276" y2="-2.7178" width="0.1524" layer="21"/>
+<wire x1="4.9276" y1="0.254" x2="4.9276" y2="2.7178" width="0.1524" layer="21"/>
+<wire x1="-6.3246" y1="2.2606" x2="-7.0866" y2="2.2606" width="0.508" layer="21" curve="-180"/>
+<wire x1="-7.0866" y1="2.2606" x2="-6.3246" y2="2.2606" width="0.508" layer="21" curve="-180"/>
+<wire x1="-4.8006" y1="-2.5908" x2="4.8006" y2="-2.5908" width="0.1524" layer="51"/>
+<wire x1="4.8006" y1="-2.5908" x2="4.8006" y2="2.5908" width="0.1524" layer="51"/>
+<wire x1="4.8006" y1="2.5908" x2="-4.8006" y2="2.5908" width="0.1524" layer="51"/>
+<wire x1="-4.8006" y1="2.5908" x2="-4.8006" y2="-2.5908" width="0.1524" layer="51"/>
+<wire x1="-1.6256" y1="4.1656" x2="-2.3876" y2="4.1656" width="0.508" layer="51" curve="-180"/>
+<wire x1="-2.3876" y1="4.1656" x2="-1.6256" y2="4.1656" width="0.508" layer="51" curve="-180"/>
+<wire x1="-6.3246" y1="2.2606" x2="-7.0866" y2="2.2606" width="0.508" layer="22" curve="-180"/>
+<wire x1="-7.0866" y1="2.2606" x2="-6.3246" y2="2.2606" width="0.508" layer="22" curve="-180"/>
+<text x="-3.2766" y="1.6256" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-1.7272" y="1.6256" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 </package>
 </packages>
 </library>
@@ -448,7 +448,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="Molex - 503763-0591" package="CONN_5037630591_MOL" value="503763-0591" x="77.6" y="69.2" smashed="yes" rot="R270">
+<element name="J1" library="Improved Molex 503763-0591" package="CONN_5037630591_MOL" value="503763-0591" x="77.6" y="69.2" smashed="yes" rot="R270">
 <attribute name="BUILT_BY" value="EMA_Cory" x="48.39" y="46.34" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="48.39" y="46.34" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5037630591_sd.pdf" x="48.39" y="46.34" size="1.778" layer="27" rot="R270" display="off"/>
@@ -653,7 +653,7 @@ design rules under a new name.</description>
 <attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="66.1" y="44.3" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VOLTAGE_RATING" value="150V" x="66.1" y="44.3" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="J5" library="Molex - 503763-0591" package="CONN_5037630591_MOL" value="503763-0591" x="65.6" y="69.1" smashed="yes" rot="MR90">
+<element name="J5" library="Improved Molex 503763-0591" package="CONN_5037630591_MOL" value="503763-0591" x="65.6" y="69.1" smashed="yes" rot="MR90">
 <attribute name="BUILT_BY" value="EMA_Cory" x="65.6" y="61.1" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="65.6" y="61.1" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5037630591_sd.pdf" x="65.6" y="61.1" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -685,37 +685,37 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="VCC_MICRO">
-<contactref element="J1" pad="1"/>
 <contactref element="J5" pad="5"/>
 <via x="66.6" y="71.1" extent="1-16" drill="0.35"/>
 <wire x1="79.7608" y1="71.1" x2="66.6" y2="71.1" width="0.508" layer="1"/>
 <wire x1="79.7608" y1="71.1" x2="79.8608" y2="71.2" width="0.508" layer="1"/>
 <wire x1="67.8608" y1="71.1" x2="66.6" y2="71.1" width="0.508" layer="16"/>
+<contactref element="J1" pad="1"/>
 </signal>
 <signal name="D+_MICRO">
-<contactref element="J1" pad="2"/>
 <contactref element="J5" pad="4"/>
 <via x="66.6" y="70.1" extent="1-16" drill="0.35"/>
 <wire x1="79.7608" y1="70.1" x2="66.6" y2="70.1" width="0.508" layer="1"/>
 <wire x1="79.7608" y1="70.1" x2="79.8608" y2="70.2" width="0.508" layer="1"/>
 <wire x1="67.8608" y1="70.1" x2="66.6" y2="70.1" width="0.508" layer="16"/>
+<contactref element="J1" pad="2"/>
 </signal>
 <signal name="D-_MICRO">
-<contactref element="J1" pad="3"/>
 <contactref element="J5" pad="3"/>
 <via x="66.6" y="69.1" extent="1-16" drill="0.35"/>
 <wire x1="79.7608" y1="69.1" x2="79.8608" y2="69.2" width="0.508" layer="1"/>
 <wire x1="79.7608" y1="69.1" x2="66.6" y2="69.1" width="0.508" layer="1"/>
 <wire x1="67.8608" y1="69.1" x2="66.6" y2="69.1" width="0.508" layer="16"/>
+<contactref element="J1" pad="3"/>
 </signal>
 <signal name="ID_MICRO">
-<contactref element="J1" pad="4"/>
 <contactref element="J5" pad="2"/>
 <via x="66.6" y="68.1" extent="1-16" drill="0.35"/>
 <wire x1="79.7608" y1="68.1" x2="66.6" y2="68.1" width="0.508" layer="1"/>
 <wire x1="79.7608" y1="68.1" x2="79.8608" y2="68.2" width="0.508" layer="1"/>
 <wire x1="67.8608" y1="68.1" x2="66.74185" y2="68.1" width="0.508" layer="16"/>
-<wire x1="79.7608" y1="68.1" x2="66.74185" y2="68.1" width="0" layer="19" extent="16-16"/>
+<contactref element="J1" pad="4"/>
+<wire x1="66.74185" y1="68.1" x2="66.6" y2="68.1" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VCC_HOST">
 <contactref element="J2" pad="1"/>
@@ -815,6 +815,10 @@ design rules under a new name.</description>
 <wire x1="59.5295" y1="29.9999" x2="59.6296" y2="30.1" width="0.1524" layer="1"/>
 <wire x1="28.255" y1="42.875" x2="46.0544" y2="42.875" width="0.508" layer="16"/>
 <wire x1="46.0544" y1="42.875" x2="46.5295" y2="42.3999" width="0.508" layer="16"/>
+<contactref element="J1" pad="7"/>
+<contactref element="J1" pad="6"/>
+<contactref element="J5" pad="7"/>
+<contactref element="J5" pad="6"/>
 </signal>
 <signal name="ANTENNA">
 <contactref element="J10" pad="3"/>
