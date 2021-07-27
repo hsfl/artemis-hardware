@@ -948,6 +948,11 @@ Created by Upverter.com</description>
 <wire x1="7.62" y1="81.28" x2="5.08" y2="81.28" width="0.1524" layer="91"/>
 <label x="-2.54" y="81.28" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J5" gate="A" pin="3"/>
+<wire x1="7.62" y1="22.86" x2="5.08" y2="22.86" width="0.1524" layer="91"/>
+<label x="-2.54" y="22.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ORION-SPACE" class="0">
 <segment>
@@ -963,22 +968,17 @@ Created by Upverter.com</description>
 </net>
 <net name="RBF1" class="0">
 <segment>
-<pinref part="J5" gate="A" pin="2"/>
-<wire x1="7.62" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
-<label x="-2.54" y="25.4" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="J1" gate="A" pin="1"/>
 <wire x1="7.62" y1="86.36" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
 <label x="0" y="86.36" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J5" gate="A" pin="2"/>
+<wire x1="7.62" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
+<label x="-2.54" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RBF2" class="0">
-<segment>
-<pinref part="J5" gate="A" pin="3"/>
-<wire x1="7.62" y1="22.86" x2="5.08" y2="22.86" width="0.1524" layer="91"/>
-<label x="-2.54" y="22.86" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="J1" gate="A" pin="2"/>
 <wire x1="7.62" y1="83.82" x2="5.08" y2="83.82" width="0.1524" layer="91"/>

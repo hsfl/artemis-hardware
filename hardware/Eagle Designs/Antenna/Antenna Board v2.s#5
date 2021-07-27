@@ -547,6 +547,9 @@ Created by Upverter.com</description>
 <wire x1="0.5842" y1="-0.3302" x2="2.794" y2="-0.3302" width="0.1524" layer="21"/>
 <wire x1="2.794" y1="3.9624" x2="2.794" y2="4.8514" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="2.032" x2="-3.81" y2="-0.3302" width="0.1524" layer="21"/>
+<text x="-6.2738" y="17.5006" size="1.27" layer="21" ratio="6" rot="SR0">5037630291</text>
+<text x="-26.0604" y="14.9606" size="1.27" layer="21" ratio="6" rot="SR0">PICO-LOCK_1.0_HDR_ASSY_SGLRW_R/A_H=1.5_-2_CKT</text>
+<text x="-12.5984" y="12.4206" size="1.27" layer="21" ratio="6" rot="SR0">EMBOSSED_PACKAGE_TYPE</text>
 <wire x1="3.048" y1="0" x2="4.572" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="4.572" y1="0.635" x2="4.572" y2="-0.635" width="0.1524" layer="51"/>
 <wire x1="4.572" y1="-0.635" x2="3.048" y2="0" width="0.1524" layer="51"/>
@@ -554,6 +557,11 @@ Created by Upverter.com</description>
 <wire x1="2.794" y1="-0.3302" x2="2.794" y2="4.8514" width="0.1524" layer="51"/>
 <wire x1="2.794" y1="4.8514" x2="-3.81" y2="4.8514" width="0.1524" layer="51"/>
 <wire x1="-3.81" y1="4.8514" x2="-3.81" y2="-0.3302" width="0.1524" layer="51"/>
+<text x="-6.2738" y="17.5006" size="1.27" layer="51" ratio="6" rot="SR0">5037630291</text>
+<text x="-26.0604" y="14.9606" size="1.27" layer="51" ratio="6" rot="SR0">PICO-LOCK_1.0_HDR_ASSY_SGLRW_R/A_H=1.5_-2_CKT</text>
+<text x="-12.5984" y="12.4206" size="1.27" layer="51" ratio="6" rot="SR0">EMBOSSED_PACKAGE_TYPE</text>
+<text x="-3.81" y="-6.5786" size="1.27" layer="48" ratio="6" rot="SR0">NOTE</text>
+<text x="-3.81" y="-9.1186" size="1.27" layer="48" ratio="6" rot="SR0">MAXIMUM_PACKAGE_HEIGHT:_1.5_MM</text>
 <text x="-3.7592" y="8.255" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-2.2352" y="8.255" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 </package>
@@ -638,6 +646,10 @@ Created by Upverter.com</description>
 <sheets>
 <sheet>
 <plain>
+<text x="0" y="86.36" size="1.778" layer="95">GND</text>
+<text x="0" y="78.74" size="1.778" layer="95">GND</text>
+<text x="2.54" y="27.94" size="1.778" layer="95">GND</text>
+<text x="2.54" y="20.32" size="1.778" layer="95">GND</text>
 </plain>
 <instances>
 <instance part="J9" gate="G$0" x="165.1" y="53.34" smashed="yes">
@@ -672,8 +684,8 @@ Created by Upverter.com</description>
 <instance part="J12" gate="A" x="220.98" y="83.82" smashed="yes">
 <attribute name="NAME" x="225.1456" y="89.1286" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
-<instance part="J1" gate="A" x="7.62" y="86.36" smashed="yes">
-<attribute name="NAME" x="11.7856" y="91.6686" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<instance part="J1" gate="A" x="5.08" y="86.36" smashed="yes">
+<attribute name="NAME" x="9.2456" y="91.6686" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
 <instance part="J5" gate="A" x="7.62" y="27.94" smashed="yes">
 <attribute name="NAME" x="11.7856" y="33.2486" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -933,21 +945,6 @@ Created by Upverter.com</description>
 <wire x1="220.98" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
 <label x="215.9" y="60.96" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="J1" gate="A" pin="4"/>
-<wire x1="7.62" y1="78.74" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
-<label x="0" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J5" gate="A" pin="4"/>
-<wire x1="7.62" y1="20.32" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
-<label x="0" y="20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="A" pin="3"/>
-<wire x1="7.62" y1="81.28" x2="5.08" y2="81.28" width="0.1524" layer="91"/>
-<label x="-2.54" y="81.28" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="ORION-SPACE" class="0">
 <segment>
@@ -959,35 +956,6 @@ Created by Upverter.com</description>
 <pinref part="J11" gate="A" pin="3"/>
 <wire x1="220.98" y1="58.42" x2="218.44" y2="58.42" width="0.1524" layer="91"/>
 <label x="203.2" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RBF1" class="0">
-<segment>
-<pinref part="J5" gate="A" pin="2"/>
-<wire x1="7.62" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
-<label x="-2.54" y="25.4" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="A" pin="1"/>
-<wire x1="7.62" y1="86.36" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
-<label x="0" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RBF2" class="0">
-<segment>
-<pinref part="J5" gate="A" pin="3"/>
-<wire x1="7.62" y1="22.86" x2="5.08" y2="22.86" width="0.1524" layer="91"/>
-<label x="-2.54" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="A" pin="2"/>
-<wire x1="7.62" y1="83.82" x2="5.08" y2="83.82" width="0.1524" layer="91"/>
-<label x="-2.54" y="83.82" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J5" gate="A" pin="1"/>
-<wire x1="7.62" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
-<label x="0" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

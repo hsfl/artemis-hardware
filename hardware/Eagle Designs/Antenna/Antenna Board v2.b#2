@@ -29,11 +29,11 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
@@ -831,24 +831,23 @@ design rules under a new name.</description>
 <signal name="RBF1">
 <contactref element="J5" pad="2"/>
 <contactref element="J1" pad="1"/>
-<via x="72.3" y="66.8" extent="1-16" drill="0.35"/>
-<wire x1="72.3" y1="66.8" x2="72.2" y2="66.8" width="0.1524" layer="1"/>
-<wire x1="72.2" y1="66.8" x2="71" y2="65.6" width="0.8128" layer="1"/>
-<wire x1="71" y1="65.6" x2="68.2" y2="65.6" width="0.8128" layer="1"/>
-<wire x1="68.2" y1="65.6" x2="68.1" y2="65.5" width="0.8128" layer="1"/>
-<wire x1="61.4" y1="65.5" x2="62.7" y2="66.8" width="0.8128" layer="16"/>
-<wire x1="72.3" y1="66.8" x2="62.7" y2="66.8" width="0.8128" layer="16"/>
+<via x="71.3" y="66" extent="1-16" drill="0.35"/>
+<wire x1="71.3" y1="66" x2="70.8" y2="65.5" width="0.1524" layer="1"/>
+<wire x1="70.8" y1="65.5" x2="68.1" y2="65.5" width="0.1524" layer="1"/>
+<wire x1="61.4" y1="65.5" x2="61.7" y2="65.2" width="0.1524" layer="16"/>
+<wire x1="70.5" y1="65.2" x2="61.7" y2="65.2" width="0.1524" layer="16"/>
+<wire x1="70.5" y1="65.2" x2="71.3" y2="66" width="0.1524" layer="16"/>
 </signal>
 <signal name="RBF2">
 <contactref element="J5" pad="3"/>
 <contactref element="J1" pad="2"/>
 <contactref element="J5" pad="1"/>
-<via x="72.4" y="63.5" extent="1-16" drill="0.35"/>
-<wire x1="72.4" y1="63.5" x2="71.5" y2="64.4" width="0.8128" layer="1"/>
-<wire x1="71.5" y1="64.4" x2="68.2" y2="64.4" width="0.8128" layer="1"/>
-<wire x1="68.2" y1="64.4" x2="68.1" y2="64.5" width="0.8128" layer="1"/>
-<wire x1="72.4" y1="63.5" x2="62.4" y2="63.5" width="0.8128" layer="16"/>
-<wire x1="62.4" y1="63.5" x2="61.4" y2="64.5" width="0.8128" layer="16"/>
+<via x="72.2" y="65" extent="1-16" drill="0.35"/>
+<wire x1="72.2" y1="65" x2="71.7" y2="64.5" width="0.1524" layer="1"/>
+<wire x1="71.7" y1="64.5" x2="68.1" y2="64.5" width="0.1524" layer="1"/>
+<wire x1="71.4" y1="64.2" x2="61.7" y2="64.2" width="0.1524" layer="16"/>
+<wire x1="61.4" y1="64.5" x2="61.7" y2="64.2" width="0.1524" layer="16"/>
+<wire x1="71.4" y1="64.2" x2="72.2" y2="65" width="0.1524" layer="16"/>
 <wire x1="58.41" y1="62.125" x2="61.4" y2="64.5" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
