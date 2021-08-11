@@ -7162,7 +7162,7 @@ Source: www.kingbright.com</description>
 <part name="GND8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C1" library="HSFL_Main_Library" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="J3" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
+<part name="J3" library="Molex - 503763-0491" deviceset="MOLEX_503763-0491" device="MOLEX_503763-0491_0_0"/>
 </parts>
 <sheets>
 <sheet>
@@ -7511,8 +7511,8 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="75.184" y="18.161" size="1.778" layer="96"/>
 </instance>
 <instance part="GND11" gate="1" x="73.66" y="12.7" smashed="yes"/>
-<instance part="J3" gate="G$0" x="314.96" y="248.92" smashed="yes">
-<attribute name="NAME" x="317.5" y="246.38" size="2.54" layer="95" align="top-left"/>
+<instance part="J3" gate="G$0" x="314.96" y="254" smashed="yes">
+<attribute name="NAME" x="317.5" y="251.46" size="2.54" layer="95" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -7705,19 +7705,24 @@ Source: www.kingbright.com</description>
 <wire x1="73.66" y1="15.24" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="J3" gate="G$0" pin="3"/>
+<wire x1="335.28" y1="233.68" x2="340.36" y2="233.68" width="0.1524" layer="91"/>
+<label x="340.36" y="233.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$0" pin="4"/>
+<wire x1="335.28" y1="228.6" x2="340.36" y2="228.6" width="0.1524" layer="91"/>
+<label x="340.36" y="228.6" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="J3" gate="G$0" pin="MNT_1"/>
-<wire x1="335.28" y1="228.6" x2="337.82" y2="228.6" width="0.1524" layer="91"/>
-<label x="337.82" y="228.6" size="1.778" layer="95"/>
+<wire x1="335.28" y1="223.52" x2="340.36" y2="223.52" width="0.1524" layer="91"/>
+<label x="340.36" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$0" pin="MNT_2"/>
-<wire x1="335.28" y1="223.52" x2="337.82" y2="223.52" width="0.1524" layer="91"/>
-<label x="337.82" y="223.52" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$0" pin="2"/>
-<wire x1="335.28" y1="233.68" x2="337.82" y2="233.68" width="0.1524" layer="91"/>
-<label x="337.82" y="233.68" size="1.778" layer="95"/>
+<wire x1="335.28" y1="218.44" x2="340.36" y2="218.44" width="0.1524" layer="91"/>
+<label x="340.36" y="218.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$94" class="0">
@@ -7970,6 +7975,11 @@ Source: www.kingbright.com</description>
 <label x="73.66" y="38.1" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <junction x="73.66" y="25.4"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$0" pin="1"/>
+<wire x1="335.28" y1="243.84" x2="340.36" y2="243.84" width="0.1524" layer="91"/>
+<label x="340.36" y="243.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO2_8" class="0">
@@ -8412,9 +8422,9 @@ Source: www.kingbright.com</description>
 <label x="53.34" y="208.28" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$0" pin="1"/>
-<wire x1="335.28" y1="238.76" x2="337.82" y2="238.76" width="0.1524" layer="91"/>
-<label x="337.82" y="238.76" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$0" pin="2"/>
+<wire x1="335.28" y1="238.76" x2="340.36" y2="238.76" width="0.1524" layer="91"/>
+<label x="340.36" y="238.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUS_UART4_TXD(BBB_RX)" class="0">
