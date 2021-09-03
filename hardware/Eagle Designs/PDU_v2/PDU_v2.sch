@@ -11160,7 +11160,6 @@ SWCLK - JTAG_TCK</text>
 <sheet>
 <description>5V Burn</description>
 <plain>
-<text x="38.1" y="50.8" size="2.54" layer="91">Power Relay A</text>
 <text x="71.12" y="81.28" size="5.08" layer="91">Burn Wire Circuit</text>
 </plain>
 <instances>
@@ -12360,7 +12359,7 @@ SWCLK - JTAG_TCK</text>
 <label x="43.18" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$56" class="0">
+<net name="A0" class="0">
 <segment>
 <wire x1="-5.08" y1="-15.24" x2="-10.16" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-15.24" x2="-10.16" y2="-7.62" width="0.1524" layer="91"/>
@@ -12368,7 +12367,7 @@ SWCLK - JTAG_TCK</text>
 <pinref part="U15" gate="A" pin="A0"/>
 </segment>
 </net>
-<net name="N$57" class="0">
+<net name="A1" class="0">
 <segment>
 <wire x1="-5.08" y1="-17.78" x2="-17.78" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-17.78" x2="-17.78" y2="-7.62" width="0.1524" layer="91"/>
