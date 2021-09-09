@@ -1039,9 +1039,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <circle x="-3.81" y="0" radius="1.02390625" width="0" layer="30"/>
 <circle x="3.81" y="0" radius="1.04726875" width="0" layer="30"/>
 </package>
-<package name="TEST_POINT">
-<smd name="1" x="0" y="0" dx="3.429" dy="1.778" layer="1"/>
-</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -1068,10 +1065,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-<symbol name="TEST_POINT">
-<pin name="TP$1" x="0" y="-5.08" length="middle" rot="R90"/>
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1354,100 +1347,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEST_POINT">
-<gates>
-<gate name="G$1" symbol="TEST_POINT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEST_POINT">
-<connects>
-<connect gate="G$1" pin="TP$1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="INA219BIDR">
-<packages>
-<package name="SOIC127P599X175-8N">
-<circle x="-4.04" y="2.305" radius="0.1" width="0.2" layer="21"/>
-<circle x="-4.04" y="2.305" radius="0.1" width="0.2" layer="51"/>
-<wire x1="-1.95" y1="2.4525" x2="1.95" y2="2.4525" width="0.127" layer="51"/>
-<wire x1="-1.95" y1="-2.4525" x2="1.95" y2="-2.4525" width="0.127" layer="51"/>
-<wire x1="-1.95" y1="2.525" x2="1.95" y2="2.525" width="0.127" layer="21"/>
-<wire x1="-1.95" y1="-2.525" x2="1.95" y2="-2.525" width="0.127" layer="21"/>
-<wire x1="-1.95" y1="2.4525" x2="-1.95" y2="-2.4525" width="0.127" layer="51"/>
-<wire x1="1.95" y1="2.4525" x2="1.95" y2="-2.4525" width="0.127" layer="51"/>
-<wire x1="-3.705" y1="2.7025" x2="3.705" y2="2.7025" width="0.05" layer="39"/>
-<wire x1="-3.705" y1="-2.7025" x2="3.705" y2="-2.7025" width="0.05" layer="39"/>
-<wire x1="-3.705" y1="2.7025" x2="-3.705" y2="-2.7025" width="0.05" layer="39"/>
-<wire x1="3.705" y1="2.7025" x2="3.705" y2="-2.7025" width="0.05" layer="39"/>
-<text x="-3.56" y="-2.902" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<text x="-3.56" y="2.902" size="1.27" layer="25">&gt;NAME</text>
-<smd name="1" x="-2.47" y="1.905" dx="1.97" dy="0.6" layer="1" roundness="25"/>
-<smd name="2" x="-2.47" y="0.635" dx="1.97" dy="0.6" layer="1" roundness="25"/>
-<smd name="3" x="-2.47" y="-0.635" dx="1.97" dy="0.6" layer="1" roundness="25"/>
-<smd name="4" x="-2.47" y="-1.905" dx="1.97" dy="0.6" layer="1" roundness="25"/>
-<smd name="5" x="2.47" y="-1.905" dx="1.97" dy="0.6" layer="1" roundness="25"/>
-<smd name="6" x="2.47" y="-0.635" dx="1.97" dy="0.6" layer="1" roundness="25"/>
-<smd name="7" x="2.47" y="0.635" dx="1.97" dy="0.6" layer="1" roundness="25"/>
-<smd name="8" x="2.47" y="1.905" dx="1.97" dy="0.6" layer="1" roundness="25"/>
-</package>
-</packages>
-<symbols>
-<symbol name="INA219BIDR">
-<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.41" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.41" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.41" layer="94"/>
-<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.41" layer="94"/>
-<text x="-12.7" y="16.24" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-12.7" y="-19.24" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<pin name="A0" x="-17.78" y="7.62" length="middle" direction="in"/>
-<pin name="A1" x="-17.78" y="5.08" length="middle" direction="in"/>
-<pin name="SCL" x="-17.78" y="2.54" length="middle" direction="in"/>
-<pin name="VIN+" x="-17.78" y="0" length="middle" direction="in"/>
-<pin name="VIN-" x="-17.78" y="-2.54" length="middle" direction="in"/>
-<pin name="SDA" x="-17.78" y="-7.62" length="middle"/>
-<pin name="VS" x="17.78" y="12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="INA219BIDR" prefix="U">
-<description> &lt;a href="https://pricing.snapeda.com/parts/INA219BIDR/Texas%20Instruments/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
-<gates>
-<gate name="A" symbol="INA219BIDR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC127P599X175-8N">
-<connects>
-<connect gate="A" pin="A0" pad="2"/>
-<connect gate="A" pin="A1" pad="1"/>
-<connect gate="A" pin="GND" pad="6"/>
-<connect gate="A" pin="SCL" pad="4"/>
-<connect gate="A" pin="SDA" pad="3"/>
-<connect gate="A" pin="VIN+" pad="8"/>
-<connect gate="A" pin="VIN-" pad="7"/>
-<connect gate="A" pin="VS" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Good"/>
-<attribute name="DESCRIPTION" value=" 26V, 12-bit, i2c output current/voltage/power monitor 8-SOIC -40 to 125 "/>
-<attribute name="MF" value="Texas Instruments"/>
-<attribute name="MP" value="INA219BIDR"/>
-<attribute name="PACKAGE" value="SOIC-8 Texas Instruments"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/INA219BIDR/?ref=eda"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="untitled">
@@ -1517,13 +1416,6 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <part name="U1" library="TMP36GSZ" deviceset="TMP36GSZ" device=""/>
 <part name="J3" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
 <part name="C1" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
-<part name="U2" library="INA219BIDR" deviceset="INA219BIDR" device=""/>
-<part name="C2" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
-<part name="R1" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
-<part name="R2" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
-<part name="R3" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="2m"/>
-<part name="U$1" library="HSFL_Main_Library" deviceset="TEST_POINT" device=""/>
-<part name="U$2" library="HSFL_Main_Library" deviceset="TEST_POINT" device=""/>
 <part name="SC1" library="untitled" deviceset="KXOB25-05X3F" device=""/>
 <part name="SC2" library="untitled" deviceset="KXOB25-05X3F" device=""/>
 <part name="SC3" library="untitled" deviceset="KXOB25-05X3F" device=""/>
@@ -1554,8 +1446,29 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <part name="SC28" library="untitled" deviceset="KXOB25-05X3F" device=""/>
 <part name="SC29" library="untitled" deviceset="KXOB25-05X3F" device=""/>
 <part name="SC30" library="untitled" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC31" library="untitled" deviceset="KXOB25-05X3F" device=""/>
-<part name="SC32" library="untitled" deviceset="KXOB25-05X3F" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R1" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="27k"/>
+<part name="R2" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1585,123 +1498,166 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <attribute name="NAME" x="401.066" y="36.195" size="1.778" layer="95"/>
 <attribute name="VALUE" x="400.304" y="33.401" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="A" x="373.38" y="-5.08" smashed="yes">
-<attribute name="NAME" x="360.68" y="11.16" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="360.68" y="-24.32" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+<instance part="SC1" gate="G$1" x="452.12" y="48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="457.32" y="47.76" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="C2" gate="G$1" x="396.24" y="-5.08" smashed="yes">
-<attribute name="NAME" x="397.764" y="-2.159" size="1.778" layer="95"/>
-<attribute name="VALUE" x="397.764" y="-7.239" size="1.778" layer="96"/>
+<instance part="SC2" gate="G$1" x="452.12" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="457.32" y="32.52" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="R1" gate="G$1" x="342.9" y="-12.7" smashed="yes">
-<attribute name="NAME" x="339.09" y="-16.2814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="344.17" y="-16.002" size="1.778" layer="96"/>
+<instance part="SC3" gate="G$1" x="452.12" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="457.32" y="17.28" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="R2" gate="G$1" x="342.9" y="-2.54" smashed="yes">
-<attribute name="NAME" x="339.09" y="-1.0414" size="1.778" layer="95"/>
-<attribute name="VALUE" x="344.17" y="-0.762" size="1.778" layer="96"/>
+<instance part="SC4" gate="G$1" x="464.82" y="48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="470.02" y="47.76" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="R3" gate="G$1" x="347.98" y="-7.62" smashed="yes">
-<attribute name="NAME" x="344.17" y="-11.2014" size="1.778" layer="95"/>
-<attribute name="VALUE" x="349.25" y="-10.922" size="1.778" layer="96"/>
+<instance part="SC5" gate="G$1" x="464.82" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="470.02" y="32.52" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="U$1" gate="G$1" x="353.06" y="7.62" smashed="yes"/>
-<instance part="U$2" gate="G$1" x="347.98" y="5.08" smashed="yes"/>
-<instance part="SC1" gate="G$1" x="454.66" y="40.64" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="40.14" size="1.778" layer="95" rot="R270"/>
+<instance part="SC6" gate="G$1" x="464.82" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="470.02" y="17.28" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC2" gate="G$1" x="454.66" y="25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="24.9" size="1.778" layer="95" rot="R270"/>
+<instance part="SC7" gate="G$1" x="477.52" y="48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="482.72" y="47.76" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC3" gate="G$1" x="454.66" y="10.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="9.66" size="1.778" layer="95" rot="R270"/>
+<instance part="SC8" gate="G$1" x="477.52" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="482.72" y="32.52" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC4" gate="G$1" x="454.66" y="-5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-5.58" size="1.778" layer="95" rot="R270"/>
+<instance part="SC9" gate="G$1" x="477.52" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="482.72" y="17.28" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC5" gate="G$1" x="454.66" y="-20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-20.82" size="1.778" layer="95" rot="R270"/>
+<instance part="SC10" gate="G$1" x="490.22" y="48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="495.42" y="47.76" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC6" gate="G$1" x="454.66" y="-35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-36.06" size="1.778" layer="95" rot="R270"/>
+<instance part="SC11" gate="G$1" x="490.22" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="495.42" y="32.52" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC7" gate="G$1" x="454.66" y="-50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-51.3" size="1.778" layer="95" rot="R270"/>
+<instance part="SC12" gate="G$1" x="490.22" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="495.42" y="17.28" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC8" gate="G$1" x="454.66" y="-66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="459.86" y="-66.54" size="1.778" layer="95" rot="R270"/>
+<instance part="SC13" gate="G$1" x="502.92" y="48.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="508.12" y="47.76" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC9" gate="G$1" x="469.9" y="38.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="37.6" size="1.778" layer="95" rot="R270"/>
+<instance part="SC14" gate="G$1" x="502.92" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="508.12" y="32.52" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC10" gate="G$1" x="469.9" y="22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="22.36" size="1.778" layer="95" rot="R270"/>
+<instance part="SC15" gate="G$1" x="502.92" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="508.12" y="17.28" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC11" gate="G$1" x="469.9" y="7.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="7.12" size="1.778" layer="95" rot="R270"/>
+<instance part="SC16" gate="G$1" x="452.12" y="-12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="457.32" y="-13.2" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC12" gate="G$1" x="469.9" y="-7.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-8.12" size="1.778" layer="95" rot="R270"/>
+<instance part="SC17" gate="G$1" x="452.12" y="-27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="457.32" y="-28.44" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC13" gate="G$1" x="469.9" y="-22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-23.36" size="1.778" layer="95" rot="R270"/>
+<instance part="SC18" gate="G$1" x="452.12" y="-43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="457.32" y="-43.68" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC14" gate="G$1" x="469.9" y="-38.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-38.6" size="1.778" layer="95" rot="R270"/>
+<instance part="SC19" gate="G$1" x="464.82" y="-12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="470.02" y="-13.2" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC15" gate="G$1" x="469.9" y="-53.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-53.84" size="1.778" layer="95" rot="R270"/>
+<instance part="SC20" gate="G$1" x="464.82" y="-27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="470.02" y="-28.44" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC16" gate="G$1" x="469.9" y="-68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="475.1" y="-69.08" size="1.778" layer="95" rot="R270"/>
+<instance part="SC21" gate="G$1" x="464.82" y="-43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="470.02" y="-43.68" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC17" gate="G$1" x="485.14" y="38.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="37.6" size="1.778" layer="95" rot="R270"/>
+<instance part="SC22" gate="G$1" x="477.52" y="-12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="482.72" y="-13.2" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC18" gate="G$1" x="485.14" y="22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="22.36" size="1.778" layer="95" rot="R270"/>
+<instance part="SC23" gate="G$1" x="477.52" y="-27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="482.72" y="-28.44" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC19" gate="G$1" x="485.14" y="7.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="7.12" size="1.778" layer="95" rot="R270"/>
+<instance part="SC24" gate="G$1" x="477.52" y="-43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="482.72" y="-43.68" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC20" gate="G$1" x="485.14" y="-7.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-8.12" size="1.778" layer="95" rot="R270"/>
+<instance part="SC25" gate="G$1" x="490.22" y="-12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="495.42" y="-13.2" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC21" gate="G$1" x="485.14" y="-22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-23.36" size="1.778" layer="95" rot="R270"/>
+<instance part="SC26" gate="G$1" x="490.22" y="-27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="495.42" y="-28.44" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC22" gate="G$1" x="485.14" y="-38.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-38.6" size="1.778" layer="95" rot="R270"/>
+<instance part="SC27" gate="G$1" x="490.22" y="-43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="495.42" y="-43.68" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC23" gate="G$1" x="485.14" y="-53.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-53.84" size="1.778" layer="95" rot="R270"/>
+<instance part="SC28" gate="G$1" x="502.92" y="-12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="508.12" y="-13.2" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC24" gate="G$1" x="485.14" y="-68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="490.34" y="-69.08" size="1.778" layer="95" rot="R270"/>
+<instance part="SC29" gate="G$1" x="502.92" y="-27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="508.12" y="-28.44" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC25" gate="G$1" x="500.38" y="38.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="37.6" size="1.778" layer="95" rot="R270"/>
+<instance part="SC30" gate="G$1" x="502.92" y="-43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="508.12" y="-43.68" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SC26" gate="G$1" x="500.38" y="22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="22.36" size="1.778" layer="95" rot="R270"/>
+<instance part="P+2" gate="VCC" x="454.66" y="53.34" smashed="yes">
+<attribute name="VALUE" x="452.12" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SC27" gate="G$1" x="500.38" y="7.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="7.12" size="1.778" layer="95" rot="R270"/>
+<instance part="P+3" gate="VCC" x="467.36" y="53.34" smashed="yes">
+<attribute name="VALUE" x="464.82" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SC28" gate="G$1" x="500.38" y="-7.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-8.12" size="1.778" layer="95" rot="R270"/>
+<instance part="P+4" gate="VCC" x="480.06" y="53.34" smashed="yes">
+<attribute name="VALUE" x="477.52" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SC29" gate="G$1" x="500.38" y="-22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-23.36" size="1.778" layer="95" rot="R270"/>
+<instance part="P+5" gate="VCC" x="492.76" y="53.34" smashed="yes">
+<attribute name="VALUE" x="490.22" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SC30" gate="G$1" x="500.38" y="-38.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-38.6" size="1.778" layer="95" rot="R270"/>
+<instance part="P+6" gate="VCC" x="505.46" y="53.34" smashed="yes">
+<attribute name="VALUE" x="502.92" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SC31" gate="G$1" x="500.38" y="-53.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-53.84" size="1.778" layer="95" rot="R270"/>
+<instance part="P+7" gate="VCC" x="454.66" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="452.12" y="-10.16" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SC32" gate="G$1" x="500.38" y="-68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="505.58" y="-69.08" size="1.778" layer="95" rot="R270"/>
+<instance part="P+8" gate="VCC" x="467.36" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="464.82" y="-10.16" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+9" gate="VCC" x="480.06" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="477.52" y="-10.16" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+10" gate="VCC" x="492.76" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="490.22" y="-10.16" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+11" gate="VCC" x="505.46" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="502.92" y="-10.16" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND2" gate="1" x="454.66" y="2.54" smashed="yes">
+<attribute name="VALUE" x="452.12" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="1" x="467.36" y="2.54" smashed="yes">
+<attribute name="VALUE" x="464.82" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="GND4" gate="1" x="480.06" y="2.54" smashed="yes">
+<attribute name="VALUE" x="477.52" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="GND5" gate="1" x="492.76" y="2.54" smashed="yes">
+<attribute name="VALUE" x="490.22" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="GND6" gate="1" x="505.46" y="2.54" smashed="yes">
+<attribute name="VALUE" x="502.92" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="GND7" gate="1" x="454.66" y="-58.42" smashed="yes">
+<attribute name="VALUE" x="452.12" y="-60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="GND8" gate="1" x="467.36" y="-58.42" smashed="yes">
+<attribute name="VALUE" x="464.82" y="-60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="GND9" gate="1" x="480.06" y="-58.42" smashed="yes">
+<attribute name="VALUE" x="477.52" y="-60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="GND10" gate="1" x="492.76" y="-58.42" smashed="yes">
+<attribute name="VALUE" x="490.22" y="-60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="GND11" gate="1" x="505.46" y="-58.42" smashed="yes">
+<attribute name="VALUE" x="502.92" y="-60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="337.82" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="336.3214" y="31.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="341.122" y="31.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R2" gate="G$1" x="337.82" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="336.3214" y="13.97" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="341.122" y="13.97" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND12" gate="1" x="337.82" y="6.35" smashed="yes">
+<attribute name="VALUE" x="335.28" y="3.81" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1714,11 +1670,6 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <wire x1="426.72" y1="34.29" x2="426.72" y2="29.21" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="457.2" y="45.72" size="1.778" layer="95"/>
-<wire x1="457.2" y1="43.18" x2="457.2" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="SC1" gate="G$1" pin="+"/>
-</segment>
-<segment>
 <wire x1="393.7" y1="-35.56" x2="396.24" y2="-35.56" width="0.1524" layer="91"/>
 <label x="396.24" y="-35.56" size="1.778" layer="95"/>
 <pinref part="J2" gate="G$0" pin="1"/>
@@ -1729,49 +1680,47 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <pinref part="J2" gate="G$0" pin="2"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="VIN+"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="342.9" y1="-7.62" x2="342.9" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="-5.08" x2="355.6" y2="-5.08" width="0.1524" layer="91"/>
-<label x="350.52" y="-5.08" size="1.778" layer="95"/>
+<pinref part="SC1" gate="G$1" pin="+"/>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<label x="472.44" y="45.72" size="1.778" layer="95"/>
-<wire x1="472.44" y1="40.64" x2="472.44" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="SC9" gate="G$1" pin="+"/>
+<pinref part="SC4" gate="G$1" pin="+"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<label x="487.68" y="45.72" size="1.778" layer="95"/>
-<wire x1="487.68" y1="40.64" x2="487.68" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="SC17" gate="G$1" pin="+"/>
+<pinref part="SC7" gate="G$1" pin="+"/>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="502.92" y1="40.64" x2="502.92" y2="45.72" width="0.1524" layer="91"/>
-<label x="502.92" y="45.72" size="1.778" layer="95"/>
+<pinref part="SC10" gate="G$1" pin="+"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="SC13" gate="G$1" pin="+"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="SC16" gate="G$1" pin="+"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="SC19" gate="G$1" pin="+"/>
+<pinref part="P+8" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="SC22" gate="G$1" pin="+"/>
+<pinref part="P+9" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
 <pinref part="SC25" gate="G$1" pin="+"/>
+<pinref part="P+10" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="SC28" gate="G$1" pin="+"/>
+<pinref part="P+11" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<label x="457.2" y="-81.28" size="1.778" layer="95" rot="R180"/>
-<pinref part="SC8" gate="G$1" pin="-"/>
-<wire x1="457.2" y1="-78.74" x2="457.2" y2="-81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="472.44" y1="-78.74" x2="472.44" y2="-81.28" width="0.1524" layer="91"/>
-<label x="472.44" y="-81.28" size="1.778" layer="95" rot="R180"/>
-<pinref part="SC16" gate="G$1" pin="-"/>
-</segment>
-<segment>
-<wire x1="487.68" y1="-78.74" x2="487.68" y2="-81.28" width="0.1524" layer="91"/>
-<label x="487.68" y="-81.28" size="1.778" layer="95" rot="R180"/>
-<pinref part="SC24" gate="G$1" pin="-"/>
-</segment>
-<segment>
-<wire x1="502.92" y1="-78.74" x2="502.92" y2="-81.28" width="0.1524" layer="91"/>
-<label x="502.92" y="-81.28" size="1.778" layer="95" rot="R180"/>
-<pinref part="SC32" gate="G$1" pin="-"/>
-</segment>
 <segment>
 <wire x1="358.14" y1="-45.72" x2="360.68" y2="-45.72" width="0.1524" layer="91"/>
 <label x="360.68" y="-45.72" size="1.778" layer="95"/>
@@ -1823,17 +1772,49 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <label x="398.78" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="GND"/>
-<wire x1="391.16" y1="-17.78" x2="396.24" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="396.24" y1="-7.62" x2="396.24" y2="-17.78" width="0.1524" layer="91"/>
-<label x="398.78" y="-17.78" size="1.778" layer="95"/>
+<pinref part="SC3" gate="G$1" pin="-"/>
+<pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="VIN-"/>
-<wire x1="355.6" y1="-7.62" x2="353.06" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<label x="355.6" y="-10.16" size="1.778" layer="95"/>
+<pinref part="SC6" gate="G$1" pin="-"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SC9" gate="G$1" pin="-"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SC12" gate="G$1" pin="-"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SC15" gate="G$1" pin="-"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SC18" gate="G$1" pin="-"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SC21" gate="G$1" pin="-"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SC24" gate="G$1" pin="-"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SC27" gate="G$1" pin="-"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SC30" gate="G$1" pin="-"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="337.82" y1="8.89" x2="337.82" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1871,57 +1852,18 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 </net>
 <net name="VOUT" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="VOUT"/>
-<wire x1="355.6" y1="40.64" x2="353.06" y2="40.64" width="0.1524" layer="91"/>
-<label x="353.06" y="40.64" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
 <wire x1="431.8" y1="-40.64" x2="434.34" y2="-40.64" width="0.1524" layer="91"/>
 <label x="434.34" y="-40.64" size="1.778" layer="95"/>
 <pinref part="J3" gate="G$0" pin="2"/>
 </segment>
-</net>
-<net name="N$31" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="A0"/>
-<wire x1="355.6" y1="2.54" x2="353.06" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="TP$1"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="A1"/>
-<pinref part="U$2" gate="G$1" pin="TP$1"/>
-<wire x1="347.98" y1="0" x2="355.6" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="SCL"/>
-<wire x1="355.6" y1="-2.54" x2="347.98" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="SDA"/>
-<wire x1="355.6" y1="-12.7" x2="347.98" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="VS" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="U2" gate="A" pin="VS"/>
-<wire x1="391.16" y1="7.62" x2="396.24" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="396.24" y1="7.62" x2="396.24" y2="0" width="0.1524" layer="91"/>
-<label x="398.78" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="337.82" y1="-2.54" x2="337.82" y2="-12.7" width="0.1524" layer="91"/>
-<label x="332.74" y="-7.62" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="337.82" y1="30.48" x2="337.82" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="27.94" x2="337.82" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="27.94" x2="330.2" y2="27.94" width="0.1524" layer="91"/>
+<junction x="337.82" y="27.94"/>
+<label x="325.12" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1933,8 +1875,6 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <net name="N$3" class="0">
 <segment>
 <pinref part="SC5" gate="G$1" pin="+"/>
-<pinref part="SC6" gate="G$1" pin="-"/>
-<pinref part="SC7" gate="G$1" pin="+"/>
 <pinref part="SC4" gate="G$1" pin="-"/>
 </segment>
 </net>
@@ -1956,24 +1896,10 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <pinref part="SC2" gate="G$1" pin="+"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="SC4" gate="G$1" pin="+"/>
-<pinref part="SC3" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="SC16" gate="G$1" pin="+"/>
-<pinref part="SC15" gate="G$1" pin="-"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="SC13" gate="G$1" pin="+"/>
 <pinref part="SC14" gate="G$1" pin="-"/>
 <pinref part="SC15" gate="G$1" pin="+"/>
-<pinref part="SC12" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -1986,12 +1912,6 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <segment>
 <pinref part="SC10" gate="G$1" pin="-"/>
 <pinref part="SC11" gate="G$1" pin="+"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="SC9" gate="G$1" pin="-"/>
-<pinref part="SC10" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -2014,18 +1934,6 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <pinref part="SC20" gate="G$1" pin="-"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="SC22" gate="G$1" pin="+"/>
-<pinref part="SC21" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="SC18" gate="G$1" pin="-"/>
-<pinref part="SC19" gate="G$1" pin="+"/>
-</segment>
-</net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="SC17" gate="G$1" pin="-"/>
@@ -2038,17 +1946,9 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <pinref part="SC19" gate="G$1" pin="-"/>
 </segment>
 </net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="SC32" gate="G$1" pin="+"/>
-<pinref part="SC31" gate="G$1" pin="-"/>
-</segment>
-</net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="SC29" gate="G$1" pin="+"/>
-<pinref part="SC30" gate="G$1" pin="-"/>
-<pinref part="SC31" gate="G$1" pin="+"/>
 <pinref part="SC28" gate="G$1" pin="-"/>
 </segment>
 </net>
@@ -2070,10 +1970,23 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <pinref part="SC26" gate="G$1" pin="+"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="N$7" class="0">
 <segment>
-<pinref part="SC28" gate="G$1" pin="+"/>
-<pinref part="SC27" gate="G$1" pin="-"/>
+<pinref part="SC8" gate="G$1" pin="-"/>
+<pinref part="SC9" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="SC16" gate="G$1" pin="-"/>
+<pinref part="SC17" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VOUT"/>
+<wire x1="355.6" y1="40.64" x2="337.82" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

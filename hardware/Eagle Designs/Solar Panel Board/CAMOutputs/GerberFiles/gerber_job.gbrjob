@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-09-08T01:46:10Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.99,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "Solar_Panel_Board_v5_1"
+        },
+        "Owner": "Aksel Sloan <aksel@hawaii.edu>",
+        "Size": {
+            "X": 82.42,
+            "Y": 96.7
+        }
+    }
+}
