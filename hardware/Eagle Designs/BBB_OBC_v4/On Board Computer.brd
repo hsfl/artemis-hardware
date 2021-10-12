@@ -3600,7 +3600,7 @@ SN: ______________</text>
 <text x="5.0546" y="52.7812" size="1" layer="26" rot="MR270">BB_Temp</text>
 <wire x1="89.54" y1="12.06" x2="89.54" y2="27.51" width="0.15" layer="22"/>
 <wire x1="89.54" y1="66.67" x2="89.55" y2="45.85" width="0.15" layer="22"/>
-<text x="45.7" y="21.9" size="1.778" layer="25">U7</text>
+<text x="57.5" y="44.7" size="1.778" layer="25">U7</text>
 </plain>
 <libraries>
 <library name="HSFL_Main_Library">
