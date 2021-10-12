@@ -7955,7 +7955,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U9" library="Artemis" deviceset="LTC1477CS8" device="LINEAR_TECHNOLOGY_LTC1477CS8_0_2"/>
 <part name="U16" library="Artemis" deviceset="MIC2514YM5-TR" device=""/>
 <part name="C7" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
-<part name="J21" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -8298,6 +8297,11 @@ SWCLK - JTAG_TCK</text>
 (Battery Board)</text>
 <text x="127" y="99.06" size="1.778" layer="97">0603</text>
 <text x="127" y="96.52" size="1.778" layer="97">0603</text>
+<text x="142.24" y="-17.78" size="1.778" layer="94">SW_5V_2 (5V Switch #2)
+is connected to 68016-202HLF 
+(Connector Header Right Angle)
+
+*Added VIA on Board</text>
 </plain>
 <instances>
 <instance part="GND23" gate="1" x="116.84" y="83.82" smashed="yes">
@@ -8400,11 +8404,6 @@ SWCLK - JTAG_TCK</text>
 <instance part="J27" gate="A" x="86.36" y="58.42" smashed="yes">
 <attribute name="VALUE" x="91.44" y="60.96" size="2.1844" layer="96"/>
 <attribute name="NAME" x="91.44" y="63.5" size="2.1844" layer="95"/>
-</instance>
-<instance part="J21" gate="A" x="147.32" y="-12.7" smashed="yes">
-<attribute name="NAME" x="151.4856" y="-7.3914" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="NAME" x="151.4856" y="-7.3914" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="152.4" y="-10.16" size="2.1844" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8570,11 +8569,6 @@ SWCLK - JTAG_TCK</text>
 <junction x="116.84" y="93.98"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="-15.24" x2="142.24" y2="-15.24" width="0.1524" layer="91"/>
-<label x="137.16" y="-15.24" size="1.778" layer="95"/>
-<pinref part="J21" gate="A" pin="2"/>
-</segment>
-<segment>
 <wire x1="149.86" y1="38.1" x2="147.32" y2="38.1" width="0.1524" layer="91"/>
 <label x="142.24" y="38.1" size="1.778" layer="95"/>
 <pinref part="J20" gate="G$1" pin="VSS"/>
@@ -8658,16 +8652,6 @@ SWCLK - JTAG_TCK</text>
 <pinref part="J27" gate="A" pin="5"/>
 <wire x1="86.36" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
 <label x="76.2" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J21" gate="A" pin="3"/>
-<wire x1="147.32" y1="-17.78" x2="142.24" y2="-17.78" width="0.1524" layer="91"/>
-<label x="137.16" y="-17.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J21" gate="A" pin="4"/>
-<wire x1="147.32" y1="-20.32" x2="142.24" y2="-20.32" width="0.1524" layer="91"/>
-<label x="137.16" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SOLAR_IN5" class="0">
@@ -8824,13 +8808,6 @@ SWCLK - JTAG_TCK</text>
 <pinref part="J17" gate="A" pin="1"/>
 <wire x1="35.56" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
 <label x="17.78" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SW_5V_2" class="0">
-<segment>
-<wire x1="147.32" y1="-12.7" x2="142.24" y2="-12.7" width="0.1524" layer="91"/>
-<label x="132.08" y="-12.7" size="1.778" layer="95"/>
-<pinref part="J21" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="BUS_3V3" class="0">
