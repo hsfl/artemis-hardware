@@ -994,11 +994,8 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <wire x1="0.9" y1="2.2" x2="3.6" y2="2.2" width="0.127" layer="21"/>
 <wire x1="0.9" y1="-2.2" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
 </package>
-<package name="PC104">
-<wire x1="1.905" y1="57.3786" x2="1.905" y2="38.5064" width="0.127" layer="20"/>
-<wire x1="1.905" y1="38.5064" x2="1.1938" y2="37.7952" width="0.127" layer="20" curve="-90"/>
-<wire x1="1.1938" y1="37.7952" x2="0" y2="36.6014" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="36.6014" x2="0" y2="1.1938" width="0.127" layer="20"/>
+<package name="PC104_WCONN_DETECTOR">
+<wire x1="0" y1="12.7" x2="0" y2="1.1938" width="0.127" layer="20"/>
 <wire x1="0" y1="1.1938" x2="1.1938" y2="0" width="0.127" layer="20" curve="90"/>
 <wire x1="1.1938" y1="0" x2="34.8742" y2="0" width="0.127" layer="20"/>
 <wire x1="34.8742" y1="0" x2="36.068" y2="1.1938" width="0.127" layer="20" curve="90"/>
@@ -1010,28 +1007,26 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <wire x1="56.388" y1="1.1938" x2="57.5818" y2="0" width="0.127" layer="20" curve="90"/>
 <wire x1="57.5818" y1="0" x2="88.9762" y2="0" width="0.127" layer="20"/>
 <wire x1="88.9762" y1="0" x2="90.17" y2="1.1938" width="0.127" layer="20" curve="90"/>
-<wire x1="90.17" y1="1.1938" x2="90.17" y2="72.898" width="0.127" layer="20"/>
-<wire x1="90.17" y1="72.898" x2="90.17" y2="94.6912" width="0.127" layer="20"/>
-<wire x1="90.17" y1="94.6912" x2="88.9762" y2="95.885" width="0.127" layer="20" curve="90"/>
-<wire x1="88.9762" y1="95.885" x2="85.598" y2="95.885" width="0.127" layer="20"/>
-<wire x1="85.598" y1="95.885" x2="57.5818" y2="95.885" width="0.127" layer="20"/>
-<wire x1="57.5818" y1="95.885" x2="56.388" y2="94.6912" width="0.127" layer="20" curve="90"/>
-<wire x1="56.388" y1="94.6912" x2="56.388" y2="94.1578" width="0.127" layer="20"/>
-<wire x1="56.388" y1="94.1578" x2="55.1942" y2="92.964" width="0.127" layer="20" curve="-90"/>
-<wire x1="55.1942" y1="92.964" x2="37.2618" y2="92.964" width="0.127" layer="20"/>
-<wire x1="37.2618" y1="92.964" x2="36.068" y2="94.1578" width="0.127" layer="20" curve="-90"/>
-<wire x1="36.068" y1="94.1578" x2="36.068" y2="94.6912" width="0.127" layer="20"/>
-<wire x1="36.068" y1="94.6912" x2="34.8742" y2="95.885" width="0.127" layer="20" curve="90"/>
-<wire x1="34.8742" y1="95.885" x2="1.1938" y2="95.885" width="0.127" layer="20"/>
-<wire x1="1.1938" y1="95.885" x2="0" y2="94.6912" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="94.6912" x2="0" y2="59.2836" width="0.127" layer="20"/>
-<wire x1="0" y1="59.2836" x2="1.1938" y2="58.0898" width="0.127" layer="20" curve="90"/>
-<wire x1="1.1938" y1="58.0898" x2="1.905" y2="57.3786" width="0.127" layer="20" curve="-90"/>
+<wire x1="87.63" y1="86.868" x2="87.63" y2="95.504" width="0.127" layer="20"/>
 <pad name="P$1" x="5.08" y="5.08" drill="3.175" diameter="6.35"/>
 <pad name="P$2" x="85.09" y="5.08" drill="3.175" diameter="6.35"/>
 <pad name="P$3" x="82.55" y="90.805" drill="3.175" diameter="6.35"/>
 <pad name="P$4" x="8.89" y="90.805" drill="3.175" diameter="6.35"/>
-<wire x1="90.17" y1="94.6912" x2="88.9762" y2="95.885" width="0.127" layer="20" curve="90"/>
+<wire x1="57.404" y1="95.504" x2="87.63" y2="95.504" width="0.127" layer="20"/>
+<wire x1="36.83" y1="92.964" x2="54.864" y2="92.964" width="0.127" layer="20"/>
+<wire x1="54.864" y1="92.964" x2="56.134" y2="94.234" width="0.127" layer="20" curve="90"/>
+<wire x1="56.134" y1="94.234" x2="57.404" y2="95.504" width="0.127" layer="20" curve="-90"/>
+<wire x1="34.544" y1="95.504" x2="2.54" y2="95.504" width="0.127" layer="20"/>
+<wire x1="34.544" y1="95.504" x2="35.814" y2="94.234" width="0.127" layer="20" curve="-90"/>
+<wire x1="35.814" y1="94.234" x2="36.83" y2="92.964" width="0.127" layer="20" curve="90"/>
+<wire x1="2.54" y1="95.504" x2="2.54" y2="12.7" width="0.127" layer="20"/>
+<wire x1="2.54" y1="12.7" x2="0" y2="12.7" width="0.127" layer="20"/>
+<wire x1="90.17" y1="86.8934" x2="87.63" y2="86.868" width="0.127" layer="20"/>
+<wire x1="90.17" y1="86.8934" x2="90.17" y2="1.1938" width="0.127" layer="20"/>
+<pad name="P$5" x="10.17" y="14" drill="3.1"/>
+<pad name="P$6" x="80.17" y="14" drill="3.1"/>
+<pad name="P$7" x="80.17" y="77.37" drill="3.1"/>
+<pad name="P$8" x="10.17" y="77.37" drill="3.1"/>
 </package>
 </packages>
 <symbols>
@@ -1348,12 +1343,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PC104">
+<deviceset name="PC104_WCONN_DETECTOR">
 <gates>
 <gate name="G$1" symbol="PC104_STANDARD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PC104">
+<device name="" package="PC104_WCONN_DETECTOR">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1946,9 +1941,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="L2" library="BK2125LM252-T" deviceset="BK2125LM252-T" device=""/>
 <part name="D1" library="RBR1VWM40ATR" deviceset="RBR1VWM40ATR" device=""/>
 <part name="D2" library="RBR1VWM40ATR" deviceset="RBR1VWM40ATR" device=""/>
-<part name="U$1" library="HSFL_Main_Library" deviceset="PC104" device=""/>
 <part name="J1" library="Molex - 503763-0591" deviceset="503763-0591" device=""/>
-<part name="J4" library="Molex - 503763-0591" deviceset="503763-0591" device=""/>
+<part name="J2" library="Molex - 503763-0591" deviceset="503763-0591" device=""/>
+<part name="U$1" library="HSFL_Main_Library" deviceset="PC104_WCONN_DETECTOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2083,13 +2078,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="D2" gate="D1" x="66.04" y="137.16" smashed="yes">
 <attribute name="NAME" x="63.5" y="139.954" size="1.778" layer="95"/>
 </instance>
-<instance part="U$1" gate="G$1" x="185.42" y="50.8" smashed="yes"/>
 <instance part="J1" gate="A" x="187.96" y="116.84" smashed="yes">
 <attribute name="NAME" x="192.1256" y="119.6086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
-<instance part="J4" gate="A" x="187.96" y="81.28" smashed="yes">
+<instance part="J2" gate="A" x="187.96" y="81.28" smashed="yes">
 <attribute name="NAME" x="192.1256" y="84.0486" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
+<instance part="U$1" gate="G$1" x="167.64" y="43.18" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -2203,22 +2198,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="205.74" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="6"/>
+<pinref part="J2" gate="A" pin="6"/>
 <wire x1="203.2" y1="73.66" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
 <label x="205.74" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="7"/>
+<pinref part="J2" gate="A" pin="7"/>
 <wire x1="203.2" y1="71.12" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
 <label x="205.74" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="2"/>
+<pinref part="J2" gate="A" pin="2"/>
 <wire x1="187.96" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
 <label x="185.42" y="78.74" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="5"/>
+<pinref part="J2" gate="A" pin="5"/>
 <wire x1="187.96" y1="71.12" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
 <label x="185.42" y="71.12" size="1.778" layer="95" rot="MR0"/>
 </segment>
@@ -2301,7 +2296,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="124.46" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="3"/>
+<pinref part="J2" gate="A" pin="3"/>
 <wire x1="187.96" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
 <label x="185.42" y="76.2" size="1.778" layer="95" rot="MR0"/>
 </segment>
@@ -2353,7 +2348,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="53.34" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="1"/>
+<pinref part="J2" gate="A" pin="1"/>
 <wire x1="187.96" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
 <label x="185.42" y="81.28" size="1.778" layer="95" rot="MR0"/>
 </segment>
@@ -2448,7 +2443,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="0" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="4"/>
+<pinref part="J2" gate="A" pin="4"/>
 <wire x1="187.96" y1="73.66" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
 <label x="185.42" y="73.66" size="1.778" layer="95" rot="MR0"/>
 </segment>
