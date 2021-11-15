@@ -1443,7 +1443,7 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <part name="SC30" library="untitled" deviceset="KXOB25-05X3F" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="R1" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="27k"/>
+<part name="R1" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="45.3k"/>
 <part name="R2" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
