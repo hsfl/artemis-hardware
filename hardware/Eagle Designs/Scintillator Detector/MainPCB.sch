@@ -1933,7 +1933,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="R11" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="226k"/>
 <part name="GND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="U3" library="TMP36GSZ" deviceset="TMP36GSZ" device=""/>
+<part name="U3" library="TMP36GSZ" deviceset="TMP36GSZ" device="" value="TMP36FSZ"/>
 <part name="R12" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="45.3k"/>
 <part name="R13" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="C9" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1uF"/>
