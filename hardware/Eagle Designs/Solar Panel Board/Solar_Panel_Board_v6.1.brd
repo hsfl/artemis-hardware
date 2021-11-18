@@ -201,6 +201,12 @@
 <hole x="71.71" y="94.05" drill="2.4"/>
 <hole x="10.71" y="2.45" drill="2.4"/>
 <hole x="71.71" y="2.45" drill="2.4"/>
+<text x="28.8" y="74.5" size="1.778" layer="16" rot="MR0">TEMP SENSOR</text>
+<text x="47.7" y="64.3" size="1.778" layer="16" rot="MR0">POWER</text>
+<text x="41.2" y="75.6" size="1.778" layer="16" rot="MR0">+</text>
+<text x="61.3" y="75.8" size="1.778" layer="16" rot="MR0">TORQUE</text>
+<text x="1.9" y="10" size="1.778" layer="1">TS</text>
+<text x="13.4" y="3.1" size="1.778" layer="1">TORQUE</text>
 </plain>
 <libraries>
 <library name="Molex - 503763-0291">
