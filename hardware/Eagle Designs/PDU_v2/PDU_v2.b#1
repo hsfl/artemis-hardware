@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -1440,7 +1440,7 @@ Circuit</text>
 <text x="85.8687625" y="50.693421875" size="0.9" layer="26" font="vector" rot="MR0">USB Charge</text>
 <text x="86.11435625" y="63.8070875" size="1.016" layer="26" font="vector" rot="MR0">TPS AIN6</text>
 <text x="58.117915625" y="79.053765625" size="1.2" layer="26" font="vector" rot="MR0">5V SW3</text>
-<text x="65.313865625" y="2.141753125" size="1.27" layer="26" font="vector" rot="MR0">Heater</text>
+<text x="67.168065625" y="8.821953125" size="1.27" layer="26" font="vector" rot="MR0">Heater</text>
 <text x="54.265903125" y="5.164146875" size="1.016" layer="26" font="vector" rot="MR0">HB1 Torque</text>
 <text x="41.702659375" y="5.181090625" size="1.016" layer="26" font="vector" rot="MR0">HB2 Torque</text>
 <text x="53.885059375" y="24.1530375" size="1.27" layer="26" font="vector" rot="MR0">HB1</text>
@@ -4287,7 +4287,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="68.6689" y="13.1572" size="0.8128" layer="27" font="vector" ratio="15" rot="SR90"/>
 </element>
 <element name="R48" library="HSFL_Main_Library" package="0603-RES" value="5.1 k" x="71.0184" y="14.3002" smashed="yes" rot="R270">
-<attribute name="NAME" x="69.7198" y="13.2326" size="1.016" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="70.5898" y="12.4468" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="69.2254" y="15.8162" size="0.6096" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="R49" library="HSFL_Main_Library" package="0603-RES" value="5.1 k" x="82.7278" y="10.287" smashed="yes" rot="R270">
@@ -4628,17 +4628,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="65.473646875" y="25.5388375" size="1.016" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="66.08060625" y="29.93029375" size="0.6096" layer="28" font="vector" rot="MR270"/>
 </element>
-<element name="J11" library="Artemis" package="CUI_UJ31-CH-G1-SMT-TR" value="UJ31-CH-G1-SMT-TR" x="72.5932" y="9.906" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="72.5932" y="9.906" size="1.778" layer="27" display="off"/>
-<attribute name="CUI_PURCHASE_URL" value="https://www.cuidevices.com/product/interconnect/connectors/usb-connectors/uj31-ch-g1-smt-tr?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM" x="72.5932" y="9.906" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="Type C, USB 3.1 Gen 2, 5 A, Right Angle, Surface Mount (SMT) , USB Receptacle" x="72.5932" y="9.906" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="CUI Devices" x="72.5932" y="9.906" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="UJ31-CH-G1-SMT-TR" x="72.5932" y="9.906" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="66.6678" y="2.667790625" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="None" x="72.5932" y="9.906" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="72.5932" y="9.906" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/UJ31-CH-G1-SMT-TR/?ref=eda" x="72.5932" y="9.906" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="70.437509375" y="-1.8478" size="1.270409375" layer="27"/>
+<element name="J11" library="Artemis" package="CUI_UJ31-CH-G1-SMT-TR" value="UJ31-CH-G1-SMT-TR" x="72.4916" y="10.1346" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="72.4916" y="10.1346" size="1.778" layer="27" display="off"/>
+<attribute name="CUI_PURCHASE_URL" value="https://www.cuidevices.com/product/interconnect/connectors/usb-connectors/uj31-ch-g1-smt-tr?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM" x="72.4916" y="10.1346" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="Type C, USB 3.1 Gen 2, 5 A, Right Angle, Surface Mount (SMT) , USB Receptacle" x="72.4916" y="10.1346" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="CUI Devices" x="72.4916" y="10.1346" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="UJ31-CH-G1-SMT-TR" x="72.4916" y="10.1346" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="66.5662" y="2.896390625" size="1.27" layer="25"/>
+<attribute name="PACKAGE" value="None" x="72.4916" y="10.1346" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="72.4916" y="10.1346" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/UJ31-CH-G1-SMT-TR/?ref=eda" x="72.4916" y="10.1346" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="70.335909375" y="-1.6192" size="1.270409375" layer="27"/>
 </element>
 <element name="J12" library="Artemis" package="CON_5037630291" package3d_urn="urn:adsk.eagle:package:30936816/1" value="5037630291" x="80.365575" y="47.371025" smashed="yes" rot="MR90">
 <attribute name="BUILT_BY" value="Molex_Team" x="80.365575" y="47.371025" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -5999,14 +5999,14 @@ design rules under a new name.</description>
 <vertex x="93.6752" y="-1.3716"/>
 <vertex x="93.0148" y="-2.032"/>
 </polygon>
-<wire x1="72.2932" y1="8.701" x2="72.5932" y2="9.001" width="0.3048" layer="1"/>
-<wire x1="72.5932" y1="9.001" x2="72.5932" y2="9.906" width="0.3048" layer="1"/>
-<wire x1="72.2932" y1="8.701" x2="71.8932" y2="9.101" width="0.3048" layer="1"/>
-<wire x1="71.8932" y1="9.101" x2="71.2932" y2="9.101" width="0.3048" layer="1"/>
-<wire x1="78.0932" y1="9.906" x2="78.0932" y2="9.001" width="0.3048" layer="1"/>
-<wire x1="78.0932" y1="9.001" x2="78.3932" y2="8.701" width="0.3048" layer="1"/>
-<wire x1="78.3932" y1="8.701" x2="78.7932" y2="9.101" width="0.3048" layer="1"/>
-<wire x1="78.7932" y1="9.101" x2="79.3932" y2="9.101" width="0.3048" layer="1"/>
+<wire x1="72.1916" y1="8.9296" x2="72.4916" y2="9.2296" width="0.3048" layer="1"/>
+<wire x1="72.4916" y1="9.2296" x2="72.4916" y2="10.1346" width="0.3048" layer="1"/>
+<wire x1="72.1916" y1="8.9296" x2="71.7916" y2="9.3296" width="0.3048" layer="1"/>
+<wire x1="71.7916" y1="9.3296" x2="71.1916" y2="9.3296" width="0.3048" layer="1"/>
+<wire x1="77.9916" y1="10.1346" x2="77.9916" y2="9.2296" width="0.3048" layer="1"/>
+<wire x1="77.9916" y1="9.2296" x2="78.2916" y2="8.9296" width="0.3048" layer="1"/>
+<wire x1="78.2916" y1="8.9296" x2="78.6916" y2="9.3296" width="0.3048" layer="1"/>
+<wire x1="78.6916" y1="9.3296" x2="79.2916" y2="9.3296" width="0.3048" layer="1"/>
 <wire x1="47.39" y1="67.99" x2="47.39" y2="71.3422" width="0.1778" layer="1"/>
 <wire x1="47.39" y1="71.3422" x2="47.879" y2="71.8312" width="0.1778" layer="1"/>
 <wire x1="59.2698" y1="77.3684" x2="62.8736125" y2="77.3684" width="0.254" layer="16"/>
@@ -6374,8 +6374,8 @@ design rules under a new name.</description>
 <via x="81.28" y="72.39" extent="1-16" drill="0.3048"/>
 <contactref element="J11" pad="A7"/>
 <contactref element="J11" pad="B7"/>
-<wire x1="76.2" y1="13.4884" x2="74.9432" y2="12.2316" width="0.3048" layer="15"/>
-<wire x1="74.9432" y1="8.701" x2="74.9432" y2="12.2316" width="0.3048" layer="15"/>
+<wire x1="76.2" y1="13.4884" x2="74.8416" y2="12.13" width="0.3048" layer="15"/>
+<wire x1="74.8416" y1="8.9296" x2="74.8416" y2="12.13" width="0.3048" layer="15"/>
 <wire x1="76.2" y1="16.51" x2="76.2" y2="13.4884" width="0.3048" layer="15"/>
 <via x="76.2" y="16.51" extent="1-16" drill="0.3048"/>
 <wire x1="76.2" y1="16.51" x2="82.8294" y2="23.1394" width="0.6096" layer="2"/>
@@ -6389,15 +6389,15 @@ design rules under a new name.</description>
 <wire x1="61.849" y1="72.39" x2="81.28" y2="72.39" width="0.6096" layer="2"/>
 <wire x1="40.8432" y1="51.3842" x2="61.849" y2="72.39" width="0.6096" layer="2"/>
 <wire x1="36.6522" y1="51.3842" x2="40.8432" y2="51.3842" width="0.6096" layer="2"/>
-<wire x1="76.2" y1="16.51" x2="75.5932" y2="15.9032" width="0.35" layer="1"/>
-<wire x1="75.5932" y1="15.9032" x2="75.5932" y2="9.906" width="0.35" layer="1"/>
+<wire x1="76.2" y1="16.51" x2="75.4916" y2="15.8016" width="0.35" layer="1"/>
+<wire x1="75.4916" y1="15.8016" x2="75.4916" y2="10.1346" width="0.35" layer="1"/>
 </signal>
 <signal name="USB_D+">
 <via x="81.28" y="73.66" extent="1-16" drill="0.3048"/>
 <contactref element="J11" pad="A6"/>
 <contactref element="J11" pad="B6"/>
-<wire x1="75.7432" y1="8.701" x2="75.7432" y2="11.6728" width="0.3048" layer="2"/>
-<wire x1="75.7432" y1="11.6728" x2="73.66" y2="13.756" width="0.3048" layer="2"/>
+<wire x1="75.6416" y1="8.9296" x2="75.6416" y2="11.7744" width="0.3048" layer="2"/>
+<wire x1="75.6416" y1="11.7744" x2="73.66" y2="13.756" width="0.3048" layer="2"/>
 <wire x1="73.66" y1="13.756" x2="73.66" y2="16.51" width="0.3048" layer="2"/>
 <via x="73.66" y="16.51" extent="1-16" drill="0.3048"/>
 <contactref element="U14" pad="75"/>
@@ -6410,23 +6410,23 @@ design rules under a new name.</description>
 <wire x1="81.28" y1="73.66" x2="84.0994" y2="70.8406" width="0.8" layer="15"/>
 <wire x1="84.0994" y1="70.8406" x2="84.0994" y2="26.9494" width="0.8" layer="15"/>
 <wire x1="73.66" y1="16.51" x2="84.0994" y2="26.9494" width="0.8" layer="15"/>
-<wire x1="73.66" y1="16.51" x2="75.0932" y2="15.0768" width="0.35" layer="1"/>
-<wire x1="75.0932" y1="15.0768" x2="75.0932" y2="9.906" width="0.35" layer="1"/>
+<wire x1="73.66" y1="16.51" x2="74.9916" y2="15.1784" width="0.35" layer="1"/>
+<wire x1="74.9916" y1="15.1784" x2="74.9916" y2="10.1346" width="0.35" layer="1"/>
 </signal>
 <signal name="USB_CC1">
 <contactref element="R48" pad="2"/>
 <contactref element="J11" pad="A5"/>
-<wire x1="74.5932" y1="9.906" x2="74.5932" y2="11.589" width="0.35" layer="1"/>
+<wire x1="74.4916" y1="10.1346" x2="74.4916" y2="11.6906" width="0.35" layer="1"/>
 <wire x1="72.732" y1="13.4502" x2="71.0184" y2="13.4502" width="0.35" layer="1"/>
-<wire x1="74.5932" y1="11.589" x2="72.732" y2="13.4502" width="0.35" layer="1"/>
+<wire x1="74.4916" y1="11.6906" x2="72.732" y2="13.4502" width="0.35" layer="1"/>
 </signal>
 <signal name="USB_CC2">
 <contactref element="R49" pad="2"/>
 <contactref element="J11" pad="B5"/>
 <wire x1="80.352" y1="7.0612" x2="82.7278" y2="9.437" width="0.7" layer="1"/>
 <wire x1="80.352" y1="7.0612" x2="76.6766" y2="7.0612" width="0.45" layer="1"/>
-<wire x1="76.6766" y1="7.0612" x2="76.1432" y2="7.5946" width="0.45" layer="1"/>
-<wire x1="76.1432" y1="8.001" x2="76.1432" y2="7.5946" width="0.45" layer="1"/>
+<wire x1="76.6766" y1="7.0612" x2="76.0416" y2="7.6962" width="0.45" layer="1"/>
+<wire x1="76.0416" y1="8.2296" x2="76.0416" y2="7.6962" width="0.45" layer="1"/>
 </signal>
 <signal name="SD_CS">
 <contactref element="J20" pad="1"/>
@@ -8073,15 +8073,15 @@ design rules under a new name.</description>
 <contactref element="J11" pad="A9"/>
 <contactref element="J11" pad="B4"/>
 <contactref element="J11" pad="B9"/>
-<wire x1="76.5932" y1="9.906" x2="76.5932" y2="8.751" width="0.381" layer="1"/>
-<wire x1="76.5932" y1="8.751" x2="76.5432" y2="8.701" width="0.381" layer="1"/>
-<wire x1="74.0932" y1="9.906" x2="74.0932" y2="8.751" width="0.381" layer="1"/>
-<wire x1="74.0932" y1="8.751" x2="74.1432" y2="8.701" width="0.381" layer="1"/>
-<wire x1="76.5432" y1="8.701" x2="76.5432" y2="11.416671875" width="0.381" layer="16"/>
-<wire x1="76.5432" y1="11.416671875" x2="75.599775" y2="12.360096875" width="0.381" layer="16"/>
+<wire x1="76.4916" y1="10.1346" x2="76.4916" y2="8.9796" width="0.381" layer="1"/>
+<wire x1="76.4916" y1="8.9796" x2="76.4416" y2="8.9296" width="0.381" layer="1"/>
+<wire x1="73.9916" y1="10.1346" x2="73.9916" y2="8.9796" width="0.381" layer="1"/>
+<wire x1="73.9916" y1="8.9796" x2="74.0416" y2="8.9296" width="0.381" layer="1"/>
+<wire x1="76.4416" y1="8.9296" x2="76.4416" y2="11.518271875" width="0.381" layer="16"/>
+<wire x1="76.4416" y1="11.518271875" x2="75.599775" y2="12.360096875" width="0.381" layer="16"/>
 <wire x1="75.599775" y1="12.360096875" x2="74.668534375" y2="12.360096875" width="0.381" layer="16"/>
-<wire x1="74.1432" y1="11.8347625" x2="74.1432" y2="8.701" width="0.381" layer="16"/>
-<wire x1="74.668534375" y1="12.360096875" x2="74.1432" y2="11.8347625" width="0.381" layer="16"/>
+<wire x1="74.0416" y1="11.7331625" x2="74.0416" y2="8.9296" width="0.381" layer="16"/>
+<wire x1="74.668534375" y1="12.360096875" x2="74.0416" y2="11.7331625" width="0.381" layer="16"/>
 </signal>
 <signal name="VBATT_FILT">
 <contactref element="U17" pad="1"/>
