@@ -6698,7 +6698,8 @@ design rules under a new name.</description>
 <wire x1="50.3174" y1="34.8234" x2="65.2018" y2="34.8234" width="0.7" layer="1"/>
 <wire x1="65.2018" y1="34.8234" x2="66.421" y2="33.6042" width="0.7" layer="1"/>
 <via x="66.421" y="33.6042" extent="1-16" drill="0.34"/>
-<wire x1="66.421" y1="33.6042" x2="77.161740625" y2="35.050675" width="0" layer="19" extent="1-1"/>
+<wire x1="79.1464" y1="34.6964" x2="67.5132" y2="34.6964" width="0.7" layer="15"/>
+<wire x1="67.5132" y1="34.6964" x2="66.421" y2="33.6042" width="0.7" layer="15"/>
 </signal>
 <signal name="SD_MISO">
 <contactref element="J20" pad="7"/>

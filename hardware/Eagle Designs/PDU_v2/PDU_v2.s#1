@@ -7909,7 +7909,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R83" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1 M"/>
 <part name="R82" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1 M"/>
 <part name="U18" library="Artemis" deviceset="TMP36FSZ" device=""/>
-<part name="R61" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="45.3 k"/>
+<part name="R61" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="27 k"/>
 <part name="R62" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="10 k"/>
 <part name="C82" library="HSFL_Main_Library" deviceset="CAP" device="0603-CAP" value="0.1 uF"/>
 <part name="R87" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="1 M"/>
