@@ -128,7 +128,7 @@
 <layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
@@ -7909,7 +7909,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R83" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1 M"/>
 <part name="R82" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1 M"/>
 <part name="U18" library="Artemis" deviceset="TMP36FSZ" device=""/>
-<part name="R61" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="45.3 k"/>
+<part name="R61" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="27 k"/>
 <part name="R62" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="10 k"/>
 <part name="C82" library="HSFL_Main_Library" deviceset="CAP" device="0603-CAP" value="0.1 uF"/>
 <part name="R87" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="1 M"/>
@@ -7961,11 +7961,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>PC104 Header</description>
 <plain>
 <text x="71.12" y="78.74" size="5.08" layer="94">PC 104 Header</text>
-<text x="-17.78" y="48.26" size="1.27" layer="97">Temperature Sensor Analog Pins:
-AIN1 - PDU v2 
-AIN2 - Battery Board
-AIN3 - AIN 6 - Solar Panel</text>
-<text x="-17.78" y="15.24" size="1.27" layer="97">CUS - Current Sensor</text>
 </plain>
 <instances>
 <instance part="H1" gate="G$1" x="30.48" y="66.04" smashed="yes"/>
