@@ -2245,7 +2245,6 @@ Batteries on PyCubed Battery Board</text>
 Batteries on PyCubed Battery Board</text>
 <text x="195.58" y="134.62" size="1.27" layer="97">BATT_CHRG is supplied by 
 Batteries on PyCubed Battery Board</text>
-<text x="132.08" y="66.04" size="1.27" layer="97">Two 1 uF Cap in Parallel = 2 uF Tot Cap</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="48.26" y="134.62" smashed="yes">

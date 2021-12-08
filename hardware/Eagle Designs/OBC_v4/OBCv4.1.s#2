@@ -6423,20 +6423,20 @@ Breakout for End-User</text>
 <attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="R1" gate="G$1" x="289.56" y="58.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="288.29" y="64.5414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="288.29" y="61.722" size="1.778" layer="96" rot="R180"/>
+<instance part="R1" gate="G$1" x="297.18" y="58.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="295.91" y="64.5414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="295.91" y="61.722" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R2" gate="G$1" x="289.56" y="45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="283.21" y="44.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="283.21" y="42.418" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="297.18" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="290.83" y="44.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="290.83" y="42.418" size="1.778" layer="96"/>
 </instance>
 <instance part="U1" gate="A" x="307.34" y="58.42" smashed="yes">
 <attribute name="NAME" x="328.0156" y="67.5386" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="327.3806" y="64.9986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="GND7" gate="1" x="307.34" y="43.18" smashed="yes"/>
-<instance part="GND8" gate="1" x="289.56" y="35.56" smashed="yes"/>
+<instance part="GND8" gate="1" x="297.18" y="35.56" smashed="yes"/>
 <instance part="C1" gate="G$1" x="363.22" y="45.72" smashed="yes">
 <attribute name="NAME" x="367.284" y="46.101" size="1.778" layer="95"/>
 <attribute name="VALUE" x="364.744" y="43.561" size="1.778" layer="96"/>
@@ -6532,7 +6532,7 @@ Breakout for End-User</text>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="289.56" y1="40.64" x2="289.56" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="40.64" x2="297.18" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -6892,10 +6892,10 @@ Breakout for End-User</text>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="289.56" y1="53.34" x2="289.56" y2="50.8" width="0.1524" layer="91"/>
-<junction x="289.56" y="53.34"/>
-<label x="276.86" y="53.34" size="1.778" layer="95"/>
-<wire x1="289.56" y1="53.34" x2="281.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="53.34" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
+<junction x="297.18" y="53.34"/>
+<label x="284.48" y="53.34" size="1.778" layer="95"/>
+<wire x1="297.18" y1="53.34" x2="289.56" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="14-A0/TX3/SPDIF_OUT"/>
@@ -6920,7 +6920,7 @@ Breakout for End-User</text>
 <pinref part="U1" gate="A" pin="VOUT"/>
 <wire x1="309.88" y1="58.42" x2="309.88" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="309.88" y1="63.5" x2="289.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="63.5" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UART4_RXD" class="0">
