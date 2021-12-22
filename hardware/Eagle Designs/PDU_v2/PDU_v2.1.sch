@@ -128,7 +128,7 @@
 <layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
@@ -1837,14 +1837,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <smd name="5" x="2.45" y="-1.905" dx="0.7" dy="2.5" layer="1" roundness="100" rot="R90"/>
 <text x="-5.08" y="-6.35" size="1.016" layer="27">&gt;VALUE</text>
 </package>
-<package name="CON_5037630291" urn="urn:adsk.eagle:footprint:30936727/1">
+<package name="CON_5037630291" urn="urn:adsk.eagle:footprint:30936727/1" locally_modified="yes">
 <smd name="1" x="0" y="0" dx="0.55" dy="1" layer="1" rot="R180"/>
 <smd name="2" x="-1" y="0" dx="0.55" dy="1" layer="1" rot="R180"/>
 <smd name="3" x="2.375" y="2.99" dx="1.26" dy="1.3" layer="1" rot="R180"/>
 <smd name="4" x="-3.38" y="2.99" dx="1.26" dy="1.3" layer="1" rot="R180"/>
-<wire x1="3.048" y1="0" x2="4.572" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="4.572" y1="0.635" x2="4.572" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="4.572" y1="-0.635" x2="3.048" y2="0" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="4.8514" x2="-3.81" y2="3.9624" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="-0.3302" x2="-1.6002" y2="-0.3302" width="0.1524" layer="21"/>
 <wire x1="2.794" y1="-0.3302" x2="2.794" y2="2.032" width="0.1524" layer="21"/>
@@ -1852,9 +1849,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="0.5842" y1="-0.3302" x2="2.794" y2="-0.3302" width="0.1524" layer="21"/>
 <wire x1="2.794" y1="3.9624" x2="2.794" y2="4.8514" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="2.032" x2="-3.81" y2="-0.3302" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="0" x2="4.572" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="4.572" y1="0.635" x2="4.572" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="4.572" y1="-0.635" x2="3.048" y2="0" width="0.1524" layer="51"/>
+<wire x1="3.048" y1="0" x2="3.302" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="0.635" x2="3.302" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-0.635" x2="3.048" y2="0" width="0.1524" layer="51"/>
 <wire x1="-3.81" y1="-0.3302" x2="2.794" y2="-0.3302" width="0.1524" layer="51"/>
 <wire x1="2.794" y1="-0.3302" x2="2.794" y2="4.8514" width="0.1524" layer="51"/>
 <wire x1="2.794" y1="4.8514" x2="-3.81" y2="4.8514" width="0.1524" layer="51"/>
@@ -1862,16 +1859,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <text x="-3.81" y="6.35" size="1.27" layer="25">&gt;Name</text>
 <text x="-3.81" y="5.08" size="1.27" layer="27">&gt;Value</text>
 </package>
-<package name="CON_5037630491">
+<package name="CON_5037630491" urn="urn:adsk.eagle:footprint:30936732/1" locally_modified="yes">
 <smd name="1" x="0" y="0" dx="0.55" dy="1" layer="1" rot="R180"/>
 <smd name="2" x="-1" y="0" dx="0.55" dy="1" layer="1" rot="R180"/>
 <smd name="3" x="-2" y="0" dx="0.55" dy="1" layer="1" rot="R180"/>
 <smd name="4" x="-3" y="0" dx="0.55" dy="1" layer="1" rot="R180"/>
 <smd name="5" x="2.375" y="2.99" dx="1.26" dy="1.3" layer="1" rot="R180"/>
 <smd name="6" x="-5.38" y="2.99" dx="1.26" dy="1.3" layer="1" rot="R180"/>
-<wire x1="3.048" y1="0" x2="4.572" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="4.572" y1="0.635" x2="4.572" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="4.572" y1="-0.635" x2="3.048" y2="0" width="0.1524" layer="21"/>
 <wire x1="-5.7912" y1="4.8514" x2="-5.7912" y2="3.9624" width="0.1524" layer="21"/>
 <wire x1="-5.7912" y1="-0.3302" x2="-3.6068" y2="-0.3302" width="0.1524" layer="21"/>
 <wire x1="2.794" y1="-0.3302" x2="2.794" y2="2.032" width="0.1524" layer="21"/>
@@ -1879,9 +1873,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="0.5842" y1="-0.3302" x2="2.794" y2="-0.3302" width="0.1524" layer="21"/>
 <wire x1="2.794" y1="3.9624" x2="2.794" y2="4.8514" width="0.1524" layer="21"/>
 <wire x1="-5.7912" y1="2.032" x2="-5.7912" y2="-0.3302" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="0" x2="4.572" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="4.572" y1="0.635" x2="4.572" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="4.572" y1="-0.635" x2="3.048" y2="0" width="0.1524" layer="51"/>
+<wire x1="3.048" y1="0" x2="3.302" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="0.635" x2="3.302" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="3.302" y1="-0.635" x2="3.048" y2="0" width="0.1524" layer="51"/>
 <wire x1="-5.7912" y1="-0.3302" x2="2.794" y2="-0.3302" width="0.1524" layer="51"/>
 <wire x1="2.794" y1="-0.3302" x2="2.794" y2="4.8514" width="0.1524" layer="51"/>
 <wire x1="2.794" y1="4.8514" x2="-5.7912" y2="4.8514" width="0.1524" layer="51"/>
@@ -5062,7 +5056,7 @@ Source: http://</description>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 </package>
-<package name="CONN_503763-0691_MOL">
+<package name="CONN_503763-0691_MOL" urn="urn:adsk.eagle:footprint:30936760/1" locally_modified="yes">
 <smd name="1" x="2.5" y="-2.3676" dx="0.5588" dy="0.9906" layer="1"/>
 <smd name="2" x="1.5" y="-2.3676" dx="0.5588" dy="0.9906" layer="1"/>
 <smd name="3" x="0.5" y="-2.3676" dx="0.5588" dy="0.9906" layer="1"/>
@@ -5078,14 +5072,10 @@ Source: http://</description>
 <wire x1="3.1242" y1="-2.8194" x2="5.5372" y2="-2.8194" width="0.1524" layer="21"/>
 <wire x1="-5.5372" y1="-0.3556" x2="-5.5372" y2="-2.8194" width="0.1524" layer="21"/>
 <wire x1="5.5372" y1="1.6002" x2="5.5372" y2="2.8194" width="0.1524" layer="21"/>
-<wire x1="6.5532" y1="-2.3622" x2="5.7912" y2="-2.3622" width="0.508" layer="21" curve="-180"/>
-<wire x1="5.7912" y1="-2.3622" x2="6.5532" y2="-2.3622" width="0.508" layer="21" curve="-180"/>
 <wire x1="-5.3848" y1="-2.6924" x2="5.3848" y2="-2.6924" width="0.1524" layer="51"/>
 <wire x1="5.3848" y1="-2.6924" x2="5.3848" y2="2.6924" width="0.1524" layer="51"/>
 <wire x1="5.3848" y1="2.6924" x2="-5.3848" y2="2.6924" width="0.1524" layer="51"/>
 <wire x1="-5.3848" y1="2.6924" x2="-5.3848" y2="-2.6924" width="0.1524" layer="51"/>
-<wire x1="2.8702" y1="-4.2672" x2="2.1082" y2="-4.2672" width="0.508" layer="51" curve="-180"/>
-<wire x1="2.1082" y1="-4.2672" x2="2.8702" y2="-4.2672" width="0.508" layer="51" curve="-180"/>
 <wire x1="6.5532" y1="-2.3622" x2="5.7912" y2="-2.3622" width="0.508" layer="22" curve="-180"/>
 <wire x1="5.7912" y1="-2.3622" x2="6.5532" y2="-2.3622" width="0.508" layer="22" curve="-180"/>
 <text x="-5.08" y="5.08" size="1.27" layer="25">&gt;Name</text>
@@ -5218,6 +5208,16 @@ Source: http://</description>
 <packageinstance name="CON_5037630291"/>
 </packageinstances>
 </package3d>
+<package3d name="CON_5037630491" urn="urn:adsk.eagle:package:30936811/1" type="box">
+<packageinstances>
+<packageinstance name="CON_5037630491"/>
+</packageinstances>
+</package3d>
+<package3d name="CONN_503763-0691_MOL" urn="urn:adsk.eagle:package:30936847/1" type="box">
+<packageinstances>
+<packageinstance name="CONN_503763-0691_MOL"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="SCHOTTKY">
@@ -5252,7 +5252,7 @@ Source: http://</description>
 <text x="0" y="-30.48" size="2.54" layer="95">&gt;Name</text>
 <text x="0" y="-33.02" size="2.54" layer="96">LTC1477CS8</text>
 </symbol>
-<symbol name="CON_5037630291" urn="urn:adsk.eagle:symbol:30936665/1">
+<symbol name="CON_5037630291">
 <pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
 <pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
 <pin name="3" x="0" y="-5.08" visible="pad" length="middle" direction="pas"/>
@@ -5913,7 +5913,7 @@ Source: http://</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5037630291" urn="urn:adsk.eagle:component:30936908/1" prefix="J">
+<deviceset name="5037630291" prefix="J">
 <gates>
 <gate name="A" symbol="CON_5037630291" x="0" y="0"/>
 </gates>
@@ -5954,6 +5954,9 @@ Source: http://</description>
 <connect gate="A" pin="5" pad="5"/>
 <connect gate="A" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30936811/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="BUILT_BY" value="Molex_Team" constant="no"/>
@@ -7194,6 +7197,9 @@ Source: http://</description>
 <connect gate="A" pin="5" pad="5"/>
 <connect gate="A" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30936847/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="BUILT_BY" value="EMA_Cory" constant="no"/>
@@ -7645,6 +7651,71 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="PDUv2">
+<packages>
+<package name="INDC2012X105N" urn="urn:adsk.eagle:footprint:30936771/1">
+<text x="-1.71" y="-1.07" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-1.71" y="1.07" size="0.5" layer="25">&gt;NAME</text>
+<wire x1="1.1" y1="-0.72" x2="-1.1" y2="-0.72" width="0.127" layer="51"/>
+<wire x1="1.1" y1="0.72" x2="-1.1" y2="0.72" width="0.127" layer="51"/>
+<wire x1="1.1" y1="-0.72" x2="1.1" y2="0.72" width="0.127" layer="51"/>
+<wire x1="-1.1" y1="-0.72" x2="-1.1" y2="0.72" width="0.127" layer="51"/>
+<wire x1="-1.708" y1="-0.983" x2="1.708" y2="-0.983" width="0.05" layer="39"/>
+<wire x1="-1.708" y1="0.983" x2="1.708" y2="0.983" width="0.05" layer="39"/>
+<wire x1="-1.708" y1="-0.983" x2="-1.708" y2="0.983" width="0.05" layer="39"/>
+<wire x1="1.708" y1="-0.983" x2="1.708" y2="0.983" width="0.05" layer="39"/>
+<smd name="1" x="-0.86" y="0" dx="1.2" dy="1.47" layer="1"/>
+<smd name="2" x="0.86" y="0" dx="1.2" dy="1.47" layer="1"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="INDC2012X105N" urn="urn:adsk.eagle:package:30936858/1" type="box">
+<packageinstances>
+<packageinstance name="INDC2012X105N"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="AIMC-0805-2N2S-T" urn="urn:adsk.eagle:symbol:30936694/1">
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AIMC-0805-2N2S-T" urn="urn:adsk.eagle:component:30936895/1" prefix="L">
+<description>2.2nH Unshielded Multilayer Inductor 600mA 100mOhm Max 0805 (2012 Metric)  </description>
+<gates>
+<gate name="G$1" symbol="AIMC-0805-2N2S-T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="INDC2012X105N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30936858/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" IND 2.2nH 0.3A 100mΩ "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="535-11562-1-ND"/>
+<attribute name="MF" value="Abracon"/>
+<attribute name="MP" value="AIMC-0805-2N2S-T"/>
+<attribute name="PACKAGE" value="2012 Bourns"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7686,7 +7757,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C21" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="C22" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="4.7 uF"/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R15" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="301 k"/>
+<part name="R15" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="309 k"/>
 <part name="R16" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="47 k"/>
 <part name="C23" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="10 pF"/>
 <part name="R17" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1 M"/>
@@ -7774,7 +7845,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C33" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="C34" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="4.7 uF"/>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R23" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="180 k"/>
+<part name="R23" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="187 k"/>
 <part name="R24" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="47 k"/>
 <part name="C35" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="10 pF"/>
 <part name="R25" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1 M"/>
@@ -7819,7 +7890,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U21" library="HSFL_Main_Library" deviceset="LT8609A" device=""/>
 <part name="J16" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
 <part name="J17" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
-<part name="J9" library="Artemis" deviceset="5037630491" device=""/>
+<part name="J9" library="Artemis" deviceset="5037630491" device="" package3d_urn="urn:adsk.eagle:package:30936811/1"/>
 <part name="J1" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
 <part name="J2" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
 <part name="J3" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
@@ -7829,8 +7900,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J20" library="Artemis" deviceset="503182-1852" device=""/>
 <part name="U1" library="Artemis" deviceset="DRV8847PWPR" device=""/>
 <part name="U2" library="Artemis" deviceset="DRV8847PWPR" device=""/>
-<part name="J7" library="Artemis" deviceset="5037630491" device=""/>
-<part name="J8" library="Artemis" deviceset="5037630491" device=""/>
+<part name="J7" library="Artemis" deviceset="5037630491" device="" package3d_urn="urn:adsk.eagle:package:30936811/1"/>
+<part name="J8" library="Artemis" deviceset="5037630491" device="" package3d_urn="urn:adsk.eagle:package:30936811/1"/>
 <part name="U3" library="Artemis" deviceset="LTC1477CS8" device="LINEAR_TECHNOLOGY_LTC1477CS8_0_2"/>
 <part name="U5" library="Artemis" deviceset="LTC1477CS8" device="LINEAR_TECHNOLOGY_LTC1477CS8_0_2"/>
 <part name="U6" library="Artemis" deviceset="LTC1477CS8" device="LINEAR_TECHNOLOGY_LTC1477CS8_0_2"/>
@@ -7905,11 +7976,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J15" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
 <part name="U10" library="Artemis" deviceset="AO3404A" device=""/>
 <part name="U24" library="Artemis" deviceset="AO3404A" device=""/>
-<part name="J18" library="Artemis" deviceset="5037630491" device=""/>
+<part name="J18" library="Artemis" deviceset="5037630491" device="" package3d_urn="urn:adsk.eagle:package:30936811/1"/>
 <part name="R83" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1 M"/>
 <part name="R82" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1 M"/>
 <part name="U18" library="Artemis" deviceset="TMP36FSZ" device=""/>
-<part name="R61" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="27 k"/>
+<part name="R61" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="45.3 k"/>
 <part name="R62" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="10 k"/>
 <part name="C82" library="HSFL_Main_Library" deviceset="CAP" device="0603-CAP" value="0.1 uF"/>
 <part name="R87" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="1 M"/>
@@ -7927,7 +7998,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J23" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
 <part name="J24" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
 <part name="J25" library="Artemis" deviceset="5037630291" device="" package3d_urn="urn:adsk.eagle:package:30936816/1"/>
-<part name="J10" library="Artemis" deviceset="5037630491" device=""/>
+<part name="J10" library="Artemis" deviceset="5037630491" device="" package3d_urn="urn:adsk.eagle:package:30936811/1"/>
 <part name="C30" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="1 uF"/>
 <part name="C37" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="C61" library="HSFL_Main_Library" deviceset="CAP" device="1206" value="4.7 uF"/>
@@ -7944,7 +8015,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R51" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="10 k"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J27" library="Artemis" deviceset="5037630691" device=""/>
+<part name="J27" library="Artemis" deviceset="5037630691" device="" package3d_urn="urn:adsk.eagle:package:30936847/1"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C9" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="1 uF"/>
@@ -7955,12 +8026,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U9" library="Artemis" deviceset="LTC1477CS8" device="LINEAR_TECHNOLOGY_LTC1477CS8_0_2"/>
 <part name="U16" library="Artemis" deviceset="MIC2514YM5-TR" device=""/>
 <part name="C7" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
+<part name="NT4" library="PDUv2" deviceset="AIMC-0805-2N2S-T" device="" package3d_urn="urn:adsk.eagle:package:30936858/1"/>
 </parts>
 <sheets>
 <sheet>
 <description>PC104 Header</description>
 <plain>
 <text x="71.12" y="78.74" size="5.08" layer="94">PC 104 Header</text>
+<text x="-17.78" y="48.26" size="1.27" layer="97">Temperature Sensor Analog Pins:
+AIN1 - PDU v2 
+AIN2 - Battery Board
+AIN3 - AIN 6 - Solar Panel</text>
+<text x="-17.78" y="15.24" size="1.27" layer="97">CUS - Current Sensor</text>
+<text x="101.6" y="22.86" size="1.27" layer="97">VBATT (Post-RBF Circuit)
+PY_VBATT (Pre-RBF Circuit)</text>
 </plain>
 <instances>
 <instance part="H1" gate="G$1" x="30.48" y="66.04" smashed="yes"/>
@@ -8302,6 +8381,10 @@ is connected to 68016-202HLF
 (Connector Header Right Angle)
 
 *Added VIA on Board</text>
+<text x="-17.78" y="40.64" size="1.27" layer="97">PY_VBATT is used for
+Pre-RBF Circuit.</text>
+<text x="40.64" y="40.64" size="1.27" layer="97">BATT_CHRG is used for 
+Battery Charging Circuit.</text>
 </plain>
 <instances>
 <instance part="GND23" gate="1" x="116.84" y="83.82" smashed="yes">
@@ -8764,13 +8847,6 @@ is connected to 68016-202HLF
 <label x="68.58" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VBATT" class="0">
-<segment>
-<wire x1="-7.62" y1="58.42" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
-<label x="-20.32" y="58.42" size="1.778" layer="95"/>
-<pinref part="J16" gate="A" pin="1"/>
-</segment>
-</net>
 <net name="SD_CS" class="0">
 <segment>
 <pinref part="J20" gate="G$1" pin="DATA2"/>
@@ -8901,6 +8977,13 @@ is connected to 68016-202HLF
 <pinref part="J27" gate="A" pin="6"/>
 <wire x1="86.36" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 <label x="73.66" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PY_VBATT" class="0">
+<segment>
+<pinref part="J16" gate="A" pin="1"/>
+<wire x1="-7.62" y1="58.42" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
+<label x="-25.4" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -12300,13 +12383,6 @@ is connected to 68016-202HLF
 <label x="53.34" y="-248.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SW_12V_EN1" class="0">
-<segment>
-<pinref part="U14" gate="A" pin="PC21"/>
-<wire x1="45.72" y1="-259.08" x2="53.34" y2="-259.08" width="0.1524" layer="91"/>
-<label x="53.34" y="-259.08" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SW_3V3_EN1" class="0">
 <segment>
 <pinref part="U14" gate="A" pin="PB16"/>
@@ -13222,9 +13298,14 @@ Connectors</text>
 <plain>
 <text x="40.64" y="-12.7" size="1.778" layer="97" rot="R180">0805</text>
 <text x="78.74" y="2.54" size="1.778" layer="97" rot="R180">0805</text>
-<text x="63.5" y="-33.02" size="1.778" layer="97">Pin Removed = Open Circuit = PDU v2 Powered On
-Pin In = Closed Circuit = PDU v2 Powered Off</text>
+<text x="99.06" y="-27.94" size="1.778" layer="97">Functionality:
+Pin Removed = Open Circuit = PDU Powered On
+Pin In = Closed Circuit = PDU Powered Off</text>
 <text x="43.18" y="20.32" size="2.54" layer="94">Remove Before Flight (RBF) Circuit</text>
+<text x="12.7" y="-48.26" size="1.778" layer="97">PY_VBATT: Power source directly from PyCubed Battery Board
+(Pre-RBF Circuit)
+VBATT: Power source that supplies to satellite (Post-RBF Circuit)
+J15 Connector: Solder these connections together</text>
 </plain>
 <instances>
 <instance part="J15" gate="A" x="30.48" y="-25.4" smashed="yes">
@@ -13248,41 +13329,25 @@ Pin In = Closed Circuit = PDU v2 Powered Off</text>
 <attribute name="NAME" x="80.01" y="8.6614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="80.01" y="5.842" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="NT4" gate="G$1" x="71.12" y="-30.48" smashed="yes">
+<attribute name="NAME" x="63.5" y="-25.4" size="1.778" layer="95"/>
+<attribute name="VALUE" x="63.5" y="-27.94" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VBATT" class="0">
 <segment>
-<pinref part="J15" gate="A" pin="1"/>
-<wire x1="30.48" y1="-25.4" x2="25.4" y2="-25.4" width="0.1524" layer="91"/>
-<label x="17.78" y="-25.4" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="81.28" y1="10.16" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
-<label x="83.82" y="17.78" size="1.778" layer="95" rot="R180"/>
-<pinref part="R82" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="U24" gate="A" pin="D"/>
-<wire x1="111.76" y1="-7.62" x2="114.3" y2="-7.62" width="0.1524" layer="91"/>
-<label x="114.3" y="-7.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RBF_OUT" class="0">
-<segment>
 <pinref part="J15" gate="A" pin="2"/>
 <wire x1="30.48" y1="-27.94" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
-<label x="15.24" y="-27.94" size="1.778" layer="95"/>
+<label x="17.78" y="-27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="27.94" y1="-2.54" x2="35.56" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="U10" gate="A" pin="G"/>
-<label x="17.78" y="-2.54" size="1.778" layer="95"/>
-<pinref part="R83" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="-2.54" x2="50.8" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-2.54" x2="35.56" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="35.56" y="-2.54"/>
+<pinref part="U24" gate="A" pin="S"/>
+<wire x1="86.36" y1="-10.16" x2="81.28" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-10.16" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
+<label x="78.74" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13297,19 +13362,9 @@ Pin In = Closed Circuit = PDU v2 Powered Off</text>
 <label x="20.32" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U24" gate="A" pin="S"/>
-<wire x1="86.36" y1="-10.16" x2="81.28" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-10.16" x2="81.28" y2="-17.78" width="0.1524" layer="91"/>
-<label x="78.74" y="-20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U10" gate="A" pin="S"/>
-<wire x1="50.8" y1="-7.62" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="R83" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="-7.62" x2="45.72" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-7.62" x2="48.26" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="48.26" y="-7.62"/>
-<label x="45.72" y="-15.24" size="1.778" layer="95"/>
+<pinref part="NT4" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="-30.48" x2="60.96" y2="-30.48" width="0.1524" layer="91"/>
+<label x="55.88" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -13321,6 +13376,49 @@ Pin In = Closed Circuit = PDU v2 Powered Off</text>
 <wire x1="81.28" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="U24" gate="A" pin="G"/>
 <pinref part="R82" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="PY_VBATT" class="0">
+<segment>
+<pinref part="J15" gate="A" pin="1"/>
+<wire x1="30.48" y1="-25.4" x2="25.4" y2="-25.4" width="0.1524" layer="91"/>
+<label x="15.24" y="-25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R83" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="-7.62" x2="33.02" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U10" gate="A" pin="G"/>
+<wire x1="33.02" y1="-7.62" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-2.54" x2="50.8" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-2.54" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="33.02" y="-2.54"/>
+<label x="17.78" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R82" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="10.16" x2="81.28" y2="12.7" width="0.1524" layer="91"/>
+<label x="76.2" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U24" gate="A" pin="D"/>
+<wire x1="111.76" y1="-7.62" x2="114.3" y2="-7.62" width="0.1524" layer="91"/>
+<label x="114.3" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RBF_GND" class="0">
+<segment>
+<pinref part="U10" gate="A" pin="S"/>
+<pinref part="R83" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="-7.62" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-7.62" x2="45.72" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="48.26" y="-7.62"/>
+<wire x1="48.26" y1="-7.62" x2="48.26" y2="-12.7" width="0.1524" layer="91"/>
+<label x="43.18" y="-15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NT4" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
+<label x="81.28" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
