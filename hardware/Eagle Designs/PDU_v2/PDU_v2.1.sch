@@ -8040,6 +8040,11 @@ AIN3 - AIN 6 - Solar Panel</text>
 <text x="-17.78" y="15.24" size="1.27" layer="97">CUS - Current Sensor</text>
 <text x="101.6" y="22.86" size="1.27" layer="97">VBATT (Post-RBF Circuit)
 PY_VBATT (Pre-RBF Circuit)</text>
+<text x="111.76" y="48.26" size="1.27" layer="94">Kapton Heater</text>
+<text x="114.3" y="50.8" size="1.27" layer="94">RPi (OBC)</text>
+<text x="114.3" y="38.1" size="1.27" layer="94">12V Reg.</text>
+<text x="190.5" y="48.26" size="1.27" layer="94">Breakout Power</text>
+<text x="109.22" y="43.18" size="1.27" layer="94">Breakout Power</text>
 </plain>
 <instances>
 <instance part="H1" gate="G$1" x="30.48" y="66.04" smashed="yes"/>
@@ -8109,7 +8114,7 @@ PY_VBATT (Pre-RBF Circuit)</text>
 <segment>
 <pinref part="H1" gate="G$1" pin="2.25"/>
 <wire x1="142.24" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
-<label x="127" y="35.56" size="1.778" layer="95"/>
+<label x="124.46" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="H1" gate="G$1" pin="2.26"/>
@@ -9538,11 +9543,11 @@ Battery Charging Circuit.</text>
 <text x="45.72" y="20.32" size="5.08" layer="94">3V3 Switches</text>
 <text x="182.88" y="20.32" size="5.08" layer="94">5V Switches</text>
 <text x="53.34" y="-30.48" size="2.54" layer="94">Breakout Power</text>
-<text x="170.18" y="-30.48" size="2.54" layer="94">BBB</text>
-<text x="160.02" y="-91.44" size="2.54" layer="94">Kapton Heater</text>
-<text x="246.38" y="-30.48" size="2.54" layer="94">Breakout Power</text>
+<text x="154.94" y="-30.48" size="2.54" layer="94">RPi (OBC)</text>
+<text x="154.94" y="-91.44" size="2.54" layer="94">Kapton Heater</text>
+<text x="238.76" y="-30.48" size="2.54" layer="94">Breakout Power</text>
 <text x="50.8" y="-106.68" size="1.778" layer="97">All cap are 0805 size.</text>
-<text x="246.38" y="-91.44" size="2.54" layer="94">12V Switch Regulator</text>
+<text x="233.68" y="-91.44" size="2.54" layer="94">12V Switch Regulator (PDU)</text>
 <text x="91.44" y="-119.38" size="5.08" layer="94">VBATT Switch</text>
 </plain>
 <instances>
