@@ -148,9 +148,7 @@ Wire Wire Line
 Text GLabel 3300 3200 0    50   BiDi ~ 0
 B-
 Connection ~ 4450 6050
-Wire Wire Line
-	4850 6050 4450 6050
-Text GLabel 4850 6050 2    50   BiDi ~ 0
+Text GLabel 5150 6050 2    50   BiDi ~ 0
 PACK-
 Connection ~ 3450 4800
 Connection ~ 4250 6050
@@ -511,17 +509,6 @@ F 3 "~" H 4750 7500 50  0001 C CNN
 	1    4750 7500
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	4850 6050 4850 6900
-Connection ~ 4850 6900
-Wire Wire Line
-	4850 6900 4850 7100
-Connection ~ 4850 7100
-Wire Wire Line
-	4850 7100 4850 7300
-Connection ~ 4850 7300
-Wire Wire Line
-	4850 7300 4850 7500
 $Comp
 L Connector:Conn_01x04_Female J9
 U 1 1 60F0D0E3
@@ -725,4 +712,21 @@ Wire Wire Line
 	8450 5300 8450 4700
 Wire Wire Line
 	8450 4700 8650 4700
+$Comp
+L Device:R_US R7
+U 1 1 61D81EB5
+P 5150 7150
+F 0 "R7" H 5218 7196 50  0000 L CNN
+F 1 "1M" H 5218 7105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5190 7140 50  0001 C CNN
+F 3 "~" H 5150 7150 50  0001 C CNN
+	1    5150 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6050 5150 6050
+Wire Wire Line
+	5150 6050 5150 7000
+Wire Wire Line
+	5150 7300 4850 7300
 $EndSCHEMATC

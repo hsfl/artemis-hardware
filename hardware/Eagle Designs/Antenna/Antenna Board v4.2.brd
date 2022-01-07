@@ -486,41 +486,6 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J3" library="Molex - 503763-0491" package="MOLEX_503763-0491_0" value="MOLEX_503763-0491MOLEX_503763-0491_0_0" x="74.3" y="28.5" smashed="yes" rot="R90">
-<attribute name="AUTOMOTIVE" value="No" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CONN_GENDER" value="Male" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CONN_ORIENTATION" value="Right Angle" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CONTACT_MATERIAL" value="Gold,Nickel" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CURRENT_RATING" value="1.5A" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET" value="https://www.molex.com/webdocs/datasheets/pdf/en-us/5037630491_PCB_HEADERS.pdf" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DEVICE_CLASS_L1" value="Connectors" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DEVICE_CLASS_L2" value="Headers and Wire Housings" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DEVICE_CLASS_L3" value="unset" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_DESCRIPTION" value="CONN HEADER 1MM R/A 4CKT" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="WM10655CT-ND" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FOOTPRINT_URL" value="https://www.molex.com/pdm_docs/sd/5037630491_sd.pdf" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Recommended_Land_Pattern" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="1.7mm" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LEAD_FREE" value="Yes" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Molex" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT" value="503763-0491" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_DATE" value="0" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_REV" value="0" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="538-503763-0491" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="503763-0491" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="73.075" y="34.3" size="1" layer="25" rot="R180"/>
-<attribute name="NUMBER_OF_CONTACTS" value="4" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NUMBER_OF_ROWS" value="1" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PACKAGE" value="HDR4" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PITCH" value="1mm" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PREFIX" value="J" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ROHS" value="Yes" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMPERATURE_RANGE_HIGH" value="+105°C" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VOLTAGE_RATING" value="150V" x="87" y="56.44" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
 <element name="J4" library="Molex - 503763-0291" package="MOLEX_503763-0291_0" value="MOLEX_503763-0291MOLEX_503763-0291_0_0" x="18.6" y="44.4" smashed="yes" rot="R270">
 <attribute name="CENTROID_NOT_SPECIFIED" value="No" x="14.79" y="27.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET" value="http://www.molex.com/pdm_docs/sd/5037630291_sd.pdf" x="14.79" y="27.89" size="1.778" layer="27" rot="R270" display="off"/>
@@ -568,41 +533,6 @@ design rules under a new name.</description>
 <attribute name="ROHS" value="yes" x="33.5" y="35.4" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="TEMPERATURE_RANGE_HIGH" value="+105°C" x="33.5" y="35.4" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="33.5" y="35.4" size="1.778" layer="28" rot="MR90" display="off"/>
-</element>
-<element name="J7" library="Molex - 503763-0491" package="MOLEX_503763-0491_0" value="MOLEX_503763-0491MOLEX_503763-0491_0_0" x="68.3" y="28.5" smashed="yes" rot="MR270">
-<attribute name="AUTOMOTIVE" value="No" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="CONN_GENDER" value="Male" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="CONN_ORIENTATION" value="Right Angle" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="CONTACT_MATERIAL" value="Gold,Nickel" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="CURRENT_RATING" value="1.5A" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DATASHEET" value="https://www.molex.com/webdocs/datasheets/pdf/en-us/5037630491_PCB_HEADERS.pdf" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DEVICE_CLASS_L1" value="Connectors" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DEVICE_CLASS_L2" value="Headers and Wire Housings" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DEVICE_CLASS_L3" value="unset" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGIKEY_DESCRIPTION" value="CONN HEADER 1MM R/A 4CKT" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="WM10655CT-ND" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="FOOTPRINT_URL" value="https://www.molex.com/pdm_docs/sd/5037630491_sd.pdf" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Recommended_Land_Pattern" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="HEIGHT" value="1.7mm" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="LEAD_FREE" value="Yes" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Molex" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT" value="503763-0491" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_DATE" value="0" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_REV" value="0" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="538-503763-0491" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MPN" value="503763-0491" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="65.475" y="32.5" size="1" layer="26" rot="MR270"/>
-<attribute name="NUMBER_OF_CONTACTS" value="4" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NUMBER_OF_ROWS" value="1" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="PACKAGE" value="HDR4" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="PITCH" value="1mm" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="PREFIX" value="J" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="ROHS" value="Yes" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="TEMPERATURE_RANGE_HIGH" value="+105°C" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VOLTAGE_RATING" value="150V" x="68.3" y="37.5" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="J1" library="Molex_503763-0291" package="CON_5037630291" value="5037630291" x="83.4" y="56.3" smashed="yes" rot="R90">
 <attribute name="BUILT_BY" value="Molex_Team" x="83.4" y="56.3" size="1.778" layer="27" rot="R90" display="off"/>
@@ -746,55 +676,121 @@ design rules under a new name.</description>
 <attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="24.6" y="56.2" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VOLTAGE_RATING" value="150V" x="24.6" y="56.2" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
+<element name="J3" library="Molex - 503763-0491" package="MOLEX_503763-0491_0" value="MOLEX_503763-0491MOLEX_503763-0491_0_0" x="74.4" y="28" smashed="yes" rot="R90">
+<attribute name="AUTOMOTIVE" value="No" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="CONN_GENDER" value="Male" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="CONN_ORIENTATION" value="Right Angle" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="CONTACT_MATERIAL" value="Gold,Nickel" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="CURRENT_RATING" value="1.5A" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DATASHEET" value="https://www.molex.com/webdocs/datasheets/pdf/en-us/5037630491_PCB_HEADERS.pdf" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DEVICE_CLASS_L1" value="Connectors" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DEVICE_CLASS_L2" value="Headers and Wire Housings" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DEVICE_CLASS_L3" value="unset" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="CONN HEADER 1MM R/A 4CKT" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="WM10655CT-ND" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="FOOTPRINT_URL" value="https://www.molex.com/pdm_docs/sd/5037630491_sd.pdf" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Recommended_Land_Pattern" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="1.7mm" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LEAD_FREE" value="Yes" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Molex" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT" value="503763-0491" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_DATE" value="0" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_REV" value="0" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-503763-0491" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="503763-0491" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="73.775" y="34.2" size="1" layer="25" rot="R180"/>
+<attribute name="NUMBER_OF_CONTACTS" value="4" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NUMBER_OF_ROWS" value="1" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PACKAGE" value="HDR4" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PITCH" value="1mm" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PREFIX" value="J" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ROHS" value="Yes" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+105°C" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE_RATING" value="150V" x="74.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="J7" library="Molex - 503763-0491" package="MOLEX_503763-0491_0" value="MOLEX_503763-0491MOLEX_503763-0491_0_0" x="68.4" y="28" smashed="yes" rot="MR270">
+<attribute name="AUTOMOTIVE" value="No" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="CONN_GENDER" value="Male" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="CONN_ORIENTATION" value="Right Angle" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="CONTACT_MATERIAL" value="Gold,Nickel" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="CURRENT_RATING" value="1.5A" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DATASHEET" value="https://www.molex.com/webdocs/datasheets/pdf/en-us/5037630491_PCB_HEADERS.pdf" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DEVICE_CLASS_L1" value="Connectors" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DEVICE_CLASS_L2" value="Headers and Wire Housings" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DEVICE_CLASS_L3" value="unset" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="CONN HEADER 1MM R/A 4CKT" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="WM10655CT-ND" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="FOOTPRINT_URL" value="https://www.molex.com/pdm_docs/sd/5037630491_sd.pdf" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Recommended_Land_Pattern" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="HEIGHT" value="1.7mm" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="LEAD_FREE" value="Yes" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="Molex" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT" value="503763-0491" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_DATE" value="0" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_REV" value="0" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-503763-0491" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MPN" value="503763-0491" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="65.575" y="32" size="1" layer="26" rot="MR270"/>
+<attribute name="NUMBER_OF_CONTACTS" value="4" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NUMBER_OF_ROWS" value="1" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="PACKAGE" value="HDR4" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="PITCH" value="1mm" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="PREFIX" value="J" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="ROHS" value="Yes" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+105°C" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-40°C" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VERIFICATION_VERSION" value="0.0.0.1" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VOLTAGE_RATING" value="150V" x="68.4" y="28" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="RX+">
 <contactref element="J3" pad="1"/>
 <contactref element="J7" pad="4"/>
-<wire x1="76.735" y1="30" x2="79.1" y2="30" width="0.508" layer="1"/>
-<wire x1="79.1" y1="30" x2="80.1" y2="31" width="0.508" layer="1"/>
-<via x="80.1" y="31" extent="1-16" drill="0.35"/>
-<wire x1="80.1" y1="31" x2="79.1" y2="30" width="0.508" layer="16"/>
-<wire x1="79.1" y1="30" x2="70.735" y2="30" width="0.508" layer="16"/>
+<wire x1="70.835" y1="29.5" x2="79.5" y2="29.5" width="0.508" layer="16"/>
+<wire x1="79.5" y1="29.5" x2="80.4" y2="30.4" width="0.508" layer="16"/>
+<via x="80.4" y="30.4" extent="1-16" drill="0.35"/>
+<wire x1="76.835" y1="29.5" x2="79.5" y2="29.5" width="0.508" layer="1"/>
+<wire x1="79.5" y1="29.5" x2="80.4" y2="30.4" width="0.508" layer="1"/>
 </signal>
 <signal name="RX-">
 <contactref element="J3" pad="2"/>
 <contactref element="J7" pad="3"/>
-<wire x1="76.735" y1="29" x2="80.4" y2="29" width="0.508" layer="1"/>
-<wire x1="80.4" y1="29" x2="81.4" y2="30" width="0.508" layer="1"/>
-<via x="81.4" y="30" extent="1-16" drill="0.35"/>
-<wire x1="81.4" y1="30" x2="80.4" y2="29" width="0.508" layer="16"/>
-<wire x1="80.4" y1="29" x2="70.735" y2="29" width="0.508" layer="16"/>
+<wire x1="70.835" y1="28.5" x2="81.1" y2="28.5" width="0.508" layer="16"/>
+<wire x1="81.1" y1="28.5" x2="82.2" y2="29.6" width="0.508" layer="16"/>
+<via x="82.2" y="29.6" extent="1-16" drill="0.35"/>
+<wire x1="76.835" y1="28.5" x2="81.1" y2="28.5" width="0.508" layer="1"/>
+<wire x1="81.1" y1="28.5" x2="82.2" y2="29.6" width="0.508" layer="1"/>
 </signal>
 <signal name="TX+">
 <contactref element="J3" pad="3"/>
 <contactref element="J7" pad="2"/>
-<wire x1="76.735" y1="28" x2="80.4" y2="28" width="0.508" layer="1"/>
-<wire x1="80.4" y1="28" x2="81.4" y2="27" width="0.508" layer="1"/>
-<via x="81.4" y="27" extent="1-16" drill="0.35"/>
-<wire x1="81.4" y1="27" x2="80.4" y2="28" width="0.508" layer="16"/>
-<wire x1="80.4" y1="28" x2="70.735" y2="28" width="0.508" layer="16"/>
+<wire x1="70.835" y1="27.5" x2="81.1" y2="27.5" width="0.508" layer="16"/>
+<wire x1="81.1" y1="27.5" x2="82.2" y2="26.4" width="0.508" layer="16"/>
+<via x="82.2" y="26.4" extent="1-16" drill="0.35"/>
+<wire x1="76.835" y1="27.5" x2="81.1" y2="27.5" width="0.508" layer="1"/>
+<wire x1="81.1" y1="27.5" x2="82.2" y2="26.4" width="0.508" layer="1"/>
 </signal>
 <signal name="TX-">
 <contactref element="J3" pad="4"/>
 <contactref element="J7" pad="1"/>
-<wire x1="76.735" y1="27" x2="79.1" y2="27" width="0.508" layer="1"/>
-<wire x1="79.1" y1="27" x2="80.1" y2="26" width="0.508" layer="1"/>
-<via x="80.1" y="26" extent="1-16" drill="0.35"/>
-<wire x1="80.1" y1="26" x2="79.1" y2="27" width="0.508" layer="16"/>
-<wire x1="79.1" y1="27" x2="70.735" y2="27" width="0.508" layer="16"/>
+<wire x1="70.835" y1="26.5" x2="79.5" y2="26.5" width="0.508" layer="16"/>
+<wire x1="79.5" y1="26.5" x2="80.4" y2="25.6" width="0.508" layer="16"/>
+<via x="80.4" y="25.6" extent="1-16" drill="0.35"/>
+<wire x1="76.835" y1="26.5" x2="79.5" y2="26.5" width="0.508" layer="1"/>
+<wire x1="79.5" y1="26.5" x2="80.4" y2="25.6" width="0.508" layer="1"/>
 </signal>
 <signal name="GND">
-<contactref element="J3" pad="6"/>
 <contactref element="J4" pad="4"/>
-<contactref element="J3" pad="5"/>
 <contactref element="J4" pad="3"/>
 <contactref element="J9" pad="3"/>
 <contactref element="J9" pad="4"/>
 <contactref element="J4" pad="2"/>
-<contactref element="J7" pad="6"/>
 <contactref element="J8" pad="4"/>
-<contactref element="J7" pad="5"/>
 <contactref element="J8" pad="3"/>
 <contactref element="J9" pad="2"/>
 <contactref element="J8" pad="1"/>
@@ -857,6 +853,10 @@ design rules under a new name.</description>
 <contactref element="J15" pad="6"/>
 <contactref element="J14" pad="1"/>
 <contactref element="J15" pad="4"/>
+<contactref element="J7" pad="5"/>
+<contactref element="J7" pad="6"/>
+<contactref element="J3" pad="5"/>
+<contactref element="J3" pad="6"/>
 </signal>
 <signal name="ANTENNA1">
 <contactref element="J10" pad="1"/>
@@ -868,8 +868,9 @@ design rules under a new name.</description>
 <signal name="VCC_BURN">
 <contactref element="J9" pad="1"/>
 <contactref element="U$3" pad="1"/>
-<wire x1="16.565" y1="69.2" x2="19.8" y2="69.2" width="0.508" layer="16"/>
-<wire x1="19.8" y1="69.2" x2="39" y2="50" width="0.508" layer="16"/>
+<wire x1="16.565" y1="69.2" x2="21.8" y2="69.2" width="0.508" layer="16"/>
+<wire x1="39" y1="52" x2="39" y2="50" width="0.508" layer="16"/>
+<wire x1="21.8" y1="69.2" x2="39" y2="52" width="0.508" layer="16"/>
 </signal>
 <signal name="VCC_BATT">
 <contactref element="J4" pad="1"/>
