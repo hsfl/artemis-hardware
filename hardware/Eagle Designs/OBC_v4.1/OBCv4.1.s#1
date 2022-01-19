@@ -6537,10 +6537,6 @@ Breakout for End-User</text>
 <text x="144.78" y="208.28" size="1.27" layer="94">RPi (OBC)</text>
 <text x="86.36" y="129.54" size="1.27" layer="97">Vin = 5V Bus 
 Teensy Always On</text>
-<text x="12.7" y="175.26" size="1.27" layer="97">CUS_SOL - Current 
-Sensor (Solar) on PDU</text>
-<text x="104.14" y="175.26" size="1.27" layer="97">CUS_VBATT - Current
-Sensor (VBATT) on PDU</text>
 </plain>
 <instances>
 <instance part="H1" gate="G$1" x="60.96" y="223.52" smashed="yes"/>
@@ -7403,34 +7399,6 @@ Sensor (VBATT) on PDU</text>
 <pinref part="J12" gate="A" pin="1"/>
 <wire x1="218.44" y1="83.82" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
 <label x="208.28" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CUS_SOL_SDA" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="1.41"/>
-<wire x1="53.34" y1="172.72" x2="45.72" y2="172.72" width="0.1524" layer="91"/>
-<label x="27.94" y="172.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CUS_SOL_SCL" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="1.43"/>
-<wire x1="53.34" y1="170.18" x2="45.72" y2="170.18" width="0.1524" layer="91"/>
-<label x="27.94" y="170.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CUS_VBATT_SDA" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="1.42"/>
-<wire x1="81.28" y1="172.72" x2="88.9" y2="172.72" width="0.1524" layer="91"/>
-<label x="88.9" y="172.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CUS_VBATT_SCL" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="1.44"/>
-<wire x1="81.28" y1="170.18" x2="88.9" y2="170.18" width="0.1524" layer="91"/>
-<label x="88.9" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
