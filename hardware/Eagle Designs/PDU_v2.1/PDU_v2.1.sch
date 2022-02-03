@@ -7968,7 +7968,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C72" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="C73" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="1 uF"/>
 <part name="R57" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="10 k"/>
-<part name="R58" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="2 k"/>
+<part name="R58" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="0"/>
 <part name="R36" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3 k"/>
 <part name="R86" library="HSFL_Main_Library" deviceset="RESISTOR" device="0603-RES" value="10 k"/>
 <part name="J11" library="Artemis" deviceset="UJ31-CH-G1-SMT-TR" device=""/>
@@ -9013,6 +9013,20 @@ Battery Charging Circuit.</text>
 <pinref part="J16" gate="A" pin="1"/>
 <wire x1="-7.62" y1="58.42" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
 <label x="-25.4" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART2_TXD" class="0">
+<segment>
+<pinref part="J11" gate="G$1" pin="SSRXP2"/>
+<wire x1="147.32" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
+<label x="129.54" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART2_RXD" class="0">
+<segment>
+<pinref part="J11" gate="G$1" pin="SSTXP1"/>
+<wire x1="147.32" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="129.54" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -12049,9 +12063,6 @@ Battery Charging Circuit.</text>
 <segment>
 <wire x1="-66.04" y1="-231.14" x2="-48.26" y2="-231.14" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-228.6" x2="-48.26" y2="-231.14" width="0.1524" layer="91"/>
-<label x="-43.18" y="-231.14" size="1.778" layer="95"/>
-<junction x="-48.26" y="-231.14"/>
-<wire x1="-48.26" y1="-231.14" x2="-43.18" y2="-231.14" width="0.1524" layer="91"/>
 <pinref part="U17" gate="A" pin="!RESET"/>
 <pinref part="R58" gate="G$1" pin="1"/>
 </segment>
