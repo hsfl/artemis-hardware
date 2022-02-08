@@ -5676,10 +5676,12 @@ design rules under a new name.</description>
 <wire x1="62.2046" y1="52.236625" x2="63.641225" y2="50.8" width="0.9" layer="2"/>
 <wire x1="63.641225" y1="50.8" x2="69.85" y2="50.8" width="0.9" layer="2"/>
 <wire x1="62.2046" y1="63.7794" x2="62.2046" y2="52.236625" width="0.9" layer="2"/>
+<contactref element="J15" pad="2"/>
 <contactref element="U24" pad="2"/>
 <contactref element="R53" pad="1"/>
 <contactref element="U19" pad="8"/>
 <wire x1="13.30195625" y1="55.53204375" x2="13.8168375" y2="62.6102375" width="0" layer="19" extent="16-16"/>
+<wire x1="12.2936" y1="33.8422" x2="10.795" y2="32.8422" width="0" layer="19" extent="16-16"/>
 <wire x1="8.246415625" y1="56.48454375" x2="13.30195625" y2="55.53204375" width="0" layer="19" extent="16-16"/>
 <wire x1="-2.62" y1="-8.735" x2="32.3342" y2="7.5184" width="0" layer="19" extent="1-1"/>
 <wire x1="0.37" y1="-17.49" x2="-2.62" y2="-8.735" width="0" layer="19" extent="1-1"/>
@@ -8486,11 +8488,15 @@ design rules under a new name.</description>
 <signal name="PY_VBATT">
 <contactref element="J16" pad="1"/>
 <contactref element="J15" pad="1"/>
+<contactref element="R83" pad="1"/>
+<contactref element="U10" pad="1"/>
 <contactref element="R82" pad="2"/>
 <contactref element="U24" pad="3"/>
 <wire x1="10.634015625" y1="55.53204375" x2="12.547625" y2="62.6102375" width="0" layer="19" extent="16-16"/>
 <wire x1="10.331628125" y1="51.1040125" x2="10.634015625" y2="55.53204375" width="0" layer="19" extent="16-16"/>
-<wire x1="12.2936" y1="32.8422" x2="10.331628125" y2="51.1040125" width="0" layer="19" extent="16-16"/>
+<wire x1="10.283040625" y1="43.856653125" x2="10.331628125" y2="51.1040125" width="0" layer="19" extent="16-16"/>
+<wire x1="9.644409375" y1="39.768628125" x2="10.283040625" y2="43.856653125" width="0" layer="19" extent="16-16"/>
+<wire x1="12.2936" y1="32.8422" x2="9.644409375" y2="39.768628125" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="RBF_GND">
 <contactref element="U10" pad="2"/>
@@ -8541,13 +8547,6 @@ design rules under a new name.</description>
 <contactref element="H1" pad="1.42"/>
 <wire x1="-7.56" y1="-11.275" x2="64.77" y2="85.725" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.99" y1="-17.49" x2="-7.56" y2="-11.275" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="RBF_SW">
-<contactref element="U10" pad="1"/>
-<contactref element="R83" pad="1"/>
-<contactref element="J15" pad="2"/>
-<wire x1="9.644409375" y1="39.768628125" x2="10.283040625" y2="43.856653125" width="0" layer="19" extent="16-16"/>
-<wire x1="12.2936" y1="33.8422" x2="9.644409375" y2="39.768628125" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -13423,12 +13423,10 @@ Connectors</text>
 Pin Removed = Open Circuit = PDU Powered On
 Pin In = Closed Circuit = PDU Powered Off</text>
 <text x="43.18" y="20.32" size="2.54" layer="94">Remove Before Flight (RBF) Circuit</text>
-<text x="99.06" y="-38.1" size="1.778" layer="97">PY_VBATT: Power source directly from PyCubed Battery Board
+<text x="12.7" y="-48.26" size="1.778" layer="97">PY_VBATT: Power source directly from PyCubed Battery Board
 (Pre-RBF Circuit)
-VBATT: Power source that supplies to satellite (Post-RBF Circuit)</text>
-<text x="10.16" y="-43.18" size="1.778" layer="97">Male Connector (MC) External Part Not Shown
-MC in (Pin In)
-MC disconnected (Pin Out)</text>
+VBATT: Power source that supplies to satellite (Post-RBF Circuit)
+J15 Connector: Solder these connections together</text>
 </plain>
 <instances>
 <instance part="J15" gate="A" x="30.48" y="-25.4" smashed="yes">
@@ -13461,6 +13459,11 @@ MC disconnected (Pin Out)</text>
 </busses>
 <nets>
 <net name="VBATT" class="0">
+<segment>
+<pinref part="J15" gate="A" pin="2"/>
+<wire x1="30.48" y1="-27.94" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
+<label x="17.78" y="-27.94" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="U24" gate="A" pin="S"/>
 <wire x1="86.36" y1="-10.16" x2="81.28" y2="-10.16" width="0.1524" layer="91"/>
@@ -13503,6 +13506,16 @@ MC disconnected (Pin Out)</text>
 <label x="15.24" y="-25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="R83" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="-7.62" x2="33.02" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U10" gate="A" pin="G"/>
+<wire x1="33.02" y1="-7.62" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-2.54" x2="50.8" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-2.54" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="33.02" y="-2.54"/>
+<label x="17.78" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="R82" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="10.16" x2="81.28" y2="12.7" width="0.1524" layer="91"/>
 <label x="76.2" y="12.7" size="1.778" layer="95"/>
@@ -13527,23 +13540,6 @@ MC disconnected (Pin Out)</text>
 <pinref part="NT4" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
 <label x="81.28" y="-30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RBF_SW" class="0">
-<segment>
-<pinref part="U10" gate="A" pin="G"/>
-<wire x1="50.8" y1="-2.54" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="R83" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="-2.54" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-7.62" x2="33.02" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="-7.62" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="33.02" y="-2.54"/>
-<label x="20.32" y="-2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J15" gate="A" pin="2"/>
-<wire x1="30.48" y1="-27.94" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
-<label x="15.24" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
