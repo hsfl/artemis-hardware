@@ -4909,59 +4909,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="L">
-<packages>
-<package name="INDC2012X145N">
-<text x="-1.71" y="-1.07" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
-<text x="-1.71" y="1.07" size="0.5" layer="25">&gt;NAME</text>
-<wire x1="1.1" y1="-0.72" x2="-1.1" y2="-0.72" width="0.127" layer="51"/>
-<wire x1="1.1" y1="0.72" x2="-1.1" y2="0.72" width="0.127" layer="51"/>
-<wire x1="1.1" y1="-0.72" x2="1.1" y2="0.72" width="0.127" layer="51"/>
-<wire x1="-1.1" y1="-0.72" x2="-1.1" y2="0.72" width="0.127" layer="51"/>
-<wire x1="-1.708" y1="-0.983" x2="1.708" y2="-0.983" width="0.05" layer="39"/>
-<wire x1="-1.708" y1="0.983" x2="1.708" y2="0.983" width="0.05" layer="39"/>
-<wire x1="-1.708" y1="-0.983" x2="-1.708" y2="0.983" width="0.05" layer="39"/>
-<wire x1="1.708" y1="-0.983" x2="1.708" y2="0.983" width="0.05" layer="39"/>
-<smd name="1" x="-0.86" y="0" dx="1.2" dy="1.47" layer="1"/>
-<smd name="2" x="0.86" y="0" dx="1.2" dy="1.47" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LQM21DH100M70L">
-<text x="-7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
-<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
-<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="L" prefix="L">
-<gates>
-<gate name="G$1" symbol="LQM21DH100M70L" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="INDC2012X145N">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value=" Inductor with Inductance: 10uH Tol. +/-20%, Package: 0805 (2012) "/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="490-18463-1-ND"/>
-<attribute name="MF" value="Murata Electronics North America"/>
-<attribute name="MP" value="LQM21DH100M70L"/>
-<attribute name="PACKAGE" value="2012 Bourns"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="OBCv4">
 <packages>
 <package name="TEENSY41">
@@ -6356,6 +6303,71 @@ Source: Samtec SSW.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="PDU">
+<packages>
+<package name="INDC2012X105N" urn="urn:adsk.eagle:footprint:30936771/1">
+<text x="-1.71" y="-1.07" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-1.71" y="1.07" size="0.5" layer="25">&gt;NAME</text>
+<wire x1="1.1" y1="-0.72" x2="-1.1" y2="-0.72" width="0.127" layer="51"/>
+<wire x1="1.1" y1="0.72" x2="-1.1" y2="0.72" width="0.127" layer="51"/>
+<wire x1="1.1" y1="-0.72" x2="1.1" y2="0.72" width="0.127" layer="51"/>
+<wire x1="-1.1" y1="-0.72" x2="-1.1" y2="0.72" width="0.127" layer="51"/>
+<wire x1="-1.708" y1="-0.983" x2="1.708" y2="-0.983" width="0.05" layer="39"/>
+<wire x1="-1.708" y1="0.983" x2="1.708" y2="0.983" width="0.05" layer="39"/>
+<wire x1="-1.708" y1="-0.983" x2="-1.708" y2="0.983" width="0.05" layer="39"/>
+<wire x1="1.708" y1="-0.983" x2="1.708" y2="0.983" width="0.05" layer="39"/>
+<smd name="1" x="-0.86" y="0" dx="1.2" dy="1.47" layer="1"/>
+<smd name="2" x="0.86" y="0" dx="1.2" dy="1.47" layer="1"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="INDC2012X105N" urn="urn:adsk.eagle:package:30936858/1" type="box">
+<packageinstances>
+<packageinstance name="INDC2012X105N"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="AIMC-0805-2N2S-T" urn="urn:adsk.eagle:symbol:30936694/1">
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AIMC-0805-2N2S-T" urn="urn:adsk.eagle:component:30936895/1" prefix="L">
+<description>2.2nH Unshielded Multilayer Inductor 600mA 100mOhm Max 0805 (2012 Metric)  </description>
+<gates>
+<gate name="G$1" symbol="AIMC-0805-2N2S-T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="INDC2012X105N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30936858/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" IND 2.2nH 0.3A 100mΩ "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="535-11562-1-ND"/>
+<attribute name="MF" value="Abracon"/>
+<attribute name="MP" value="AIMC-0805-2N2S-T"/>
+<attribute name="PACKAGE" value="2012 Bourns"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6399,7 +6411,6 @@ Source: Samtec SSW.pdf</description>
 <part name="U3" library="RFM69HCW" deviceset="RFM69HCW_433_900" device=""/>
 <part name="R4" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="0"/>
 <part name="R5" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="0"/>
-<part name="L1" library="L" deviceset="L" device=""/>
 <part name="R6" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="0"/>
 <part name="U$1" library="OBCv4" deviceset="TEENSY41" device=""/>
 <part name="J2" library="OBCv4" deviceset="5037630491" device="" package3d_urn="urn:adsk.eagle:package:30936811/1"/>
@@ -6419,6 +6430,7 @@ Source: Samtec SSW.pdf</description>
 <part name="J1" library="OBCv4" deviceset="MCX-J-P-H-RA-TH1" device=""/>
 <part name="J9" library="OBCv4" deviceset="MCX-J-P-H-RA-TH1" device=""/>
 <part name="J14" library="OBCv4" deviceset="5037630491" device="" package3d_urn="urn:adsk.eagle:package:30936811/1"/>
+<part name="L2" library="PDU" deviceset="AIMC-0805-2N2S-T" device="" package3d_urn="urn:adsk.eagle:package:30936858/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -7837,7 +7849,7 @@ Breakout for End-User</text>
 Radio Connector</text>
 <text x="-53.34" y="17.78" size="1.27" layer="97">(Antenna)
 GPS Connector</text>
-<text x="-66.04" y="-2.54" size="1.778" layer="97">10 uH
+<text x="-66.04" y="-5.08" size="1.778" layer="97">33 nH
 0805</text>
 </plain>
 <instances>
@@ -7877,9 +7889,6 @@ GPS Connector</text>
 <attribute name="NAME" x="-151.13" y="49.7586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-151.13" y="44.958" size="1.778" layer="96"/>
 </instance>
-<instance part="L1" gate="G$1" x="-68.58" y="2.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="-71.12" y="0" size="1.778" layer="95" rot="R180"/>
-</instance>
 <instance part="R6" gate="G$1" x="-91.44" y="2.54" smashed="yes">
 <attribute name="NAME" x="-95.25" y="4.0386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-95.25" y="-0.762" size="1.778" layer="96"/>
@@ -7897,6 +7906,9 @@ GPS Connector</text>
 <instance part="J9" gate="G$1" x="-55.88" y="12.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="-52.07" y="14.224" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-59.944" y="5.842" size="1.778" layer="96"/>
+</instance>
+<instance part="L2" gate="G$1" x="-68.58" y="0" smashed="yes" rot="R90">
+<attribute name="NAME" x="-71.12" y="0" size="1.778" layer="95" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -7990,9 +8002,10 @@ GPS Connector</text>
 <pinref part="U6" gate="G$1" pin="GPS_ANT"/>
 <wire x1="-68.58" y1="27.94" x2="-68.58" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="10.16" x2="-68.58" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="2"/>
-<junction x="-68.58" y="10.16"/>
 <pinref part="J9" gate="G$1" pin="1"/>
+<pinref part="L2" gate="G$1" pin="2"/>
+<wire x1="-68.58" y1="10.16" x2="-68.58" y2="7.62" width="0.1524" layer="91"/>
+<junction x="-68.58" y="10.16"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -8096,10 +8109,10 @@ GPS Connector</text>
 <label x="-78.74" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="L1" gate="G$1" pin="1"/>
-<label x="-63.5" y="-7.62" size="1.778" layer="95"/>
-<wire x1="-68.58" y1="-5.08" x2="-68.58" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-7.62" x2="-63.5" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-66.04" y="-12.7" size="1.778" layer="95"/>
+<wire x1="-68.58" y1="-12.7" x2="-63.5" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="1"/>
+<wire x1="-68.58" y1="-12.7" x2="-68.58" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
