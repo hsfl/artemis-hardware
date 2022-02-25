@@ -9201,18 +9201,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C83" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="C89" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="C90" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
-<part name="U19" library="PDU" deviceset="LND01K1-G" device=""/>
-<part name="U34" library="PDU" deviceset="LND01K1-G" device=""/>
 <part name="U35" library="PDU" deviceset="LND01K1-G" device=""/>
-<part name="U36" library="PDU" deviceset="LND01K1-G" device=""/>
-<part name="U37" library="PDU" deviceset="LND01K1-G" device=""/>
-<part name="U38" library="PDU" deviceset="LND01K1-G" device=""/>
-<part name="R91" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R92" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R93" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R94" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R95" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R96" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES"/>
 </parts>
 <sheets>
 <sheet>
@@ -9400,7 +9390,7 @@ OBC's Teensy I2C1</text>
 <wire x1="68.58" y1="40.64" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
 <junction x="68.58" y="43.18"/>
-<label x="63.5" y="35.56" size="1.778" layer="95"/>
+<label x="66.04" y="35.56" size="1.778" layer="95"/>
 <pinref part="R72" gate="G$1" pin="1"/>
 <pinref part="R73" gate="G$1" pin="1"/>
 <junction x="68.58" y="45.72"/>
@@ -9543,6 +9533,34 @@ OBC's Teensy I2C1</text>
 <pinref part="H1" gate="G$1" pin="1.43"/>
 <wire x1="22.86" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <label x="5.08" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SD_CS" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="1.25"/>
+<wire x1="22.86" y1="35.56" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
+<label x="7.62" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SD_MOSI" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="1.27"/>
+<wire x1="22.86" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<label x="5.08" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SD_SCK" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="1.26"/>
+<wire x1="50.8" y1="35.56" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
+<label x="53.34" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SD_MISO" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="1.28"/>
+<wire x1="50.8" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
+<label x="53.34" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -10039,17 +10057,6 @@ Battery Charging Circuit.</text>
 <label x="68.58" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SD_CS" class="0">
-<segment>
-<pinref part="J20" gate="G$1" pin="DATA2"/>
-<wire x1="127" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="53.34" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
-<junction x="132.08" y="50.8"/>
-<label x="119.38" y="50.8" size="1.778" layer="95"/>
-<pinref part="R42" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="SD_MOSI" class="0">
 <segment>
 <pinref part="J20" gate="G$1" pin="CMD"/>
@@ -10190,6 +10197,17 @@ Battery Charging Circuit.</text>
 <pinref part="J11" gate="G$1" pin="SSTXP1"/>
 <wire x1="147.32" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
 <label x="129.54" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SD_CS" class="0">
+<segment>
+<pinref part="J20" gate="G$1" pin="CD/DAT3"/>
+<wire x1="149.86" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R42" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="53.34" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<junction x="132.08" y="48.26"/>
+<label x="121.92" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -10626,8 +10644,8 @@ Battery Charging Circuit.</text>
 <text x="256.54" y="-33.02" size="2.54" layer="94">Breakout Power</text>
 <text x="48.26" y="-99.06" size="1.778" layer="97">All cap are 0805 size.</text>
 <text x="251.46" y="-93.98" size="2.54" layer="94">12V Switch Regulator (PDU)</text>
-<text x="271.78" y="-121.92" size="5.08" layer="94">VBATT Switch</text>
-<text x="63.5" y="-114.3" size="5.08" layer="94">Depletion MOSFETs</text>
+<text x="198.12" y="-116.84" size="5.08" layer="94">VBATT Switch</text>
+<text x="63.5" y="-119.38" size="5.08" layer="94">Depletion MOSFETs</text>
 </plain>
 <instances>
 <instance part="GND6" gate="1" x="27.94" y="22.86" smashed="yes" rot="R180">
@@ -10708,13 +10726,13 @@ Battery Charging Circuit.</text>
 <instance part="U9" gate="G$0" x="45.72" y="-50.8" smashed="yes">
 <attribute name="NAME" x="45.72" y="-81.28" size="2.54" layer="95"/>
 </instance>
-<instance part="U16" gate="A" x="281.94" y="-147.32" smashed="yes">
-<attribute name="NAME" x="284.8356" y="-128.0414" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="284.2006" y="-130.5814" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<instance part="U16" gate="A" x="208.28" y="-144.78" smashed="yes">
+<attribute name="NAME" x="211.1756" y="-125.5014" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="210.5406" y="-128.0414" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="C7" gate="G$1" x="271.78" y="-149.86" smashed="yes">
-<attribute name="NAME" x="273.304" y="-146.939" size="1.778" layer="95"/>
-<attribute name="VALUE" x="273.304" y="-152.019" size="1.778" layer="96"/>
+<instance part="C7" gate="G$1" x="198.12" y="-147.32" smashed="yes">
+<attribute name="NAME" x="199.644" y="-144.399" size="1.778" layer="95"/>
+<attribute name="VALUE" x="199.644" y="-149.479" size="1.778" layer="96"/>
 </instance>
 <instance part="C65" gate="G$1" x="91.44" y="-2.54" smashed="yes">
 <attribute name="NAME" x="87.376" y="-0.381" size="1.778" layer="95" rot="R180"/>
@@ -10740,53 +10758,13 @@ Battery Charging Circuit.</text>
 <attribute name="NAME" x="295.656" y="-63.881" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="295.656" y="-66.421" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U19" gate="A" x="7.62" y="-134.62" smashed="yes">
-<attribute name="NAME" x="25.7556" y="-125.5014" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="25.1206" y="-128.0414" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<instance part="U35" gate="A" x="73.66" y="-137.16" smashed="yes">
+<attribute name="NAME" x="91.7956" y="-128.0414" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="91.1606" y="-130.5814" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="U34" gate="A" x="7.62" y="-162.56" smashed="yes">
-<attribute name="NAME" x="25.7556" y="-153.4414" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="25.1206" y="-155.9814" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="U35" gate="A" x="88.9" y="-137.16" smashed="yes">
-<attribute name="NAME" x="107.0356" y="-128.0414" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="106.4006" y="-130.5814" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="U36" gate="A" x="88.9" y="-165.1" smashed="yes">
-<attribute name="NAME" x="107.0356" y="-155.9814" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="106.4006" y="-158.5214" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="U37" gate="A" x="172.72" y="-137.16" smashed="yes">
-<attribute name="NAME" x="190.8556" y="-128.0414" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="190.2206" y="-130.5814" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="U38" gate="A" x="172.72" y="-165.1" smashed="yes">
-<attribute name="NAME" x="190.8556" y="-155.9814" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="190.2206" y="-158.5214" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="R91" gate="G$1" x="58.42" y="-137.16" smashed="yes">
-<attribute name="NAME" x="54.61" y="-140.7414" size="1.778" layer="95"/>
-<attribute name="VALUE" x="54.61" y="-140.462" size="1.778" layer="96"/>
-</instance>
-<instance part="R92" gate="G$1" x="55.88" y="-165.1" smashed="yes">
-<attribute name="NAME" x="52.07" y="-168.6814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.07" y="-168.402" size="1.778" layer="96"/>
-</instance>
-<instance part="R93" gate="G$1" x="139.7" y="-139.7" smashed="yes">
-<attribute name="NAME" x="135.89" y="-143.2814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="135.89" y="-143.002" size="1.778" layer="96"/>
-</instance>
-<instance part="R94" gate="G$1" x="137.16" y="-167.64" smashed="yes">
-<attribute name="NAME" x="133.35" y="-171.2214" size="1.778" layer="95"/>
-<attribute name="VALUE" x="133.35" y="-170.942" size="1.778" layer="96"/>
-</instance>
-<instance part="R95" gate="G$1" x="223.52" y="-139.7" smashed="yes">
-<attribute name="NAME" x="219.71" y="-138.2014" size="1.778" layer="95"/>
-<attribute name="VALUE" x="219.71" y="-143.002" size="1.778" layer="96"/>
-</instance>
-<instance part="R96" gate="G$1" x="220.98" y="-167.64" smashed="yes">
-<attribute name="NAME" x="217.17" y="-166.1414" size="1.778" layer="95"/>
-<attribute name="VALUE" x="217.17" y="-170.942" size="1.778" layer="96"/>
+<instance part="R93" gate="G$1" x="124.46" y="-139.7" smashed="yes">
+<attribute name="NAME" x="120.65" y="-143.2814" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.65" y="-143.002" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10861,13 +10839,13 @@ Battery Charging Circuit.</text>
 </segment>
 <segment>
 <pinref part="U16" gate="A" pin="GND"/>
-<wire x1="276.86" y1="-139.7" x2="266.7" y2="-139.7" width="0.1524" layer="91"/>
-<label x="261.62" y="-139.7" size="1.778" layer="95"/>
+<wire x1="203.2" y1="-137.16" x2="193.04" y2="-137.16" width="0.1524" layer="91"/>
+<label x="187.96" y="-137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="271.78" y1="-152.4" x2="271.78" y2="-154.94" width="0.1524" layer="91"/>
-<label x="269.24" y="-157.48" size="1.778" layer="95"/>
+<wire x1="198.12" y1="-149.86" x2="198.12" y2="-152.4" width="0.1524" layer="91"/>
+<label x="195.58" y="-154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C65" gate="G$1" pin="2"/>
@@ -10900,14 +10878,9 @@ Battery Charging Circuit.</text>
 <label x="297.18" y="-73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R91" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="-137.16" x2="66.04" y2="-137.16" width="0.1524" layer="91"/>
-<label x="66.04" y="-137.16" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R92" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="-165.1" x2="63.5" y2="-165.1" width="0.1524" layer="91"/>
-<label x="63.5" y="-165.1" size="1.778" layer="95"/>
+<pinref part="R93" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="-139.7" x2="132.08" y2="-139.7" width="0.1524" layer="91"/>
+<label x="132.08" y="-139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUS_3V3" class="0">
@@ -11043,22 +11016,12 @@ Battery Charging Circuit.</text>
 <pinref part="U3" gate="G$0" pin="1_VOUT"/>
 <pinref part="U3" gate="G$0" pin="2_VOUT"/>
 </segment>
-<segment>
-<pinref part="U19" gate="A" pin="SOURCE"/>
-<wire x1="45.72" y1="-134.62" x2="53.34" y2="-134.62" width="0.1524" layer="91"/>
-<label x="53.34" y="-134.62" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SW_3V3_EN1" class="0">
 <segment>
 <wire x1="40.64" y1="-10.16" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
 <label x="17.78" y="-10.16" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$0" pin="EN"/>
-</segment>
-<segment>
-<pinref part="U19" gate="A" pin="GATE"/>
-<wire x1="10.16" y1="-137.16" x2="5.08" y2="-137.16" width="0.1524" layer="91"/>
-<label x="-10.16" y="-137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW_5V_1" class="0">
@@ -11078,8 +11041,8 @@ Battery Charging Circuit.</text>
 </segment>
 <segment>
 <pinref part="U35" gate="A" pin="SOURCE"/>
-<wire x1="127" y1="-137.16" x2="134.62" y2="-137.16" width="0.1524" layer="91"/>
-<label x="134.62" y="-137.16" size="1.778" layer="95"/>
+<wire x1="111.76" y1="-137.16" x2="119.38" y2="-137.16" width="0.1524" layer="91"/>
+<label x="119.38" y="-137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW_5V_2" class="0">
@@ -11097,11 +11060,6 @@ Battery Charging Circuit.</text>
 <pinref part="U6" gate="G$0" pin="1_VOUT"/>
 <pinref part="U6" gate="G$0" pin="2_VOUT"/>
 </segment>
-<segment>
-<pinref part="U36" gate="A" pin="SOURCE"/>
-<wire x1="127" y1="-165.1" x2="132.08" y2="-165.1" width="0.1524" layer="91"/>
-<label x="132.08" y="-165.1" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SW_5V_EN1" class="0">
 <segment>
@@ -11111,8 +11069,8 @@ Battery Charging Circuit.</text>
 </segment>
 <segment>
 <pinref part="U35" gate="A" pin="GATE"/>
-<wire x1="91.44" y1="-139.7" x2="86.36" y2="-139.7" width="0.1524" layer="91"/>
-<label x="73.66" y="-139.7" size="1.778" layer="95"/>
+<wire x1="76.2" y1="-139.7" x2="71.12" y2="-139.7" width="0.1524" layer="91"/>
+<label x="58.42" y="-139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW_5V_EN2" class="0">
@@ -11120,11 +11078,6 @@ Battery Charging Circuit.</text>
 <wire x1="144.78" y1="-71.12" x2="137.16" y2="-71.12" width="0.1524" layer="91"/>
 <label x="124.46" y="-71.12" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$0" pin="EN"/>
-</segment>
-<segment>
-<pinref part="U36" gate="A" pin="GATE"/>
-<wire x1="91.44" y1="-167.64" x2="86.36" y2="-167.64" width="0.1524" layer="91"/>
-<label x="73.66" y="-167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW_5V_3" class="0">
@@ -11188,11 +11141,6 @@ Battery Charging Circuit.</text>
 <junction x="38.1" y="-55.88"/>
 <label x="10.16" y="-55.88" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U34" gate="A" pin="SOURCE"/>
-<wire x1="45.72" y1="-162.56" x2="50.8" y2="-162.56" width="0.1524" layer="91"/>
-<label x="50.8" y="-162.56" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SW_3V3_EN2" class="0">
 <segment>
@@ -11200,113 +11148,37 @@ Battery Charging Circuit.</text>
 <wire x1="40.64" y1="-71.12" x2="33.02" y2="-71.12" width="0.1524" layer="91"/>
 <label x="17.78" y="-71.12" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U34" gate="A" pin="GATE"/>
-<wire x1="10.16" y1="-165.1" x2="5.08" y2="-165.1" width="0.1524" layer="91"/>
-<label x="-10.16" y="-165.1" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SW_VBATT" class="0">
 <segment>
 <pinref part="U16" gate="A" pin="OUT"/>
-<wire x1="307.34" y1="-142.24" x2="314.96" y2="-142.24" width="0.1524" layer="91"/>
-<label x="314.96" y="-142.24" size="1.778" layer="95"/>
+<wire x1="233.68" y1="-139.7" x2="241.3" y2="-139.7" width="0.1524" layer="91"/>
+<label x="241.3" y="-139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW_VBATT_EN" class="0">
 <segment>
 <pinref part="U16" gate="A" pin="CTL"/>
-<wire x1="276.86" y1="-137.16" x2="266.7" y2="-137.16" width="0.1524" layer="91"/>
-<label x="251.46" y="-137.16" size="1.778" layer="95"/>
+<wire x1="203.2" y1="-134.62" x2="193.04" y2="-134.62" width="0.1524" layer="91"/>
+<label x="177.8" y="-134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBATT" class="0">
 <segment>
 <pinref part="U16" gate="A" pin="IN"/>
-<wire x1="276.86" y1="-142.24" x2="271.78" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-139.7" x2="198.12" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="-142.24" x2="266.7" y2="-142.24" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="-144.78" x2="271.78" y2="-142.24" width="0.1524" layer="91"/>
-<junction x="271.78" y="-142.24"/>
-<label x="259.08" y="-142.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="U19" gate="A" pin="DRAIN"/>
-<wire x1="45.72" y1="-137.16" x2="53.34" y2="-137.16" width="0.1524" layer="91"/>
-<pinref part="R91" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="U34" gate="A" pin="DRAIN"/>
-<wire x1="45.72" y1="-165.1" x2="50.8" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="R92" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="-139.7" x2="193.04" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="-142.24" x2="198.12" y2="-139.7" width="0.1524" layer="91"/>
+<junction x="198.12" y="-139.7"/>
+<label x="185.42" y="-139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$60" class="0">
 <segment>
 <pinref part="U35" gate="A" pin="DRAIN"/>
-<wire x1="127" y1="-139.7" x2="134.62" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-139.7" x2="119.38" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="R93" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$62" class="0">
-<segment>
-<pinref part="U36" gate="A" pin="DRAIN"/>
-<wire x1="127" y1="-167.64" x2="132.08" y2="-167.64" width="0.1524" layer="91"/>
-<pinref part="R94" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$63" class="0">
-<segment>
-<pinref part="U37" gate="A" pin="GATE"/>
-<wire x1="175.26" y1="-139.7" x2="170.18" y2="-139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$65" class="0">
-<segment>
-<pinref part="U38" gate="A" pin="GATE"/>
-<wire x1="175.26" y1="-167.64" x2="170.18" y2="-167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$69" class="0">
-<segment>
-<pinref part="U37" gate="A" pin="SOURCE"/>
-<wire x1="210.82" y1="-137.16" x2="218.44" y2="-137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$72" class="0">
-<segment>
-<pinref part="U37" gate="A" pin="DRAIN"/>
-<wire x1="210.82" y1="-139.7" x2="218.44" y2="-139.7" width="0.1524" layer="91"/>
-<pinref part="R95" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$73" class="0">
-<segment>
-<pinref part="U38" gate="A" pin="SOURCE"/>
-<wire x1="210.82" y1="-165.1" x2="215.9" y2="-165.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$74" class="0">
-<segment>
-<pinref part="U38" gate="A" pin="DRAIN"/>
-<wire x1="210.82" y1="-167.64" x2="215.9" y2="-167.64" width="0.1524" layer="91"/>
-<pinref part="R96" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R93" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="-139.7" x2="147.32" y2="-139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R94" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="-167.64" x2="144.78" y2="-167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
