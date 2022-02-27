@@ -937,10 +937,14 @@ Created by Upverter.com</description>
 <circle x="10.16" y="10.16" radius="2" width="0.2032" layer="21"/>
 <circle x="-10.16" y="-10.16" radius="2" width="0.2032" layer="21"/>
 <circle x="10.16" y="-10.16" radius="2" width="0.2032" layer="21"/>
-<wire x1="5.875" y1="-5.113" x2="-5.875" y2="-5.113" width="0.1524" layer="20"/>
 <wire x1="-5.875" y1="-5.113" x2="-5.875" y2="6.637" width="0.1524" layer="20"/>
 <wire x1="-5.875" y1="6.637" x2="5.875" y2="6.637" width="0.1524" layer="20"/>
 <wire x1="5.875" y1="6.637" x2="5.875" y2="-5.113" width="0.1524" layer="20"/>
+<wire x1="-1" y1="-5.113" x2="-1" y2="-9.1" width="0.1524" layer="20"/>
+<wire x1="-1" y1="-9.1" x2="1" y2="-9.1" width="0.1524" layer="20"/>
+<wire x1="1" y1="-9.1" x2="1" y2="-5.113" width="0.1524" layer="20"/>
+<wire x1="-5.875" y1="-5.113" x2="-1" y2="-5.113" width="0.1524" layer="20"/>
+<wire x1="1" y1="-5.113" x2="5.875" y2="-5.113" width="0.1524" layer="20"/>
 </package>
 </packages>
 <symbols>
