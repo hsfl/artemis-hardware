@@ -9133,23 +9133,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R52" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3 k"/>
 <part name="R54" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.3 k"/>
 <part name="U20" library="charging" deviceset="LTC4012IUFPBF" device=""/>
-<part name="C_DC" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
+<part name="C91" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="R27" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3 k"/>
-<part name="LED1" library="HSFL_Main_Library" deviceset="LED_0805" device=""/>
+<part name="D13" library="HSFL_Main_Library" deviceset="LED_0805" device=""/>
 <part name="U28" library="charging" deviceset="SI4431BDY-T1-E3" device=""/>
 <part name="C10" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="R28" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="6.04 k"/>
 <part name="C12" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
-<part name="R_F" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="5.1 k"/>
-<part name="R_CL" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1"/>
+<part name="R96" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="5.1 k"/>
+<part name="R91" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1"/>
 <part name="C14" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="10 uF"/>
 <part name="R29" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="0"/>
 <part name="D1" library="charging" deviceset="CMDSH-3TR" device=""/>
 <part name="C18" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="L2" library="charging" deviceset="AIML-0805-150K-T" device=""/>
-<part name="R_IN1" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.01 k"/>
-<part name="R_IN2" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.01 k"/>
-<part name="R_SENSE" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1"/>
+<part name="R92" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.01 k"/>
+<part name="R94" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="3.01 k"/>
+<part name="R95" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1"/>
 <part name="C38" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="4.7 uF"/>
 <part name="R37" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="26.7 k"/>
 <part name="R55" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="169 k"/>
@@ -14393,6 +14393,10 @@ when unused (pg. 8)</text>
 when unused (pg. 8)</text>
 <text x="-71.12" y="78.74" size="1.27" layer="97">~ICL left floating
 when unused (pg. 8)</text>
+<text x="7.62" y="33.02" size="1.778" layer="97">(RIN1)</text>
+<text x="7.62" y="22.86" size="1.778" layer="97">(RIN2)</text>
+<text x="30.48" y="25.4" size="1.778" layer="97">(RSENSE)</text>
+<text x="-60.96" y="129.54" size="1.778" layer="97">LED (BATT CHRG)</text>
 </plain>
 <instances>
 <instance part="D6" gate="A" x="-142.24" y="111.76" smashed="yes">
@@ -14431,7 +14435,7 @@ when unused (pg. 8)</text>
 <attribute name="NAME" x="-40.8432" y="126.3142" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="-45.0342" y="-8.3566" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="C_DC" gate="G$1" x="-81.28" y="137.16" smashed="yes">
+<instance part="C91" gate="G$1" x="-81.28" y="137.16" smashed="yes">
 <attribute name="NAME" x="-79.756" y="140.081" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-79.756" y="135.001" size="1.778" layer="96"/>
 </instance>
@@ -14439,7 +14443,7 @@ when unused (pg. 8)</text>
 <attribute name="NAME" x="-62.23" y="136.1186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-62.23" y="133.858" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="-63.5" y="124.46" smashed="yes">
+<instance part="D13" gate="G$1" x="-63.5" y="124.46" smashed="yes">
 <attribute name="NAME" x="-60.96" y="127" size="1.778" layer="95"/>
 </instance>
 <instance part="U28" gate="A" x="-5.08" y="132.08" smashed="yes">
@@ -14458,11 +14462,11 @@ when unused (pg. 8)</text>
 <attribute name="NAME" x="4.064" y="114.681" size="1.778" layer="95"/>
 <attribute name="VALUE" x="4.064" y="112.141" size="1.778" layer="96"/>
 </instance>
-<instance part="R_F" gate="G$1" x="20.32" y="111.76" smashed="yes">
+<instance part="R96" gate="G$1" x="20.32" y="111.76" smashed="yes">
 <attribute name="NAME" x="16.51" y="113.2586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="16.51" y="108.458" size="1.778" layer="96"/>
 </instance>
-<instance part="R_CL" gate="G$1" x="7.62" y="124.46" smashed="yes">
+<instance part="R91" gate="G$1" x="7.62" y="124.46" smashed="yes">
 <attribute name="NAME" x="11.43" y="125.9586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="11.43" y="121.158" size="1.778" layer="96"/>
 </instance>
@@ -14486,15 +14490,15 @@ when unused (pg. 8)</text>
 <attribute name="VALUE" x="48.8188" y="66.8528" size="1.778" layer="96" ratio="10" rot="SR0"/>
 <attribute name="NAME" x="49.8856" y="74.4728" size="1.778" layer="95" ratio="10" rot="SR0"/>
 </instance>
-<instance part="R_IN1" gate="G$1" x="2.54" y="33.02" smashed="yes">
+<instance part="R92" gate="G$1" x="2.54" y="33.02" smashed="yes">
 <attribute name="NAME" x="-1.27" y="34.5186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1.27" y="29.718" size="1.778" layer="96"/>
 </instance>
-<instance part="R_IN2" gate="G$1" x="2.54" y="22.86" smashed="yes">
+<instance part="R94" gate="G$1" x="2.54" y="22.86" smashed="yes">
 <attribute name="NAME" x="-1.27" y="24.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1.27" y="19.558" size="1.778" layer="96"/>
 </instance>
-<instance part="R_SENSE" gate="G$1" x="22.86" y="27.94" smashed="yes" rot="R90">
+<instance part="R95" gate="G$1" x="22.86" y="27.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="24.13" y="26.8986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="24.13" y="24.638" size="1.778" layer="96"/>
 </instance>
@@ -14569,7 +14573,7 @@ when unused (pg. 8)</text>
 <label x="-88.9" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C_DC" gate="G$1" pin="2"/>
+<pinref part="C91" gate="G$1" pin="2"/>
 <wire x1="-81.28" y1="134.62" x2="-81.28" y2="132.08" width="0.1524" layer="91"/>
 <label x="-83.82" y="129.54" size="1.778" layer="95"/>
 </segment>
@@ -14664,7 +14668,7 @@ when unused (pg. 8)</text>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="-63.5" y1="142.24" x2="-63.5" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="144.78" x2="-71.12" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="C_DC" gate="G$1" pin="1"/>
+<pinref part="C91" gate="G$1" pin="1"/>
 <wire x1="-71.12" y1="144.78" x2="-81.28" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="144.78" x2="-93.98" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="144.78" x2="-81.28" y2="142.24" width="0.1524" layer="91"/>
@@ -14694,7 +14698,7 @@ when unused (pg. 8)</text>
 <segment>
 <pinref part="U20" gate="A" pin="~CHRG"/>
 <wire x1="-53.34" y1="119.38" x2="-63.5" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="2"/>
+<pinref part="D13" gate="G$1" pin="2"/>
 <wire x1="-63.5" y1="124.46" x2="-63.5" y2="119.38" width="0.1524" layer="91"/>
 <label x="-60.96" y="119.38" size="1.778" layer="95"/>
 </segment>
@@ -14702,7 +14706,7 @@ when unused (pg. 8)</text>
 <net name="N$26" class="0">
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="1"/>
+<pinref part="D13" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="132.08" x2="-63.5" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14735,7 +14739,7 @@ when unused (pg. 8)</text>
 <wire x1="-7.62" y1="111.76" x2="-7.62" y2="124.46" width="0.1524" layer="91"/>
 <junction x="-7.62" y="111.76"/>
 <label x="-15.24" y="111.76" size="1.778" layer="95"/>
-<pinref part="R_CL" gate="G$1" pin="1"/>
+<pinref part="R91" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="124.46" x2="-7.62" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14762,7 +14766,7 @@ when unused (pg. 8)</text>
 <wire x1="10.16" y1="111.76" x2="5.08" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="111.76" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
 <junction x="10.16" y="111.76"/>
-<pinref part="R_F" gate="G$1" pin="1"/>
+<pinref part="R96" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -14853,8 +14857,8 @@ when unused (pg. 8)</text>
 <label x="68.58" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R_IN1" gate="G$1" pin="2"/>
-<pinref part="R_SENSE" gate="G$1" pin="2"/>
+<pinref part="R92" gate="G$1" pin="2"/>
+<pinref part="R95" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
 <junction x="22.86" y="33.02"/>
@@ -14865,14 +14869,14 @@ when unused (pg. 8)</text>
 <segment>
 <pinref part="U20" gate="A" pin="CSP"/>
 <wire x1="-15.24" y1="33.02" x2="-2.54" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="R_IN1" gate="G$1" pin="1"/>
+<pinref part="R92" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$51" class="0">
 <segment>
 <pinref part="U20" gate="A" pin="CSN"/>
 <wire x1="-15.24" y1="22.86" x2="-2.54" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="R_IN2" gate="G$1" pin="1"/>
+<pinref part="R94" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$53" class="0">
@@ -14937,11 +14941,11 @@ when unused (pg. 8)</text>
 </net>
 <net name="VBATT" class="0">
 <segment>
-<pinref part="R_CL" gate="G$1" pin="2"/>
+<pinref part="R91" gate="G$1" pin="2"/>
 <pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="124.46" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R_F" gate="G$1" pin="2"/>
+<pinref part="R96" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="111.76" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
 <junction x="30.48" y="111.76"/>
@@ -14967,13 +14971,13 @@ when unused (pg. 8)</text>
 <net name="BATT_CHRG" class="0">
 <segment>
 <pinref part="U20" gate="A" pin="BAT"/>
-<pinref part="R_SENSE" gate="G$1" pin="1"/>
+<pinref part="R95" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="15.24" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="15.24" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="D5" gate="A" pin="1"/>
 <wire x1="22.86" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
 <junction x="22.86" y="15.24"/>
-<pinref part="R_IN2" gate="G$1" pin="2"/>
+<pinref part="R94" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
 <junction x="22.86" y="22.86"/>
 <pinref part="C39" gate="G$1" pin="1"/>
