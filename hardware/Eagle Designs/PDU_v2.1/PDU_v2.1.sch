@@ -8926,7 +8926,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND50" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND51" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C43" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="4.7 uF"/>
-<part name="C44" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="1uF"/>
+<part name="C44" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="1 uF"/>
 <part name="C45" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="R6" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="100 k"/>
 <part name="R1" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="4 m"/>
@@ -9202,7 +9202,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C89" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="C90" library="HSFL_Main_Library" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="U35" library="PDU" deviceset="LND01K1-G" device=""/>
-<part name="R93" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R93" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="10 k"/>
+<part name="C92" library="HSFL_Main_Library" deviceset="CAP" device="1206" value="1 uF"/>
+<part name="R97" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="16"/>
 </parts>
 <sheets>
 <sheet>
@@ -10213,6 +10215,55 @@ Battery Charging Circuit.</text>
 </nets>
 </sheet>
 <sheet>
+<description>Low Pass Filter / RC Circuit</description>
+<plain>
+<text x="27.94" y="15.24" size="1.27" layer="97" rot="R180">0805</text>
+<text x="38.1" y="2.54" size="1.27" layer="97" rot="R180">1206</text>
+</plain>
+<instances>
+<instance part="C92" gate="G$1" x="33.02" y="5.08" smashed="yes">
+<attribute name="NAME" x="34.544" y="8.001" size="1.778" layer="95"/>
+<attribute name="VALUE" x="34.544" y="2.921" size="1.778" layer="96"/>
+</instance>
+<instance part="R97" gate="G$1" x="22.86" y="12.7" smashed="yes">
+<attribute name="NAME" x="19.05" y="14.1986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="19.05" y="9.398" size="1.778" layer="96"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="POST_RBF_VBATT" class="0">
+<segment>
+<wire x1="17.78" y1="12.7" x2="7.62" y2="12.7" width="0.1524" layer="91"/>
+<label x="-12.7" y="12.7" size="1.778" layer="95"/>
+<pinref part="R97" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="CS_VBATT" class="0">
+<segment>
+<wire x1="27.94" y1="12.7" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
+<label x="40.64" y="12.7" size="1.778" layer="95"/>
+<wire x1="33.02" y1="12.7" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="12.7" x2="33.02" y2="10.16" width="0.1524" layer="91"/>
+<junction x="33.02" y="12.7"/>
+<pinref part="C92" gate="G$1" pin="1"/>
+<pinref part="R97" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<wire x1="33.02" y1="2.54" x2="33.02" y2="0" width="0.1524" layer="91"/>
+<label x="30.48" y="-2.54" size="1.778" layer="95"/>
+<wire x1="33.02" y1="0" x2="7.62" y2="0" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="0" x2="40.64" y2="0" width="0.1524" layer="91"/>
+<junction x="33.02" y="0"/>
+<pinref part="C92" gate="G$1" pin="2"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
 <description>H-Bridge Circuits</description>
 <plain>
 <text x="-2.54" y="129.54" size="5.08" layer="94">H-Bridge Circuit</text>
@@ -10764,7 +10815,7 @@ Battery Charging Circuit.</text>
 </instance>
 <instance part="R93" gate="G$1" x="124.46" y="-139.7" smashed="yes">
 <attribute name="NAME" x="120.65" y="-143.2814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="120.65" y="-143.002" size="1.778" layer="96"/>
+<attribute name="VALUE" x="120.65" y="-145.542" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -15039,7 +15090,7 @@ Pin In = Closed Circuit = PDU Powered Off</text>
 <text x="43.18" y="20.32" size="2.54" layer="94">Remove Before Flight (RBF) Circuit</text>
 <text x="99.06" y="-38.1" size="1.778" layer="97">PY_VBATT: Power source directly from PyCubed Battery Board
 (Pre-RBF Circuit)
-CS_VBATT: Power source that supplies to Current Sensor (Post-RBF Circuit)</text>
+POST_RBF_VBATT: Power source that gets (noise) filtered (Post-RBF Circuit)</text>
 <text x="10.16" y="-43.18" size="1.778" layer="97">Male Connector (MC) External Part Not Shown
 MC in (Pin In)
 MC disconnected (Pin Out)</text>
@@ -15152,53 +15203,53 @@ MC disconnected (Pin Out)</text>
 <label x="114.3" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CS_VBATT" class="0">
+<net name="POST_RBF_VBATT" class="0">
 <segment>
 <pinref part="U24" gate="A" pin="S"/>
 <wire x1="86.36" y1="-10.16" x2="81.28" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-10.16" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
-<label x="76.2" y="-17.78" size="1.778" layer="95"/>
+<label x="71.12" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,8,-5.08,-15.24,U14,VDDANA,VDD,,,"/>
-<approved hash="104,8,-5.08,-10.16,U14,VDDIOB_2,VDD,,,"/>
-<approved hash="104,8,-5.08,-5.08,U14,VDDIOB,VDD,,,"/>
-<approved hash="104,8,-5.08,-25.4,U14,VDDIO_2,VDD,,,"/>
-<approved hash="104,8,-5.08,-30.48,U14,VDDIO_3,VDD,,,"/>
-<approved hash="104,8,-5.08,-35.56,U14,VDDIO_4,VDD,,,"/>
-<approved hash="104,8,-5.08,-40.64,U14,VDDIO_5,VDD,,,"/>
-<approved hash="104,8,-5.08,-50.8,U14,VDDCORE,N$58,,,"/>
-<approved hash="104,8,-5.08,-20.32,U14,VDDIO,VDD,,,"/>
+<approved hash="104,9,-5.08,-15.24,U14,VDDANA,VDD,,,"/>
+<approved hash="104,9,-5.08,-10.16,U14,VDDIOB_2,VDD,,,"/>
+<approved hash="104,9,-5.08,-5.08,U14,VDDIOB,VDD,,,"/>
+<approved hash="104,9,-5.08,-25.4,U14,VDDIO_2,VDD,,,"/>
+<approved hash="104,9,-5.08,-30.48,U14,VDDIO_3,VDD,,,"/>
+<approved hash="104,9,-5.08,-35.56,U14,VDDIO_4,VDD,,,"/>
+<approved hash="104,9,-5.08,-40.64,U14,VDDIO_5,VDD,,,"/>
+<approved hash="104,9,-5.08,-50.8,U14,VDDCORE,N$58,,,"/>
+<approved hash="104,9,-5.08,-20.32,U14,VDDIO,VDD,,,"/>
 <approved hash="104,2,149.86,43.18,J20,VDD,BUS_3V3,,,"/>
 <approved hash="104,2,149.86,38.1,J20,VSS,GND,,,"/>
-<approved hash="104,4,40.64,5.08,U3,1_VOUT,SW_3V3_1,,,"/>
-<approved hash="104,4,40.64,-2.54,U3,VIN1,BUS_3V3,,,"/>
-<approved hash="104,4,40.64,-5.08,U3,VINS,BUS_3V3,,,"/>
-<approved hash="104,4,78.74,-2.54,U3,VIN3,N$32,,,"/>
-<approved hash="104,4,78.74,5.08,U3,VIN2,BUS_3V3,,,"/>
-<approved hash="104,4,40.64,2.54,U3,2_VOUT,SW_3V3_1,,,"/>
-<approved hash="104,8,-20.32,-172.72,D2,VSS,GND,,,"/>
+<approved hash="104,5,40.64,5.08,U3,1_VOUT,SW_3V3_1,,,"/>
+<approved hash="104,5,40.64,-2.54,U3,VIN1,BUS_3V3,,,"/>
+<approved hash="104,5,40.64,-5.08,U3,VINS,BUS_3V3,,,"/>
+<approved hash="104,5,78.74,-2.54,U3,VIN3,N$32,,,"/>
+<approved hash="104,5,78.74,5.08,U3,VIN2,BUS_3V3,,,"/>
+<approved hash="104,5,40.64,2.54,U3,2_VOUT,SW_3V3_1,,,"/>
+<approved hash="104,9,-20.32,-172.72,D2,VSS,GND,,,"/>
 <approved hash="204,2,147.32,152.4,J11,VBUS,,,,"/>
 <approved hash="104,2,147.32,91.44,J11,SHIELD,GND,,,"/>
-<approved hash="104,4,40.64,-55.88,U9,1_VOUT,SW_3V3_2,,,"/>
-<approved hash="104,4,40.64,-63.5,U9,VIN1,BUS_3V3,,,"/>
-<approved hash="104,4,40.64,-66.04,U9,VINS,BUS_3V3,,,"/>
-<approved hash="104,4,78.74,-63.5,U9,VIN3,N$9,,,"/>
-<approved hash="104,4,78.74,-55.88,U9,VIN2,BUS_3V3,,,"/>
-<approved hash="104,4,40.64,-58.42,U9,2_VOUT,SW_3V3_2,,,"/>
-<approved hash="206,5,15.24,121.92,N$1,,,,,"/>
-<approved hash="206,5,45.72,124.46,N$1,,,,,"/>
-<approved hash="106,4,78.74,-63.5,N$9,,,,,"/>
-<approved hash="106,4,78.74,-2.54,N$32,,,,,"/>
-<approved hash="206,5,111.76,111.76,N$41,,,,,"/>
-<approved hash="206,5,76.2,124.46,N$41,,,,,"/>
-<approved hash="206,5,127,129.54,N$48,,,,,"/>
-<approved hash="206,5,86.36,86.36,N$48,,,,,"/>
-<approved hash="113,5,180.34,130.785,D4,,,,,"/>
+<approved hash="104,5,40.64,-55.88,U9,1_VOUT,SW_3V3_2,,,"/>
+<approved hash="104,5,40.64,-63.5,U9,VIN1,BUS_3V3,,,"/>
+<approved hash="104,5,40.64,-66.04,U9,VINS,BUS_3V3,,,"/>
+<approved hash="104,5,78.74,-63.5,U9,VIN3,N$9,,,"/>
+<approved hash="104,5,78.74,-55.88,U9,VIN2,BUS_3V3,,,"/>
+<approved hash="104,5,40.64,-58.42,U9,2_VOUT,SW_3V3_2,,,"/>
+<approved hash="206,6,15.24,121.92,N$1,,,,,"/>
+<approved hash="206,6,45.72,124.46,N$1,,,,,"/>
+<approved hash="106,5,78.74,-63.5,N$9,,,,,"/>
+<approved hash="106,5,78.74,-2.54,N$32,,,,,"/>
+<approved hash="206,6,111.76,111.76,N$41,,,,,"/>
+<approved hash="206,6,76.2,124.46,N$41,,,,,"/>
+<approved hash="206,6,127,129.54,N$48,,,,,"/>
+<approved hash="206,6,86.36,86.36,N$48,,,,,"/>
+<approved hash="113,6,180.34,130.785,D4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
