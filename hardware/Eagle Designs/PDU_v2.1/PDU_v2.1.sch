@@ -8782,6 +8782,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.2192" y="0.3048" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="68016-202HLF">
+<pad name="1" x="0" y="0" drill="1.2" diameter="1.8"/>
+<pad name="2" x="2.54" y="0" drill="1.2" diameter="1.8"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LND01K1-G">
@@ -8796,6 +8800,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="33.02" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
 <text x="18.1356" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 <text x="17.5006" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+</symbol>
+<symbol name="68016-202HLF">
+<pin name="1" x="-5.08" y="5.08" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="-5.08" y="2.54" visible="pad" length="middle" direction="pas"/>
+<wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="3.81" y2="5.9182" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="3.81" y2="3.3782" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="3.81" y2="4.2418" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="3.81" y2="1.7018" width="0.1524" layer="94"/>
+<wire x1="0" y1="7.62" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="0" y2="7.62" width="0.1524" layer="94"/>
+<text x="-0.9144" y="10.3886" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="0" y="7.62" size="2.1844" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8859,6 +8881,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MANUFACTURER_PART_NUMBER" value="LND01K1-G" constant="no"/>
 <attribute name="MFR_NAME" value="Microchip" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="68016-202HLF">
+<gates>
+<gate name="G$1" symbol="68016-202HLF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="68016-202HLF">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -9205,6 +9243,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R93" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="10 k"/>
 <part name="C92" library="HSFL_Main_Library" deviceset="CAP" device="1206" value="1 uF"/>
 <part name="R97" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="16"/>
+<part name="J28" library="PDU" deviceset="68016-202HLF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9588,11 +9627,6 @@ SWCLK - JTAG_TCK</text>
 (Battery Board)</text>
 <text x="127" y="99.06" size="1.778" layer="97">0603</text>
 <text x="127" y="96.52" size="1.778" layer="97">0603</text>
-<text x="142.24" y="-17.78" size="1.778" layer="94">SW_5V_2 (5V Switch #2)
-is connected to 68016-202HLF 
-(Connector Header Right Angle)
-
-*Added VIA on Board</text>
 <text x="-17.78" y="40.64" size="1.27" layer="97">PY_VBATT is used for
 Pre-RBF Circuit.</text>
 <text x="40.64" y="40.64" size="1.27" layer="97">BATT_CHRG is used for 
@@ -9699,6 +9733,10 @@ Battery Charging Circuit.</text>
 <instance part="J27" gate="A" x="86.36" y="58.42" smashed="yes">
 <attribute name="VALUE" x="91.44" y="60.96" size="2.1844" layer="96"/>
 <attribute name="NAME" x="91.44" y="63.5" size="2.1844" layer="95"/>
+</instance>
+<instance part="J28" gate="G$1" x="160.02" y="-20.32" smashed="yes">
+<attribute name="NAME" x="159.1056" y="-9.9314" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="160.02" y="-12.7" size="2.1844" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9947,6 +9985,11 @@ Battery Charging Circuit.</text>
 <pinref part="J27" gate="A" pin="5"/>
 <wire x1="86.36" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
 <label x="76.2" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J28" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="-17.78" x2="152.4" y2="-17.78" width="0.1524" layer="91"/>
+<label x="147.32" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SOLAR_IN5" class="0">
@@ -10210,6 +10253,13 @@ Battery Charging Circuit.</text>
 <wire x1="132.08" y1="53.34" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
 <junction x="132.08" y="48.26"/>
 <label x="121.92" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SW_5V_2" class="0">
+<segment>
+<pinref part="J28" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="-15.24" x2="152.4" y2="-15.24" width="0.1524" layer="91"/>
+<label x="142.24" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
