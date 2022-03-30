@@ -921,14 +921,14 @@ Created by Upverter.com</description>
 <library name="Adafruit PA1010D Holes">
 <packages>
 <package name="PA1010D">
-<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0" layer="22"/>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0" layer="21"/>
 <wire x1="-12.7" y1="-10.16" x2="-10.16" y2="-12.7" width="0" layer="21" curve="90"/>
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0" layer="21"/>
 <wire x1="10.16" y1="-12.7" x2="12.7" y2="-10.16" width="0" layer="21" curve="90"/>
 <wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0" layer="21"/>
 <wire x1="12.7" y1="10.16" x2="10.16" y2="12.7" width="0" layer="21" curve="90"/>
 <wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0" layer="21"/>
-<wire x1="-10.16" y1="12.7" x2="-12.7" y2="10.16" width="0" layer="22" curve="90"/>
+<wire x1="-10.16" y1="12.7" x2="-12.7" y2="10.16" width="0" layer="21" curve="90"/>
 <pad name="P$1" x="-10.16" y="10.16" drill="2.54"/>
 <pad name="P$2" x="10.16" y="10.16" drill="2.54"/>
 <pad name="P$3" x="-10.16" y="-10.16" drill="2.54"/>
