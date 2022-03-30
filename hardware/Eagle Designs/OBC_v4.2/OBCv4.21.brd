@@ -187,7 +187,7 @@
 <board>
 <fusionsync huburn="a.YnVzaW5lc3M6aGF3YWlpMzk3" projecturn="a.YnVzaW5lc3M6aGF3YWlpMzk3I0QyMDIxMDIxMTM4MTc0NzIyNg" f3durn="urn:adsk.wipprod:dm.lineage:WPvLawa_Q36ULf1lFy3S-g" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="935d8412-0a8b-471e-9db4-d59a038692ee" lastsyncedrevisionid="935d8412-0a8b-471e-9db4-d59a038692ee" lastboardhashguid="5ede64c8-f60e-0077-9b9e-ecb65980b17f" lastpushedtime="2021-09-29T01:22:19Z" linktopcb3d="true"/>
 <plain>
-<text x="52.6288" y="41.694" size="1.2" layer="25" font="vector">OBC Board Rev. 4.20</text>
+<text x="52.6288" y="41.694" size="1.2" layer="25" font="vector">OBC Board Rev. 4.21</text>
 <rectangle x1="60.5079" y1="43.6237" x2="61.4223" y2="43.6491" layer="21"/>
 <rectangle x1="60.4317" y1="43.6237" x2="60.5079" y2="43.6491" layer="21"/>
 <rectangle x1="59.4919" y1="43.6745" x2="59.6951" y2="43.6999" layer="21"/>
