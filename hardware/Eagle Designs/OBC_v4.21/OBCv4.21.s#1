@@ -6595,7 +6595,6 @@ for End-User</text>
 <text x="144.78" y="76.2" size="1.778" layer="94">Modular Radio DIO0 GPIO</text>
 <text x="12.7" y="175.26" size="1.27" layer="97">I2C1 connected to
 PDU's Current Sensor I2C</text>
-<text x="144.78" y="40.64" size="1.778" layer="94">Chip Select for End-User (PC 104 Header)</text>
 </plain>
 <instances>
 <instance part="H1" gate="G$1" x="60.96" y="223.52" smashed="yes"/>
@@ -7060,6 +7059,11 @@ PDU's Current Sensor I2C</text>
 <wire x1="66.04" y1="66.04" x2="63.5" y2="66.04" width="0.1524" layer="91"/>
 <label x="53.34" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="H1" gate="G$1" pin="2.4"/>
+<wire x1="200.66" y1="220.98" x2="208.28" y2="220.98" width="0.1524" layer="91"/>
+<label x="208.28" y="220.98" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RADIO_RESET" class="0">
 <segment>
@@ -7513,18 +7517,6 @@ PDU's Current Sensor I2C</text>
 <pinref part="U$1" gate="G$1" pin="8-TX2/IN1"/>
 <wire x1="121.92" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
 <label x="124.46" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="T_CS1" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="2.4"/>
-<wire x1="200.66" y1="220.98" x2="208.28" y2="220.98" width="0.1524" layer="91"/>
-<label x="208.28" y="220.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="9-OUT1C"/>
-<wire x1="121.92" y1="40.64" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
-<label x="124.46" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
