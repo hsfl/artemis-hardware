@@ -6592,7 +6592,7 @@ Teensy Always On</text>
 for End-User</text>
 <text x="294.64" y="236.22" size="2.54" layer="91">Adafruit GPS Breakout 
 (3.3V Power, UART5)</text>
-<text x="144.78" y="76.2" size="1.778" layer="94">Modular Radio DIO0 GPIO</text>
+<text x="144.78" y="76.2" size="1.778" layer="94">Modular Radio DIO1 GPIO</text>
 <text x="12.7" y="175.26" size="1.27" layer="97">I2C1 connected to
 PDU's Current Sensor I2C</text>
 <text x="144.78" y="40.64" size="1.778" layer="94">Chip Select for End-User (PC 104 Header)</text>
@@ -7508,13 +7508,6 @@ PDU's Current Sensor I2C</text>
 <label x="289.56" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DIO0" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="8-TX2/IN1"/>
-<wire x1="121.92" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
-<label x="124.46" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="T_CS1" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="2.4"/>
@@ -7525,6 +7518,13 @@ PDU's Current Sensor I2C</text>
 <pinref part="U$1" gate="G$1" pin="9-OUT1C"/>
 <wire x1="121.92" y1="40.64" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <label x="124.46" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DIO1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="8-TX2/IN1"/>
+<wire x1="121.92" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
+<label x="124.46" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -8162,14 +8162,14 @@ GPS Connector</text>
 </net>
 <net name="RADIO_RESET" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="SDN"/>
-<wire x1="167.64" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
-<label x="147.32" y="106.68" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="RESET"/>
 <wire x1="167.64" y1="53.34" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
-<label x="144.78" y="53.34" size="1.778" layer="95"/>
+<label x="149.86" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GPIO_0"/>
+<wire x1="205.74" y1="127" x2="210.82" y2="127" width="0.1524" layer="91"/>
+<label x="210.82" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI1_CS1" class="0">
@@ -8368,23 +8368,23 @@ GPS Connector</text>
 <label x="55.88" y="63.5" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="DIO0" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="GPIO_0"/>
-<wire x1="205.74" y1="127" x2="210.82" y2="127" width="0.1524" layer="91"/>
-<label x="210.82" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="DIO0"/>
-<wire x1="205.74" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
-<label x="210.82" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="UART5_RXD" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="GPS_RXDO"/>
 <wire x1="109.22" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
 <label x="114.3" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DIO1" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="GPIO_1"/>
+<wire x1="205.74" y1="132.08" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
+<label x="210.82" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="DIO1"/>
+<wire x1="205.74" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
+<label x="210.82" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
