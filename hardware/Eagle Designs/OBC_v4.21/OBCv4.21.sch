@@ -6522,6 +6522,7 @@ Source: Samtec SSW.pdf</description>
 <part name="L2" library="PDU" deviceset="AIMC-0805-2N2S-T" device="" package3d_urn="urn:adsk.eagle:package:30936858/1"/>
 <part name="U3" library="RFM RADIOS" deviceset="RFM23BP" device=""/>
 <part name="U4" library="RFM RADIOS" deviceset="RFM69HCW" device=""/>
+<part name="R3" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -8033,6 +8034,10 @@ GPS Connector</text>
 <attribute name="NAME" x="172.72" y="81.534" size="1.778" layer="95"/>
 <attribute name="VALUE" x="172.72" y="38.608" size="1.778" layer="96"/>
 </instance>
+<instance part="R3" gate="G$1" x="218.44" y="127" smashed="yes">
+<attribute name="NAME" x="214.63" y="128.4986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="222.25" y="130.302" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8167,9 +8172,9 @@ GPS Connector</text>
 <label x="149.86" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GPIO_0"/>
-<wire x1="205.74" y1="127" x2="210.82" y2="127" width="0.1524" layer="91"/>
-<label x="210.82" y="127" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="127" x2="226.06" y2="127" width="0.1524" layer="91"/>
+<label x="226.06" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI1_CS1" class="0">
@@ -8385,6 +8390,13 @@ GPS Connector</text>
 <pinref part="U4" gate="G$1" pin="DIO1"/>
 <wire x1="205.74" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 <label x="210.82" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="GPIO_0"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="127" x2="213.36" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
