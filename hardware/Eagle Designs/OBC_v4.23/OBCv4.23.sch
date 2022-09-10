@@ -6525,8 +6525,8 @@ Source: Samtec SSW.pdf</description>
 <part name="L2" library="PDU" deviceset="AIMC-0805-2N2S-T" device="" package3d_urn="urn:adsk.eagle:package:30936858/1"/>
 <part name="U3" library="RFM RADIOS" deviceset="RFM23BP" device=""/>
 <part name="U4" library="RFM RADIOS" deviceset="RFM69HCW" device=""/>
-<part name="R8" library="HSFL_Main_Library" deviceset="RESISTOR" device="1206" value="0"/>
-<part name="R7" library="HSFL_Main_Library" deviceset="RESISTOR" device="1206" value="0"/>
+<part name="R8" library="HSFL_Main_Library" deviceset="RESISTOR" device="2512" value="0"/>
+<part name="R9" library="HSFL_Main_Library" deviceset="RESISTOR" device="2512" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -8079,13 +8079,13 @@ GPS Connector</text>
 <attribute name="NAME" x="172.72" y="81.534" size="1.778" layer="95"/>
 <attribute name="VALUE" x="172.72" y="38.608" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="215.9" y="63.5" smashed="yes">
-<attribute name="NAME" x="212.09" y="64.9986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="212.09" y="60.198" size="1.778" layer="96"/>
-</instance>
-<instance part="R7" gate="G$1" x="215.9" y="121.92" smashed="yes">
+<instance part="R8" gate="G$1" x="215.9" y="121.92" smashed="yes">
 <attribute name="NAME" x="212.09" y="123.4186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="212.09" y="118.618" size="1.778" layer="96"/>
+<attribute name="VALUE" x="217.17" y="123.698" size="1.778" layer="96"/>
+</instance>
+<instance part="R9" gate="G$1" x="215.9" y="63.5" smashed="yes">
+<attribute name="NAME" x="212.09" y="64.9986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="219.71" y="65.278" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8332,9 +8332,9 @@ GPS Connector</text>
 <wire x1="86.36" y1="48.26" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="63.5" x2="226.06" y2="63.5" width="0.1524" layer="91"/>
-<label x="226.06" y="63.5" size="1.778" layer="95"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
+<label x="220.98" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ANT_CONN" class="0">
@@ -8459,9 +8459,9 @@ GPS Connector</text>
 </net>
 <net name="5V_BUS" class="0">
 <segment>
-<wire x1="220.98" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
-<label x="228.6" y="121.92" size="1.778" layer="95"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
+<label x="226.06" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDN" class="0">
@@ -8473,14 +8473,14 @@ GPS Connector</text>
 </net>
 <net name="N$9" class="0">
 <segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VCC"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="121.92" x2="210.82" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="3V3"/>
 <wire x1="210.82" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
 </segment>
