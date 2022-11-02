@@ -1,3 +1,0 @@
-cosmos/bin
-/../build-source-beaglebone-Debug/programs/agents/agent:bin
-/../../../source/projects/cubesat-kit/source/tests/device_test:bin
