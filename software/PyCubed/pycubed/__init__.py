@@ -1,4 +1,0 @@
-
-
-from .pycubed import cubesat
-
