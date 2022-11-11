@@ -1,2 +1,0 @@
-
-from .cubesatclass import cubesat
