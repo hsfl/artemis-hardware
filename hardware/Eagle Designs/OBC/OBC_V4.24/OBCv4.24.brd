@@ -5930,8 +5930,7 @@ design rules under a new name.</description>
 <wire x1="83.46" y1="10.51" x2="78.27" y2="5.32" width="0.8" layer="15"/>
 <wire x1="78.27" y1="5.32" x2="34.64" y2="5.32" width="0.8" layer="15"/>
 <wire x1="31.36" y1="8.6" x2="34.64" y2="5.32" width="0.8" layer="15"/>
-<wire x1="35.65" y1="9.1" x2="38.805" y2="9.1" width="0.5" layer="16"/>
-<wire x1="35.4" y1="9.14" x2="38.805" y2="9.1" width="0.5" layer="16"/>
+<wire x1="35.65" y1="9.1" x2="35.4" y2="9.14" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$16">
 <contactref element="R4" pad="2"/>
