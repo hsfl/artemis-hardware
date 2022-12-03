@@ -6527,6 +6527,7 @@ Source: Samtec SSW.pdf</description>
 <part name="U4" library="RFM RADIOS" deviceset="RFM69HCW" device=""/>
 <part name="R8" library="HSFL_Main_Library" deviceset="RESISTOR" device="2512" value="0"/>
 <part name="R9" library="HSFL_Main_Library" deviceset="RESISTOR" device="2512" value="0"/>
+<part name="R3" library="HSFL_Main_Library" deviceset="RESISTOR" device="0805-RES" value="1M"/>
 </parts>
 <sheets>
 <sheet>
@@ -8103,6 +8104,10 @@ GPS Connector</text>
 <attribute name="NAME" x="212.09" y="64.9986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="219.71" y="65.278" size="1.778" layer="96"/>
 </instance>
+<instance part="R3" gate="G$1" x="205.74" y="30.48" smashed="yes">
+<attribute name="NAME" x="201.93" y="31.9786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="201.93" y="27.178" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8161,39 +8166,9 @@ GPS Connector</text>
 <label x="88.9" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="45.72" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
-<label x="223.52" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="GND1"/>
-<wire x1="167.64" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
-<label x="157.48" y="137.16" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="GND2"/>
-<wire x1="167.64" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
-<label x="157.48" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="GND3"/>
-<wire x1="205.74" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
-<label x="210.82" y="106.68" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="GND1"/>
-<wire x1="167.64" y1="78.74" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
-<label x="157.48" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="GND2"/>
-<wire x1="167.64" y1="43.18" x2="162.56" y2="43.18" width="0.1524" layer="91"/>
-<label x="157.48" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="GND3"/>
-<wire x1="205.74" y1="48.26" x2="210.82" y2="48.26" width="0.1524" layer="91"/>
-<label x="210.82" y="48.26" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="30.48" x2="213.36" y2="30.48" width="0.1524" layer="91"/>
+<label x="213.36" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPS_RSTN" class="0">
@@ -8383,54 +8358,44 @@ GPS Connector</text>
 </net>
 <net name="RF_GND" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="GND_RF"/>
-<wire x1="58.42" y1="88.9" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
-<label x="58.42" y="88.9" size="1.778" layer="95" rot="MR270"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="45.72" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
+<label x="228.6" y="45.72" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="P$22"/>
-<wire x1="60.96" y1="88.9" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
-<label x="60.96" y="88.9" size="1.778" layer="95" rot="MR270"/>
+<pinref part="U3" gate="G$1" pin="GND1"/>
+<wire x1="167.64" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
+<label x="157.48" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="P$24"/>
-<wire x1="66.04" y1="88.9" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
-<label x="66.04" y="88.9" size="1.778" layer="95" rot="MR270"/>
+<pinref part="U3" gate="G$1" pin="GND2"/>
+<wire x1="167.64" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
+<label x="157.48" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="P$25"/>
-<wire x1="68.58" y1="88.9" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
-<label x="68.58" y="88.9" size="1.778" layer="95" rot="MR270"/>
+<pinref part="U3" gate="G$1" pin="GND3"/>
+<wire x1="205.74" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
+<label x="210.82" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="P$27"/>
-<wire x1="73.66" y1="88.9" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
-<label x="73.66" y="88.9" size="1.778" layer="95" rot="MR270"/>
+<pinref part="U4" gate="G$1" pin="GND1"/>
+<wire x1="167.64" y1="78.74" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
+<label x="157.48" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="P$28"/>
-<wire x1="76.2" y1="88.9" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
-<label x="76.2" y="88.9" size="1.778" layer="95" rot="MR270"/>
+<pinref part="U4" gate="G$1" pin="GND2"/>
+<wire x1="167.64" y1="43.18" x2="162.56" y2="43.18" width="0.1524" layer="91"/>
+<label x="157.48" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="P$29"/>
-<wire x1="78.74" y1="88.9" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
-<label x="78.74" y="88.9" size="1.778" layer="95" rot="MR270"/>
+<pinref part="U4" gate="G$1" pin="GND3"/>
+<wire x1="205.74" y1="48.26" x2="210.82" y2="48.26" width="0.1524" layer="91"/>
+<label x="210.82" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="P$31"/>
-<wire x1="83.82" y1="88.9" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
-<label x="83.82" y="88.9" size="1.778" layer="95" rot="MR270"/>
-</segment>
-<segment>
-<pinref part="U6" gate="G$1" pin="P$33"/>
-<wire x1="88.9" y1="88.9" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
-<label x="88.9" y="88.9" size="1.778" layer="95" rot="MR270"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
-<label x="55.88" y="63.5" size="1.778" layer="95" rot="MR0"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="30.48" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
+<label x="198.12" y="30.48" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="UART5_RXD" class="0">
@@ -8499,6 +8464,58 @@ GPS Connector</text>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="3V3"/>
 <wire x1="210.82" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPS_GND" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+<label x="55.88" y="63.5" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="GND_RF"/>
+<wire x1="58.42" y1="88.9" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<label x="58.42" y="88.9" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="P$22"/>
+<wire x1="60.96" y1="88.9" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
+<label x="60.96" y="88.9" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="P$24"/>
+<wire x1="66.04" y1="88.9" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="66.04" y="88.9" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="P$25"/>
+<wire x1="68.58" y1="88.9" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
+<label x="68.58" y="88.9" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="P$27"/>
+<wire x1="73.66" y1="88.9" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
+<label x="73.66" y="88.9" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="P$28"/>
+<wire x1="76.2" y1="88.9" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
+<label x="76.2" y="88.9" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="P$29"/>
+<wire x1="78.74" y1="88.9" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
+<label x="78.74" y="88.9" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="P$31"/>
+<wire x1="83.82" y1="88.9" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
+<label x="83.82" y="88.9" size="1.778" layer="95" rot="MR270"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="P$33"/>
+<wire x1="88.9" y1="88.9" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
+<label x="88.9" y="88.9" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 </nets>
