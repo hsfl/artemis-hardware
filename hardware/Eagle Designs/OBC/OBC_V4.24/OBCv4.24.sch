@@ -7575,6 +7575,13 @@ PDU's Current Sensor I2C</text>
 <label x="58.42" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="SW_3V3_2" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="2.20"/>
+<wire x1="200.66" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
+<label x="208.28" y="200.66" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -8473,13 +8480,6 @@ GPS Connector</text>
 <label x="210.82" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="5V_BUS" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="220.98" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
-<label x="226.06" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SDN" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="SDN"/>
@@ -8499,6 +8499,13 @@ GPS Connector</text>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="3V3"/>
 <wire x1="210.82" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SW_3V3_2" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
+<label x="226.06" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
