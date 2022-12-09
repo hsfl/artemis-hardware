@@ -1204,31 +1204,25 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 </packages>
 <symbols>
 <symbol name="SOLAR-CONNECTOR">
-<text x="-7.62" y="13.081" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-14.732" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-10.16" y="10.16" visible="pin" length="short"/>
-<pin name="2" x="10.16" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="3" x="-10.16" y="7.62" visible="pin" length="short"/>
-<pin name="4" x="10.16" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="5" x="-10.16" y="5.08" visible="pin" length="short"/>
-<pin name="6" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="7" x="-10.16" y="2.54" visible="pin" length="short"/>
-<pin name="8" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="9" x="-10.16" y="0" visible="pin" length="short"/>
-<pin name="10" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="11" x="-10.16" y="-2.54" visible="pin" length="short"/>
-<pin name="12" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
-<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
-<pin name="P$1" x="-10.16" y="-7.62" visible="pin" length="short"/>
-<pin name="P$2" x="10.16" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="P$3" x="-10.16" y="-10.16" visible="pin" length="short"/>
-<pin name="P$4" x="10.16" y="-10.16" visible="pin" length="short" rot="R180"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
+<text x="-7.62" y="10.541" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="8.128" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-7.62" y="5.08" visible="pin" length="short"/>
+<pin name="2" x="7.62" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="3" x="-7.62" y="2.54" visible="pin" length="short"/>
+<pin name="4" x="7.62" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="5" x="-7.62" y="0" visible="pin" length="short"/>
+<pin name="6" x="7.62" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="7" x="-7.62" y="-2.54" visible="pin" length="short"/>
+<pin name="8" x="7.62" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="9" x="-7.62" y="-5.08" visible="pin" length="short"/>
+<pin name="10" x="7.62" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="11" x="-7.62" y="-7.62" visible="pin" length="short"/>
+<pin name="12" x="7.62" y="-7.62" visible="pin" length="short" rot="R180"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.1524" layer="94"/>
+<pin name="GND" x="0" y="-12.7" visible="off" length="short" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1251,10 +1245,7 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="GND" pad="P$1 P$2 P$3 P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1481,9 +1472,9 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <instance part="SC25" gate="G$1" x="513.08" y="-33.02" smashed="yes" rot="R270">
 <attribute name="NAME" x="518.28" y="-33.52" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="J1" gate="G$1" x="386.08" y="-35.56" smashed="yes">
-<attribute name="NAME" x="378.46" y="-22.479" size="1.778" layer="95"/>
-<attribute name="VALUE" x="378.46" y="-50.292" size="1.778" layer="96"/>
+<instance part="J1" gate="G$1" x="383.54" y="-30.48" smashed="yes">
+<attribute name="NAME" x="375.92" y="-19.939" size="1.778" layer="95"/>
+<attribute name="VALUE" x="375.92" y="-22.352" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1525,8 +1516,8 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <pinref part="J1" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<wire x1="396.24" y1="-30.48" x2="398.78" y2="-30.48" width="0.1524" layer="91"/>
-<label x="398.78" y="-30.48" size="1.778" layer="95"/>
+<wire x1="391.16" y1="-30.48" x2="393.7" y2="-30.48" width="0.1524" layer="91"/>
+<label x="393.7" y="-30.48" size="1.778" layer="95"/>
 <pinref part="J1" gate="G$1" pin="6"/>
 </segment>
 </net>
@@ -1571,46 +1562,31 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="P$1"/>
-<wire x1="375.92" y1="-43.18" x2="373.38" y2="-43.18" width="0.1524" layer="91"/>
-<label x="373.38" y="-43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="P$3"/>
-<wire x1="375.92" y1="-45.72" x2="373.38" y2="-45.72" width="0.1524" layer="91"/>
-<label x="373.38" y="-45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="P$2"/>
-<wire x1="396.24" y1="-43.18" x2="398.78" y2="-43.18" width="0.1524" layer="91"/>
-<label x="398.78" y="-43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="P$4"/>
-<wire x1="396.24" y1="-45.72" x2="398.78" y2="-45.72" width="0.1524" layer="91"/>
-<label x="398.78" y="-45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="375.92" y1="-27.94" x2="373.38" y2="-27.94" width="0.1524" layer="91"/>
 <label x="373.38" y="-27.94" size="1.778" layer="95" rot="MR0"/>
 <pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<wire x1="396.24" y1="-27.94" x2="398.78" y2="-27.94" width="0.1524" layer="91"/>
-<label x="398.78" y="-27.94" size="1.778" layer="95"/>
+<wire x1="391.16" y1="-27.94" x2="393.7" y2="-27.94" width="0.1524" layer="91"/>
+<label x="393.7" y="-27.94" size="1.778" layer="95"/>
 <pinref part="J1" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="383.54" y1="-43.18" x2="383.54" y2="-45.72" width="0.1524" layer="91"/>
+<label x="383.54" y="-45.72" size="1.778" layer="95" rot="MR180"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="7"/>
 <wire x1="375.92" y1="-33.02" x2="373.38" y2="-33.02" width="0.1524" layer="91"/>
 <label x="373.38" y="-33.02" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J1" gate="G$1" pin="7"/>
 </segment>
 <segment>
+<wire x1="391.16" y1="-33.02" x2="393.7" y2="-33.02" width="0.1524" layer="91"/>
+<label x="393.7" y="-33.02" size="1.778" layer="95"/>
 <pinref part="J1" gate="G$1" pin="8"/>
-<wire x1="396.24" y1="-33.02" x2="398.78" y2="-33.02" width="0.1524" layer="91"/>
-<label x="398.78" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VS+" class="0">
@@ -1645,8 +1621,8 @@ Monocrystalline Solar Cell 30.7mW, 2.07V</description>
 <label x="337.82" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="396.24" y1="-25.4" x2="398.78" y2="-25.4" width="0.1524" layer="91"/>
-<label x="398.78" y="-25.4" size="1.778" layer="95"/>
+<wire x1="391.16" y1="-25.4" x2="393.7" y2="-25.4" width="0.1524" layer="91"/>
+<label x="393.7" y="-25.4" size="1.778" layer="95"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>

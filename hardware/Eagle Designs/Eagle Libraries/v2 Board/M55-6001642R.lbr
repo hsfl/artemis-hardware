@@ -113,29 +113,29 @@
 </packages>
 <symbols>
 <symbol name="CONN_016P_000C_1">
-<pin name="1" x="-7.62" y="17.78" length="short" direction="pas"/>
-<pin name="2" x="7.62" y="17.78" length="short" direction="pas" rot="R180"/>
-<pin name="3" x="-7.62" y="15.24" length="short" direction="pas"/>
-<pin name="4" x="7.62" y="15.24" length="short" direction="pas" rot="R180"/>
-<pin name="5" x="-7.62" y="12.7" length="short" direction="pas"/>
-<pin name="6" x="7.62" y="12.7" length="short" direction="pas" rot="R180"/>
-<pin name="7" x="-7.62" y="10.16" length="short" direction="pas"/>
-<pin name="8" x="7.62" y="10.16" length="short" direction="pas" rot="R180"/>
-<pin name="9" x="-7.62" y="7.62" length="short" direction="pas"/>
-<pin name="10" x="7.62" y="7.62" length="short" direction="pas" rot="R180"/>
-<pin name="11" x="-7.62" y="5.08" length="short" direction="pas"/>
-<pin name="12" x="7.62" y="5.08" length="short" direction="pas" rot="R180"/>
-<pin name="13" x="-7.62" y="2.54" length="short" direction="pas"/>
-<pin name="14" x="7.62" y="2.54" length="short" direction="pas" rot="R180"/>
-<pin name="15" x="-7.62" y="0" length="short" direction="pas"/>
-<pin name="16" x="7.62" y="0" length="short" direction="pas" rot="R180"/>
-<wire x1="-5.08" y1="20.32" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="20.32" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="20.32" x2="-5.08" y2="20.32" width="0.1524" layer="94"/>
-<text x="-5.08" y="24.13" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
-<pin name="17" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<text x="-5.08" y="21.59" size="1.778" layer="96" ratio="6">&gt;VALUE</text>
+<pin name="1" x="7.62" y="7.62" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="-7.62" y="7.62" visible="pin" length="short" direction="pas"/>
+<pin name="3" x="7.62" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="-7.62" y="5.08" visible="pin" length="short" direction="pas"/>
+<pin name="5" x="7.62" y="2.54" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="6" x="-7.62" y="2.54" visible="pin" length="short" direction="pas"/>
+<pin name="7" x="7.62" y="0" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="8" x="-7.62" y="0" visible="pin" length="short" direction="pas"/>
+<pin name="9" x="7.62" y="-2.54" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="10" x="-7.62" y="-2.54" visible="pin" length="short" direction="pas"/>
+<pin name="11" x="7.62" y="-5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="12" x="-7.62" y="-5.08" visible="pin" length="short" direction="pas"/>
+<pin name="13" x="7.62" y="-7.62" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="14" x="-7.62" y="-7.62" visible="pin" length="short" direction="pas"/>
+<pin name="15" x="7.62" y="-10.16" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="16" x="-7.62" y="-10.16" visible="pin" length="short" direction="pas"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="5.08" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.1524" layer="94"/>
+<text x="-5.08" y="13.97" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<pin name="GND" x="0" y="-15.24" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="-5.08" y="11.43" size="1.778" layer="96" ratio="6">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -154,7 +154,6 @@
 <connect gate="A" pin="14" pad="14"/>
 <connect gate="A" pin="15" pad="15"/>
 <connect gate="A" pin="16" pad="16"/>
-<connect gate="A" pin="17" pad="19 20 21 22"/>
 <connect gate="A" pin="2" pad="2"/>
 <connect gate="A" pin="3" pad="3"/>
 <connect gate="A" pin="4" pad="4"/>
@@ -163,6 +162,7 @@
 <connect gate="A" pin="7" pad="7"/>
 <connect gate="A" pin="8" pad="8"/>
 <connect gate="A" pin="9" pad="9"/>
+<connect gate="A" pin="GND" pad="19 20 21 22"/>
 </connects>
 <technologies>
 <technology name="">
