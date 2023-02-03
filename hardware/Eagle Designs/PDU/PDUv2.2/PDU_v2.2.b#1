@@ -6355,6 +6355,7 @@ design rules under a new name.</description>
 <via x="79.15" y="66.39" extent="1-16" drill="0.35"/>
 <contactref element="J28" pad="2"/>
 <via x="57.92" y="32.67" extent="1-16" drill="0.35"/>
+<wire x1="22.1604" y1="71.1708" x2="21.299" y2="73.0504" width="0" layer="19" extent="1-16"/>
 <via x="20.91" y="70.3" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="SW_5V_3">
