@@ -344,34 +344,6 @@ DIN A3, landscape with location and doc. field</description>
 <text x="-28.682065625" y="-1.174503125" size="0.6096" layer="21" rot="R90">POGO</text>
 <pad name="GND" x="-30.25" y="1.27" drill="1" rot="R90"/>
 </package>
-<package name="SAMTEC_MCX-J-P-H-RA-TH1">
-<wire x1="-3" y1="3" x2="3" y2="3" width="0.1" layer="51"/>
-<wire x1="3" y1="3" x2="3" y2="-3" width="0.1" layer="51"/>
-<wire x1="3" y1="-3" x2="2.25" y2="-3" width="0.1" layer="51"/>
-<wire x1="2.25" y1="-3" x2="-2.25" y2="-3" width="0.1" layer="51"/>
-<wire x1="-2.25" y1="-3" x2="-3" y2="-3" width="0.1" layer="51"/>
-<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.1" layer="51"/>
-<wire x1="-1" y1="3" x2="1" y2="3" width="0.2" layer="21"/>
-<wire x1="3" y1="-1" x2="3" y2="1" width="0.2" layer="21"/>
-<wire x1="-3" y1="-1" x2="-3" y2="1" width="0.2" layer="21"/>
-<wire x1="-3.84" y1="3.84" x2="3.84" y2="3.84" width="0.05" layer="39"/>
-<wire x1="3.84" y1="3.84" x2="3.84" y2="-6.75" width="0.05" layer="39"/>
-<wire x1="3.84" y1="-6.75" x2="-3.84" y2="-6.75" width="0.05" layer="39"/>
-<wire x1="-3.84" y1="-6.75" x2="-3.84" y2="3.84" width="0.05" layer="39"/>
-<text x="-3.81" y="4.21" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-6.985" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<wire x1="-2.25" y1="-3" x2="-2.25" y2="-6.5" width="0.1" layer="51"/>
-<wire x1="-2.25" y1="-6.5" x2="2.25" y2="-6.5" width="0.1" layer="51"/>
-<wire x1="2.25" y1="-6.5" x2="2.25" y2="-3" width="0.1" layer="51"/>
-<wire x1="-2.25" y1="-6.5" x2="2.25" y2="-6.5" width="0.2" layer="21"/>
-<wire x1="-2.25" y1="-4.1" x2="-2.25" y2="-6.5" width="0.2" layer="21"/>
-<wire x1="2.25" y1="-6.5" x2="2.25" y2="-4.1" width="0.2" layer="21"/>
-<pad name="S1" x="-2.54" y="2.54" drill="1.4"/>
-<pad name="S2" x="2.54" y="2.54" drill="1.4"/>
-<pad name="S3" x="2.54" y="-2.54" drill="1.4"/>
-<pad name="S4" x="-2.54" y="-2.54" drill="1.4"/>
-<pad name="1" x="0" y="0" drill="1.1"/>
-</package>
 </packages>
 <symbols>
 <symbol name="TEENSY41">
@@ -457,31 +429,6 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="14.986" y1="33.782" x2="20.574" y2="33.782" width="0.0762" layer="94"/>
 <pin name="GND7" x="7.62" y="-43.18" visible="pin" length="short" rot="R90"/>
 </symbol>
-<symbol name="MCX-J-P-H-RA-TH1">
-<circle x="0" y="2.54" radius="1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.524" x2="0" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0" y1="1.524" x2="1.016" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-2.286" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.302" y1="3.302" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-3.302" y1="1.778" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="1.524" x2="0" y2="0" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="0.254" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="-3.81" y="4.064" size="1.778" layer="95">&gt;NAME</text>
-<text x="-4.064" y="-4.318" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="-0.762" x2="-1.27" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.762" x2="-0.508" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-0.762" x2="0.254" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-3.302" y1="0.762" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.302" y1="-0.762" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="1" x="2.54" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="2" x="2.54" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TEENSY41">
@@ -562,30 +509,6 @@ DIN A3, landscape with location and doc. field</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCX-J-P-H-RA-TH1" prefix="J">
-<description>50 Ohm MCX Jack or Plug, Through-hole </description>
-<gates>
-<gate name="G$1" symbol="MCX-J-P-H-RA-TH1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SAMTEC_MCX-J-P-H-RA-TH1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="S1 S2 S3 S4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value=" MCX Connector Jack, Female Socket 50Ohm Through Hole, Right Angle Solder "/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="SAM10607-ND"/>
-<attribute name="MF" value="Samtec"/>
-<attribute name="MP" value="MCX-J-P-H-RA-TH1"/>
-<attribute name="PACKAGE" value="None"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/MCX-J-P-H-RA-TH1/?ref=eda"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -692,6 +615,42 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Antenna_Pad">
+<packages>
+<package name="ANTENNA_PAD+HOLES">
+<smd name="1" x="0" y="-11.6" dx="13.8" dy="2.25" layer="1"/>
+<hole x="0" y="7.5" drill="3.26"/>
+<hole x="0" y="-7.5" drill="3.26"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ANTENNA_PAD">
+<pin name="1" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="-3.556" y="5.08" size="1.778" layer="95">Antenna Pad</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ANTENNA_PAD+HOLES">
+<gates>
+<gate name="G$1" symbol="ANTENNA_PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ANTENNA_PAD+HOLES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -710,7 +669,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="U$1" library="OBCv4" deviceset="TEENSY41" device="TEENSY"/>
 <part name="U1" library="RFM RADIOS" deviceset="RFM23BP" device=""/>
-<part name="J1" library="OBCv4" deviceset="MCX-J-P-H-RA-TH1" device=""/>
+<part name="U$2" library="Antenna_Pad" deviceset="ANTENNA_PAD+HOLES" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -748,10 +707,7 @@ Teensy Always On</text>
 <attribute name="NAME" x="264.16" y="195.834" size="1.778" layer="95"/>
 <attribute name="VALUE" x="264.16" y="152.908" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="327.66" y="160.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="331.47" y="163.576" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="318.516" y="153.162" size="1.778" layer="96"/>
-</instance>
+<instance part="U$2" gate="G$1" x="320.04" y="154.94" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -933,9 +889,9 @@ Teensy Always On</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="ANT"/>
-<wire x1="325.12" y1="157.48" x2="297.18" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="157.48" x2="297.18" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
