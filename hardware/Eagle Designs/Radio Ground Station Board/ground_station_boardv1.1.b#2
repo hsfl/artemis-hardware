@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -185,7 +185,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6aGF3YWlpMzk3" projecturn="a.YnVzaW5lc3M6aGF3YWlpMzk3I0QyMDIxMDIxMTM4MTc0NzIyNg" f3durn="urn:adsk.wipprod:dm.lineage:WPvLawa_Q36ULf1lFy3S-g" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="935d8412-0a8b-471e-9db4-d59a038692ee" lastsyncedrevisionid="935d8412-0a8b-471e-9db4-d59a038692ee" lastboardhashguid="5ede64c8-f60e-0077-9b9e-ecb65980b17f" lastpushedtime="2021-09-29T01:22:19Z" linktopcb3d="false"/>
+<fusionsync huburn="a.YnVzaW5lc3M6aGF3YWlpMzk3" projecturn="a.YnVzaW5lc3M6aGF3YWlpMzk3I0QyMDIxMDIxMTM4MTc0NzIyNg" f3durn="urn:adsk.wipprod:dm.lineage:WPvLawa_Q36ULf1lFy3S-g" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="935d8412-0a8b-471e-9db4-d59a038692ee" lastsyncedrevisionid="935d8412-0a8b-471e-9db4-d59a038692ee" lastboardhashguid="5ede64c8-f60e-0077-9b9e-ecb65980b17f" lastpushedtime="2021-09-29T01:22:19Z" linktopcb3d="true"/>
 <plain>
 <text x="49.0388" y="41.564" size="1.2" layer="25" font="vector">Ground Staion Board Rev 2.0</text>
 <rectangle x1="60.5079" y1="43.6237" x2="61.4223" y2="43.6491" layer="21"/>
@@ -3563,8 +3563,19 @@
 <text x="33.84" y="60.28" size="1.5" layer="21" font="vector">Teensy 4.1</text>
 <text x="82.1" y="62.56" size="1.2" layer="25" font="vector">Radio
 Conn</text>
-<text x="49.4188" y="28.884" size="1.6764" layer="25" font="vector">Pinouts</text>
-<text x="55.9988" y="22.594" size="1.6764" layer="25" font="vector">RFM23      | Teensy 
+<text x="49.4188" y="28.884" size="1.778" layer="25" font="vector">Pinouts:</text>
+<text x="48.9588" y="-4.596" size="1.6764" layer="25" font="vector">Teensy  | RFM23
+////////////////////
+7           | Radio Reset 
+8           | Interupt
+26         | SDI (MOSI) 
+27         | Clock 
+30         | RXON
+31         | TXON
+37         | SDN
+38         | Chip Select 
+39         | SDO (MISO) 
+ 
 </text>
 </plain>
 <libraries>
@@ -4125,7 +4136,7 @@ design rules under a new name.</description>
 <vertex x="-3" y="-5.8"/>
 <vertex x="93.4" y="-5.8"/>
 </polygon>
-<polygon width="0.3048" layer="15" grouprefs="IMU">
+<polygon width="0.3048" layer="15" rank="2" grouprefs="IMU">
 <vertex x="91.4" y="97"/>
 <vertex x="-3.8" y="97"/>
 <vertex x="-3.8" y="-3.2"/>
@@ -4148,7 +4159,16 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="J1" pad="1"/>
 <contactref element="U1" pad="9"/>
-<wire x1="37.29" y1="37.51" x2="83.66" y2="37.56" width="0" layer="19" extent="1-1"/>
+<wire x1="83.61" y1="37.51" x2="83.66" y2="37.56" width="0.1524" layer="1"/>
+<wire x1="37.29" y1="37.51" x2="83.61" y2="37.51" width="0.6096" layer="1"/>
+</signal>
+<signal name="RF_GND">
+<polygon width="0.1524" layer="15">
+<vertex x="90" y="48"/>
+<vertex x="33.25" y="48"/>
+<vertex x="33.25" y="24.25"/>
+<vertex x="90" y="24.25"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>

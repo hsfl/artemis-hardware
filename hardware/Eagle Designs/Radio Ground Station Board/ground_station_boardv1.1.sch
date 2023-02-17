@@ -871,13 +871,6 @@ Teensy Always On</text>
 <label x="302.26" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ANT_GND" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GND3"/>
-<wire x1="297.18" y1="162.56" x2="302.26" y2="162.56" width="0.1524" layer="91"/>
-<label x="302.26" y="162.56" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GND2"/>
@@ -936,6 +929,18 @@ Teensy Always On</text>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="ANT"/>
 <wire x1="325.12" y1="157.48" x2="297.18" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RF_GND" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="GND3"/>
+<wire x1="325.12" y1="160.02" x2="320.04" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="160.02" x2="297.18" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="160.02" x2="297.18" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="160.02" x2="320.04" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="167.64" x2="332.74" y2="167.64" width="0.1524" layer="91"/>
+<junction x="320.04" y="160.02"/>
 </segment>
 </net>
 </nets>
