@@ -818,14 +818,15 @@ Teensy Always On</text>
 </net>
 <net name="NIRQ" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="8-TX2/IN1"/>
-<wire x1="121.92" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
-<label x="124.46" y="76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="NIRQ"/>
 <wire x1="259.08" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
 <label x="248.92" y="167.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="40-A16/CS1"/>
+<wire x1="66.04" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
+<label x="58.42" y="60.96" size="1.778" layer="95"/>
+<label x="58.42" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_ON" class="0">
@@ -869,6 +870,13 @@ Teensy Always On</text>
 <pinref part="U1" gate="G$1" pin="GPIO_1"/>
 <wire x1="297.18" y1="187.96" x2="302.26" y2="187.96" width="0.1524" layer="91"/>
 <label x="302.26" y="187.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ANT_GND" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GND3"/>
+<wire x1="297.18" y1="162.56" x2="302.26" y2="162.56" width="0.1524" layer="91"/>
+<label x="302.26" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -929,18 +937,6 @@ Teensy Always On</text>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="ANT"/>
 <wire x1="325.12" y1="157.48" x2="297.18" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RF_GND" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="GND3"/>
-<wire x1="325.12" y1="160.02" x2="320.04" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="160.02" x2="297.18" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="160.02" x2="297.18" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="160.02" x2="320.04" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="167.64" x2="332.74" y2="167.64" width="0.1524" layer="91"/>
-<junction x="320.04" y="160.02"/>
 </segment>
 </net>
 </nets>
