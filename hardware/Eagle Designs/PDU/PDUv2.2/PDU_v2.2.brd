@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.01" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -7920,10 +7920,10 @@ design rules under a new name.</description>
 <wire x1="16.3216" y1="7.663" x2="12.743" y2="7.663" width="0.762" layer="1"/>
 <wire x1="12.743" y1="7.663" x2="11.43" y2="6.35" width="0.762" layer="1"/>
 <via x="83.7184" y="13.97" extent="1-16" drill="0.3556"/>
-<wire x1="11.43" y1="6.35" x2="12.6402" y2="5.1398" width="0.762" layer="2"/>
-<wire x1="12.6402" y1="5.1398" x2="78.1298" y2="5.1398" width="0.5" layer="2"/>
-<wire x1="83.7184" y1="10.7284" x2="78.1298" y2="5.1398" width="0.762" layer="2"/>
-<wire x1="83.7184" y1="10.7284" x2="83.7184" y2="13.97" width="0.762" layer="2"/>
+<wire x1="11.43" y1="6.35" x2="11.576703125" y2="6.203296875" width="0.762" layer="2"/>
+<wire x1="11.576703125" y1="6.203296875" x2="79.6571" y2="6.203296875" width="0.5" layer="2"/>
+<wire x1="83.7184" y1="10.264596875" x2="79.6571" y2="6.203296875" width="0.5" layer="2"/>
+<wire x1="83.7184" y1="10.264596875" x2="83.7184" y2="13.97" width="0.762" layer="2"/>
 <wire x1="84.7598" y1="81.7308" x2="84.64" y2="81.611" width="0.762" layer="1"/>
 <wire x1="84.7598" y1="81.7308" x2="84.7598" y2="82.6008" width="0.762" layer="1"/>
 <via x="84.7598" y="82.6008" extent="1-16" drill="0.3556"/>
