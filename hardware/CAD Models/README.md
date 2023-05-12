@@ -2,8 +2,6 @@
 
 # Artemis Cubesat Kit Hardware
 
-# Artemis Cubesat Kit Hardware
-
 Within this folder are the solidworks files for the Artemis CubeSat.
 
 Models were made using SolidWorks 2020, be sure to have SolidWorks 2020 or up to open the files.
