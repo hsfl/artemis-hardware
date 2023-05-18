@@ -1,10 +1,8 @@
-<img src="https://hsfl.github.io/artemis/resources/logos/hsfl.png" width="100"> <img src="https://hsfl.github.io/artemis/resources/logos/uh_manoa.png" width="100">
+<img src="images/artemis.png" alt="Artemis" width="190" height="180"> <img src="images/university-of-hawaii-manoa.png" alt="University of Hawaii Manoa" width="180" height="180"> <br>
 
-# Artemis Cubesat Kit
+# Artemis Cubesat Kit Hardware
 
 Welcome! Here you'll find resources for the Artemis Cubesat Kit.
 
-For documentation and tutorials, visit the [technical details website](https://hsfl.github.io/artemis/index.html)
-
-For an overview of the project, visit the [project page](http://leonidas-b.hsfl.hawaii.edu/wordpress-5.0.1/artemis-2-2/)
+For documentation and tutorials, visit our [project website](https://sites.google.com/hawaii.edu/artemiscubesatkit).
 
