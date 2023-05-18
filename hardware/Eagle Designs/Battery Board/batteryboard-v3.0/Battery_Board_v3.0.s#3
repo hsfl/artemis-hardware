@@ -1825,6 +1825,7 @@ Created by Upverter.com</description>
 <part name="U$1" library="PC104_holes" deviceset="PC104_HOLES" device=""/>
 <part name="J4" library="Keystone_Electronics_1042" deviceset="1042_SMALLPAD" device=""/>
 <part name="H1" library="TFM-130-01-L-D-RA" deviceset="TFM-130-01-L-D-RA" device=""/>
+<part name="J7" library="Molex - 503763-0291" deviceset="MOLEX_503763-0291" device="MOLEX_503763-0291_0_0"/>
 </parts>
 <sheets>
 <sheet>
@@ -1923,6 +1924,9 @@ Created by Upverter.com</description>
 <attribute name="NAME" x="-129.54" y="172.974" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-129.54" y="91.44" size="1.778" layer="95"/>
 </instance>
+<instance part="J7" gate="G$0" x="83.82" y="144.78" smashed="yes">
+<attribute name="NAME" x="86.36" y="142.24" size="2.54" layer="95" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1975,6 +1979,16 @@ Created by Upverter.com</description>
 <wire x1="-30.48" y1="22.86" x2="-27.94" y2="22.86" width="0.1524" layer="91"/>
 <label x="-27.94" y="22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J7" gate="G$0" pin="MNT_1"/>
+<wire x1="104.14" y1="124.46" x2="106.68" y2="124.46" width="0.1524" layer="91"/>
+<label x="106.68" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$0" pin="MNT_2"/>
+<wire x1="104.14" y1="119.38" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
+<label x="106.68" y="119.38" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PACK+" class="0">
 <segment>
@@ -1998,9 +2012,9 @@ Created by Upverter.com</description>
 <label x="142.24" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="60"/>
-<wire x1="-134.62" y1="170.18" x2="-139.7" y2="170.18" width="0.1524" layer="91"/>
-<label x="-144.78" y="170.18" size="1.778" layer="95"/>
+<pinref part="J7" gate="G$0" pin="1"/>
+<wire x1="104.14" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
+<label x="106.68" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VS" class="0">
@@ -2231,9 +2245,21 @@ Created by Upverter.com</description>
 </net>
 <net name="VBATT" class="0">
 <segment>
-<pinref part="H1" gate="G$1" pin="59"/>
-<wire x1="-109.22" y1="170.18" x2="-99.06" y2="170.18" width="0.1524" layer="91"/>
-<label x="-101.6" y="170.18" size="1.778" layer="95"/>
+<pinref part="H1" gate="G$1" pin="1"/>
+<wire x1="-109.22" y1="96.52" x2="-106.68" y2="96.52" width="0.1524" layer="91"/>
+<label x="-106.68" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PACK" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="2"/>
+<wire x1="-134.62" y1="96.52" x2="-142.24" y2="96.52" width="0.1524" layer="91"/>
+<label x="-142.24" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$0" pin="2"/>
+<wire x1="104.14" y1="129.54" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
+<label x="106.68" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
