@@ -1639,42 +1639,6 @@ Created by Upverter.com</description>
 </package>
 </packages>
 </library>
-<library name="TFM-105-01-L-D-RA">
-<packages>
-<package name="SAMTEC_TFM-105-01-L-D-RA">
-<wire x1="-7.32" y1="0.508" x2="-7.32" y2="5.842" width="0.1" layer="51"/>
-<wire x1="-7.32" y1="5.842" x2="2.21" y2="5.842" width="0.1" layer="51"/>
-<wire x1="2.21" y1="5.842" x2="2.21" y2="0.508" width="0.1" layer="51"/>
-<wire x1="2.21" y1="0.508" x2="-7.32" y2="0.508" width="0.1" layer="51"/>
-<wire x1="-7.32" y1="0.508" x2="-7.32" y2="5.842" width="0.1" layer="51"/>
-<wire x1="-7.32" y1="5.842" x2="2.21" y2="5.842" width="0.1" layer="51"/>
-<wire x1="2.21" y1="5.842" x2="2.21" y2="0.508" width="0.1" layer="51"/>
-<wire x1="-7.32" y1="0.508" x2="-7.32" y2="5.842" width="0.2" layer="21"/>
-<wire x1="2.21" y1="5.842" x2="2.21" y2="0.508" width="0.2" layer="21"/>
-<wire x1="-7.32" y1="5.842" x2="2.21" y2="5.842" width="0.2" layer="21"/>
-<wire x1="0.8425" y1="0.508" x2="2.21" y2="0.508" width="0.2" layer="21"/>
-<wire x1="-5.9225" y1="0.508" x2="-7.32" y2="0.508" width="0.2" layer="21"/>
-<wire x1="-7.57" y1="-2.0125" x2="-7.57" y2="6.092" width="0.05" layer="39"/>
-<wire x1="-7.57" y1="6.092" x2="2.46" y2="6.092" width="0.05" layer="39"/>
-<wire x1="2.46" y1="6.092" x2="2.46" y2="-2.0125" width="0.05" layer="39"/>
-<wire x1="2.46" y1="-2.0125" x2="-7.57" y2="-2.0125" width="0.05" layer="39"/>
-<text x="-8.32" y="7.092" size="1.27" layer="25">&gt;NAME</text>
-<text x="-8.32" y="-4.2625" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="2.86" y="0" radius="0.1" width="0.2" layer="21"/>
-<circle x="2.86" y="0" radius="0.1" width="0.2" layer="51"/>
-<pad name="01" x="0" y="0" drill="0.635" diameter="0.985" shape="square"/>
-<pad name="02" x="0" y="-1.27" drill="0.635" diameter="0.985"/>
-<pad name="03" x="-1.27" y="0" drill="0.635" diameter="0.985"/>
-<pad name="04" x="-1.27" y="-1.27" drill="0.635" diameter="0.985"/>
-<pad name="05" x="-2.54" y="0" drill="0.635" diameter="0.985"/>
-<pad name="06" x="-2.54" y="-1.27" drill="0.635" diameter="0.985"/>
-<pad name="07" x="-3.81" y="0" drill="0.635" diameter="0.985"/>
-<pad name="08" x="-3.81" y="-1.27" drill="0.635" diameter="0.985"/>
-<pad name="09" x="-5.08" y="0" drill="0.635" diameter="0.985"/>
-<pad name="10" x="-5.08" y="-1.27" drill="0.635" diameter="0.985"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2098,13 +2062,6 @@ design rules under a new name.</description>
 <element name="U$1" library="PC104_holes" package="PC104_HOLES" value="PC104_HOLES" x="5.15" y="85.15" smashed="yes" rot="R270"/>
 <element name="J4" library="Keystone_Electronics_1042" package="1042_KEY_SMALLPAD" value="1042_SMALLPAD" x="47.9" y="75.9" smashed="yes" rot="MR180">
 <attribute name="NAME" x="48.7766" y="75.265" size="1.27" layer="26" ratio="6" rot="SMR0"/>
-</element>
-<element name="J11" library="TFM-105-01-L-D-RA" package="SAMTEC_TFM-105-01-L-D-RA" value="TFM-105-01-L-D-RA" x="6.2" y="48.3" smashed="yes" rot="R90">
-<attribute name="MANUFACTURER" value="Samtec" x="6.2" y="48.3" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-0.892" y="39.98" size="1.27" layer="25" rot="R90"/>
-<attribute name="PARTREV" value="R" x="6.2" y="48.3" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="STANDARD" value="Manufacturer Recommendations" x="6.2" y="48.3" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="10.4625" y="39.98" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
 <signals>

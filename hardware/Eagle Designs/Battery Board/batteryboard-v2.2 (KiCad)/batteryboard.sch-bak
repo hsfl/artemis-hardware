@@ -521,6 +521,17 @@ F 3 "~" H 8150 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Connector:Conn_01x02_Female J7
+U 1 1 60F15AC1
+P 8150 3150
+F 0 "J7" H 8178 3126 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 8178 3035 50  0000 L CNN
+F 2 "Molex:Molex_Pico-Lock_503763-0291_1x02-1MP_P1.00m_Horizontal" H 8150 3150 50  0001 C CNN
+F 3 "~" H 8150 3150 50  0001 C CNN
+	1    8150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
 L Connector:Conn_01x02_Female J8
 U 1 1 60F16DC5
 P 8150 3400
@@ -549,6 +560,8 @@ Wire Wire Line
 Wire Wire Line
 	7800 3250 7950 3250
 Connection ~ 7800 3500
+Wire Wire Line
+	7600 3150 7950 3150
 Wire Wire Line
 	6950 3250 7250 3250
 Wire Wire Line
@@ -626,7 +639,7 @@ F 3 "~" H 9400 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L batteryboard-rescue:TMP36FSZ-TMP36FSZ U2
+L TMP36FSZ:TMP36FSZ U2
 U 1 1 61949410
 P 8550 5850
 F 0 "U2" H 8500 6317 50  0000 C CNN
@@ -656,7 +669,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 4350 7550 5650
 $Comp
-L batteryboard-rescue:5037630291-5037630291 J11
+L 5037630291:5037630291 J11
 U 1 1 61B371B8
 P 9150 4800
 F 0 "J11" H 9480 4846 50  0000 L CNN
@@ -716,24 +729,4 @@ Wire Wire Line
 	5150 6050 5150 7000
 Wire Wire Line
 	5150 7300 4850 7300
-Wire Wire Line
-	7600 3150 7900 3150
-$Comp
-L Connector:Conn_01x02_Female J7
-U 1 1 60F15AC1
-P 8150 3150
-F 0 "J7" H 8178 3126 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 8178 3035 50  0000 L CNN
-F 2 "Molex:Molex_Pico-Lock_503763-0291_1x02-1MP_P1.00m_Horizontal" H 8150 3150 50  0001 C CNN
-F 3 "~" H 8150 3150 50  0001 C CNN
-	1    8150 3150
-	1    0    0    -1  
-$EndComp
-Text Label 7900 3000 0    50   ~ 0
-CONN
-Wire Wire Line
-	7900 3150 7900 3000
-Connection ~ 7900 3150
-Wire Wire Line
-	7900 3150 7950 3150
 $EndSCHEMATC

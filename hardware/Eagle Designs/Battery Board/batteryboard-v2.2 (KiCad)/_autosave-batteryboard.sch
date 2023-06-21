@@ -545,19 +545,13 @@ Wire Wire Line
 Wire Wire Line
 	7800 3500 7950 3500
 Wire Wire Line
-	7800 3500 7800 3250
-Wire Wire Line
 	7800 3250 7950 3250
-Connection ~ 7800 3500
 Wire Wire Line
 	6950 3250 7250 3250
-Wire Wire Line
-	7600 3400 7950 3400
 Wire Wire Line
 	7600 3400 7600 3750
 Wire Wire Line
 	7600 3750 7950 3750
-Connection ~ 7600 3400
 Wire Wire Line
 	7600 3750 7600 3950
 Wire Wire Line
@@ -578,9 +572,6 @@ Wire Wire Line
 	7350 3250 7600 3250
 Wire Wire Line
 	7600 3150 7600 3250
-Connection ~ 7600 3250
-Wire Wire Line
-	7600 3250 7600 3400
 Text Notes 8250 5850 0    50   ~ 0
 Temp Sensor\n
 $Comp
@@ -716,8 +707,6 @@ Wire Wire Line
 	5150 6050 5150 7000
 Wire Wire Line
 	5150 7300 4850 7300
-Wire Wire Line
-	7600 3150 7900 3150
 $Comp
 L Connector:Conn_01x02_Female J7
 U 1 1 60F15AC1
@@ -729,11 +718,27 @@ F 3 "~" H 8150 3150 50  0001 C CNN
 	1    8150 3150
 	1    0    0    -1  
 $EndComp
-Text Label 7900 3000 0    50   ~ 0
+Wire Wire Line
+	7600 3150 7950 3150
+Text Label 8500 2950 0    50   ~ 0
 CONN
 Wire Wire Line
-	7900 3150 7900 3000
-Connection ~ 7900 3150
+	7950 3150 8500 3150
 Wire Wire Line
-	7900 3150 7950 3150
+	8500 3150 8500 2950
+Connection ~ 7950 3150
+Text Label 9100 3400 0    50   ~ 0
+CONN+
+Wire Wire Line
+	7600 3400 7800 3400
+Wire Wire Line
+	7800 3250 7800 3400
+Connection ~ 7800 3400
+Wire Wire Line
+	7800 3400 7950 3400
+Wire Wire Line
+	9100 3400 7950 3400
+Connection ~ 7950 3400
+Wire Wire Line
+	7950 3400 7800 3400
 $EndSCHEMATC

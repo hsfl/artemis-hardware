@@ -1706,6 +1706,92 @@ Created by Upverter.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="TFM-105-01-L-D-RA">
+<packages>
+<package name="SAMTEC_TFM-105-01-L-D-RA">
+<wire x1="-7.32" y1="0.508" x2="-7.32" y2="5.842" width="0.1" layer="51"/>
+<wire x1="-7.32" y1="5.842" x2="2.21" y2="5.842" width="0.1" layer="51"/>
+<wire x1="2.21" y1="5.842" x2="2.21" y2="0.508" width="0.1" layer="51"/>
+<wire x1="2.21" y1="0.508" x2="-7.32" y2="0.508" width="0.1" layer="51"/>
+<wire x1="-7.32" y1="0.508" x2="-7.32" y2="5.842" width="0.1" layer="51"/>
+<wire x1="-7.32" y1="5.842" x2="2.21" y2="5.842" width="0.1" layer="51"/>
+<wire x1="2.21" y1="5.842" x2="2.21" y2="0.508" width="0.1" layer="51"/>
+<wire x1="-7.32" y1="0.508" x2="-7.32" y2="5.842" width="0.2" layer="21"/>
+<wire x1="2.21" y1="5.842" x2="2.21" y2="0.508" width="0.2" layer="21"/>
+<wire x1="-7.32" y1="5.842" x2="2.21" y2="5.842" width="0.2" layer="21"/>
+<wire x1="0.8425" y1="0.508" x2="2.21" y2="0.508" width="0.2" layer="21"/>
+<wire x1="-5.9225" y1="0.508" x2="-7.32" y2="0.508" width="0.2" layer="21"/>
+<wire x1="-7.57" y1="-2.0125" x2="-7.57" y2="6.092" width="0.05" layer="39"/>
+<wire x1="-7.57" y1="6.092" x2="2.46" y2="6.092" width="0.05" layer="39"/>
+<wire x1="2.46" y1="6.092" x2="2.46" y2="-2.0125" width="0.05" layer="39"/>
+<wire x1="2.46" y1="-2.0125" x2="-7.57" y2="-2.0125" width="0.05" layer="39"/>
+<text x="-8.32" y="7.092" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8.32" y="-4.2625" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="2.86" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="2.86" y="0" radius="0.1" width="0.2" layer="51"/>
+<pad name="01" x="0" y="0" drill="0.635" diameter="0.985" shape="square"/>
+<pad name="02" x="0" y="-1.27" drill="0.635" diameter="0.985"/>
+<pad name="03" x="-1.27" y="0" drill="0.635" diameter="0.985"/>
+<pad name="04" x="-1.27" y="-1.27" drill="0.635" diameter="0.985"/>
+<pad name="05" x="-2.54" y="0" drill="0.635" diameter="0.985"/>
+<pad name="06" x="-2.54" y="-1.27" drill="0.635" diameter="0.985"/>
+<pad name="07" x="-3.81" y="0" drill="0.635" diameter="0.985"/>
+<pad name="08" x="-3.81" y="-1.27" drill="0.635" diameter="0.985"/>
+<pad name="09" x="-5.08" y="0" drill="0.635" diameter="0.985"/>
+<pad name="10" x="-5.08" y="-1.27" drill="0.635" diameter="0.985"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TFM-105-01-L-D-RA">
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<text x="-8.12" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="01" x="-12.7" y="5.08" length="middle" direction="pas"/>
+<pin name="02" x="12.7" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="03" x="-12.7" y="2.54" length="middle" direction="pas"/>
+<pin name="04" x="12.7" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="05" x="-12.7" y="0" length="middle" direction="pas"/>
+<pin name="06" x="12.7" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="07" x="-12.7" y="-2.54" length="middle" direction="pas"/>
+<pin name="08" x="12.7" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="09" x="-12.7" y="-5.08" length="middle" direction="pas"/>
+<pin name="10" x="12.7" y="-5.08" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TFM-105-01-L-D-RA" prefix="J">
+<gates>
+<gate name="G$1" symbol="TFM-105-01-L-D-RA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAMTEC_TFM-105-01-L-D-RA">
+<connects>
+<connect gate="G$1" pin="01" pad="01"/>
+<connect gate="G$1" pin="02" pad="02"/>
+<connect gate="G$1" pin="03" pad="03"/>
+<connect gate="G$1" pin="04" pad="04"/>
+<connect gate="G$1" pin="05" pad="05"/>
+<connect gate="G$1" pin="06" pad="06"/>
+<connect gate="G$1" pin="07" pad="07"/>
+<connect gate="G$1" pin="08" pad="08"/>
+<connect gate="G$1" pin="09" pad="09"/>
+<connect gate="G$1" pin="10" pad="10"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Samtec"/>
+<attribute name="PARTREV" value="R"/>
+<attribute name="STANDARD" value="Manufacturer Recommendations"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1743,6 +1829,7 @@ Created by Upverter.com</description>
 <part name="R5" library="HSFL_Main_Library (1)" deviceset="RESISTOR" device="0805-RES" value="45.3k"/>
 <part name="U$1" library="PC104_holes" deviceset="PC104_HOLES" device=""/>
 <part name="J4" library="Keystone_Electronics_1042" deviceset="1042_SMALLPAD" device=""/>
+<part name="J11" library="TFM-105-01-L-D-RA" deviceset="TFM-105-01-L-D-RA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1848,6 +1935,10 @@ Created by Upverter.com</description>
 <instance part="J4" gate="G$1" x="-111.76" y="106.68" smashed="yes">
 <attribute name="NAME" x="-104.0384" y="111.9886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="-124.2314" y="99.2886" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+</instance>
+<instance part="J11" gate="G$1" x="-35.56" y="83.82" smashed="yes">
+<attribute name="NAME" x="-43.68" y="91.44" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-43.18" y="73.66" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
