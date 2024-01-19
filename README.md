@@ -2,7 +2,7 @@
 
 # Artemis Cubesat Kit Hardware
 
-Welcome! Here you'll find resources for the Artemis Cubesat Kit.
+This repository contains CAD models, Eagle designs, and thermal analysis for the Artemis Cubesat Kit V1.
 
 For documentation and tutorials, visit our [project website](https://sites.google.com/hawaii.edu/artemiscubesatkit).
 
