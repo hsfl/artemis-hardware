@@ -1,0 +1,3 @@
+[submodule "detumbling-simulator"]
+	path = detumbling-simulator
+	url = https://github.com/rfonod/detumbling-simulator.git
